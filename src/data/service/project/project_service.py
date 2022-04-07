@@ -1,10 +1,18 @@
 """service class of project model"""
 
-from repository.project_repository import ProjectRepository
-from data.service.project.project_converter import ProjectConverter
 
-from data.model.project_model import ProjectModel
-from data.entity.project_entity import ProjectEntity
+import sys
+
+sys.path.append('src/data/service/project')
+sys.path.append('src/data/model')
+sys.path.append('src/data/entity')
+sys.path.append('src/repository')
+
+from project_repository import ProjectRepository
+from project_converter import ProjectConverter
+from project_model import ProjectModel
+
+from project_entity import ProjectEntity
 
 
 class ProjectService:
@@ -24,7 +32,6 @@ class ProjectService:
         project_models: list[ProjectModel] = self.__list_up_projects()
         for project_model in project_models:
             self.repository.fetch_from_remote(project_model)
-
 
 
 def main():

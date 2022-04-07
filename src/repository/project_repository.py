@@ -2,9 +2,14 @@
 
 from os.path import exists
 import git
+import sys
 
-from data.entity.project_entity import ProjectEntity
-from data.model.project_model import ProjectModel
+sys.path.append('src/data/service')
+sys.path.append('src/data/entity')
+sys.path.append('src/data/model')
+
+from project_entity import ProjectEntity
+from project_model import ProjectModel
 
 
 class ProjectRepository():
@@ -22,13 +27,14 @@ class ProjectRepository():
             return list(
                 map(
                     lambda data: ProjectEntity(data[0], data[1], data[3], data[4]),
-                    [[x.strip() for x in line.split('\t')] for line in opened_file]
+                    [[x.strip() for x in line.split('\t')] for line in list(opened_file)[1:]]
                 )
             )
 
     def fetch_from_remote(self, project: ProjectModel):
         """"function to fetch from git and save project"""
-        output_path: str = f'project/{project.name}'
+        print(project.name)
+        output_path: str = project.get_project_path
         if not exists(output_path):
             repo = git.Repo.clone_from(
                 project.url,

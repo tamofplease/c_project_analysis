@@ -1,7 +1,11 @@
 """module of project converter"""
 
-from data.entity.project_entity import ProjectEntity
-from data.model.project_model import ProjectModel
+import sys
+sys.path.append('src/data/entity')
+sys.path.append('src/data/model')
+
+from project_entity import ProjectEntity
+from project_model import ProjectModel
 
 
 class ProjectConverter:
@@ -9,7 +13,7 @@ class ProjectConverter:
     def entity_to_model(self, project_entity: ProjectEntity) -> ProjectModel:
         """convert project_entity to project_model"""
         return ProjectModel(
-            project_entity.id,
+            project_entity.project_id,
             project_entity.name,
             project_entity.commit_hash,
             project_entity.url,

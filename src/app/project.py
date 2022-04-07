@@ -2,10 +2,17 @@
 
 
 import sys
-from data.service.project.project_service import ProjectService
 
+sys.path.append('src/data/service/project')
+sys.path.append('src/repository')
 
-project_service = ProjectService()
+from project_converter import ProjectConverter
+from project_service import ProjectService
+from project_repository import ProjectRepository
+
+project_converter = ProjectConverter()
+project_repository = ProjectRepository()
+project_service = ProjectService(project_converter, project_repository)
 
 
 def fetch_and_save_from_list():
