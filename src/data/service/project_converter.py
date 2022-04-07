@@ -1,8 +1,5 @@
 """module of project converter"""
 
-import sys
-sys.path.append('src/data/entity')
-sys.path.append('src/data/model')
 
 from project_entity import ProjectEntity
 from project_model import ProjectModel

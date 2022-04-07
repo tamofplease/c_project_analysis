@@ -1,13 +1,6 @@
 """service class of project model"""
 
 
-import sys
-
-sys.path.append('src/data/service/project')
-sys.path.append('src/data/model')
-sys.path.append('src/data/entity')
-sys.path.append('src/repository')
-
 from project_repository import ProjectRepository
 from project_converter import ProjectConverter
 from project_model import ProjectModel

@@ -3,8 +3,6 @@
 
 import sys
 
-sys.path.append('src/data/service/project')
-sys.path.append('src/repository')
 
 from project_converter import ProjectConverter
 from project_service import ProjectService

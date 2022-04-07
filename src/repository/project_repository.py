@@ -2,11 +2,6 @@
 
 from os.path import exists
 import git
-import sys
-
-sys.path.append('src/data/service')
-sys.path.append('src/data/entity')
-sys.path.append('src/data/model')
 
 from project_entity import ProjectEntity
 from project_model import ProjectModel

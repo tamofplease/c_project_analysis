@@ -6,6 +6,8 @@
     "python.analysis.extraPaths": [
         "./src/data/entity",
         "./src/data/model",
-        "./src/data/service/project"
+        "./src/data/service/project",
+        "./src/data/service",
+        "./src/repository"
     ]
 }
