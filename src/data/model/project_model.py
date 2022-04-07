@@ -13,5 +13,5 @@ class ProjectModel:
     @property
     def get_project_path(self) -> str:
         """function of get project path"""
-        project_root_path = "project"
+        project_root_path = "project/"
         return project_root_path + self.name

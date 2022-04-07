@@ -5,6 +5,7 @@
     "python.linting.mypyEnabled": true,
     "python.analysis.extraPaths": [
         "./src/data/entity",
-        "./src/data/model"
+        "./src/data/model",
+        "./src/data/service/project"
     ]
 }
