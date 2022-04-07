@@ -1,6 +1,9 @@
 """Project model module"""
 
 
+from typing import Tuple
+
+
 class ProjectModel:
     """model of project"""
     def __init__(self, project_id: str, name: str, commit_hash: str, url: str):
@@ -9,6 +12,10 @@ class ProjectModel:
         self.name: str = name
         self.commit_hash: str = commit_hash
         self.url: str = url
+
+    @property
+    def to_tuple(self) -> Tuple[str, str, str, str]:
+        return (self.project_id, self.name, self.commit_hash, self.url)
 
     @property
     def get_project_path(self) -> str:

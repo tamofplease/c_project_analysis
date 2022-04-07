@@ -1,6 +1,8 @@
 """This is a repository class for Project model"""
 
 from os.path import exists
+from client.csv_client import CSVClient
+from client.db_client import DBClient
 import git
 
 from project_entity import ProjectEntity
@@ -10,9 +12,8 @@ from project_model import ProjectModel
 class ProjectRepository():
     """Implementation of ProjectRepository class"""
 
-    def __init__(self):
-        pass
-        # self.db_client = dbClient
+    def __init__(self, db_client: DBClient):
+        self.db_client = db_client
 
     # def fetch_by_id(self, project_id: str):
     #     """This is a function to fetch project entity by id"""
@@ -28,7 +29,6 @@ class ProjectRepository():
 
     def fetch_from_remote(self, project: ProjectModel):
         """"function to fetch from git and save project"""
-        print(project.name)
         output_path: str = project.get_project_path
         if not exists(output_path):
             repo = git.Repo.clone_from(
@@ -38,10 +38,16 @@ class ProjectRepository():
             )
             repo.git.checkout(project.commit_hash)
 
+    def save_information_to_database(self, project: ProjectModel):
+        """function to save project model to database"""
+        self.db_client.insert(project.to_tuple)
+
 
 def main():
     """ main function"""
-    repo = ProjectRepository()
+    repo = ProjectRepository(
+        CSVClient("project", ["id", "name", "commit_hash", "url"])
+    )
     res = repo.get_current_project()
     print(res)
 

@@ -26,6 +26,12 @@ class ProjectService:
         for project_model in project_models:
             self.repository.fetch_from_remote(project_model)
 
+    def save_project_record(self):
+        """function of save project record to specific database"""
+        project_models: list[ProjectModel] = self.__list_up_projects()
+        for project_model in project_models:
+            self.repository.save_information_to_database(project_model)
+
 
 def main():
     """example class of project_service"""

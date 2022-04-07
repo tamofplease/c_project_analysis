@@ -2,18 +2,19 @@ import csv
 from os.path import exists
 
 import sys
+from client.db_client import DBClient
+
 sys.path.append("./")
 
 from constant import Constant  # noqa: E402
 
 
-class CSVClient():
+class CSVClient(DBClient):
     def __init__(self, table_name: str, columns_name: list[str]):
-        self.table_name: str = table_name
-        self.columns: list[str] = columns_name
+        super().__init__(table_name, columns_name)
 
     def insert(self, data: tuple[str]):
-        assert(len(self.columns) == len(data))
+        super().insert()
         target_path = self.get_target_path
 
         if not exists(target_path):
