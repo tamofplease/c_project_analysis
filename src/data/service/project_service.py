@@ -6,7 +6,7 @@ from project_converter import ProjectConverter
 from project_model import ProjectModel
 
 from project_entity import ProjectEntity
-from file_model import FileModel
+from file_entity import FileEntity
 
 
 class ProjectService:
@@ -33,10 +33,9 @@ class ProjectService:
         for project_model in project_models:
             self.repository.save_information_to_database(project_model)
 
+    def files(self, project_id: str) -> list[FileEntity]:
+        """function of listup files model of specific project"""
 
-    def files(self, project_id: str) -> list[FileModel]:
-        """function of listup files model"""
-        
 
 def main():
     """example class of project_service"""
