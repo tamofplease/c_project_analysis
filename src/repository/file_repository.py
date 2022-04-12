@@ -20,7 +20,7 @@ class FileRepository():
     def __init__(self, db_client: DBClient):
         self.db_client = db_client
 
-    def get_current_project(self) -> list[FileEntity]:
+    def get_all_files_from_local(self, project_id: str) -> list[FileEntity]:
         """return initial """
 
     def save_information_to_database(self, file: FileModel):
