@@ -7,3 +7,4 @@ class FileEntity:
     file_id: str
     name: str
     path: str
+    project_id: str
