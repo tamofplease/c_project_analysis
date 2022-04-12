@@ -9,6 +9,7 @@ sys.path.append("src/data/model")
 sys.path.append("src/repository")
 
 from db_client import DBClient  # noqa: E402
+from local_file_client import LocalFileClient  # noqa: E402
 
 from file_entity import FileEntity  # noqa: E402
 from file_model import FileModel  # noqa: E402
@@ -17,11 +18,12 @@ from file_model import FileModel  # noqa: E402
 class FileRepository():
     """Implementation of FileRepository class"""
 
-    def __init__(self, db_client: DBClient):
+    def __init__(self, db_client: DBClient, local_file_client: LocalFileClient):
         self.db_client = db_client
+        self.local_file_client = local_file_client
 
     def get_all_files_from_local(self, project_id: str) -> list[FileEntity]:
-        """return initial """
+        """return initial"""
 
     def save_information_to_database(self, file: FileModel):
         self.db_client.insert(file.to_tuple)

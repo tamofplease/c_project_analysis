@@ -31,10 +31,14 @@ class ProjectRepository():
         with open('list.tsv', encoding='utf-8') as opened_file:
             return list(
                 map(
-                    lambda data: ProjectEntity(data[0], data[1], data[3], data[4]),
+                    lambda data: ProjectEntity.from_list(data),
                     [[x.strip() for x in line.split('\t')] for line in list(opened_file)[1:]]
                 )
             )
+
+    def fetch_from_id(self, project_id: str):
+        data: list[str] = self.db_client.fetch(project_id)
+        return ProjectEntity.from_list(data)
 
     def fetch_from_remote(self, project: ProjectModel):
         """"function to fetch from git and save project"""
