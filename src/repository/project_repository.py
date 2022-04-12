@@ -1,12 +1,21 @@
 """This is a repository class for Project model"""
 
-from os.path import exists
-from client.csv_client import CSVClient
-from client.db_client import DBClient
-import git
+import sys
+sys.path.append("./")
+sys.path.append("venv/lib/python3.9/site-packages")
+sys.path.append("src/client")
+sys.path.append("src/data/service")
+sys.path.append("src/data/entity")
+sys.path.append("src/data/model")
+sys.path.append("src/repository")
 
-from project_entity import ProjectEntity
-from project_model import ProjectModel
+from os.path import exists  # noqa: E402
+from csv_client import CSVClient  # noqa: E402
+from db_client import DBClient  # noqa: E402
+import git  # noqa: E402
+
+from project_entity import ProjectEntity  # noqa: E402
+from project_model import ProjectModel  # noqa: E402
 
 
 class ProjectRepository():

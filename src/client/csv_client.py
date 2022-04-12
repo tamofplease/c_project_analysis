@@ -2,8 +2,10 @@ import csv
 from os.path import exists
 
 import sys
-from client.db_client import DBClient
 
+from db_client import DBClient
+
+sys.path.append("src/client")
 sys.path.append("./")
 
 from constant import Constant  # noqa: E402
@@ -14,7 +16,7 @@ class CSVClient(DBClient):
         super().__init__(table_name, columns_name)
 
     def insert(self, data: tuple[str]):
-        super().insert()
+        super().insert(data)
         target_path = self.get_target_path
 
         if not exists(target_path):
