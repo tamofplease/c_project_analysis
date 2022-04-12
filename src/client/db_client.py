@@ -11,3 +11,6 @@ class DBClient(ABC):
 
     def fetch(self, target_id: str):
         pass
+
+    def fetch_all(self):
+        pass
