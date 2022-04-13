@@ -29,7 +29,7 @@ class CSVClient(DBClient):
             for row in list(reader)[1:]:
                 if(row[0] == data[0]):
                     includeId = True
-        
+
         if not includeId:
             with open(target_path, 'a') as f_out:
                 writer = csv.writer(f_out)
