@@ -12,15 +12,13 @@ sys.path.append("src/data/model")
 sys.path.append("src/repository")
 
 from csv_client import CSVClient  # noqa: E402
-from project_converter import ProjectConverter  # noqa: E402
 from project_service import ProjectService  # noqa: E402
 from project_repository import ProjectRepository  # noqa: E402
 
-project_converter = ProjectConverter()
 project_repository = ProjectRepository(
     CSVClient("project", ["id", "name", "commit_hash", "url"])
 )
-project_service = ProjectService(project_converter, project_repository)
+project_service = ProjectService(project_repository=project_repository)
 
 
 def fetch_and_save_from_list():

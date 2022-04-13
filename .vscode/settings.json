@@ -8,6 +8,7 @@
         "./src/data/model",
         "./src/data/service/project",
         "./src/data/service",
-        "./src/repository"
+        "./src/repository",
+        "./src/client"
     ]
 }
