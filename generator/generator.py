@@ -12,7 +12,7 @@ def main():
     # save project to db
     project_service.save_project_record(projects=projects)
 
-    # fetch c or h files from target project
+    # get c or h files from target project
     files: list[FileEntity] = file_service.list_up_files(projects=projects)
 
     # save file to db

@@ -75,3 +75,19 @@ class FileEntity:
     @property
     def to_tuple(self) -> tuple:
         return (self.file_id, self.name, self.path, self.project_id)
+
+
+@dataclass
+class DefineMacroEntity:
+    """entity of define macro"""
+    define_macro_id: str
+    key: str
+    value: str
+
+    @classmethod
+    def columns(cls):
+        return ["define_macro_id", "key", "value"]
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.define_macro_id, self.key, self.value)
