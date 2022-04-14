@@ -7,17 +7,23 @@ class ProjectEntity:
     """Entity of Project record"""
     project_id: str
     name: str
+    summary: str
     commit_hash: str
     url: str
 
     @classmethod
+    def columns(cls) -> list[str]:
+        return ["id", "name", "summary", "commit_hash", "url"]
+
+    @classmethod
     def from_list(cls, data: list[str]):
-        assert(len(data) == 4)
+        assert(len(data) == 5)
         return cls(
             project_id=data[0],
             name=data[1],
-            commit_hash=data[2],
-            url=data[3]
+            summary=data[2],
+            commit_hash=data[3],
+            url=data[4]
         )
 
     @classmethod
@@ -25,6 +31,7 @@ class ProjectEntity:
         return cls(
             project_id=data["project_id"],
             name=data["name"],
+            summary=data["summary"],
             commit_hash=data["commit_hash"],
             url=data["url"]
         )
@@ -37,7 +44,7 @@ class ProjectEntity:
 
     @property
     def to_tuple(self) -> tuple:
-        return (self.project_id, self.name, self.commit_hash, self.url)
+        return (self.project_id, self.name, self.summary, self.commit_hash, self.url)
 
     @property
     def get_project_path(self) -> str:
@@ -51,6 +58,10 @@ class FileEntity:
     name: str
     path: str
     project_id: str
+
+    @classmethod
+    def columns(cls):
+        return ["file_id", "name", "path", "project_id"]
 
     @classmethod
     def from_map(cls, data: dict[str, str]):

@@ -1,3 +1,4 @@
+from tqdm import tqdm
 from repository import file_repository, project_repository, FileRepository, ProjectRepository
 from entity import FileEntity, ProjectEntity
 
@@ -37,7 +38,7 @@ class FileService:
         return results
 
     def save_to_file_record(self, files: list[FileEntity]) -> None:
-        for file in files:
+        for file in tqdm(files):
             self.file_repository.save_information_to_database(file)
 
 

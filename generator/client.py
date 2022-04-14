@@ -3,7 +3,8 @@ from abc import ABC
 import csv
 from os.path import exists
 import glob
-from generator.constant import Constant
+from constant import Constant
+from entity import FileEntity, ProjectEntity
 
 
 class DBClient(ABC):
@@ -12,7 +13,7 @@ class DBClient(ABC):
         self.columns: list[str] = columns_name
 
     def insert(self, data: Tuple) -> None:
-        assert(len(self.columns) == len(data))
+        assert(len(self.columns) == len(list(data)))
 
     def fetch(self, target_id: str):
         pass
@@ -24,6 +25,7 @@ class DBClient(ABC):
 class CSVClient(DBClient):
     def __init__(self, table_name: str, columns_name: list[str]):
         super().__init__(table_name, columns_name)
+        self.current_id = 1
 
     def insert(self, data: Tuple):
         super().insert(data)
@@ -33,17 +35,9 @@ class CSVClient(DBClient):
             with open(target_path, 'w') as output_file:
                 writer = csv.writer(output_file)
                 writer.writerow(self.columns)
-        includeId = False
-        with open(target_path, 'r') as f_in:
-            reader = csv.reader(f_in)
-            for row in list(reader)[1:]:
-                if(row[0] == data[0]):
-                    includeId = True
-
-        if not includeId:
-            with open(target_path, 'a') as f_out:
-                writer = csv.writer(f_out)
-                writer.writerow(data)
+        with open(target_path, 'a') as f_out:
+            writer = csv.writer(f_out)
+            writer.writerow(data)
 
     def fetch(self, target_id: str) -> list[str]:
         target_path = self.get_target_path
@@ -78,6 +72,6 @@ class LocalFileClient():
         return list(f.readlines())
 
 
-project_csv_client = CSVClient("project", ["id", "name", "commit_hash", "url"])
-file_csv_client = CSVClient("file", ["id", "name", "path", "project_id"])
+project_csv_client = CSVClient("project", ProjectEntity.columns())
+file_csv_client = CSVClient("file", FileEntity.columns())
 local_file_client = LocalFileClient()
