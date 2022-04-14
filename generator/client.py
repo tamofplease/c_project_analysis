@@ -1,21 +1,31 @@
+from typing import Tuple
+from abc import ABC
 import csv
 from os.path import exists
+import glob
+from generator.constant import Constant
 
-import sys
 
-from db_client import DBClient
+class DBClient(ABC):
+    def __init__(self, table_name: str, columns_name: list[str]):
+        self.table_name: str = table_name
+        self.columns: list[str] = columns_name
 
-sys.path.append("src/client")
-sys.path.append("./")
+    def insert(self, data: Tuple) -> None:
+        assert(len(self.columns) == len(data))
 
-from constant import Constant  # noqa: E402
+    def fetch(self, target_id: str):
+        pass
+
+    def fetch_all(self):
+        pass
 
 
 class CSVClient(DBClient):
     def __init__(self, table_name: str, columns_name: list[str]):
         super().__init__(table_name, columns_name)
 
-    def insert(self, data: tuple[str]):
+    def insert(self, data: Tuple):
         super().insert(data)
         target_path = self.get_target_path
 
@@ -56,12 +66,17 @@ class CSVClient(DBClient):
         return Constant.output_root_path + "/" + self.table_name + ".csv"
 
 
-def main():
-    client = CSVClient("project_test", ["id", "name", "commit_hash", "url"])
-    client.insert(["1", "sample_name", "sample_commit_hash", "sample_url"])
-    client.insert(["1", "sample_name2", "sample_commit_hash", "sample_url"])
-    client.insert(["2", "sample_name3", "sample_commit_hash", "sample_url"])
+class LocalFileClient():
+    def __init__(self):
+        pass
+
+    def file_paths(self, project_path) -> list[str]:
+        return list(glob.glob(project_path + "/**/*.[h,c]", recursive=True))
+
+    def read_content(self, file_path) -> list[str]:
+        f = open(file_path, "r")
+        return list(f.readlines())
 
 
-if __name__ == "__main__":
-    main()
+project_csv_client = CSVClient("project", ["id", "name", "commit_hash", "url"])
+file_csv_client = CSVClient("file", ["id", "name", "path", "project_id"])

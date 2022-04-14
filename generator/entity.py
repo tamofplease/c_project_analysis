@@ -1,9 +1,8 @@
-"""module of project entity"""
+from dataclasses import dataclass
+from constant import Constant
 
-import dataclasses
 
-
-@dataclasses.dataclass
+@dataclass
 class ProjectEntity:
     """Entity of Project record"""
     project_id: str
@@ -36,5 +35,32 @@ class ProjectEntity:
         project_root_path = "project/"
         return project_root_path + self.name
 
+    @property
     def to_tuple(self) -> tuple:
         return (self.project_id, self.name, self.commit_hash, self.url)
+
+    @property
+    def get_project_path(self) -> str:
+        return Constant.local_project_root_path + "/" + self.name
+
+
+@dataclass
+class FileEntity:
+    """Entity of File record"""
+    file_id: str
+    name: str
+    path: str
+    project_id: str
+
+    @classmethod
+    def from_map(cls, data: dict[str, str]):
+        return cls(
+            file_id=data["file_id"],
+            name=data["name"],
+            path=data["path"],
+            project_id=data["project_id"]
+        )
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.file_id, self.name, self.path, self.project_id)

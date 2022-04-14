@@ -1,22 +1,7 @@
-"""This is a repository class for Project model"""
-
-import sys
-
-from client.local_file_client import LocalFileClient
-sys.path.append("./")
-sys.path.append("venv/lib/python3.9/site-packages")
-sys.path.append("src/client")
-sys.path.append("src/data/service")
-sys.path.append("src/data/entity")
-sys.path.append("src/data/model")
-sys.path.append("src/repository")
-
-from os.path import exists  # noqa: E402
-from csv_client import CSVClient  # noqa: E402
-from db_client import DBClient  # noqa: E402
-import git  # noqa: E402
-
-from project_entity import ProjectEntity  # noqa: E402
+from os.path import exists
+import git
+from client import DBClient, LocalFileClient
+from entity import ProjectEntity, FileEntity
 
 
 class ProjectRepository():
@@ -36,7 +21,7 @@ class ProjectRepository():
                 )
             )
 
-    def fetch_from_id(self, project_id: str):
+    def fetch_from_id(self, project_id: str) -> ProjectEntity:
         data: list[str] = self.db_client.fetch(project_id)
         return ProjectEntity.from_list(data)
 
@@ -56,14 +41,25 @@ class ProjectRepository():
         self.db_client.insert(project.to_tuple)
 
 
-def main():
-    """ main function"""
-    repo = ProjectRepository(
-        CSVClient("project", ["id", "name", "commit_hash", "url"])
-    )
-    res = repo.get_current_project()
-    print(res)
+class FileRepository():
+    """Implementation of FileRepository class"""
 
+    def __init__(self, db_client: DBClient, local_file_client: LocalFileClient):
+        self.db_client = db_client
+        self.local_file_client = local_file_client
 
-if __name__ == "__main__":
-    main()
+    def get_all_files_from_local(self, project: ProjectEntity) -> list[FileEntity]:
+        return list(map(
+            lambda data: FileEntity.from_map(
+                {
+                    "file_id": "1",
+                    "name": data.split("/")[-1],
+                    "path": data,
+                    "project_id": project.project_id,
+                }
+            ),
+            self.local_file_client.file_paths(project.path)
+        ))
+
+    def save_information_to_database(self, file: FileEntity):
+        self.db_client.insert(file.to_tuple)
