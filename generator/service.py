@@ -64,7 +64,7 @@ class DefineMacroService:
     def save_to_define_macro_record(self, define_macros: list[DefineMacroEntity]) -> None:
         for index, define_macro in enumerate(tqdm(define_macros)):
             define_macro.define_macro_id = index
-            self.define_macro_repository.save_information_to_database
+            self.define_macro_repository.save_information_to_database(define_macro=define_macro)
 
 
 project_service = ProjectService(
