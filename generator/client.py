@@ -5,6 +5,7 @@ from os.path import exists
 import glob
 from constant import Constant
 from entity import FileEntity, ProjectEntity
+from generator.entity import DefineMacroEntity
 
 
 class DBClient(ABC):
@@ -73,4 +74,5 @@ class LocalFileClient():
 
 project_csv_client = CSVClient("project", ProjectEntity.columns())
 file_csv_client = CSVClient("file", FileEntity.columns())
+define_macro_client = CSVClient("define_macro", DefineMacroEntity.columns())
 local_file_client = LocalFileClient()
