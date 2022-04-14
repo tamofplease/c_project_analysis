@@ -37,11 +37,6 @@ init-hook='''
 import sys;
 sys.path.append("./");
 sys.path.append("venv/lib/python3.9/site-packages"); 
-sys.path.append("src/client");
-sys.path.append("src/data/service");
-sys.path.append("src/data/entity");
-sys.path.append("src/data/model");
-sys.path.append("src/repository");
 '''
 
 # Use multiple processes to speed up Pylint. Specifying 0 will auto-detect the

@@ -80,3 +80,4 @@ class LocalFileClient():
 
 project_csv_client = CSVClient("project", ["id", "name", "commit_hash", "url"])
 file_csv_client = CSVClient("file", ["id", "name", "path", "project_id"])
+local_file_client = LocalFileClient()

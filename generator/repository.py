@@ -1,6 +1,6 @@
 from os.path import exists
 import git
-from client import DBClient, LocalFileClient
+from client import project_csv_client, file_csv_client, local_file_client, DBClient, LocalFileClient
 from entity import ProjectEntity, FileEntity
 
 
@@ -63,3 +63,14 @@ class FileRepository():
 
     def save_information_to_database(self, file: FileEntity):
         self.db_client.insert(file.to_tuple)
+
+
+project_repository = ProjectRepository(
+    db_client=project_csv_client,
+    local_file_client=local_file_client
+)
+
+file_repository = FileRepository(
+    db_client=file_csv_client,
+    local_file_client=local_file_client
+)
