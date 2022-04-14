@@ -38,7 +38,8 @@ class FileService:
         return results
 
     def save_to_file_record(self, files: list[FileEntity]) -> None:
-        for file in tqdm(files):
+        for index, file in enumerate(tqdm(files)):
+            file.file_id = index
             self.file_repository.save_information_to_database(file)
 
 

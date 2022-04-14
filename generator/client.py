@@ -25,7 +25,6 @@ class DBClient(ABC):
 class CSVClient(DBClient):
     def __init__(self, table_name: str, columns_name: list[str]):
         super().__init__(table_name, columns_name)
-        self.current_id = 1
 
     def insert(self, data: Tuple):
         super().insert(data)

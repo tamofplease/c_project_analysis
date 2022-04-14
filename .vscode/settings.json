@@ -4,11 +4,9 @@
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "python.analysis.extraPaths": [
-        "./src/data/entity",
-        "./src/data/model",
-        "./src/data/service/project",
-        "./src/data/service",
-        "./src/repository",
-        "./src/client"
+        "venv/lib/python3.9/site-packages",
+    ],
+    "cSpell.words": [
+        "tqdm"
     ]
 }
