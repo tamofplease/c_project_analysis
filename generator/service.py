@@ -1,6 +1,13 @@
 from tqdm import tqdm
-from repository import file_repository, project_repository, FileRepository, ProjectRepository
-from entity import FileEntity, ProjectEntity
+from repository import (
+    define_macro_repository,
+    file_repository,
+    project_repository,
+    DefineMacroRepository,
+    FileRepository,
+    ProjectRepository,
+)
+from entity import DefineMacroEntity, FileEntity, ProjectEntity
 
 
 class ProjectService:
@@ -27,9 +34,8 @@ class ProjectService:
 class FileService:
     """service class for generate file records"""
 
-    def __init__(self, file_repository: FileRepository, project_repository: ProjectRepository):
+    def __init__(self, file_repository: FileRepository):
         self.file_repository = file_repository
-        self.project_repository = project_repository
 
     def list_up_files(self, projects: list[ProjectEntity]) -> list[FileEntity]:
         results = []
@@ -43,12 +49,32 @@ class FileService:
             self.file_repository.save_information_to_database(file)
 
 
+class DefineMacroService:
+    """service class for define_macro"""
+
+    def __init__(self, define_macro_repository: DefineMacroRepository):
+        self.define_macro_repository = define_macro_repository
+
+    def list_up_define_macros(self, files: list[FileEntity]) -> list[DefineMacroEntity]:
+        results: list[DefineMacroEntity] = []
+        for file in tqdm(files):
+            results += self.define_macro_repository.get_define_macros_from_file(file)
+        return results
+
+    def save_to_define_macro_record(self, define_macros: list[DefineMacroEntity]) -> None:
+        for index, define_macro in enumerate(tqdm(define_macros)):
+            define_macro.define_macro_id = index
+            self.define_macro_repository.save_information_to_database
+
+
 project_service = ProjectService(
     project_repository=project_repository
 )
 
-
 file_service = FileService(
-    project_repository=project_repository,
     file_repository=file_repository
+)
+
+define_macro_service = DefineMacroService(
+    define_macro_repository=define_macro_repository
 )

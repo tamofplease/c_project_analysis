@@ -77,11 +77,11 @@ class ExtractorClient():
 
     def extract_define_macros(self, path: str) -> list[Tuple[str, str]]:
         results: set = set()
-        with open(path, 'r',  encoding='utf-8', errors='ignore') as open_f:
-            lines = open_f.readlines()
-            results = results.union({line for line in lines if line.startswith('#define')})
+        with open(path, 'r', errors='ignore') as open_f:
+            lines = open_f.read().splitlines()
+            results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
         return [
-            (result.split(' ')[1], ' '.join(result.split(' ')[2:])) for result in results
+            (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
         ]
 
 
