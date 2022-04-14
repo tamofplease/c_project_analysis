@@ -4,8 +4,7 @@ import csv
 from os.path import exists
 import glob
 from constant import Constant
-from entity import FileEntity, ProjectEntity
-from generator.entity import DefineMacroEntity
+from entity import DefineMacroEntity, FileEntity, ProjectEntity
 
 
 class DBClient(ABC):
@@ -72,7 +71,24 @@ class LocalFileClient():
         return list(f.readlines())
 
 
+class ExtractorClient():
+    def __init__(self):
+        pass
+
+    def extract_define_macros(self, path: str) -> list[Tuple[str, str]]:
+        results: set = set()
+        with open(path, 'r',  encoding='utf-8', errors='ignore') as open_f:
+            lines = open_f.readlines()
+            results = results.union({line for line in lines if line.startswith('#define')})
+        return [
+            (result.split(' ')[1], ' '.join(result.split(' ')[2:])) for result in results
+        ]
+
+
 project_csv_client = CSVClient("project", ProjectEntity.columns())
 file_csv_client = CSVClient("file", FileEntity.columns())
 define_macro_client = CSVClient("define_macro", DefineMacroEntity.columns())
+
 local_file_client = LocalFileClient()
+
+extractor_client = ExtractorClient()

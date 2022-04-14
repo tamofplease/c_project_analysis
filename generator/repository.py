@@ -1,6 +1,17 @@
 from os.path import exists
+from typing import Tuple
+from generator.entity import DefineMacroEntity
 import git
-from client import project_csv_client, file_csv_client, local_file_client, DBClient, LocalFileClient
+from client import (
+    project_csv_client,
+    define_macro_client,
+    extractor_client,
+    file_csv_client,
+    local_file_client,
+    DBClient,
+    ExtractorClient,
+    LocalFileClient,
+)
 from entity import ProjectEntity, FileEntity
 
 
@@ -65,6 +76,18 @@ class FileRepository():
         self.db_client.insert(file.to_tuple)
 
 
+class DefineMacroRepository():
+    """ Implementation of DefineMacroRepository class"""
+
+    def __init__(self, db_client: DBClient, extractor_client: ExtractorClient):
+        self.db_client = db_client
+        self.extractor_client = extractor_client
+
+    def get_define_macros_from_file(self, file: FileEntity) -> list[DefineMacroEntity]:
+        results: list[Tuple[str, str]] = extractor_client.extract_define_macros(file.path)
+        return list(map(lambda x: DefineMacroEntity(id=0, key=x[0], value=x[1]), results))
+
+
 project_repository = ProjectRepository(
     db_client=project_csv_client,
     local_file_client=local_file_client
@@ -73,4 +96,9 @@ project_repository = ProjectRepository(
 file_repository = FileRepository(
     db_client=file_csv_client,
     local_file_client=local_file_client
+)
+
+define_macro_repository = DefineMacroRepository(
+    db_client=define_macro_client,
+    extractor_client=extractor_client
 )
