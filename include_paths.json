@@ -1,0 +1,6 @@
+{
+    "include_paths": [
+        "/usr/local/include",
+        "/usr/local/Cellar/sdl2/2.0.20/include/SDL2"
+    ]
+}

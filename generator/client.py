@@ -63,8 +63,27 @@ class LocalFileClient():
     def __init__(self):
         pass
 
+    def __check_is_related_with_c(self, target_header_file: str) -> bool:
+        target_name = ".".join(target_header_file.split("/")[-1].split(".")[:-1])
+        target_dir_path = "/".join(target_header_file.split("/")[:-1])
+        same_dir_files = glob.glob(target_dir_path + "/*")
+        for file_path in same_dir_files:
+            file_name = file_path.split("/")[-1]
+            if "." not in file_name:
+                continue
+            name, ext = ".".join(file_name.split(".")[:-1]), file_name.split(".")[-1]
+            if ext in ["cpp", "m", "cc"]:
+                return False
+            if name == target_name:
+                if ext in ["c", "h"]:
+                    continue
+                return False
+        return True
+
     def file_paths(self, project_path) -> list[str]:
-        return list(glob.glob(project_path + "/**/*.[h,c]", recursive=True))
+        c_files = list(glob.glob(project_path + "/**/*.c", recursive=True))
+        h_files = list(glob.glob(project_path + "/**/*.h", recursive=True))
+        return c_files + [h_file for h_file in h_files if self.__check_is_related_with_c(h_file)]
 
     def read_content(self, file_path) -> list[str]:
         f = open(file_path, "r")
