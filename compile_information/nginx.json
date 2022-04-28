@@ -1,0 +1,45 @@
+{
+
+    "include_path": {
+        "absolute": {
+            "quote": [],
+            "system": [
+                "/usr/local/include/",
+                "/usr/local/Cellar/perl/5.34.0/lib/perl5/5.34.0/darwin-thread-multi-2level/CORE/",
+                "/usr/local/Cellar/openssl@1.1/1.1.1n/include/",
+                "/usr/local/Cellar/hwloc/2.7.0/share/hwloc/tests/hwloc/ports/include/solaris/"
+            ]
+        },
+        "relative": {
+            "quote": [],
+            "system": [
+                "src/core/",
+                "objs/",
+                "src/os/unix/",
+                "src/event/",
+                "src/event/modules/",
+                "src/event/modules/perl/",
+                "src/stream",
+                "src/mail",
+                "src/http/",
+                "src/http/v2/",
+                "src/http/modules/",
+                "src/http/modules/perl/",
+                "/"
+            ]
+        }
+    },
+    "limited_words": {
+        "mac": [],
+        "windows": [
+            "windows",
+            "win"
+        ],
+        "linux": [
+            "linux",
+            "crypt.h",
+            "osreldate.h"
+        ]
+    },
+    "ignore_word": []
+}

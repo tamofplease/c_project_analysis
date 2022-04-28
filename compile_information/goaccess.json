@@ -1,0 +1,26 @@
+{
+
+    "include_path": {
+        "absolute": {
+            "quote": [],
+            "system": [
+                "/usr/local/include/"
+            ]
+        },
+        "relative": {
+            "quote": [],
+            "system": []
+        }
+    },
+    "limited_words": {
+        "mac": [],
+        "windows": [
+            "windows",
+            "win"
+        ],
+        "linux": [
+            "linux"
+        ]
+    },
+    "ignore_word": []
+}

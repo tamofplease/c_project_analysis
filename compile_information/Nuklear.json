@@ -1,0 +1,27 @@
+{
+
+    "include_path": {
+        "absolute": {
+            "quote": [],
+            "system": [
+                "/usr/local/include/",
+                "/usr/local/Cellar/sdl2/2.0.22/include/SDL2/"
+            ]
+        },
+        "relative": {
+            "quote": [],
+            "system": []
+        }
+    },
+    "limited_words": {
+        "mac": [],
+        "windows": [
+            "windows",
+            "win"
+        ],
+        "linux": [
+            "linux",
+            "wayland"
+        ]
+    }
+}

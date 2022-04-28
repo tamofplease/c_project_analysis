@@ -72,7 +72,7 @@ class LocalFileClient():
             if "." not in file_name:
                 continue
             name, ext = ".".join(file_name.split(".")[:-1]), file_name.split(".")[-1]
-            if ext in ["cpp", "m", "cc"]:
+            if ext in ["cpp", "m", "cc", "S"]:
                 return False
             if name == target_name:
                 if ext in ["c", "h"]:

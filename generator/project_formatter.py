@@ -6,6 +6,7 @@ from subprocess import PIPE, run
 from tqdm import tqdm
 
 from client import LocalFileClient
+from constant import Constant
 
 
 class ErrorType(Enum):
@@ -47,56 +48,77 @@ class FileFormatter():
     def __init__(self, path: str, format_type: FormatType):
         self.path = path
         self.format_type = format_type
+        project_name = path[len(Constant.local_project_root_path):].split("/")[1]
+        project_root_path = Constant.local_project_root_path + '/' + project_name
         self.compiler_path = "/usr/local/bin/gcc-11"
-        with open("include_paths.json") as fp:
+        self.include_path = ""
+        with open("compile_information/{}.json".format(project_name)) as fp:
             data = json.load(fp)
-            for include_path in data["include_paths"]:
-                self.compiler_path += " -I {}".format(include_path)
+            self.limited_mac = data["limited_words"]["mac"]
+            self.limited_windows = data["limited_words"]["windows"]
+            self.limited_linux = data["limited_words"]["linux"]
+            for include_path in data["include_path"]["absolute"]["quote"]:
+                self.include_path += " -iquote {} ".format(include_path)
+            for include_path in data["include_path"]["absolute"]["system"]:
+                self.include_path += " -isystem {} ".format(include_path)
+            for include_path in data["include_path"]["relative"]["quote"]:
+                self.include_path += " -iquote {} ".format(project_root_path + '/' + include_path)
+            for include_path in data["include_path"]["relative"]["system"]:
+                self.include_path += " -isystem {} ".format(project_root_path + '/' + include_path)
+            self.ignore_word = data["ignore_word"]
+
+    def __format_error(self, errors: list[str]) -> str:
+        for error in errors:
+            if "#include" in error or '# include' in error:
+                return error
+        return ""
 
     def __should_ignore_error(self, errors: list[str]) -> bool:
+        ignore_words = self.ignore_word
         if platform.system() == "Darwin":
-            is_windows = any(["windows" in error for error in errors])
-            if is_windows:
-                return True
-            is_linux_lib = any(["wayland" in error for error in errors])
-            if is_linux_lib:
-                return True
-            return False
-        return False
+            ignore_words += self.limited_linux + self.limited_windows
+        else:
+            raise Exception
+        return any([any([word in error for word in ignore_words]) for error in errors])
 
-    def build_executable_command(self) -> list[str]:
-        initial_execute_string = "{} {} {}".format(
+    def build_executable_command(self) -> str:
+        self.execute_string = "{} {} {} {}".format(
             self.compiler_path,
             self.format_type.initial_command_option,
-            self.path
+            self.path,
+            self.include_path
         )
+        return self.execute_string
+
+    def execute(self, debug=True) -> str:
         proc = run(
-            initial_execute_string,
+            self.execute_string,
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
             text=True,
             errors='ignore',
         )
-        _, errors = proc.stdout, proc.stderr.split('\n')
-        if self.__should_ignore_error(errors):
-            return [""]
-        return errors
-
-    def execuce(self) -> tuple[list[str], list[str]]:
-        pass
+        if debug:
+            _, errors = proc.stdout, proc.stderr.split('\n')
+            if self.__should_ignore_error(errors):
+                return ""
+            return self.__format_error(errors)
+        else:
+            raise Exception()
 
 
 def main():
-    print(FormatType.AVAILABLE.initial_command_option)
-    project_root = "/Users/washi38/University/Labo/c_project_analysis/project/bcc"
+    project_root = "/Users/washi38/University/Labo/c_project_analysis/project/nginx"
     client = LocalFileClient()
     paths = client.file_paths(project_path=project_root)
     cnt = 0
     for path in tqdm(paths):
-        errors = FileFormatter(path=path, format_type=FormatType.AVAILABLE).build_executable_command()
-        if len(errors) != 1:
-            print(errors)
+        model = FileFormatter(path=path, format_type=FormatType.AVAILABLE)
+        model.build_executable_command()
+        error: str = model.execute()
+        if error != "":
+            print(error)
             cnt += 1
     print(cnt)
 
