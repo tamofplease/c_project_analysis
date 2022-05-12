@@ -80,6 +80,15 @@ class LocalFileClient():
                 return False
         return True
 
+    def exclude_submodules(self, paths: list[str]) -> list[str]:
+        dirs = set(['/'.join(path.split('/')[:-1]) for path in paths])
+        # submoduleを除外したい
+        for dir in dirs:
+            files = glob.glob(dir)
+            if 'git' in files:
+                pass
+        return []
+
     def file_paths(self, project_path) -> list[str]:
         c_files = list(glob.glob(project_path + "/**/*.c", recursive=True))
         h_files = list(glob.glob(project_path + "/**/*.h", recursive=True))

@@ -109,7 +109,7 @@ class FileFormatter():
 
 
 def main():
-    project_root = "/Users/washi38/University/Labo/c_project_analysis/project/nginx"
+    project_root = "/Users/washi38/University/Labo/c_project_analysis/project/radare2"
     client = LocalFileClient()
     paths = client.file_paths(project_path=project_root)
     cnt = 0
@@ -119,6 +119,7 @@ def main():
         error: str = model.execute()
         if error != "":
             print(error)
+            print(path)
             cnt += 1
     print(cnt)
 

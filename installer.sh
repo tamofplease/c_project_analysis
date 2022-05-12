@@ -11,3 +11,7 @@ brew install nginx
 brew install geoip
 brew install perl
 brew install mcrypt
+brew install glib
+brew install gtk+
+brew install capstone
+brew install ocaml

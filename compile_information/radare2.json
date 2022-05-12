@@ -1,0 +1,71 @@
+{
+
+    "include_path": {
+        "absolute": {
+            "quote": [],
+            "system": [
+                "/usr/local/include/",
+                "/usr/local/Cellar/glib/2.72.1/include/glib-2.0/",
+                "/usr/local/Cellar/glib/2.72.1/lib/glib-2.0/include/",
+                "/usr/local/Cellar/capstone/4.0.2/include/capstone/",
+                "/usr/local/Cellar/llvm/13.0.1_1/include/c++/v1/__functional/",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/net-snmp/library/"
+            ]
+        },
+        "relative": {
+            "quote": [
+                "libr/asm/arch/include/",
+                "libr/asm/arch/rsp/",
+                "libr/asm/arch/hexagon/",
+                "shlr/yxml/",
+                "libr/parse/c/",
+                "shlr/grub/include/",
+                "libr/anal/arch/hexagon/"
+            ],
+            "system": [
+                "libr/include/",
+                "shlr/zip/include/",
+                "shlr/sdb/src/",
+                "libr/asm/arch/include/",
+                "libr/include/r_util/",
+                "shlr/",
+                "libr/asm/arch/8051/",
+                "libr/asm/arch/v850/",
+                "libr/asm/arch/propeller/",
+                "libr/asm/arch/msp430/",
+                "libr/asm/arch/ebc/",
+                "libr/asm/arch/cr16/",
+                "libr/asm/arch/",
+                "libr/asm/arch/h8300/",
+                "libr/bin/mangling/",
+                "libr/bin/format/",
+                "shlr/qnx/include/",
+                "shlr/grub/include/",
+                "shlr/bochs/include/",
+                "shlr/gdb/include/",
+                "libr/asm/arch/or1k/",
+                "libr/asm/arch/v810/",
+                "libr/anal/arch/gb/"
+            ]
+        }
+    },
+    "limited_words": {
+        "mac": [],
+        "windows": [
+            "windows",
+            "win"
+        ],
+        "linux": [
+            "linux",
+            "kvm"
+        ]
+    },
+    "ignore_word": [
+        "x86im.h",
+        "big.c",
+        "r2-install.c",
+        "asm_arm_v35.c",
+        "json/main.c",
+        "encodings_dec.h"
+    ]
+}
