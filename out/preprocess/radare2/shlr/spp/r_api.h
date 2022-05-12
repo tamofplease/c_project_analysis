@@ -1,0 +1,22 @@
+# 0 "project/radare2/shlr/spp/r_api.h"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "project/radare2/shlr/spp/r_api.h"
+# 14 "project/radare2/shlr/spp/r_api.h"
+SStrBuf *r_strbuf_new(const char *s);
+bool r_strbuf_set(SStrBuf *sb, const char *s);
+bool r_strbuf_append(SStrBuf *sb, const char *s);
+char *r_strbuf_get(SStrBuf *sb);
+char *r_strbuf_drain(SStrBuf *sb);
+void r_strbuf_free(SStrBuf *sb);
+void r_strbuf_fini(SStrBuf *sb);
+void r_strbuf_init(SStrBuf *sb);
+int r_sys_setenv(const char *key, const char *value);
+char *r_sys_getenv(const char *key);
+int r_sys_getpid(void);
+
+
+
+
+
+S_API void out_printf(Output *out, char *str, ...) __attribute__ ((format (printf, 2, 3)));

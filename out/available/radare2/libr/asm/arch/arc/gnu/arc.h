@@ -1,0 +1,498 @@
+#define __DBL_MIN_EXP__ (-1021)
+#define AC_SUFFIX_LANEMASK (AC_SIMD_EXTEND3 << 1)
+#define __UINT_LEAST16_MAX__ 0xffff
+#define AC_SUFFIX_NONE (0x1)
+#define __ATOMIC_ACQUIRE 2
+#define __FLT128_MAX_10_EXP__ 4932
+#define AC_SUFFIX_DIRECT (AC_SUFFIX_NONE << 1)
+#define __FLT_MIN__ 1.17549435082228750796873653722224568e-38F
+#define __GCC_IEC_559_COMPLEX 2
+#define AC_SIMD_EXTENDED (AC_SIMD_ENCODE_LIMM << 1)
+#define __UINT_LEAST8_TYPE__ unsigned char
+#define __SIZEOF_FLOAT80__ 16
+#define ARC_SHIFT_REGA_AC 0
+#define __INTMAX_C(c) c ## L
+#define ARC_DELAY_JUMP 2
+#define __CHAR_BIT__ 8
+#define __UINT8_MAX__ 0xff
+#define __SCHAR_WIDTH__ 8
+#define ARC_REGISTER_WRITEONLY 0x02
+#define __WINT_MAX__ 0x7fffffff
+#define AC_SIMD_SYNTAX_VVI (AC_SIMD_SYNTAX_VV << 1)
+#define __FLT32_MIN_EXP__ (-125)
+#define __ORDER_LITTLE_ENDIAN__ 1234
+#define __SIZE_MAX__ 0xffffffffffffffffUL
+#define __WCHAR_MAX__ 0x7fffffff
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1
+#define __DBL_DENORM_MIN__ ((double)4.94065645841246544176568792868221372e-324L)
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
+#define __GCC_ATOMIC_CHAR_LOCK_FREE 2
+#define __GCC_IEC_559 2
+#define __FLT32X_DECIMAL_DIG__ 17
+#define __FLT_EVAL_METHOD__ 0
+#define ARC_MOD_SDASYM 0x100000
+#define AC_SYNTAX_SIMD (AC_SYNTAX_NOP << 1)
+#define __FLT64_DECIMAL_DIG__ 17
+#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
+#define AC_SIMD_KREG (AC_SIMD_EXTEND1 << 1)
+#define OP1_IMM_IMPLIED (OP1_MUST_BE_IMM << 1)
+#define __UINT_FAST64_MAX__ 0xffffffffffffffffULL
+#define __SIG_ATOMIC_TYPE__ int
+#define __DBL_MIN_10_EXP__ (-307)
+#define __FINITE_MATH_ONLY__ 0
+#define ARC_MOD_BITS 0x107000
+#define __FLT32X_MAX_EXP__ 1024
+#define __FLT32_HAS_DENORM__ 1
+#define __UINT_FAST8_MAX__ 0xff
+#define __FLT32_MAX_10_EXP__ 38
+#define __INT8_C(c) c
+#define ARC_REG_LIMM 62
+#define __INT_LEAST8_WIDTH__ 8
+#define SYNTAX_3OP (SYNTAX_LENGTH )
+#define AC_SIMD_SYNTAX_C00 (AC_SIMD_SYNTAX_VL0 << 1)
+#define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
+#define __SHRT_MAX__ 0x7fff
+#define ARC_OPERAND_UNSIGNED 0x20000
+#define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
+#define AC_SIMD_SYNTAX_V00 (AC_SIMD_SYNTAX_VbC0 << 1)
+#define __FLT64X_MAX_10_EXP__ 4932
+#define __LDBL_IS_IEC_60559__ 2
+#define __FLT64X_HAS_QUIET_NAN__ 1
+#define __UINT_LEAST8_MAX__ 0xff
+#define __GCC_ATOMIC_BOOL_LOCK_FREE 2
+#define __FLT128_DENORM_MIN__ 6.47517511943802511092443895822764655e-4966F128
+#define __APPLE_CC__ 1
+#define __UINTMAX_TYPE__ long unsigned int
+#define ARC_REG_SHIMM_UPDATE 61
+#define ARC_REGISTER_16 0x8
+#define __FLT_EVAL_METHOD_TS_18661_3__ 0
+#define ARC_SHIFT_REGA 21
+#define ARC_SHIFT_REGB 15
+#define ARC_SHIFT_REGC 9
+#define __UINT32_MAX__ 0xffffffffU
+#define AC_SIMD_FLAG_SET (AC_SIMD_FLAGS_NONE << 1)
+#define ARC_OPVAL_MACH(bits) ((bits) & ARC_MACH_MASK)
+#define __FLT128_MIN_EXP__ (-16381)
+#define __WINT_MIN__ (-__WINT_MAX__ - 1)
+#define __FLT128_MIN_10_EXP__ (-4931)
+#define __FLT32X_IS_IEC_60559__ 2
+#define __INT_LEAST16_WIDTH__ 16
+#define __SCHAR_MAX__ 0x7f
+#define __FLT128_MANT_DIG__ 113
+#define __WCHAR_MIN__ (-__WCHAR_MAX__ - 1)
+#define __INT64_C(c) c ## LL
+#define AC_SIMD_SYNTAX_C0 (AC_SIMD_SYNTAX_CC << 1)
+#define AC_SIMD_SYNTAX_CC (AC_SIMD_SYNTAX_0 << 1)
+#define __GCC_ATOMIC_POINTER_LOCK_FREE 2
+#define ARC_SIMD_REGISTER (ARC_SIMD_LANEMASK <<0x1)
+#define AC_SIMD_SYNTAX_D0 (AC_SIMD_SYNTAX_DC << 1)
+#define AC_SIMD_SYNTAX_DC (AC_SIMD_SYNTAX_C0 << 1)
+#define ARC_MACH_CPU_MASK (ARC_MACH_BIG - 1)
+#define __FLT32X_MANT_DIG__ 53
+#define AC_SIMD_SYNTAX_VC0 (AC_SIMD_SYNTAX_V00 << 1)
+#define __USER_LABEL_PREFIX__ _
+#define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
+#define __STDC_HOSTED__ 1
+#define AC_SIMD_SYNTAX_C (AC_SIMD_SYNTAX_VVI << 1)
+#define ARC_MACH_BIG 32
+#define ARC_OPCODE_NEXT_DIS(op) ((op)->next_dis)
+#define __DBL_DIG__ 15
+#define __FLT32_DIG__ 6
+#define AC_SIMD_IREGA (AC_SIMD_SYNTAX_DISC << 1)
+#define AC_SIMD_IREGB (AC_SIMD_IREGA << 1)
+#define __FLT_EPSILON__ 1.19209289550781250000000000000000000e-7F
+#define __SHRT_WIDTH__ 16
+#define __FLT32_IS_IEC_60559__ 2
+#define __LDBL_MIN__ 3.36210314311209350626267781732175260e-4932L
+#define __STDC_UTF_16__ 1
+#define ARC_MACH_MASK ((ARC_MACH_BIG << 1) - 1)
+#define __DBL_IS_IEC_60559__ 2
+#define __strong 
+#define __FLT64X_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951F64x
+#define __FLT32X_HAS_INFINITY__ 1
+#define AC_SYNTAX_2OP (AC_SYNTAX_3OP << 1)
+#define __INT32_MAX__ 0x7fffffff
+#define __INT_WIDTH__ 32
+#define __SIZEOF_LONG__ 8
+#define AC_SIMD_SYNTAX_VD (AC_SIMD_SYNTAX_D0 << 1)
+#define AC_SIMD_SYNTAX_VV (AC_SIMD_SYNTAX_VVC << 1)
+#define __APPLE__ 1
+#define __UINT16_C(c) c
+#define __DECIMAL_DIG__ 21
+#define __FLT64_EPSILON__ 2.22044604925031308084726333618164062e-16F64
+#define __FLT128_IS_IEC_60559__ 2
+#define AC_SIMD_SYNTAX_VU0 (AC_SIMD_SYNTAX_VVL << 1)
+#define AC_SIMD_SYNTAX_VV0 (AC_SIMD_SYNTAX_VVV << 1)
+#define AC_SUFFIX_FLAG (AC_SUFFIX_COND << 1)
+#define __FLT64X_MIN_10_EXP__ (-4931)
+#define AC_SIMD_SYNTAX_VVC (AC_SIMD_SYNTAX_VC0 << 1)
+#define AC_SIMD_SYNTAX_VVL (AC_SIMD_SYNTAX_VD << 1)
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define AC_SIMD_SYNTAX_VVV (AC_SIMD_IREGB << 1)
+#define AC_SIMD_SYNTAX_VL0 (AC_SIMD_SYNTAX_VU0 << 1)
+#define AC_OP1_MUST_BE_IMM (AC_OP1_DEST_IGNORED << 1)
+#define __FLT64_MANT_DIG__ 53
+#define __FLT64X_MANT_DIG__ 64
+#define __DYNAMIC__ 1
+#define __GNUC__ 11
+#define __MMX__ 1
+#define __FLT_HAS_DENORM__ 1
+#define __SIZEOF_LONG_DOUBLE__ 16
+#define AC_SIMD_ENCODE_S12 (AC_SUFFIX_LANEMASK << 1)
+#define __BIGGEST_ALIGNMENT__ 16
+#define __FLT64_MAX_10_EXP__ 308
+#define ARC_OPERAND_SIGNOPT 0x40
+#define ARC_OPERAND_LIMM 0x10
+#define E_ARC_MACH_A4 0x00000000
+#define __DBL_MAX__ ((double)1.79769313486231570814527423731704357e+308L)
+#define __INT_FAST32_MAX__ 0x7fffffff
+#define __DBL_HAS_INFINITY__ 1
+#define __SIZEOF_FLOAT__ 4
+#define __HAVE_SPECULATION_SAFE_VALUE 1
+#define __INTPTR_WIDTH__ 64
+#define __FLT64X_HAS_INFINITY__ 1
+#define __UINT_LEAST32_MAX__ 0xffffffffU
+#define ARC_OPERAND_4BYTE_ALIGNED 0x80000
+#define __FLT32X_HAS_DENORM__ 1
+#define __INT_FAST16_TYPE__ short int
+#define __MMX_WITH_SSE__ 1
+#define __LDBL_HAS_DENORM__ 1
+#define __FLT128_HAS_INFINITY__ 1
+#define ARC_REGISTER_NOSHORT_CUT 0x04
+#define __weak 
+#define __DBL_MAX_EXP__ 1024
+#define __WCHAR_WIDTH__ 32
+#define __FLT32_MAX__ 3.40282346638528859811704183484516925e+38F32
+#define AC_SIMD_ENCODE_LIMM (AC_SIMD_SCALE_0 << 1)
+#define ARC_OPERAND_LOAD 0x8000
+#define __SSE2_MATH__ 1
+#define __ATOMIC_HLE_RELEASE 131072
+#define AC_SIMD_SYNTAX_VbC0 (AC_SIMD_SYNTAX_Vb00 << 1)
+#define __PTRDIFF_MAX__ 0x7fffffffffffffffL
+#define __amd64 1
+#define AC_SIMD_SCALE_2 (AC_SIMD_SCALE_1 << 1)
+#define __tune_core2__ 1
+#define AC_SIMD_SCALE_3 (AC_SIMD_SCALE_2 << 1)
+#define __ATOMIC_HLE_ACQUIRE 65536
+#define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
+#define __SIZEOF_SIZE_T__ 8
+#define ARC_OPERAND_FAKE 0x100
+#define __FLT64X_MIN_EXP__ (-16381)
+#define __SIZEOF_WINT_T__ 4
+#define __LONG_LONG_WIDTH__ 64
+#define __FLT32_MAX_EXP__ 128
+#define AC_SIMD_ENCODE_U8 (AC_SIMD_FLAG2_SET << 1)
+#define ARC_OPERAND_ABSOLUTE_BRANCH 4
+#define __GXX_ABI_VERSION 1016
+#define ARC_OPVAL_CPU(bits) ((bits) & ARC_MACH_CPU_MASK)
+#define __FLT_MIN_EXP__ (-125)
+#define ARC_SIMD_SCALE3 (ARC_SIMD_SCALE2 << 0x1)
+#define ARC_SIMD_SCALE4 (ARC_SIMD_SCALE3 << 0x1)
+#define __INT16_MAX__ 0x7fff
+#define OP1_MUST_BE_IMM (OP1_DEST_IGNORED << 1)
+#define __x86_64 1
+#define __INT_FAST64_TYPE__ long long int
+#define __FLT64_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F64
+#define __DBL_MIN__ ((double)2.22507385850720138309023271733240406e-308L)
+#define ARC_OPCODE_NEXT_ASM(op) ((op)->next_asm)
+#define __FLT128_EPSILON__ 1.92592994438723585305597794258492732e-34F128
+#define __FLT64X_NORM_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+#define __SIZEOF_POINTER__ 8
+#define __SIZE_TYPE__ long unsigned int
+#define SUFFIX_NONE (OP1_IMM_IMPLIED << 1)
+#define __LP64__ 1
+#define __DBL_HAS_QUIET_NAN__ 1
+#define __FLT32X_EPSILON__ 2.22044604925031308084726333618164062e-16F32x
+#define __FLT64_MIN_EXP__ (-1021)
+#define __FLT64_MIN_10_EXP__ (-307)
+#define ARC_HAVE_MACH(bits) ((bits) & ARC_MACH_MASK)
+#define __FLT64X_DECIMAL_DIG__ 21
+#define __REGISTER_PREFIX__ 
+#define __UINT16_MAX__ 0xffff
+#define __DBL_HAS_DENORM__ 1
+#define __LDBL_HAS_INFINITY__ 1
+#define __FLT32_MIN__ 1.17549435082228750796873653722224568e-38F32
+#define __UINT8_TYPE__ unsigned char
+#define __FLT_DIG__ 6
+#define __NO_INLINE__ 1
+#define ARC_SHIMM_CONST_P(x) ((long) (x) >= -256 && (long) (x) <= 255)
+#define AC_SUFFIX_COND (AC_SUFFIX_DIRECT << 1)
+#define __DEC_EVAL_METHOD__ 2
+#define ARC_HAVE_CPU(bits) ((bits) & ARC_MACH_CPU_MASK)
+#define __FLT_MANT_DIG__ 24
+#define __LDBL_DECIMAL_DIG__ 21
+#define ARC_OPERAND_WARN 0x400
+#define __VERSION__ "11.2.0"
+#define __UINT64_C(c) c ## ULL
+#define ARC_OPERAND_2BYTE_ALIGNED 0x40000
+#define SYNTAX_NOP (SYNTAX_1OP << 1)
+#define __INT_LEAST32_MAX__ 0x7fffffff
+#define __GCC_ATOMIC_INT_LOCK_FREE 2
+#define SUFFIX_COND (SUFFIX_NONE << 1)
+#define __FLT128_MAX_EXP__ 16384
+#define ARC_HASH_OPCODE(string) ((string)[0] >= 'a' && (string)[0] <= 'z' ? (string)[0] - 'a' : 26)
+#define AC_SYNTAX_3OP (0x01)
+#define __FLT32_MANT_DIG__ 24
+#define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define ARC_MACH_ARC4 1
+#define ARC_MACH_ARC5 2
+#define ARC_MACH_ARC6 4
+#define ARC_MACH_ARC7 8
+#define AC_SIMD_EXTEND1 (AC_SIMD_SETLM << 1)
+#define AC_SIMD_EXTEND2 (AC_SIMD_EXTENDED << 1)
+#define AC_SIMD_EXTEND3 (AC_SIMD_EXTEND2 << 1)
+#define __FLT128_HAS_DENORM__ 1
+#define __FLT32_DECIMAL_DIG__ 9
+#define __FLT128_DIG__ 33
+#define __INT32_C(c) c
+#define __ORDER_PDP_ENDIAN__ 3412
+#define SYNTAX_VALID (SUFFIX_FLAG << 1)
+#define __INT_FAST32_TYPE__ int
+#define SYNTAX_1OP (SYNTAX_2OP << 1)
+#define __UINT_LEAST16_TYPE__ short unsigned int
+#define SYNTAX_LENGTH (ARC_OPCODE_COND_BRANCH << 1)
+#define AC_SIMD_FLAG2_SET (AC_SIMD_FLAG1_SET << 1)
+#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 110500
+#define __UINT64_MAX__ 0xffffffffffffffffULL
+#define __FLT_IS_IEC_60559__ 2
+#define __GNUC_WIDE_EXECUTION_CHARSET_NAME "UTF-32LE"
+#define __FLT64X_DIG__ 18
+#define __INT8_TYPE__ signed char
+#define __GCC_ASM_FLAG_OUTPUTS__ 1
+#define ARC_REGISTER_SIMD_K 0x80
+#define ARC_SIMD_ZERVA (ARC_SIMD_REGISTER <<0x1)
+#define ARC_SIMD_ZERVB (ARC_SIMD_ZERVA <<0x1)
+#define ARC_SIMD_ZERVC (ARC_SIMD_ZERVB <<0x1)
+#define __UINT32_TYPE__ unsigned int
+#define ARC_OPERAND_ERROR 0x800
+#define __FLT_RADIX__ 2
+#define __INT_LEAST16_TYPE__ short int
+#define __LDBL_EPSILON__ 1.08420217248550443400745280086994171e-19L
+#define __UINTMAX_C(c) c ## UL
+#define ARC_REGISTER_READONLY 0x01
+#define __SSE_MATH__ 1
+#define AC_EXTENDED_MULTIPLY AC_SIMD_EXTENDED
+#define __k8 1
+#define __FLT32X_MIN__ 2.22507385850720138309023271733240406e-308F32x
+#define ARC_SIMD_SETLM (ARC_SIMD_ZERVC <<0x1)
+#define __SIG_ATOMIC_MAX__ 0x7fffffff
+#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define ARC_SIMD_SCALE1 (ARC_INCR_U6 << 0x1)
+#define ARC_SIMD_SCALE2 (ARC_SIMD_SCALE1 << 0x1)
+#define __SIZEOF_PTRDIFF_T__ 8
+#define AC_SIMD_FLAGS_NONE (AC_SUFFIX_FLAG << 1)
+#define ARC_MOD_DOT 0x1000
+#define ARCOMPACT (ARC_MACH_ARC5 | ARC_MACH_ARC6 | ARC_MACH_ARC601 | ARC_MACH_ARC7)
+#define AC_SYNTAX_1OP (AC_SYNTAX_2OP << 1)
+#define SIMD_LONG_INST (SYNTAX_VALID << 1)
+#define __LDBL_DIG__ 18
+#define AC_SIMD_SYNTAX_VbI0 (AC_SIMD_SYNTAX_VV0 << 1)
+#define __FLT64_IS_IEC_60559__ 2
+#define __x86_64__ 1
+#define __FLT32X_MIN_EXP__ (-1021)
+#define ARC_OPERAND_JUMPFLAGS 0x200
+#define ARC_OPERAND_STORE 0x10000
+#define ARC_OPCODE_CPU(bits) ((bits) & ARC_MACH_CPU_MASK)
+#define AC_SIMD_FLAG1_SET (AC_SIMD_FLAG_SET << 1)
+#define __INT_FAST16_MAX__ 0x7fff
+#define ARC_OPCODE_COND_BRANCH (ARC_OPCODE_FLAG_START)
+#define __FLT64_DIG__ 15
+#define __UINT_FAST32_MAX__ 0xffffffffU
+#define __UINT_LEAST64_TYPE__ long long unsigned int
+#define ARC_HASH_ICODE(insn) ((unsigned int) (insn) >> 27)
+#define __FLT_HAS_QUIET_NAN__ 1
+#define ARC_SHIFT_REGB_HIGH_AC 12
+#define __FLT_MAX_10_EXP__ 38
+#define __LONG_MAX__ 0x7fffffffffffffffL
+#define __FLT64X_HAS_DENORM__ 1
+#define ARC_REGISTER_SIMD_DR 0x40
+#define __FLT_HAS_INFINITY__ 1
+#define __GNUC_EXECUTION_CHARSET_NAME "UTF-8"
+#define __UINT_FAST16_TYPE__ short unsigned int
+#define __INT_FAST32_WIDTH__ 32
+#define ARC_REG_SHIMM 63
+#define __CHAR16_TYPE__ short unsigned int
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define AC_OP1_DEST_IGNORED (AC_SYNTAX_SIMD << 1)
+#define __SIZE_WIDTH__ 64
+#define __SEG_FS 1
+#define __INT_LEAST16_MAX__ 0x7fff
+#define ARC_REGISTER_SIMD_I 0x20
+#define __INT64_MAX__ 0x7fffffffffffffffLL
+#define __SEG_GS 1
+#define __FLT32_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F32
+#define __SIG_ATOMIC_WIDTH__ 32
+#define __INT_LEAST64_TYPE__ long long int
+#define __INT16_TYPE__ short int
+#define __INT_LEAST8_TYPE__ signed char
+#define AC_OP1_IMM_IMPLIED (AC_OP1_MUST_BE_IMM << 1)
+#define __STDC_VERSION__ 201710L
+#define __SIZEOF_INT__ 4
+#define __INT_FAST8_MAX__ 0x7f
+#define __FLT128_MAX__ 1.18973149535723176508575932662800702e+4932F128
+#define __INTPTR_MAX__ 0x7fffffffffffffffL
+#define __FLT64_HAS_QUIET_NAN__ 1
+#define __LITTLE_ENDIAN__ 1
+#define __FLT32_MIN_10_EXP__ (-37)
+#define SUFFIX_FLAG (SUFFIX_COND << 1)
+#define __FLT32X_DIG__ 15
+#define __PTRDIFF_WIDTH__ 64
+#define __LDBL_MANT_DIG__ 64
+#define __CONSTANT_CFSTRINGS__ 1
+#define __FLT64_HAS_INFINITY__ 1
+#define __FLT64X_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+#define ARC_SHIFT_REGC_AC 6
+#define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+#define __code_model_small__ 1
+#define __GCC_ATOMIC_LONG_LOCK_FREE 2
+#define ARC_OPERAND_RELATIVE_BRANCH 2
+#define __k8__ 1
+#define __INTPTR_TYPE__ long int
+#define ARC_REGISTER_SIMD_VR 0x10
+#define __UINT16_TYPE__ short unsigned int
+#define __WCHAR_TYPE__ int
+#define __pic__ 2
+#define __UINTPTR_MAX__ 0xffffffffffffffffUL
+#define __INT_FAST64_WIDTH__ 64
+#define ARC_OPCODE_MACH(bits) ((bits) & ARC_MACH_MASK)
+#define AC_SIMD_SYNTAX_DISC (AC_OP1_IMM_IMPLIED << 1)
+#define __INT_FAST64_MAX__ 0x7fffffffffffffffLL
+#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+#define __FLT_NORM_MAX__ 3.40282346638528859811704183484516925e+38F
+#define __FLT32_HAS_INFINITY__ 1
+#define ARC_OPERAND_NEGATIVE 0x80
+#define __FLT64X_MAX_EXP__ 16384
+#define __UINT_FAST64_TYPE__ long long unsigned int
+#define ARC_MOD_P(X) ((X) & ARC_MOD_BITS)
+#define __INT_MAX__ 0x7fffffff
+#define __INT64_TYPE__ long long int
+#define __FLT_MAX_EXP__ 128
+#define __ORDER_BIG_ENDIAN__ 4321
+#define __DBL_MANT_DIG__ 53
+#define __SIZEOF_FLOAT128__ 16
+#define __INT_LEAST64_MAX__ 0x7fffffffffffffffLL
+#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
+#define ARC_MACH_ARC601 16
+#define __WINT_TYPE__ int
+#define __UINT_LEAST32_TYPE__ unsigned int
+#define __SIZEOF_SHORT__ 2
+#define __FLT32_NORM_MAX__ 3.40282346638528859811704183484516925e+38F32
+#define __SSE__ 1
+#define __LDBL_MIN_EXP__ (-16381)
+#define __FLT64_MAX__ 1.79769313486231570814527423731704357e+308F64
+#define __MACH__ 1
+#define __amd64__ 1
+#define __WINT_WIDTH__ 32
+#define ARC_OPCODE_FLAG_START (ARC_MACH_MASK + 1)
+#define __INT_LEAST8_MAX__ 0x7f
+#define __INT_LEAST64_WIDTH__ 64
+#define __LDBL_MAX_EXP__ 16384
+#define __FLT32X_MAX_10_EXP__ 308
+#define ARC_SHIFT_REGB_LOW_AC 24
+#define AC_SIMD_SYNTAX_0 (AC_SIMD_SYNTAX_C << 1)
+#define __SIZEOF_INT128__ 16
+#define __FLT64X_IS_IEC_60559__ 2
+#define __LDBL_MAX_10_EXP__ 4932
+#define __ATOMIC_RELAXED 0
+#define __DBL_EPSILON__ ((double)2.22044604925031308084726333618164062e-16L)
+#define __FLT128_MIN__ 3.36210314311209350626267781732175260e-4932F128
+#define _LP64 1
+#define __UINT8_C(c) c
+#define ARC_DELAY_NONE 0
+#define __FLT64_MAX_EXP__ 1024
+#define __INT_LEAST32_TYPE__ int
+#define __SIZEOF_WCHAR_T__ 4
+#define __UINT64_TYPE__ long long unsigned int
+#define ARC_REG_CONSTANT_P(REG) ((REG) >= 61)
+#define __GNUC_PATCHLEVEL__ 0
+#define __FLT128_NORM_MAX__ 1.18973149535723176508575932662800702e+4932F128
+#define __FLT64_NORM_MAX__ 1.79769313486231570814527423731704357e+308F64
+#define __FLT128_HAS_QUIET_NAN__ 1
+#define ARC_OPERAND_SUFFIX 1
+#define OP1_DEST_IGNORED (SYNTAX_NOP << 1)
+#define __INTMAX_MAX__ 0x7fffffffffffffffL
+#define SYNTAX_2OP (SYNTAX_3OP << 1)
+#define __INT_FAST8_TYPE__ signed char
+#define __FLT64X_MIN__ 3.36210314311209350626267781732175260e-4932F64x
+#define AC_SIMD_ENCODE_U16 (AC_SIMD_KREG << 1)
+#define __GNUC_STDC_INLINE__ 1
+#define __FLT64_HAS_DENORM__ 1
+#define __FLT32_EPSILON__ 1.19209289550781250000000000000000000e-7F32
+#define __DBL_DECIMAL_DIG__ 17
+#define __STDC_UTF_32__ 1
+#define __INT_FAST8_WIDTH__ 8
+#define __FXSR__ 1
+#define __FLT32X_MAX__ 1.79769313486231570814527423731704357e+308F32x
+#define __DBL_NORM_MAX__ ((double)1.79769313486231570814527423731704357e+308L)
+#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define __INTMAX_WIDTH__ 64
+#define __UINT32_C(c) c ## U
+#define __FLT_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F
+#define AC_SIMD_SYNTAX_Vb00 (AC_SIMD_SYNTAX_VbI0 << 1)
+#define ARC_DELAY_NORMAL 1
+#define __INT8_MAX__ 0x7f
+#define __LONG_WIDTH__ 64
+#define __PIC__ 2
+#define __UINT_FAST32_TYPE__ unsigned int
+#define __FLT32X_NORM_MAX__ 1.79769313486231570814527423731704357e+308F32x
+#define __CHAR32_TYPE__ unsigned int
+#define __FLT_MAX__ 3.40282346638528859811704183484516925e+38F
+#define __SSE2__ 1
+#define EM_ARCOMPACT 93
+#define AC_SIMD_SCALE_0 (AC_SIMD_SCALE_4 << 1)
+#define AC_SIMD_SCALE_1 (AC_SIMD_ENCODE_U6 << 1)
+#define AC_SIMD_SCALE_4 (AC_SIMD_SCALE_3 << 1)
+#define __INT32_TYPE__ int
+#define __SIZEOF_DOUBLE__ 8
+#define __FLT_MIN_10_EXP__ (-37)
+#define ARC_MASK_REG 63
+#define __FLT64_MIN__ 2.22507385850720138309023271733240406e-308F64
+#define __INT_LEAST32_WIDTH__ 32
+#define __INTMAX_TYPE__ long int
+#define AC_SYNTAX_NOP (AC_SYNTAX_1OP << 1)
+#define __FLT32X_HAS_QUIET_NAN__ 1
+#define __ATOMIC_CONSUME 1
+#define __GNUC_MINOR__ 2
+#define __INT_FAST16_WIDTH__ 16
+#define __UINTMAX_MAX__ 0xffffffffffffffffUL
+#define __FLT32X_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F32x
+#define ARC_OPERAND_ADDRESS 8
+#define ARC_INCR_U6 0x100000
+#define __DBL_MAX_10_EXP__ 308
+#define __LDBL_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951L
+#define ARC_MOD_AUXREG 0x4000
+#define __INT16_C(c) c
+#define __STDC__ 1
+#define __PTRDIFF_TYPE__ long int
+#define C(x) (((unsigned) (x) & ARC_MASK_REG) << ARC_SHIFT_REGC)
+#define __ATOMIC_SEQ_CST 5
+#define __FLT32X_MIN_10_EXP__ (-307)
+#define __UINTPTR_TYPE__ long unsigned int
+#define AC_SIMD_ZERVA (AC_SIMD_ENCODE_S12 << 1)
+#define AC_SIMD_ZERVB (AC_SIMD_ZERVA << 1)
+#define AC_SIMD_ZERVC (AC_SIMD_ZERVB << 1)
+#define ARC_OPERAND_SIGNED 0x20
+#define __LDBL_MIN_10_EXP__ (-4931)
+#define AC_SIMD_ENCODE_U6 (AC_SIMD_ENCODE_U8 << 1)
+#define __SIZEOF_LONG_LONG__ 8
+#define __FLT128_DECIMAL_DIG__ 36
+#define __GCC_ATOMIC_LLONG_LOCK_FREE 2
+#define __FLT32_HAS_QUIET_NAN__ 1
+#define __FLT_DECIMAL_DIG__ 9
+#define __UINT_FAST16_MAX__ 0xffff
+#define AC_SIMD_SETLM (AC_SIMD_ZERVC << 1)
+#define __LDBL_NORM_MAX__ 1.18973149535723176502126385303097021e+4932L
+#define __GCC_ATOMIC_SHORT_LOCK_FREE 2
+#define __SSE3__ 1
+#define __UINT_FAST8_TYPE__ unsigned char
+#define AC_SIMD_ENCODE_ZR (AC_SIMD_ENCODE_U16 << 1)
+#define ARC_MOD_REG 0x2000
+#define __ATOMIC_ACQ_REL 4
+#define ARC_SIMD_LANEMASK (ARC_SIMD_SCALE4 <<0x1)
+#define __ATOMIC_RELEASE 3
+#define A(x) (((unsigned) (x) & ARC_MASK_REG) << ARC_SHIFT_REGA)
+#define B(x) (((unsigned) (x) & ARC_MASK_REG) << ARC_SHIFT_REGB)
+#define I(x) (((unsigned) (x) & 31) << 27)
+#define R(x,b,m) (((unsigned) (x) & (m)) << (b))

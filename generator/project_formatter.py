@@ -48,7 +48,10 @@ class FileFormatter():
     def __init__(self, path: str, format_type: FormatType):
         self.path = path
         self.format_type = format_type
-        project_name = path[len(Constant.local_project_root_path):].split("/")[1]
+        if Constant.local_project_root_path in path:
+            project_name = path[len(Constant.local_project_root_path):].split("/")[1]
+        else:
+            project_name = path.split("/")[1]
         project_root_path = Constant.local_project_root_path + '/' + project_name
         self.compiler_path = "/usr/local/bin/gcc-11"
         self.include_path = ""
@@ -90,7 +93,7 @@ class FileFormatter():
         )
         return self.execute_string
 
-    def execute(self, debug=True) -> str:
+    def execute(self, debug=True):
         proc = run(
             self.execute_string,
             shell=True,
@@ -99,13 +102,13 @@ class FileFormatter():
             text=True,
             errors='ignore',
         )
+        content, errors = proc.stdout, proc.stderr.split('\n')
         if debug:
-            _, errors = proc.stdout, proc.stderr.split('\n')
             if self.__should_ignore_error(errors):
-                return ""
-            return self.__format_error(errors)
+                return ([], "")
+            return [], self.__format_error(errors)
         else:
-            raise Exception()
+            return content, self.__format_error(errors)
 
 
 def main():
@@ -116,7 +119,7 @@ def main():
     for path in tqdm(paths):
         model = FileFormatter(path=path, format_type=FormatType.AVAILABLE)
         model.build_executable_command()
-        error: str = model.execute()
+        content, error = model.execute()
         if error != "":
             print(error)
             print(path)

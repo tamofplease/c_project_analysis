@@ -1,0 +1,2019 @@
+# 0 "project/radare2/libr/asm/arch/z80/z80_tab.h"
+# 0 "<built-in>"
+#define __STDC__ 1
+# 0 "<built-in>"
+#define __STDC_VERSION__ 201710L
+# 0 "<built-in>"
+#define __STDC_UTF_16__ 1
+# 0 "<built-in>"
+#define __STDC_UTF_32__ 1
+# 0 "<built-in>"
+#define __STDC_HOSTED__ 1
+# 0 "<built-in>"
+#define __GNUC__ 11
+# 0 "<built-in>"
+#define __GNUC_MINOR__ 2
+# 0 "<built-in>"
+#define __GNUC_PATCHLEVEL__ 0
+# 0 "<built-in>"
+#define __VERSION__ "11.2.0"
+# 0 "<built-in>"
+#define __ATOMIC_RELAXED 0
+# 0 "<built-in>"
+#define __ATOMIC_SEQ_CST 5
+# 0 "<built-in>"
+#define __ATOMIC_ACQUIRE 2
+# 0 "<built-in>"
+#define __ATOMIC_RELEASE 3
+# 0 "<built-in>"
+#define __ATOMIC_ACQ_REL 4
+# 0 "<built-in>"
+#define __ATOMIC_CONSUME 1
+# 0 "<built-in>"
+#define __pic__ 2
+# 0 "<built-in>"
+#define __PIC__ 2
+# 0 "<built-in>"
+#define __FINITE_MATH_ONLY__ 0
+# 0 "<built-in>"
+#define _LP64 1
+# 0 "<built-in>"
+#define __LP64__ 1
+# 0 "<built-in>"
+#define __SIZEOF_INT__ 4
+# 0 "<built-in>"
+#define __SIZEOF_LONG__ 8
+# 0 "<built-in>"
+#define __SIZEOF_LONG_LONG__ 8
+# 0 "<built-in>"
+#define __SIZEOF_SHORT__ 2
+# 0 "<built-in>"
+#define __SIZEOF_FLOAT__ 4
+# 0 "<built-in>"
+#define __SIZEOF_DOUBLE__ 8
+# 0 "<built-in>"
+#define __SIZEOF_LONG_DOUBLE__ 16
+# 0 "<built-in>"
+#define __SIZEOF_SIZE_T__ 8
+# 0 "<built-in>"
+#define __CHAR_BIT__ 8
+# 0 "<built-in>"
+#define __BIGGEST_ALIGNMENT__ 16
+# 0 "<built-in>"
+#define __ORDER_LITTLE_ENDIAN__ 1234
+# 0 "<built-in>"
+#define __ORDER_BIG_ENDIAN__ 4321
+# 0 "<built-in>"
+#define __ORDER_PDP_ENDIAN__ 3412
+# 0 "<built-in>"
+#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+# 0 "<built-in>"
+#define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
+# 0 "<built-in>"
+#define __SIZEOF_POINTER__ 8
+# 0 "<built-in>"
+#define __GNUC_EXECUTION_CHARSET_NAME "UTF-8"
+# 0 "<built-in>"
+#define __GNUC_WIDE_EXECUTION_CHARSET_NAME "UTF-32LE"
+# 0 "<built-in>"
+#define __SIZE_TYPE__ long unsigned int
+# 0 "<built-in>"
+#define __PTRDIFF_TYPE__ long int
+# 0 "<built-in>"
+#define __WCHAR_TYPE__ int
+# 0 "<built-in>"
+#define __WINT_TYPE__ int
+# 0 "<built-in>"
+#define __INTMAX_TYPE__ long int
+# 0 "<built-in>"
+#define __UINTMAX_TYPE__ long unsigned int
+# 0 "<built-in>"
+#define __CHAR16_TYPE__ short unsigned int
+# 0 "<built-in>"
+#define __CHAR32_TYPE__ unsigned int
+# 0 "<built-in>"
+#define __SIG_ATOMIC_TYPE__ int
+# 0 "<built-in>"
+#define __INT8_TYPE__ signed char
+# 0 "<built-in>"
+#define __INT16_TYPE__ short int
+# 0 "<built-in>"
+#define __INT32_TYPE__ int
+# 0 "<built-in>"
+#define __INT64_TYPE__ long long int
+# 0 "<built-in>"
+#define __UINT8_TYPE__ unsigned char
+# 0 "<built-in>"
+#define __UINT16_TYPE__ short unsigned int
+# 0 "<built-in>"
+#define __UINT32_TYPE__ unsigned int
+# 0 "<built-in>"
+#define __UINT64_TYPE__ long long unsigned int
+# 0 "<built-in>"
+#define __INT_LEAST8_TYPE__ signed char
+# 0 "<built-in>"
+#define __INT_LEAST16_TYPE__ short int
+# 0 "<built-in>"
+#define __INT_LEAST32_TYPE__ int
+# 0 "<built-in>"
+#define __INT_LEAST64_TYPE__ long long int
+# 0 "<built-in>"
+#define __UINT_LEAST8_TYPE__ unsigned char
+# 0 "<built-in>"
+#define __UINT_LEAST16_TYPE__ short unsigned int
+# 0 "<built-in>"
+#define __UINT_LEAST32_TYPE__ unsigned int
+# 0 "<built-in>"
+#define __UINT_LEAST64_TYPE__ long long unsigned int
+# 0 "<built-in>"
+#define __INT_FAST8_TYPE__ signed char
+# 0 "<built-in>"
+#define __INT_FAST16_TYPE__ short int
+# 0 "<built-in>"
+#define __INT_FAST32_TYPE__ int
+# 0 "<built-in>"
+#define __INT_FAST64_TYPE__ long long int
+# 0 "<built-in>"
+#define __UINT_FAST8_TYPE__ unsigned char
+# 0 "<built-in>"
+#define __UINT_FAST16_TYPE__ short unsigned int
+# 0 "<built-in>"
+#define __UINT_FAST32_TYPE__ unsigned int
+# 0 "<built-in>"
+#define __UINT_FAST64_TYPE__ long long unsigned int
+# 0 "<built-in>"
+#define __INTPTR_TYPE__ long int
+# 0 "<built-in>"
+#define __UINTPTR_TYPE__ long unsigned int
+# 0 "<built-in>"
+#define __GXX_ABI_VERSION 1016
+# 0 "<built-in>"
+#define __SCHAR_MAX__ 0x7f
+# 0 "<built-in>"
+#define __SHRT_MAX__ 0x7fff
+# 0 "<built-in>"
+#define __INT_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __LONG_MAX__ 0x7fffffffffffffffL
+# 0 "<built-in>"
+#define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
+# 0 "<built-in>"
+#define __WCHAR_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __WCHAR_MIN__ (-__WCHAR_MAX__ - 1)
+# 0 "<built-in>"
+#define __WINT_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __WINT_MIN__ (-__WINT_MAX__ - 1)
+# 0 "<built-in>"
+#define __PTRDIFF_MAX__ 0x7fffffffffffffffL
+# 0 "<built-in>"
+#define __SIZE_MAX__ 0xffffffffffffffffUL
+# 0 "<built-in>"
+#define __SCHAR_WIDTH__ 8
+# 0 "<built-in>"
+#define __SHRT_WIDTH__ 16
+# 0 "<built-in>"
+#define __INT_WIDTH__ 32
+# 0 "<built-in>"
+#define __LONG_WIDTH__ 64
+# 0 "<built-in>"
+#define __LONG_LONG_WIDTH__ 64
+# 0 "<built-in>"
+#define __WCHAR_WIDTH__ 32
+# 0 "<built-in>"
+#define __WINT_WIDTH__ 32
+# 0 "<built-in>"
+#define __PTRDIFF_WIDTH__ 64
+# 0 "<built-in>"
+#define __SIZE_WIDTH__ 64
+# 0 "<built-in>"
+#define __INTMAX_MAX__ 0x7fffffffffffffffL
+# 0 "<built-in>"
+#define __INTMAX_C(c) c ## L
+# 0 "<built-in>"
+#define __UINTMAX_MAX__ 0xffffffffffffffffUL
+# 0 "<built-in>"
+#define __UINTMAX_C(c) c ## UL
+# 0 "<built-in>"
+#define __INTMAX_WIDTH__ 64
+# 0 "<built-in>"
+#define __SIG_ATOMIC_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+# 0 "<built-in>"
+#define __SIG_ATOMIC_WIDTH__ 32
+# 0 "<built-in>"
+#define __INT8_MAX__ 0x7f
+# 0 "<built-in>"
+#define __INT16_MAX__ 0x7fff
+# 0 "<built-in>"
+#define __INT32_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __INT64_MAX__ 0x7fffffffffffffffLL
+# 0 "<built-in>"
+#define __UINT8_MAX__ 0xff
+# 0 "<built-in>"
+#define __UINT16_MAX__ 0xffff
+# 0 "<built-in>"
+#define __UINT32_MAX__ 0xffffffffU
+# 0 "<built-in>"
+#define __UINT64_MAX__ 0xffffffffffffffffULL
+# 0 "<built-in>"
+#define __INT_LEAST8_MAX__ 0x7f
+# 0 "<built-in>"
+#define __INT8_C(c) c
+# 0 "<built-in>"
+#define __INT_LEAST8_WIDTH__ 8
+# 0 "<built-in>"
+#define __INT_LEAST16_MAX__ 0x7fff
+# 0 "<built-in>"
+#define __INT16_C(c) c
+# 0 "<built-in>"
+#define __INT_LEAST16_WIDTH__ 16
+# 0 "<built-in>"
+#define __INT_LEAST32_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __INT32_C(c) c
+# 0 "<built-in>"
+#define __INT_LEAST32_WIDTH__ 32
+# 0 "<built-in>"
+#define __INT_LEAST64_MAX__ 0x7fffffffffffffffLL
+# 0 "<built-in>"
+#define __INT64_C(c) c ## LL
+# 0 "<built-in>"
+#define __INT_LEAST64_WIDTH__ 64
+# 0 "<built-in>"
+#define __UINT_LEAST8_MAX__ 0xff
+# 0 "<built-in>"
+#define __UINT8_C(c) c
+# 0 "<built-in>"
+#define __UINT_LEAST16_MAX__ 0xffff
+# 0 "<built-in>"
+#define __UINT16_C(c) c
+# 0 "<built-in>"
+#define __UINT_LEAST32_MAX__ 0xffffffffU
+# 0 "<built-in>"
+#define __UINT32_C(c) c ## U
+# 0 "<built-in>"
+#define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
+# 0 "<built-in>"
+#define __UINT64_C(c) c ## ULL
+# 0 "<built-in>"
+#define __INT_FAST8_MAX__ 0x7f
+# 0 "<built-in>"
+#define __INT_FAST8_WIDTH__ 8
+# 0 "<built-in>"
+#define __INT_FAST16_MAX__ 0x7fff
+# 0 "<built-in>"
+#define __INT_FAST16_WIDTH__ 16
+# 0 "<built-in>"
+#define __INT_FAST32_MAX__ 0x7fffffff
+# 0 "<built-in>"
+#define __INT_FAST32_WIDTH__ 32
+# 0 "<built-in>"
+#define __INT_FAST64_MAX__ 0x7fffffffffffffffLL
+# 0 "<built-in>"
+#define __INT_FAST64_WIDTH__ 64
+# 0 "<built-in>"
+#define __UINT_FAST8_MAX__ 0xff
+# 0 "<built-in>"
+#define __UINT_FAST16_MAX__ 0xffff
+# 0 "<built-in>"
+#define __UINT_FAST32_MAX__ 0xffffffffU
+# 0 "<built-in>"
+#define __UINT_FAST64_MAX__ 0xffffffffffffffffULL
+# 0 "<built-in>"
+#define __INTPTR_MAX__ 0x7fffffffffffffffL
+# 0 "<built-in>"
+#define __INTPTR_WIDTH__ 64
+# 0 "<built-in>"
+#define __UINTPTR_MAX__ 0xffffffffffffffffUL
+# 0 "<built-in>"
+#define __GCC_IEC_559 2
+# 0 "<built-in>"
+#define __GCC_IEC_559_COMPLEX 2
+# 0 "<built-in>"
+#define __FLT_EVAL_METHOD__ 0
+# 0 "<built-in>"
+#define __FLT_EVAL_METHOD_TS_18661_3__ 0
+# 0 "<built-in>"
+#define __DEC_EVAL_METHOD__ 2
+# 0 "<built-in>"
+#define __FLT_RADIX__ 2
+# 0 "<built-in>"
+#define __FLT_MANT_DIG__ 24
+# 0 "<built-in>"
+#define __FLT_DIG__ 6
+# 0 "<built-in>"
+#define __FLT_MIN_EXP__ (-125)
+# 0 "<built-in>"
+#define __FLT_MIN_10_EXP__ (-37)
+# 0 "<built-in>"
+#define __FLT_MAX_EXP__ 128
+# 0 "<built-in>"
+#define __FLT_MAX_10_EXP__ 38
+# 0 "<built-in>"
+#define __FLT_DECIMAL_DIG__ 9
+# 0 "<built-in>"
+#define __FLT_MAX__ 3.40282346638528859811704183484516925e+38F
+# 0 "<built-in>"
+#define __FLT_NORM_MAX__ 3.40282346638528859811704183484516925e+38F
+# 0 "<built-in>"
+#define __FLT_MIN__ 1.17549435082228750796873653722224568e-38F
+# 0 "<built-in>"
+#define __FLT_EPSILON__ 1.19209289550781250000000000000000000e-7F
+# 0 "<built-in>"
+#define __FLT_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F
+# 0 "<built-in>"
+#define __FLT_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __DBL_MANT_DIG__ 53
+# 0 "<built-in>"
+#define __DBL_DIG__ 15
+# 0 "<built-in>"
+#define __DBL_MIN_EXP__ (-1021)
+# 0 "<built-in>"
+#define __DBL_MIN_10_EXP__ (-307)
+# 0 "<built-in>"
+#define __DBL_MAX_EXP__ 1024
+# 0 "<built-in>"
+#define __DBL_MAX_10_EXP__ 308
+# 0 "<built-in>"
+#define __DBL_DECIMAL_DIG__ 17
+# 0 "<built-in>"
+#define __DBL_MAX__ ((double)1.79769313486231570814527423731704357e+308L)
+# 0 "<built-in>"
+#define __DBL_NORM_MAX__ ((double)1.79769313486231570814527423731704357e+308L)
+# 0 "<built-in>"
+#define __DBL_MIN__ ((double)2.22507385850720138309023271733240406e-308L)
+# 0 "<built-in>"
+#define __DBL_EPSILON__ ((double)2.22044604925031308084726333618164062e-16L)
+# 0 "<built-in>"
+#define __DBL_DENORM_MIN__ ((double)4.94065645841246544176568792868221372e-324L)
+# 0 "<built-in>"
+#define __DBL_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __DBL_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __DBL_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __DBL_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __LDBL_MANT_DIG__ 64
+# 0 "<built-in>"
+#define __LDBL_DIG__ 18
+# 0 "<built-in>"
+#define __LDBL_MIN_EXP__ (-16381)
+# 0 "<built-in>"
+#define __LDBL_MIN_10_EXP__ (-4931)
+# 0 "<built-in>"
+#define __LDBL_MAX_EXP__ 16384
+# 0 "<built-in>"
+#define __LDBL_MAX_10_EXP__ 4932
+# 0 "<built-in>"
+#define __DECIMAL_DIG__ 21
+# 0 "<built-in>"
+#define __LDBL_DECIMAL_DIG__ 21
+# 0 "<built-in>"
+#define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
+# 0 "<built-in>"
+#define __LDBL_NORM_MAX__ 1.18973149535723176502126385303097021e+4932L
+# 0 "<built-in>"
+#define __LDBL_MIN__ 3.36210314311209350626267781732175260e-4932L
+# 0 "<built-in>"
+#define __LDBL_EPSILON__ 1.08420217248550443400745280086994171e-19L
+# 0 "<built-in>"
+#define __LDBL_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951L
+# 0 "<built-in>"
+#define __LDBL_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __LDBL_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __LDBL_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __LDBL_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT32_MANT_DIG__ 24
+# 0 "<built-in>"
+#define __FLT32_DIG__ 6
+# 0 "<built-in>"
+#define __FLT32_MIN_EXP__ (-125)
+# 0 "<built-in>"
+#define __FLT32_MIN_10_EXP__ (-37)
+# 0 "<built-in>"
+#define __FLT32_MAX_EXP__ 128
+# 0 "<built-in>"
+#define __FLT32_MAX_10_EXP__ 38
+# 0 "<built-in>"
+#define __FLT32_DECIMAL_DIG__ 9
+# 0 "<built-in>"
+#define __FLT32_MAX__ 3.40282346638528859811704183484516925e+38F32
+# 0 "<built-in>"
+#define __FLT32_NORM_MAX__ 3.40282346638528859811704183484516925e+38F32
+# 0 "<built-in>"
+#define __FLT32_MIN__ 1.17549435082228750796873653722224568e-38F32
+# 0 "<built-in>"
+#define __FLT32_EPSILON__ 1.19209289550781250000000000000000000e-7F32
+# 0 "<built-in>"
+#define __FLT32_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F32
+# 0 "<built-in>"
+#define __FLT32_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT32_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT32_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT32_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT64_MANT_DIG__ 53
+# 0 "<built-in>"
+#define __FLT64_DIG__ 15
+# 0 "<built-in>"
+#define __FLT64_MIN_EXP__ (-1021)
+# 0 "<built-in>"
+#define __FLT64_MIN_10_EXP__ (-307)
+# 0 "<built-in>"
+#define __FLT64_MAX_EXP__ 1024
+# 0 "<built-in>"
+#define __FLT64_MAX_10_EXP__ 308
+# 0 "<built-in>"
+#define __FLT64_DECIMAL_DIG__ 17
+# 0 "<built-in>"
+#define __FLT64_MAX__ 1.79769313486231570814527423731704357e+308F64
+# 0 "<built-in>"
+#define __FLT64_NORM_MAX__ 1.79769313486231570814527423731704357e+308F64
+# 0 "<built-in>"
+#define __FLT64_MIN__ 2.22507385850720138309023271733240406e-308F64
+# 0 "<built-in>"
+#define __FLT64_EPSILON__ 2.22044604925031308084726333618164062e-16F64
+# 0 "<built-in>"
+#define __FLT64_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F64
+# 0 "<built-in>"
+#define __FLT64_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT64_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT64_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT64_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT128_MANT_DIG__ 113
+# 0 "<built-in>"
+#define __FLT128_DIG__ 33
+# 0 "<built-in>"
+#define __FLT128_MIN_EXP__ (-16381)
+# 0 "<built-in>"
+#define __FLT128_MIN_10_EXP__ (-4931)
+# 0 "<built-in>"
+#define __FLT128_MAX_EXP__ 16384
+# 0 "<built-in>"
+#define __FLT128_MAX_10_EXP__ 4932
+# 0 "<built-in>"
+#define __FLT128_DECIMAL_DIG__ 36
+# 0 "<built-in>"
+#define __FLT128_MAX__ 1.18973149535723176508575932662800702e+4932F128
+# 0 "<built-in>"
+#define __FLT128_NORM_MAX__ 1.18973149535723176508575932662800702e+4932F128
+# 0 "<built-in>"
+#define __FLT128_MIN__ 3.36210314311209350626267781732175260e-4932F128
+# 0 "<built-in>"
+#define __FLT128_EPSILON__ 1.92592994438723585305597794258492732e-34F128
+# 0 "<built-in>"
+#define __FLT128_DENORM_MIN__ 6.47517511943802511092443895822764655e-4966F128
+# 0 "<built-in>"
+#define __FLT128_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT128_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT128_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT128_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT32X_MANT_DIG__ 53
+# 0 "<built-in>"
+#define __FLT32X_DIG__ 15
+# 0 "<built-in>"
+#define __FLT32X_MIN_EXP__ (-1021)
+# 0 "<built-in>"
+#define __FLT32X_MIN_10_EXP__ (-307)
+# 0 "<built-in>"
+#define __FLT32X_MAX_EXP__ 1024
+# 0 "<built-in>"
+#define __FLT32X_MAX_10_EXP__ 308
+# 0 "<built-in>"
+#define __FLT32X_DECIMAL_DIG__ 17
+# 0 "<built-in>"
+#define __FLT32X_MAX__ 1.79769313486231570814527423731704357e+308F32x
+# 0 "<built-in>"
+#define __FLT32X_NORM_MAX__ 1.79769313486231570814527423731704357e+308F32x
+# 0 "<built-in>"
+#define __FLT32X_MIN__ 2.22507385850720138309023271733240406e-308F32x
+# 0 "<built-in>"
+#define __FLT32X_EPSILON__ 2.22044604925031308084726333618164062e-16F32x
+# 0 "<built-in>"
+#define __FLT32X_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F32x
+# 0 "<built-in>"
+#define __FLT32X_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT32X_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT32X_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT32X_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT64X_MANT_DIG__ 64
+# 0 "<built-in>"
+#define __FLT64X_DIG__ 18
+# 0 "<built-in>"
+#define __FLT64X_MIN_EXP__ (-16381)
+# 0 "<built-in>"
+#define __FLT64X_MIN_10_EXP__ (-4931)
+# 0 "<built-in>"
+#define __FLT64X_MAX_EXP__ 16384
+# 0 "<built-in>"
+#define __FLT64X_MAX_10_EXP__ 4932
+# 0 "<built-in>"
+#define __FLT64X_DECIMAL_DIG__ 21
+# 0 "<built-in>"
+#define __FLT64X_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+# 0 "<built-in>"
+#define __FLT64X_NORM_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+# 0 "<built-in>"
+#define __FLT64X_MIN__ 3.36210314311209350626267781732175260e-4932F64x
+# 0 "<built-in>"
+#define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
+# 0 "<built-in>"
+#define __FLT64X_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951F64x
+# 0 "<built-in>"
+#define __FLT64X_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT64X_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT64X_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT64X_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __REGISTER_PREFIX__ 
+# 0 "<built-in>"
+#define __USER_LABEL_PREFIX__ _
+# 0 "<built-in>"
+#define __GNUC_STDC_INLINE__ 1
+# 0 "<built-in>"
+#define __NO_INLINE__ 1
+# 0 "<built-in>"
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+# 0 "<built-in>"
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1
+# 0 "<built-in>"
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1
+# 0 "<built-in>"
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
+# 0 "<built-in>"
+#define __GCC_ATOMIC_BOOL_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_CHAR_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_SHORT_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_INT_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_LONG_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_LLONG_LOCK_FREE 2
+# 0 "<built-in>"
+#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+# 0 "<built-in>"
+#define __GCC_ATOMIC_POINTER_LOCK_FREE 2
+# 0 "<built-in>"
+#define __HAVE_SPECULATION_SAFE_VALUE 1
+# 0 "<built-in>"
+#define __PRAGMA_REDEFINE_EXTNAME 1
+# 0 "<built-in>"
+#define __SIZEOF_INT128__ 16
+# 0 "<built-in>"
+#define __SIZEOF_WCHAR_T__ 4
+# 0 "<built-in>"
+#define __SIZEOF_WINT_T__ 4
+# 0 "<built-in>"
+#define __SIZEOF_PTRDIFF_T__ 8
+# 0 "<built-in>"
+#define __amd64 1
+# 0 "<built-in>"
+#define __amd64__ 1
+# 0 "<built-in>"
+#define __x86_64 1
+# 0 "<built-in>"
+#define __x86_64__ 1
+# 0 "<built-in>"
+#define __SIZEOF_FLOAT80__ 16
+# 0 "<built-in>"
+#define __SIZEOF_FLOAT128__ 16
+# 0 "<built-in>"
+#define __ATOMIC_HLE_ACQUIRE 65536
+# 0 "<built-in>"
+#define __ATOMIC_HLE_RELEASE 131072
+# 0 "<built-in>"
+#define __GCC_ASM_FLAG_OUTPUTS__ 1
+# 0 "<built-in>"
+#define __k8 1
+# 0 "<built-in>"
+#define __k8__ 1
+# 0 "<built-in>"
+#define __tune_core2__ 1
+# 0 "<built-in>"
+#define __code_model_small__ 1
+# 0 "<built-in>"
+#define __MMX__ 1
+# 0 "<built-in>"
+#define __SSE__ 1
+# 0 "<built-in>"
+#define __SSE2__ 1
+# 0 "<built-in>"
+#define __SSE3__ 1
+# 0 "<built-in>"
+#define __FXSR__ 1
+# 0 "<built-in>"
+#define __SSE_MATH__ 1
+# 0 "<built-in>"
+#define __SSE2_MATH__ 1
+# 0 "<built-in>"
+#define __MMX_WITH_SSE__ 1
+# 0 "<built-in>"
+#define __SEG_FS 1
+# 0 "<built-in>"
+#define __SEG_GS 1
+# 0 "<built-in>"
+#define __LITTLE_ENDIAN__ 1
+# 0 "<built-in>"
+#define __MACH__ 1
+# 0 "<built-in>"
+#define __APPLE__ 1
+# 0 "<built-in>"
+#define __APPLE_CC__ 1
+# 0 "<built-in>"
+#define __CONSTANT_CFSTRINGS__ 1
+# 0 "<built-in>"
+#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 110500
+# 0 "<built-in>"
+#define __strong 
+# 0 "<built-in>"
+#define __weak 
+# 0 "<command-line>"
+#define __DYNAMIC__ 1
+# 1 "project/radare2/libr/asm/arch/z80/z80_tab.h"
+
+
+
+#define Z80_TAB_H 
+
+
+
+
+#define NULL 0
+
+enum {
+ Z80_OP_UNK = 1,
+ Z80_OP8 = 2,
+ Z80_OP16 = 4,
+ Z80_OP24 = 8,
+ Z80_ARG8 = 16,
+ Z80_ARG16 = 32,
+ Z80_ENC0 = 64,
+ Z80_ENC1 = 128
+};
+
+typedef struct {
+ const char* name;
+ int type;
+ const void *op_moar;
+} z80_opcode;
+
+static ut8 z80_fddd_branch_index_res (ut8 hex) {
+ switch (hex) {
+  case 0x9:
+   return 0x0;
+  case 0x19:
+   return 0x1;
+  case 0x21:
+  case 0x22:
+  case 0x23:
+  case 0x24:
+  case 0x25:
+  case 0x26:
+   return hex-0x1f;
+  case 0x29:
+  case 0x2a:
+  case 0x2b:
+  case 0x2c:
+  case 0x2d:
+  case 0x2e:
+   return hex-0x21;
+  case 0x34:
+  case 0x35:
+  case 0x36:
+   return hex-0x26;
+  case 0x39:
+   return 0x11;
+  case 0x44:
+  case 0x45:
+  case 0x46:
+   return hex-0x32;
+  case 0x4c:
+  case 0x4d:
+  case 0x4e:
+   return hex-0x37;
+  case 0x54:
+  case 0x55:
+  case 0x56:
+   return hex-0x3c;
+  case 0x5c:
+  case 0x5d:
+  case 0x5e:
+   return hex-0x41;
+  case 0x60:
+  case 0x61:
+  case 0x62:
+  case 0x63:
+  case 0x64:
+  case 0x65:
+  case 0x66:
+  case 0x67:
+  case 0x68:
+  case 0x69:
+  case 0x6a:
+  case 0x6b:
+  case 0x6c:
+  case 0x6d:
+  case 0x6e:
+  case 0x6f:
+  case 0x70:
+  case 0x71:
+  case 0x72:
+  case 0x73:
+  case 0x74:
+  case 0x75:
+   return hex-0x42;
+  case 0x77:
+   return 0x34;
+  case 0x7c:
+  case 0x7d:
+  case 0x7e:
+   return hex-0x47;
+  case 0x84:
+  case 0x85:
+  case 0x86:
+   return hex-0x4c;
+  case 0x8c:
+  case 0x8d:
+  case 0x8e:
+   return hex-0x51;
+  case 0x94:
+  case 0x95:
+  case 0x96:
+   return hex-0x56;
+  case 0x9c:
+  case 0x9d:
+  case 0x9e:
+   return hex-0x5b;
+  case 0xa4:
+  case 0xa5:
+  case 0xa6:
+   return hex-0x60;
+  case 0xac:
+  case 0xad:
+  case 0xae:
+   return hex-0x65;
+  case 0xb4:
+  case 0xb5:
+  case 0xb6:
+   return hex-0x6a;
+  case 0xbc:
+  case 0xbd:
+  case 0xbe:
+   return hex-0x6f;
+  case 0xcb:
+   return 0x50;
+  case 0xe1:
+   return 0x51;
+  case 0xe3:
+   return 0x52;
+  case 0xe5:
+   return 0x53;
+  case 0xe9:
+   return 0x54;
+  case 0xf9:
+   return 0x55;
+ }
+ return 0x56;
+}
+
+static ut8 z80_ed_branch_index_res (ut8 hex) {
+ if (hex > 0x3f && 0x4c > hex)
+  return hex-0x40;
+ if (hex == 0x4d)
+  return 0xc;
+ if (hex > 0x4d && 0x54 > hex)
+  return hex-0x42;
+ if (hex > 0x55 && 0x5c > hex)
+  return hex-0x44;
+ if (hex > 0x5d && 0x63 > hex)
+  return hex-0x46;
+ if (hex > 0x66 && 0x6b > hex)
+  return hex-0x4a;
+ if (hex > 0x6e && 0x74 > hex)
+  return hex-0x4e;
+ if (hex > 0x77 && 0x7c > hex)
+  return hex-0x52;
+ if (hex > 0x9f && 0xa4 > hex)
+  return hex-0x76;
+ if (hex > 0xa7 && 0xac > hex)
+  return hex-0x7a;
+ if (hex > 0xaf && 0xb4 > hex)
+  return hex-0x7e;
+ if (hex > 0xb7 && 0xbc > hex)
+  return hex-0x82;
+ return 0x3b;
+}
+
+static const char *cb[] = {
+ "rlc b",
+ "rlc c",
+ "rlc d",
+ "rlc e",
+ "rlc h",
+ "rlc l",
+ "rlc [hl]",
+ "rlc a",
+ "rrc b",
+ "rrc c",
+ "rrc d",
+ "rrc e",
+ "rrc h",
+ "rrc l",
+ "rrc [hl]",
+ "rrc a",
+ "rl b",
+ "rl c",
+ "rl d",
+ "rl e",
+ "rl h",
+ "rl l",
+ "rl [hl]",
+ "rl a",
+ "rr b",
+ "rr c",
+ "rr d",
+ "rr e",
+ "rr h",
+ "rr l",
+ "rr [hl]",
+ "rr a",
+ "sla b",
+ "sla c",
+ "sla d",
+ "sla e",
+ "sla h",
+ "sla l",
+ "sla [hl]",
+ "sla a",
+ "sra b",
+ "sra c",
+ "sra d",
+ "sra e",
+ "sra h",
+ "sra l",
+ "sra [hl]",
+ "sra a",
+ "sll b",
+ "sll c",
+ "sll d",
+ "sll e",
+ "sll h",
+ "sll l",
+ "sll [hl]",
+ "sll a",
+ "srl b",
+ "srl c",
+ "srl d",
+ "srl e",
+ "srl h",
+ "srl l",
+ "srl [hl]",
+ "srl a",
+ "bit 0, b",
+ "bit 0, c",
+ "bit 0, d",
+ "bit 0, e",
+ "bit 0, h",
+ "bit 0, l",
+ "bit 0, [hl]",
+ "bit 0, a",
+ "bit 1, b",
+ "bit 1, c",
+ "bit 1, d",
+ "bit 1, e",
+ "bit 1, h",
+ "bit 1, l",
+ "bit 1, [hl]",
+ "bit 1, a",
+ "bit 2, b",
+ "bit 2, c",
+ "bit 2, d",
+ "bit 2, e",
+ "bit 2, h",
+ "bit 2, l",
+ "bit 2, [hl]",
+ "bit 2, a",
+ "bit 3, b",
+ "bit 3, c",
+ "bit 3, d",
+ "bit 3, e",
+ "bit 3, h",
+ "bit 3, l",
+ "bit 3, [hl]",
+ "bit 3, a",
+ "bit 4, b",
+ "bit 4, c",
+ "bit 4, d",
+ "bit 4, e",
+ "bit 4, h",
+ "bit 4, l",
+ "bit 4, [hl]",
+ "bit 4, a",
+ "bit 5, b",
+ "bit 5, c",
+ "bit 5, d",
+ "bit 5, e",
+ "bit 5, h",
+ "bit 5, l",
+ "bit 5, [hl]",
+ "bit 5, a",
+ "bit 6, b",
+ "bit 6, c",
+ "bit 6, d",
+ "bit 6, e",
+ "bit 6, h",
+ "bit 6, l",
+ "bit 6, [hl]",
+ "bit 6, a",
+ "bit 7, b",
+ "bit 7, c",
+ "bit 7, d",
+ "bit 7, e",
+ "bit 7, h",
+ "bit 7, l",
+ "bit 7, [hl]",
+ "bit 7, a",
+ "res 0, b",
+ "res 0, c",
+ "res 0, d",
+ "res 0, e",
+ "res 0, h",
+ "res 0, l",
+ "res 0, [hl]",
+ "res 0, a",
+ "res 1, b",
+ "res 1, c",
+ "res 1, d",
+ "res 1, e",
+ "res 1, h",
+ "res 1, l",
+ "res 1, [hl]",
+ "res 1, a",
+ "res 2, b",
+ "res 2, c",
+ "res 2, d",
+ "res 2, e",
+ "res 2, h",
+ "res 2, l",
+ "res 2, [hl]",
+ "res 2, a",
+ "res 3, b",
+ "res 3, c",
+ "res 3, d",
+ "res 3, e",
+ "res 3, h",
+ "res 3, l",
+ "res 3, [hl]",
+ "res 3, a",
+ "res 4, b",
+ "res 4, c",
+ "res 4, d",
+ "res 4, e",
+ "res 4, h",
+ "res 4, l",
+ "res 4, [hl]",
+ "res 4, a",
+ "res 5, b",
+ "res 5, c",
+ "res 5, d",
+ "res 5, e",
+ "res 5, h",
+ "res 5, l",
+ "res 5, [hl]",
+ "res 5, a",
+ "res 6, b",
+ "res 6, c",
+ "res 6, d",
+ "res 6, e",
+ "res 6, h",
+ "res 6, l",
+ "res 6, [hl]",
+ "res 6, a",
+ "res 7, b",
+ "res 7, c",
+ "res 7, d",
+ "res 7, e",
+ "res 7, h",
+ "res 7, l",
+ "res 7, [hl]",
+ "res 7, a",
+ "set 0, b",
+ "set 0, c",
+ "set 0, d",
+ "set 0, e",
+ "set 0, h",
+ "set 0, l",
+ "set 0, [hl]",
+ "set 0, a",
+ "set 1, b",
+ "set 1, c",
+ "set 1, d",
+ "set 1, e",
+ "set 1, h",
+ "set 1, l",
+ "set 1, [hl]",
+ "set 1, a",
+ "set 2, b",
+ "set 2, c",
+ "set 2, d",
+ "set 2, e",
+ "set 2, h",
+ "set 2, l",
+ "set 2, [hl]",
+ "set 2, a",
+ "set 3, b",
+ "set 3, c",
+ "set 3, d",
+ "set 3, e",
+ "set 3, h",
+ "set 3, l",
+ "set 3, [hl]",
+ "set 3, a",
+ "set 4, b",
+ "set 4, c",
+ "set 4, d",
+ "set 4, e",
+ "set 4, h",
+ "set 4, l",
+ "set 4, [hl]",
+ "set 4, a",
+ "set 5, b",
+ "set 5, c",
+ "set 5, d",
+ "set 5, e",
+ "set 5, h",
+ "set 5, l",
+ "set 5, [hl]",
+ "set 5, a",
+ "set 6, b",
+ "set 6, c",
+ "set 6, d",
+ "set 6, e",
+ "set 6, h",
+ "set 6, l",
+ "set 6, [hl]",
+ "set 6, a",
+ "set 7, b",
+ "set 7, c",
+ "set 7, d",
+ "set 7, e",
+ "set 7, h",
+ "set 7, l",
+ "set 7, [hl]",
+ "set 7, a",
+};
+
+static const char *ddcb[]={
+ "rlc [ix+0x%02x], b",
+ "rlc [ix+0x%02x], c",
+ "rlc [ix+0x%02x], d",
+ "rlc [ix+0x%02x], e",
+ "rlc [ix+0x%02x], h",
+ "rlc [ix+0x%02x], l",
+ "rlc [ix+0x%02x]",
+ "rlc [ix+0x%02x], a",
+ "rrc [ix+0x%02x], b",
+ "rrc [ix+0x%02x], c",
+ "rrc [ix+0x%02x], d",
+ "rrc [ix+0x%02x], e",
+ "rrc [ix+0x%02x], h",
+ "rrc [ix+0x%02x], l",
+ "rrc [ix+0x%02x]",
+ "rrc [ix+0x%02x], a",
+ "rl [ix+0x%02x], b",
+ "rl [ix+0x%02x], c",
+ "rl [ix+0x%02x], d",
+ "rl [ix+0x%02x], e",
+ "rl [ix+0x%02x], h",
+ "rl [ix+0x%02x], l",
+ "rl [ix+0x%02x]",
+ "rl [ix+0x%02x], a",
+ "rr [ix+0x%02x], b",
+ "rr [ix+0x%02x], c",
+ "rr [ix+0x%02x], d",
+ "rr [ix+0x%02x], e",
+ "rr [ix+0x%02x], h",
+ "rr [ix+0x%02x], l",
+ "rr [ix+0x%02x]",
+ "rr [ix+0x%02x], a",
+ "sla [ix+0x%02x], b",
+ "sla [ix+0x%02x], c",
+ "sla [ix+0x%02x], d",
+ "sla [ix+0x%02x], e",
+ "sla [ix+0x%02x], h",
+ "sla [ix+0x%02x], l",
+ "sla [ix+0x%02x]",
+ "sla [ix+0x%02x], a",
+ "sra [ix+0x%02x], b",
+ "sra [ix+0x%02x], c",
+ "sra [ix+0x%02x], d",
+ "sra [ix+0x%02x], e",
+ "sra [ix+0x%02x], h",
+ "sra [ix+0x%02x], l",
+ "sra [ix+0x%02x]",
+ "sra [ix+0x%02x], a",
+ "sll [ix+0x%02x], b",
+ "sll [ix+0x%02x], c",
+ "sll [ix+0x%02x], d",
+ "sll [ix+0x%02x], e",
+ "sll [ix+0x%02x], h",
+ "sll [ix+0x%02x], l",
+ "sll [ix+0x%02x]",
+ "sll [ix+0x%02x], a",
+ "srl [ix+0x%02x], b",
+ "srl [ix+0x%02x], c",
+ "srl [ix+0x%02x], d",
+ "srl [ix+0x%02x], e",
+ "srl [ix+0x%02x], h",
+ "srl [ix+0x%02x], l",
+ "srl [ix+0x%02x]",
+ "srl [ix+0x%02x], a",
+ "bit 0, [ix+0x%02x]",
+ "bit 1, [ix+0x%02x]",
+ "bit 2, [ix+0x%02x]",
+ "bit 3, [ix+0x%02x]",
+ "bit 4, [ix+0x%02x]",
+ "bit 5, [ix+0x%02x]",
+ "bit 6, [ix+0x%02x]",
+ "bit 7, [ix+0x%02x]",
+ "res 0, [ix+0x%02x], b",
+ "res 0, [ix+0x%02x], c",
+ "res 0, [ix+0x%02x], d",
+ "res 0, [ix+0x%02x], e",
+ "res 0, [ix+0x%02x], h",
+ "res 0, [ix+0x%02x], l",
+ "res 0, [ix+0x%02x]",
+ "res 0, [ix+0x%02x], a",
+ "res 1, [ix+0x%02x], b",
+ "res 1, [ix+0x%02x], c",
+ "res 1, [ix+0x%02x], d",
+ "res 1, [ix+0x%02x], e",
+ "res 1, [ix+0x%02x], h",
+ "res 1, [ix+0x%02x], l",
+ "res 1, [ix+0x%02x]",
+ "res 1, [ix+0x%02x], a",
+ "res 2, [ix+0x%02x], b",
+ "res 2, [ix+0x%02x], c",
+ "res 2, [ix+0x%02x], d",
+ "res 2, [ix+0x%02x], e",
+ "res 2, [ix+0x%02x], h",
+ "res 2, [ix+0x%02x], l",
+ "res 2, [ix+0x%02x]",
+ "res 2, [ix+0x%02x], a",
+ "res 3, [ix+0x%02x], b",
+ "res 3, [ix+0x%02x], c",
+ "res 3, [ix+0x%02x], d",
+ "res 3, [ix+0x%02x], e",
+ "res 3, [ix+0x%02x], h",
+ "res 3, [ix+0x%02x], l",
+ "res 3, [ix+0x%02x]",
+ "res 3, [ix+0x%02x], a",
+ "res 4, [ix+0x%02x], b",
+ "res 4, [ix+0x%02x], c",
+ "res 4, [ix+0x%02x], d",
+ "res 4, [ix+0x%02x], e",
+ "res 4, [ix+0x%02x], h",
+ "res 4, [ix+0x%02x], l",
+ "res 4, [ix+0x%02x]",
+ "res 4, [ix+0x%02x], a",
+ "res 5, [ix+0x%02x], b",
+ "res 5, [ix+0x%02x], c",
+ "res 5, [ix+0x%02x], d",
+ "res 5, [ix+0x%02x], e",
+ "res 5, [ix+0x%02x], h",
+ "res 5, [ix+0x%02x], l",
+ "res 5, [ix+0x%02x]",
+ "res 5, [ix+0x%02x], a",
+ "res 6, [ix+0x%02x], b",
+ "res 6, [ix+0x%02x], c",
+ "res 6, [ix+0x%02x], d",
+ "res 6, [ix+0x%02x], e",
+ "res 6, [ix+0x%02x], h",
+ "res 6, [ix+0x%02x], l",
+ "res 6, [ix+0x%02x]",
+ "res 6, [ix+0x%02x], a",
+ "res 7, [ix+0x%02x], b",
+ "res 7, [ix+0x%02x], c",
+ "res 7, [ix+0x%02x], d",
+ "res 7, [ix+0x%02x], e",
+ "res 7, [ix+0x%02x], h",
+ "res 7, [ix+0x%02x], l",
+ "res 7, [ix+0x%02x]",
+ "res 7, [ix+0x%02x], a",
+ "set 0, [ix+0x%02x], b",
+ "set 0, [ix+0x%02x], c",
+ "set 0, [ix+0x%02x], d",
+ "set 0, [ix+0x%02x], e",
+ "set 0, [ix+0x%02x], h",
+ "set 0, [ix+0x%02x], l",
+ "set 0, [ix+0x%02x]",
+ "set 0, [ix+0x%02x], a",
+ "set 1, [ix+0x%02x], b",
+ "set 1, [ix+0x%02x], c",
+ "set 1, [ix+0x%02x], d",
+ "set 1, [ix+0x%02x], e",
+ "set 1, [ix+0x%02x], h",
+ "set 1, [ix+0x%02x], l",
+ "set 1, [ix+0x%02x]",
+ "set 1, [ix+0x%02x], a",
+ "set 2, [ix+0x%02x], b",
+ "set 2, [ix+0x%02x], c",
+ "set 2, [ix+0x%02x], d",
+ "set 2, [ix+0x%02x], e",
+ "set 2, [ix+0x%02x], h",
+ "set 2, [ix+0x%02x], l",
+ "set 2, [ix+0x%02x]",
+ "set 2, [ix+0x%02x], a",
+ "set 3, [ix+0x%02x], b",
+ "set 3, [ix+0x%02x], c",
+ "set 3, [ix+0x%02x], d",
+ "set 3, [ix+0x%02x], e",
+ "set 3, [ix+0x%02x], h",
+ "set 3, [ix+0x%02x], l",
+ "set 3, [ix+0x%02x]",
+ "set 3, [ix+0x%02x], a",
+ "set 4, [ix+0x%02x], b",
+ "set 4, [ix+0x%02x], c",
+ "set 4, [ix+0x%02x], d",
+ "set 4, [ix+0x%02x], e",
+ "set 4, [ix+0x%02x], h",
+ "set 4, [ix+0x%02x], l",
+ "set 4, [ix+0x%02x]",
+ "set 4, [ix+0x%02x], a",
+ "set 5, [ix+0x%02x], b",
+ "set 5, [ix+0x%02x], c",
+ "set 5, [ix+0x%02x], d",
+ "set 5, [ix+0x%02x], e",
+ "set 5, [ix+0x%02x], h",
+ "set 5, [ix+0x%02x], l",
+ "set 5, [ix+0x%02x]",
+ "set 5, [ix+0x%02x], a",
+ "set 6, [ix+0x%02x], b",
+ "set 6, [ix+0x%02x], c",
+ "set 6, [ix+0x%02x], d",
+ "set 6, [ix+0x%02x], e",
+ "set 6, [ix+0x%02x], h",
+ "set 6, [ix+0x%02x], l",
+ "set 6, [ix+0x%02x]",
+ "set 6, [ix+0x%02x], a",
+ "set 7, [ix+0x%02x], b",
+ "set 7, [ix+0x%02x], c",
+ "set 7, [ix+0x%02x], d",
+ "set 7, [ix+0x%02x], e",
+ "set 7, [ix+0x%02x], h",
+ "set 7, [ix+0x%02x], l",
+ "set 7, [ix+0x%02x]",
+ "set 7, [ix+0x%02x], a",
+ "%x\rinvalid",
+};
+
+static const char *fdcb[]={
+ "rlc b, [iy+0x%02x]",
+ "rlc c, [iy+0x%02x]",
+ "rlc d, [iy+0x%02x]",
+ "rlc e, [iy+0x%02x]",
+ "rlc h, [iy+0x%02x]",
+ "rlc l, [iy+0x%02x]",
+ "rlc [iy+0x%02x]",
+ "rlc a, [iy+0x%02x]",
+ "rrc b, [iy+0x%02x]",
+ "rrc c, [iy+0x%02x]",
+ "rrc d, [iy+0x%02x]",
+ "rrc e, [iy+0x%02x]",
+ "rrc h, [iy+0x%02x]",
+ "rrc l, [iy+0x%02x]",
+ "rrc [iy+0x%02x]",
+ "rrc a, [iy+0x%02x]",
+ "rl b, [iy+0x%02x]",
+ "rl c, [iy+0x%02x]",
+ "rl d, [iy+0x%02x]",
+ "rl e, [iy+0x%02x]",
+ "rl h, [iy+0x%02x]",
+ "rl l, [iy+0x%02x]",
+ "rl [iy+0x%02x]",
+ "rl a, [iy+0x%02x]",
+ "rr b, [iy+0x%02x]",
+ "rr c, [iy+0x%02x]",
+ "rr d, [iy+0x%02x]",
+ "rr e, [iy+0x%02x]",
+ "rr h, [iy+0x%02x]",
+ "rr l, [iy+0x%02x]",
+ "rr [iy+0x%02x]",
+ "rr a, [iy+0x%02x]",
+ "sla b, [iy+0x%02x]",
+ "sla c, [iy+0x%02x]",
+ "sla d, [iy+0x%02x]",
+ "sla e, [iy+0x%02x]",
+ "sla h, [iy+0x%02x]",
+ "sla l, [iy+0x%02x]",
+ "sla [iy+0x%02x]",
+ "sla a, [iy+0x%02x]",
+ "sra b, [iy+0x%02x]",
+ "sra c, [iy+0x%02x]",
+ "sra d, [iy+0x%02x]",
+ "sra e, [iy+0x%02x]",
+ "sra h, [iy+0x%02x]",
+ "sra l, [iy+0x%02x]",
+ "sra [iy+0x%02x]",
+ "sra a, [iy+0x%02x]",
+ "sll b, [iy+0x%02x]",
+ "sll c, [iy+0x%02x]",
+ "sll d, [iy+0x%02x]",
+ "sll e, [iy+0x%02x]",
+ "sll h, [iy+0x%02x]",
+ "sll l, [iy+0x%02x]",
+ "sll [iy+0x%02x]",
+ "sll a, [iy+0x%02x]",
+ "srl b, [iy+0x%02x]",
+ "srl c, [iy+0x%02x]",
+ "srl d, [iy+0x%02x]",
+ "srl e, [iy+0x%02x]",
+ "srl h, [iy+0x%02x]",
+ "srl l, [iy+0x%02x]",
+ "srl [iy+0x%02x]",
+ "srl a, [iy+0x%02x]",
+ "bit 0, [iy+0x%02x]",
+ "bit 1, [iy+0x%02x]",
+ "bit 2, [iy+0x%02x]",
+ "bit 3, [iy+0x%02x]",
+ "bit 4, [iy+0x%02x]",
+ "bit 5, [iy+0x%02x]",
+ "bit 6, [iy+0x%02x]",
+ "bit 7, [iy+0x%02x]",
+ "res 0, [iy+0x%02x], b",
+ "res 0, [iy+0x%02x], c",
+ "res 0, [iy+0x%02x], d",
+ "res 0, [iy+0x%02x], e",
+ "res 0, [iy+0x%02x], h",
+ "res 0, [iy+0x%02x], l",
+ "res 0, [iy+0x%02x]",
+ "res 0, [iy+0x%02x], a",
+ "res 1, [iy+0x%02x], b",
+ "res 1, [iy+0x%02x], c",
+ "res 1, [iy+0x%02x], d",
+ "res 1, [iy+0x%02x], e",
+ "res 1, [iy+0x%02x], h",
+ "res 1, [iy+0x%02x], l",
+ "res 1, [iy+0x%02x]",
+ "res 1, [iy+0x%02x], a",
+ "res 2, [iy+0x%02x], b",
+ "res 2, [iy+0x%02x], c",
+ "res 2, [iy+0x%02x], d",
+ "res 2, [iy+0x%02x], e",
+ "res 2, [iy+0x%02x], h",
+ "res 2, [iy+0x%02x], l",
+ "res 2, [iy+0x%02x]",
+ "res 2, [iy+0x%02x], a",
+ "res 3, [iy+0x%02x], b",
+ "res 3, [iy+0x%02x], c",
+ "res 3, [iy+0x%02x], d",
+ "res 3, [iy+0x%02x], e",
+ "res 3, [iy+0x%02x], h",
+ "res 3, [iy+0x%02x], l",
+ "res 3, [iy+0x%02x]",
+ "res 3, [iy+0x%02x], a",
+ "res 4, [iy+0x%02x], b",
+ "res 4, [iy+0x%02x], c",
+ "res 4, [iy+0x%02x], d",
+ "res 4, [iy+0x%02x], e",
+ "res 4, [iy+0x%02x], h",
+ "res 4, [iy+0x%02x], l",
+ "res 4, [iy+0x%02x]",
+ "res 4, [iy+0x%02x], a",
+ "res 5, [iy+0x%02x], b",
+ "res 5, [iy+0x%02x], c",
+ "res 5, [iy+0x%02x], d",
+ "res 5, [iy+0x%02x], e",
+ "res 5, [iy+0x%02x], h",
+ "res 5, [iy+0x%02x], l",
+ "res 5, [iy+0x%02x]",
+ "res 5, [iy+0x%02x], a",
+ "res 6, [iy+0x%02x], b",
+ "res 6, [iy+0x%02x], c",
+ "res 6, [iy+0x%02x], d",
+ "res 6, [iy+0x%02x], e",
+ "res 6, [iy+0x%02x], h",
+ "res 6, [iy+0x%02x], l",
+ "res 6, [iy+0x%02x]",
+ "res 6, [iy+0x%02x], a",
+ "res 7, [iy+0x%02x], b",
+ "res 7, [iy+0x%02x], c",
+ "res 7, [iy+0x%02x], d",
+ "res 7, [iy+0x%02x], e",
+ "res 7, [iy+0x%02x], h",
+ "res 7, [iy+0x%02x], l",
+ "res 7, [iy+0x%02x]",
+ "res 7, [iy+0x%02x], a",
+ "set 0, [iy+0x%02x], b",
+ "set 0, [iy+0x%02x], c",
+ "set 0, [iy+0x%02x], d",
+ "set 0, [iy+0x%02x], e",
+ "set 0, [iy+0x%02x], h",
+ "set 0, [iy+0x%02x], l",
+ "set 0, [iy+0x%02x]",
+ "set 0, [iy+0x%02x], a",
+ "set 1, [iy+0x%02x], b",
+ "set 1, [iy+0x%02x], c",
+ "set 1, [iy+0x%02x], d",
+ "set 1, [iy+0x%02x], e",
+ "set 1, [iy+0x%02x], h",
+ "set 1, [iy+0x%02x], l",
+ "set 1, [iy+0x%02x]",
+ "set 1, [iy+0x%02x], a",
+ "set 2, [iy+0x%02x], b",
+ "set 2, [iy+0x%02x], c",
+ "set 2, [iy+0x%02x], d",
+ "set 2, [iy+0x%02x], e",
+ "set 2, [iy+0x%02x], h",
+ "set 2, [iy+0x%02x], l",
+ "set 2, [iy+0x%02x]",
+ "set 2, [iy+0x%02x], a",
+ "set 3, [iy+0x%02x], b",
+ "set 3, [iy+0x%02x], c",
+ "set 3, [iy+0x%02x], d",
+ "set 3, [iy+0x%02x], e",
+ "set 3, [iy+0x%02x], h",
+ "set 3, [iy+0x%02x], l",
+ "set 3, [iy+0x%02x]",
+ "set 3, [iy+0x%02x], a",
+ "set 4, [iy+0x%02x], b",
+ "set 4, [iy+0x%02x], c",
+ "set 4, [iy+0x%02x], d",
+ "set 4, [iy+0x%02x], e",
+ "set 4, [iy+0x%02x], h",
+ "set 4, [iy+0x%02x], l",
+ "set 4, [iy+0x%02x]",
+ "set 4, [iy+0x%02x], a",
+ "set 5, [iy+0x%02x], b",
+ "set 5, [iy+0x%02x], c",
+ "set 5, [iy+0x%02x], d",
+ "set 5, [iy+0x%02x], e",
+ "set 5, [iy+0x%02x], h",
+ "set 5, [iy+0x%02x], l",
+ "set 5, [iy+0x%02x]",
+ "set 5, [iy+0x%02x], a",
+ "set 6, [iy+0x%02x], b",
+ "set 6, [iy+0x%02x], c",
+ "set 6, [iy+0x%02x], d",
+ "set 6, [iy+0x%02x], e",
+ "set 6, [iy+0x%02x], h",
+ "set 6, [iy+0x%02x], l",
+ "set 6, [iy+0x%02x]",
+ "set 6, [iy+0x%02x], a",
+ "set 7, [iy+0x%02x], b",
+ "set 7, [iy+0x%02x], c",
+ "set 7, [iy+0x%02x], d",
+ "set 7, [iy+0x%02x], e",
+ "set 7, [iy+0x%02x], h",
+ "set 7, [iy+0x%02x], l",
+ "set 7, [iy+0x%02x]",
+ "set 7, [iy+0x%02x], a",
+ "%x\rinvalid",
+};
+
+
+static const z80_opcode dd[] = {
+ {"add ix, bc", Z80_OP16 ,0},
+ {"add ix, de", Z80_OP16 ,0},
+ {"ld ix, 0x%04x", Z80_OP16^Z80_ARG16 ,0},
+ {"ld [0x%04x], ix", Z80_OP16^Z80_ARG16 ,0},
+ {"inc ix", Z80_OP16 ,0},
+ {"inc ixh", Z80_OP16 ,0},
+ {"dec ixh", Z80_OP16 ,0},
+ {"ld ixh, 0x%02x", Z80_OP16^Z80_ARG8 ,0},
+ {"add ix, ix", Z80_OP16 ,0},
+ {"ld ix, [0x%04x]", Z80_OP16^Z80_ARG16 ,0},
+ {"dec ix", Z80_OP16 ,0},
+ {"inc ixl", Z80_OP16 ,0},
+ {"dec ixl", Z80_OP16 ,0},
+ {"ld ixl, 0x%02x", Z80_OP16^Z80_ARG8 ,0},
+ {"inc [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"dec [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], 0x%02x",Z80_OP16^Z80_ARG8^Z80_ARG16 ,0},
+ {"add ix, sp", Z80_OP16 ,0},
+ {"ld b, ixh", Z80_OP16 ,0},
+ {"ld b, ixl", Z80_OP16 ,0},
+ {"ld b, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld c, ixh", Z80_OP16 ,0},
+ {"ld c, ixl", Z80_OP16 ,0},
+ {"ld c, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld d, ixh", Z80_OP16 ,0},
+ {"ld d, ixl", Z80_OP16 ,0},
+ {"ld d, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld e, ixh", Z80_OP16 ,0},
+ {"ld e, ixl", Z80_OP16 ,0},
+ {"ld e, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld ixh, b", Z80_OP16 ,0},
+ {"ld ixh, c", Z80_OP16 ,0},
+ {"ld ixh, d", Z80_OP16 ,0},
+ {"ld ixh, e", Z80_OP16 ,0},
+ {"ld ixh, ixh", Z80_OP16 ,0},
+ {"ld ixh, ixl", Z80_OP16 ,0},
+ {"ld h, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld ixh, a", Z80_OP16 ,0},
+ {"ld ixl, b", Z80_OP16 ,0},
+ {"ld ixl, c", Z80_OP16 ,0},
+ {"ld ixl, d", Z80_OP16 ,0},
+ {"ld ixl, e", Z80_OP16 ,0},
+ {"ld ixl, ixh", Z80_OP16 ,0},
+ {"ld ixl, ixl", Z80_OP16 ,0},
+ {"ld l, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld ixl, a", Z80_OP16 ,0},
+ {"ld [ix+0x%02x], b", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], c", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], d", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], e", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], h", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], l", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [ix+0x%02x], a", Z80_OP16^Z80_ARG8 ,0},
+ {"ld a, ixh", Z80_OP16 ,0},
+ {"ld a, ixl", Z80_OP16 ,0},
+ {"ld a, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"add a, ixh", Z80_OP16 ,0},
+ {"add a, ixl", Z80_OP16 ,0},
+ {"add a, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"adc a, ixh", Z80_OP16 ,0},
+ {"adc a, ixl", Z80_OP16 ,0},
+ {"adc a, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"sub a, ixh", Z80_OP16 ,0},
+ {"sub a, ixl", Z80_OP16 ,0},
+ {"sub [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"sbc a, ixh", Z80_OP16 ,0},
+ {"sbc a, ixl", Z80_OP16 ,0},
+ {"sbc a, [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"and ixh", Z80_OP16 ,0},
+ {"and ixl", Z80_OP16 ,0},
+ {"and [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"xor ixh", Z80_OP16 ,0},
+ {"xor ixl", Z80_OP16 ,0},
+ {"xor [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"or ixh", Z80_OP16 ,0},
+ {"or ixl", Z80_OP16 ,0},
+ {"or [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"cp ixh", Z80_OP16 ,0},
+ {"cp ixl", Z80_OP16 ,0},
+ {"cp [ix+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"", Z80_OP24^Z80_ARG8 ,ddcb},
+ {"pop ix", Z80_OP16 ,0},
+ {"ex [sp], ix", Z80_OP16 ,0},
+ {"push ix", Z80_OP16 ,0},
+ {"jp [ix]", Z80_OP16 ,0},
+ {"ld sp, ix", Z80_OP16 ,0},
+ {"invalid", Z80_OP16 ,0}
+};
+
+static const z80_opcode ed[]={
+ {"in b, [c]", Z80_OP16 ,0},
+ {"out [c], b", Z80_OP16 ,0},
+ {"sbc hl, bc", Z80_OP16 ,0},
+ {"ld [0x%04x], bc", Z80_OP16^Z80_ARG16 ,0},
+ {"neg", Z80_OP16 ,0},
+ {"retn", Z80_OP16 ,0},
+ {"im 0", Z80_OP16 ,0},
+ {"ld i, a", Z80_OP16 ,0},
+ {"in c, [c]", Z80_OP16 ,0},
+ {"out [c], c", Z80_OP16 ,0},
+ {"adc hl, bc", Z80_OP16 ,0},
+ {"ld bc, [0x%04x]", Z80_OP16^Z80_ARG16 ,0},
+ {"reti", Z80_OP16 ,0},
+ {"ld r, a", Z80_OP16 ,0},
+ {"in d, [c]", Z80_OP16 ,0},
+ {"out [c], d", Z80_OP16 ,0},
+ {"sbc hl, de", Z80_OP16 ,0},
+ {"ld [0x%04x], de", Z80_OP16^Z80_ARG16 ,0},
+ {"im 1", Z80_OP16 ,0},
+ {"ld a, i", Z80_OP16 ,0},
+ {"in e, [c]", Z80_OP16 ,0},
+ {"out [c], e", Z80_OP16 ,0},
+ {"adc hl, de", Z80_OP16 ,0},
+ {"ld de, [0x%04x]", Z80_OP16^Z80_ARG16 ,0},
+ {"im 2", Z80_OP16 ,0},
+ {"ld a, r", Z80_OP16 ,0},
+ {"in h, [c]", Z80_OP16 ,0},
+ {"out [c], h", Z80_OP16 ,0},
+ {"sbc hl, hl", Z80_OP16 ,0},
+ {"rrd", Z80_OP16 ,0},
+ {"in l, [c]", Z80_OP16 ,0},
+ {"out [c], l", Z80_OP16 ,0},
+ {"adc hl, hl", Z80_OP16 ,0},
+ {"rld", Z80_OP16 ,0},
+ {"in [c]", Z80_OP16 ,0},
+ {"out [c], 0", Z80_OP16 ,0},
+ {"sbc hl, sp", Z80_OP16 ,0},
+ {"ld [0x%04x], sp", Z80_OP16^Z80_ARG16 ,0},
+ {"in a, [c]", Z80_OP16 ,0},
+ {"out [c], a", Z80_OP16 ,0},
+ {"adc hl, sp", Z80_OP16 ,0},
+ {"ld sp, [0x%04x]", Z80_OP16^Z80_ARG16 ,0},
+ {"ldi", Z80_OP16 ,0},
+ {"cpi", Z80_OP16 ,0},
+ {"ini", Z80_OP16 ,0},
+ {"outi", Z80_OP16 ,0},
+ {"ldd", Z80_OP16 ,0},
+ {"cpd", Z80_OP16 ,0},
+ {"ind", Z80_OP16 ,0},
+ {"outd", Z80_OP16 ,0},
+ {"ldir", Z80_OP16 ,0},
+ {"cpir", Z80_OP16 ,0},
+ {"inir", Z80_OP16 ,0},
+ {"otir", Z80_OP16 ,0},
+ {"lddr", Z80_OP16 ,0},
+ {"cpdr", Z80_OP16 ,0},
+ {"indr", Z80_OP16 ,0},
+ {"otdr", Z80_OP16 ,0},
+ {"invalid", Z80_OP16 ,0},
+ {"invalid", Z80_OP16 ,0}
+};
+
+static const z80_opcode fd[]={
+ {"add iy, bc", Z80_OP16 ,0},
+ {"add iy, de", Z80_OP16 ,0},
+ {"ld iy, 0x%04x", Z80_OP16^Z80_ARG16 ,0},
+ {"ld [0x%04x], iy", Z80_OP16^Z80_ARG16 ,0},
+ {"inc iy", Z80_OP16 ,0},
+ {"inc iyh", Z80_OP16 ,0},
+ {"dec iyh", Z80_OP16 ,0},
+ {"ld iyh, 0x%02x", Z80_OP16^Z80_ARG8 ,0},
+ {"add iy, iy", Z80_OP16 ,0},
+ {"ld iy, [0x%04x]", Z80_OP16^Z80_ARG16 ,0},
+ {"dec iy", Z80_OP16 ,0},
+ {"inc iyl", Z80_OP16 ,0},
+ {"dec iyl", Z80_OP16 ,0},
+ {"ld iyl, 0x%02x", Z80_OP16^Z80_ARG8 ,0},
+ {"inc [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"dec [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], 0x%02x",Z80_OP16^Z80_ARG8^Z80_ARG16 ,0},
+ {"add iy, sp", Z80_OP16 ,0},
+ {"ld b, iyh", Z80_OP16 ,0},
+ {"ld b, iyl", Z80_OP16 ,0},
+ {"ld b, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld c, iyh", Z80_OP16 ,0},
+ {"ld c, iyl", Z80_OP16 ,0},
+ {"ld c, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld d, iyh", Z80_OP16 ,0},
+ {"ld d, iyl", Z80_OP16 ,0},
+ {"ld d, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld e, iyh", Z80_OP16 ,0},
+ {"ld e, iyl", Z80_OP16 ,0},
+ {"ld e, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld iyh, b", Z80_OP16 ,0},
+ {"ld iyh, c", Z80_OP16 ,0},
+ {"ld iyh, d", Z80_OP16 ,0},
+ {"ld iyh, e", Z80_OP16 ,0},
+ {"ld iyh, iyh", Z80_OP16 ,0},
+ {"ld iyh, iyl", Z80_OP16 ,0},
+ {"ld h, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld iyh, a", Z80_OP16 ,0},
+ {"ld iyl, b", Z80_OP16 ,0},
+ {"ld iyl, c", Z80_OP16 ,0},
+ {"ld iyl, d", Z80_OP16 ,0},
+ {"ld iyl, e", Z80_OP16 ,0},
+ {"ld iyl, iyh", Z80_OP16 ,0},
+ {"ld iyl, iyl", Z80_OP16 ,0},
+ {"ld l, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"ld iyl, a", Z80_OP16 ,0},
+ {"ld [iy+0x%02x], b", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], c", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], d", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], e", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], h", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], l", Z80_OP16^Z80_ARG8 ,0},
+ {"ld [iy+0x%02x], a", Z80_OP16^Z80_ARG8 ,0},
+ {"ld a, iyh", Z80_OP16 ,0},
+ {"ld a, iyl", Z80_OP16 ,0},
+ {"ld a, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"add a, iyh", Z80_OP16 ,0},
+ {"add a, iyl", Z80_OP16 ,0},
+ {"add a, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"adc a, iyh", Z80_OP16 ,0},
+ {"adc a, iyl", Z80_OP16 ,0},
+ {"adc a, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"sub iyh", Z80_OP16 ,0},
+ {"sub iyl", Z80_OP16 ,0},
+ {"sub [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"sbc a, iyh", Z80_OP16 ,0},
+ {"sbc a, iyl", Z80_OP16 ,0},
+ {"sbc a, [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"and iyh", Z80_OP16 ,0},
+ {"and iyl", Z80_OP16 ,0},
+ {"and [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"xor iyh", Z80_OP16 ,0},
+ {"xor iyl", Z80_OP16 ,0},
+ {"xor [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"or iyh", Z80_OP16 ,0},
+ {"or iyl", Z80_OP16 ,0},
+ {"or [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"cp iyh", Z80_OP16 ,0},
+ {"cp iyl", Z80_OP16 ,0},
+ {"cp [iy+0x%02x]", Z80_OP16^Z80_ARG8 ,0},
+ {"", Z80_OP24^Z80_ARG8 ,fdcb},
+ {"pop iy", Z80_OP16 ,0},
+ {"ex [sp], iy", Z80_OP16 ,0},
+ {"push iy", Z80_OP16 ,0},
+ {"jp [iy]", Z80_OP16 ,0},
+ {"ld sp, iy", Z80_OP16 ,0},
+ {"invalid", Z80_OP16 ,0}
+};
+
+static const z80_opcode z80_op[] = {
+ {"nop", Z80_OP8 ,0},
+ {"ld bc, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ld [bc], a", Z80_OP8 ,0},
+ {"inc bc", Z80_OP8 ,0},
+ {"inc b", Z80_OP8 ,0},
+ {"dec b", Z80_OP8 ,0},
+ {"ld b, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rlca", Z80_OP8 ,0},
+ {"ex af, af'", Z80_OP8 ,0},
+ {"add hl, bc", Z80_OP8 ,0},
+ {"ld a, [bc]", Z80_OP8 ,0},
+ {"dec bc", Z80_OP8 ,0},
+ {"inc c", Z80_OP8 ,0},
+ {"dec c", Z80_OP8 ,0},
+ {"ld c, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rrca", Z80_OP8 ,0},
+ {"djnz 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"ld de, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ld [de], a", Z80_OP8 ,0},
+ {"inc de", Z80_OP8 ,0},
+ {"inc d", Z80_OP8 ,0},
+ {"dec d", Z80_OP8 ,0},
+ {"ld d, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rla", Z80_OP8 ,0},
+ {"jr 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"add hl, de", Z80_OP8 ,0},
+ {"ld a, [de]", Z80_OP8 ,0},
+ {"dec de", Z80_OP8 ,0},
+ {"inc e", Z80_OP8 ,0},
+ {"dec e", Z80_OP8 ,0},
+ {"ld e, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rra", Z80_OP8 ,0},
+ {"jr nz, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"ld hl, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ld [0x%04x], hl", Z80_OP8^Z80_ARG16 ,0},
+ {"inc hl", Z80_OP8 ,0},
+ {"inc h", Z80_OP8 ,0},
+ {"dec h", Z80_OP8 ,0},
+ {"ld h, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"daa", Z80_OP8 ,0},
+ {"jr z, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"add hl, hl", Z80_OP8 ,0},
+ {"ld hl, [0x%04x]", Z80_OP8^Z80_ARG16 ,0},
+ {"dec hl", Z80_OP8 ,0},
+ {"inc l", Z80_OP8 ,0},
+ {"dec l", Z80_OP8 ,0},
+ {"ld l, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"cpl", Z80_OP8 ,0},
+ {"jr nc, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"ld sp, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ld [0x%04x], a", Z80_OP8^Z80_ARG16 ,0},
+ {"inc sp", Z80_OP8 ,0},
+ {"inc [hl]", Z80_OP8 ,0},
+ {"dec [hl]", Z80_OP8 ,0},
+ {"ld [hl], 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"scf", Z80_OP8 ,0},
+ {"jr c, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"add hl, sp", Z80_OP8 ,0},
+ {"ld a, [0x%04x]", Z80_OP8^Z80_ARG16 ,0},
+ {"dec sp", Z80_OP8 ,0},
+ {"inc a", Z80_OP8 ,0},
+ {"dec a", Z80_OP8 ,0},
+ {"ld a, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"ccf", Z80_OP8 ,0},
+ {"ld b, b", Z80_OP8 ,0},
+ {"ld b, c", Z80_OP8 ,0},
+ {"ld b, d", Z80_OP8 ,0},
+ {"ld b, e", Z80_OP8 ,0},
+ {"ld b, h", Z80_OP8 ,0},
+ {"ld b, l", Z80_OP8 ,0},
+ {"ld b, [hl]", Z80_OP8 ,0},
+ {"ld b, a", Z80_OP8 ,0},
+ {"ld c, b", Z80_OP8 ,0},
+ {"ld c, c", Z80_OP8 ,0},
+ {"ld c, d", Z80_OP8 ,0},
+ {"ld c, e", Z80_OP8 ,0},
+ {"ld c, h", Z80_OP8 ,0},
+ {"ld c, l", Z80_OP8 ,0},
+ {"ld c, [hl]", Z80_OP8 ,0},
+ {"ld c, a", Z80_OP8 ,0},
+ {"ld d, b", Z80_OP8 ,0},
+ {"ld d, c", Z80_OP8 ,0},
+ {"ld d, d", Z80_OP8 ,0},
+ {"ld d, e", Z80_OP8 ,0},
+ {"ld d, h", Z80_OP8 ,0},
+ {"ld d, l", Z80_OP8 ,0},
+ {"ld d, [hl]", Z80_OP8 ,0},
+ {"ld d, a", Z80_OP8 ,0},
+ {"ld e, b", Z80_OP8 ,0},
+ {"ld e, c", Z80_OP8 ,0},
+ {"ld e, d", Z80_OP8 ,0},
+ {"ld e, e", Z80_OP8 ,0},
+ {"ld e, h", Z80_OP8 ,0},
+ {"ld e, l", Z80_OP8 ,0},
+ {"ld e, [hl]", Z80_OP8 ,0},
+ {"ld e, a", Z80_OP8 ,0},
+ {"ld h, b", Z80_OP8 ,0},
+ {"ld h, c", Z80_OP8 ,0},
+ {"ld h, d", Z80_OP8 ,0},
+ {"ld h, e", Z80_OP8 ,0},
+ {"ld h, h", Z80_OP8 ,0},
+ {"ld h, l", Z80_OP8 ,0},
+ {"ld h, [hl]", Z80_OP8 ,0},
+ {"ld h, a", Z80_OP8 ,0},
+ {"ld l, b", Z80_OP8 ,0},
+ {"ld l, c", Z80_OP8 ,0},
+ {"ld l, d", Z80_OP8 ,0},
+ {"ld l, e", Z80_OP8 ,0},
+ {"ld l, h", Z80_OP8 ,0},
+ {"ld l, l", Z80_OP8 ,0},
+ {"ld l, [hl]", Z80_OP8 ,0},
+ {"ld l, a", Z80_OP8 ,0},
+ {"ld [hl], b", Z80_OP8 ,0},
+ {"ld [hl], c", Z80_OP8 ,0},
+ {"ld [hl], d", Z80_OP8 ,0},
+ {"ld [hl], e", Z80_OP8 ,0},
+ {"ld [hl], h", Z80_OP8 ,0},
+ {"ld [hl], l", Z80_OP8 ,0},
+ {"halt", Z80_OP8 ,0},
+ {"ld [hl], a", Z80_OP8 ,0},
+ {"ld a, b", Z80_OP8 ,0},
+ {"ld a, c", Z80_OP8 ,0},
+ {"ld a, d", Z80_OP8 ,0},
+ {"ld a, e", Z80_OP8 ,0},
+ {"ld a, h", Z80_OP8 ,0},
+ {"ld a, l", Z80_OP8 ,0},
+ {"ld a, [hl]", Z80_OP8 ,0},
+ {"ld a, a", Z80_OP8 ,0},
+ {"add a, b", Z80_OP8 ,0},
+ {"add a, c", Z80_OP8 ,0},
+ {"add a, d", Z80_OP8 ,0},
+ {"add a, e", Z80_OP8 ,0},
+ {"add a, h", Z80_OP8 ,0},
+ {"add a, l", Z80_OP8 ,0},
+ {"add a, [hl]", Z80_OP8 ,0},
+ {"add a, a", Z80_OP8 ,0},
+ {"adc a, b", Z80_OP8 ,0},
+ {"adc a, c", Z80_OP8 ,0},
+ {"adc a, d", Z80_OP8 ,0},
+ {"adc a, e", Z80_OP8 ,0},
+ {"adc a, h", Z80_OP8 ,0},
+ {"adc a, l", Z80_OP8 ,0},
+ {"adc a, [hl]", Z80_OP8 ,0},
+ {"adc a, a", Z80_OP8 ,0},
+ {"sub b", Z80_OP8 ,0},
+ {"sub c", Z80_OP8 ,0},
+ {"sub d", Z80_OP8 ,0},
+ {"sub e", Z80_OP8 ,0},
+ {"sub h", Z80_OP8 ,0},
+ {"sub l", Z80_OP8 ,0},
+ {"sub [hl]", Z80_OP8 ,0},
+ {"sub a", Z80_OP8 ,0},
+ {"sbc a, b", Z80_OP8 ,0},
+ {"sbc a, c", Z80_OP8 ,0},
+ {"sbc a, d", Z80_OP8 ,0},
+ {"sbc a, e", Z80_OP8 ,0},
+ {"sbc a, h", Z80_OP8 ,0},
+ {"sbc a, l", Z80_OP8 ,0},
+ {"sbc a, [hl]", Z80_OP8 ,0},
+ {"sbc a, a", Z80_OP8 ,0},
+ {"and b", Z80_OP8 ,0},
+ {"and c", Z80_OP8 ,0},
+ {"and d", Z80_OP8 ,0},
+ {"and e", Z80_OP8 ,0},
+ {"and h", Z80_OP8 ,0},
+ {"and l", Z80_OP8 ,0},
+ {"and [hl]", Z80_OP8 ,0},
+ {"and a", Z80_OP8 ,0},
+ {"xor b", Z80_OP8 ,0},
+ {"xor c", Z80_OP8 ,0},
+ {"xor d", Z80_OP8 ,0},
+ {"xor e", Z80_OP8 ,0},
+ {"xor h", Z80_OP8 ,0},
+ {"xor l", Z80_OP8 ,0},
+ {"xor [hl]", Z80_OP8 ,0},
+ {"xor a", Z80_OP8 ,0},
+ {"or b", Z80_OP8 ,0},
+ {"or c", Z80_OP8 ,0},
+ {"or d", Z80_OP8 ,0},
+ {"or e", Z80_OP8 ,0},
+ {"or h", Z80_OP8 ,0},
+ {"or l", Z80_OP8 ,0},
+ {"or [hl]", Z80_OP8 ,0},
+ {"or a", Z80_OP8 ,0},
+ {"cp b", Z80_OP8 ,0},
+ {"cp c", Z80_OP8 ,0},
+ {"cp d", Z80_OP8 ,0},
+ {"cp e", Z80_OP8 ,0},
+ {"cp h", Z80_OP8 ,0},
+ {"cp l", Z80_OP8 ,0},
+ {"cp [hl]", Z80_OP8 ,0},
+ {"cp a", Z80_OP8 ,0},
+ {"ret nz", Z80_OP8 ,0},
+ {"pop bc", Z80_OP8 ,0},
+ {"jp nz, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"jp 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"call nz, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"push bc", Z80_OP8 ,0},
+ {"add a, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x00", Z80_OP8 ,0},
+ {"ret z", Z80_OP8 ,0},
+ {"ret", Z80_OP8 ,0},
+ {"jp z, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"", Z80_OP16 ,cb},
+ {"call z, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"call 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"adc a, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x08", Z80_OP8 ,0},
+ {"ret nc", Z80_OP8 ,0},
+ {"pop de", Z80_OP8 ,0},
+ {"jp nc, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"out [0x%02x], a", Z80_OP8^Z80_ARG8 ,0},
+ {"call nc, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"push de", Z80_OP8 ,0},
+ {"sub 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x10", Z80_OP8 ,0},
+ {"ret c", Z80_OP8 ,0},
+ {"exx", Z80_OP8 ,0},
+ {"jp c, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"in a, [0x%02x]", Z80_OP8^Z80_ARG8 ,0},
+ {"call c, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"", Z80_OP_UNK^Z80_ENC0 ,dd},
+ {"sbc a, 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x18", Z80_OP8 ,0},
+ {"ret po", Z80_OP8 ,0},
+ {"pop hl", Z80_OP8 ,0},
+ {"jp po, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ex [sp], hl", Z80_OP8 ,0},
+ {"call po, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"push hl", Z80_OP8 ,0},
+ {"and 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x20", Z80_OP8 ,0},
+ {"ret pe", Z80_OP8 ,0},
+ {"jp [hl]", Z80_OP8 ,0},
+ {"jp pe, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ex de, hl", Z80_OP8 ,0},
+ {"call pe, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"", Z80_OP_UNK^Z80_ENC1 ,ed},
+ {"xor 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x28", Z80_OP8 ,0},
+ {"ret p", Z80_OP8 ,0},
+ {"pop af", Z80_OP8 ,0},
+ {"jp p, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"di", Z80_OP8 ,0},
+ {"call p, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"push af", Z80_OP8 ,0},
+ {"or 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x30", Z80_OP8 ,0},
+ {"ret m", Z80_OP8 ,0},
+ {"ld sp, hl", Z80_OP8 ,0},
+ {"jp m, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"ei", Z80_OP8 ,0},
+ {"call m, 0x%04x", Z80_OP8^Z80_ARG16 ,0},
+ {"", Z80_OP_UNK^Z80_ENC0 ,fd},
+ {"cp 0x%02x", Z80_OP8^Z80_ARG8 ,0},
+ {"rst 0x38", Z80_OP8 ,0},
+};
