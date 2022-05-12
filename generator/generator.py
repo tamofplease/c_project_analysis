@@ -48,7 +48,6 @@ def main():
             os.makedirs(os.path.dirname(out), exist_ok=True)
             with open(out, 'w') as f:
                 f.write(content)
-            
 
 
 if __name__ == "__main__":
