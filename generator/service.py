@@ -43,6 +43,9 @@ class FileService:
             results += self.file_repository.get_all_files_from_local(project=project)
         return results
 
+    def fetch_files(self) -> list[FileEntity]:
+        return self.file_repository.get_all_files_from_remote()
+
     def save_to_file_record(self, files: list[FileEntity]) -> None:
         for index, file in enumerate(tqdm(files)):
             file.file_id = index

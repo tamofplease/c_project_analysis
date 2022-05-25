@@ -5,6 +5,7 @@ from os.path import exists
 import glob
 from constant import Constant
 from entity import DefineMacroEntity, FileEntity, ProjectEntity
+from type import FormatType
 
 
 class DBClient(ABC):
@@ -51,12 +52,16 @@ class CSVClient(DBClient):
         target_path = self.get_target_path
         with open(target_path, 'r') as f_out:
             reader = csv.reader(f_out)
-            return [row for row in list(reader)]
+            return [row for row in list(reader)][1:]
 
     @property
     def get_target_path(self):
         """return path to output """
         return Constant.output_root_path + "/" + self.table_name + ".csv"
+    
+    @property
+    def get_current_max_id(self):
+        return self.fetch_all()[-1][0]
 
 
 class LocalFileClient():
@@ -103,14 +108,19 @@ class ExtractorClient():
     def __init__(self):
         pass
 
-    def extract_define_macros(self, path: str) -> list[Tuple[str, str]]:
-        results: set = set()
-        with open(path, 'r', errors='ignore') as open_f:
-            lines = open_f.read().splitlines()
-            results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
-        return [
-            (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
-        ]
+    def extract_define_macros(self, path: str, type: FormatType) -> set[Tuple[str, str]]:
+        try:
+            if type.get_output_root not in path:
+                raise Exception('path must be placed under {} folder'.format(type.get_output_root))
+            results: set = set()
+            with open(path, 'r', errors='ignore') as open_f:
+                lines = open_f.read().splitlines()
+                results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
+            return set([
+                (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
+            ])
+        except FileNotFoundError:
+            return set()
 
 
 project_csv_client = CSVClient("project", ProjectEntity.columns())

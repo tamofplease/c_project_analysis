@@ -74,6 +74,21 @@ class FileRepository():
     def save_information_to_database(self, file: FileEntity):
         self.db_client.insert(file.to_tuple)
 
+    def get_all_files_from_remote(self) -> list[FileEntity]:
+        return list(
+            map(
+                lambda data: FileEntity.from_map(
+                    {
+                        "file_id": data[0],
+                        "name": data[1],
+                        "path": data[2],
+                        "project_id": data[3],
+                    }
+                ),
+                self.db_client.fetch_all()
+            )
+        )
+
 
 class DefineMacroRepository():
     """Implementation of DefineMacroRepository class"""

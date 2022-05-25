@@ -91,3 +91,37 @@ class DefineMacroEntity:
     @property
     def to_tuple(self) -> tuple:
         return (self.define_macro_id, self.key, self.value)
+
+
+@dataclass
+class MacroEntity:
+    macro_id: str
+    key: str
+    value: str
+
+    @classmethod
+    def columns(cls):
+        return ["macro_id", "key", "value"]
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.macro_id, self.key, self.value)
+
+    @classmethod
+    def from_tuple(cls, tpl: tuple):
+        return MacroEntity(tpl[0], tpl[1], tpl[2])
+
+
+@dataclass
+class AvailableMacroEntity:
+    available_macro_id: str
+    macro_id: str
+    file_id: str
+
+    @classmethod
+    def columns(cls):
+        return ["available_macro_id", "key", "value"]
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.available_macro_id, self.macro_id, self.file_id)
