@@ -15,7 +15,7 @@ class FormatType(Enum):
     def initial_command_option(self):
         match self:
             case FormatType.FORMAT:
-                return "-preprocessed -dD -E"
+                return "-fpreprocessed -dD -E"
             case FormatType.PREPROCESS:
                 return "-E"
             case FormatType.WHOLE:

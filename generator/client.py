@@ -110,12 +110,30 @@ class ExtractorClient():
 
     def extract_define_macros(self, path: str, type: FormatType) -> set[Tuple[str, str]]:
         try:
+            if type == FormatType.FORMAT:
+                return self.__extract_defined_macros(path)
             if type.get_output_root not in path:
                 raise Exception('path must be placed under {} folder'.format(type.get_output_root))
             results: set = set()
             with open(path, 'r', errors='ignore') as open_f:
                 lines = open_f.read().splitlines()
                 results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
+            return set([
+                (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
+            ])
+        except FileNotFoundError:
+            return set()
+
+    def __extract_defined_macros(self, path: str) -> set[Tuple[str, str]]:
+        _type = FormatType.FORMAT
+        try:
+            if _type.get_output_root not in path:
+                raise Exception('path must be placed under {} folder'.format(_type.get_output_root))
+            results: set = set()
+            with open(path, 'r', errors='ignore') as open_f:
+                lines = open_f.read().splitlines()
+                results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
+            print(path, results)
             return set([
                 (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
             ])
