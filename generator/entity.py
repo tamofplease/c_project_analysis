@@ -75,6 +75,10 @@ class FileEntity:
     @property
     def to_tuple(self) -> tuple:
         return (self.file_id, self.name, self.path, self.project_id)
+    
+    @classmethod
+    def from_tuple(cls, tpl: tuple[str, str, str, str]):
+        return FileEntity(file_id=tpl[0], name=tpl[1], path=tpl[2], project_id=tpl[3])
 
 
 @dataclass
