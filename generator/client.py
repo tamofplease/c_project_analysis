@@ -4,8 +4,15 @@ import csv
 from os.path import exists
 import glob
 from constant import Constant
-from entity import DefineMacroEntity, FileEntity, ProjectEntity
-from generator.entity import AvailableMacroEntity, MacroEntity, UsedMacroEntity, WholeMacroEntity
+from entity import (
+    ProjectEntity,
+    FileEntity,
+    MacroEntity,
+    WholeMacroEntity,
+    DefineMacroEntity,
+    AvailableMacroEntity,
+    UsedMacroEntity
+)
 from type import FormatType
 
 
