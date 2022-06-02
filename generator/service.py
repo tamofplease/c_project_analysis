@@ -1,13 +1,29 @@
 from tqdm import tqdm
 from repository import (
-    define_macro_repository,
-    file_repository,
     project_repository,
-    DefineMacroRepository,
-    FileRepository,
+    file_repository,
+    macro_repository,
+    whole_macro_repository,
+    define_macro_repository,
+    available_macro_repository,
+    used_macro_repository,
     ProjectRepository,
+    FileRepository,
+    MacroRepository,
+    WholeMacroRepository,
+    DefineMacroRepository,
+    AvailableMacroRepository,
+    UsedMacroRepository,
 )
-from entity import DefineMacroEntity, FileEntity, ProjectEntity
+from entity import (
+    ProjectEntity,
+    FileEntity,
+    MacroEntity,
+    WholeMacroEntity,
+    DefineMacroEntity,
+    AvailableMacroEntity,
+    UsedMacroEntity
+)
 
 
 class ProjectService:
@@ -52,22 +68,44 @@ class FileService:
             self.file_repository.save_information_to_database(file)
 
 
+class MacroService:
+    def __init__(self, repository: MacroRepository):
+        self.macro_repository = repository
+
+    def fetch_all(self) -> list[MacroEntity]:
+        return self.macro_repository.fetch_macros()
+
+
+class WholeMacroService:
+    def __init__(self, repository: WholeMacroRepository):
+        self.whole_macro_repository = repository
+
+    def fetch_all(self) -> list[WholeMacroEntity]:
+        return self.whole_macro_repository.fetch_macros()
+
+
 class DefineMacroService:
-    """service class for define_macro"""
+    def __init__(self, repository: DefineMacroRepository):
+        self.define_macro_repository = repository
 
-    def __init__(self, define_macro_repository: DefineMacroRepository):
-        self.define_macro_repository = define_macro_repository
+    def fetch_all(self) -> list[DefineMacroEntity]:
+        return self.define_macro_repository.fetch_macros()
 
-    def list_up_define_macros(self, files: list[FileEntity]) -> list[DefineMacroEntity]:
-        results: list[DefineMacroEntity] = []
-        for file in tqdm(files):
-            results += self.define_macro_repository.get_define_macros_from_file(file)
-        return results
 
-    def save_to_define_macro_record(self, define_macros: list[DefineMacroEntity]) -> None:
-        for index, define_macro in enumerate(tqdm(define_macros)):
-            define_macro.define_macro_id = index
-            self.define_macro_repository.save_information_to_database(define_macro=define_macro)
+class AvailableMacroService:
+    def __init__(self, repository: AvailableMacroRepository):
+        self.available_macro_repository = repository
+
+    def fetch_all(self) -> list[AvailableMacroEntity]:
+        return self.available_macro_repository.fetch_macros()
+
+
+class UsedMacroService:
+    def __init__(self, repository: UsedMacroRepository):
+        self.used_macro_repository = repository
+
+    def fetch_all(self) -> list[UsedMacroEntity]:
+        return self.used_macro_repository.fetch_macros()
 
 
 project_service = ProjectService(
@@ -78,6 +116,22 @@ file_service = FileService(
     file_repository=file_repository
 )
 
+macro_service = MacroService(
+    repository=macro_repository
+)
+
+whole_macro_service = WholeMacroService(
+    repository=whole_macro_repository
+)
+
 define_macro_service = DefineMacroService(
-    define_macro_repository=define_macro_repository
+    repository=define_macro_repository
+)
+
+available_macro_service = AvailableMacroService(
+    repository=available_macro_repository
+)
+
+used_macro_service = UsedMacroService(
+    repository=used_macro_repository
 )
