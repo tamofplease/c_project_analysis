@@ -173,6 +173,13 @@ class UsedMacroRepository():
             )
         )
 
+    @property
+    def next_id(self) -> int:
+        try:
+            return 1 + int(self.db_client.fetch_all()[-1][0])
+        except Exception:
+            return 1
+
     def save_information_to_database(self, used_macro: UsedMacroEntity):
         self.db_client.insert(used_macro.to_tuple)
 
