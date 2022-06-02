@@ -106,6 +106,11 @@ class UsedMacroService:
 
     def fetch_all(self) -> list[UsedMacroEntity]:
         return self.used_macro_repository.fetch_macros()
+    
+    def save(self, used_macros: list[UsedMacroEntity]) -> None:
+        for index, used_macro in enumerate(tqdm(used_macros)):
+            used_macro.file_id = index
+            self.used_macro_repository.save_information_to_database(used_macro)
 
 
 project_service = ProjectService(

@@ -84,6 +84,10 @@ class FileEntity:
     def from_tuple(cls, tpl: tuple):
         return FileEntity(file_id=tpl[0], name=tpl[1], path=tpl[2], project_id=tpl[3])
 
+    @property
+    def get_preprocessed_path(self) -> str:
+        return self.path.replace('project', 'out/preprocess')
+
 
 @dataclass
 class MacroEntity:

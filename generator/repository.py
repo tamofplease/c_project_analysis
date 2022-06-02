@@ -173,6 +173,9 @@ class UsedMacroRepository():
             )
         )
 
+    def save_information_to_database(self, used_macro: UsedMacroEntity):
+        self.db_client.insert(used_macro.to_tuple)
+
 
 project_repository = ProjectRepository(
     db_client=project_csv_client,
