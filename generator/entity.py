@@ -78,22 +78,6 @@ class FileEntity:
 
 
 @dataclass
-class DefineMacroEntity:
-    """entity of define macro"""
-    define_macro_id: str
-    key: str
-    value: str
-
-    @classmethod
-    def columns(cls):
-        return ["define_macro_id", "key", "value"]
-
-    @property
-    def to_tuple(self) -> tuple:
-        return (self.define_macro_id, self.key, self.value)
-
-
-@dataclass
 class MacroEntity:
     macro_id: str
     key: str
@@ -101,15 +85,38 @@ class MacroEntity:
 
     @classmethod
     def columns(cls):
-        return ["macro_id", "key", "value"]
+        return ["id", "key", "value"]
 
     @property
     def to_tuple(self) -> tuple:
         return (self.macro_id, self.key, self.value)
 
     @classmethod
-    def from_tuple(cls, tpl: tuple):
-        return MacroEntity(tpl[0], tpl[1], tpl[2])
+    def from_tuple(cls, tpl: tuple[str, str, str]):
+        return MacroEntity(macro_id=tpl[0], key=tpl[1], value=tpl[2])
+
+
+@dataclass
+class DefineMacroEntity:
+    define_macro_id: str
+    macro_id: str
+    file_id: str
+
+    @classmethod
+    def columns(cls):
+        return ["id", "macro_id", "file_id"]
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.define_macro_id, self.macro_id, self.file_id)
+
+    @classmethod
+    def from_tuple(cls, tup: tuple[str, str, str]):
+        return DefineMacroEntity(
+            define_macro_id=tup[0],
+            macro_id=tup[1],
+            file_id=tup[2]
+        )
 
 
 @dataclass
@@ -120,8 +127,39 @@ class AvailableMacroEntity:
 
     @classmethod
     def columns(cls):
-        return ["available_macro_id", "key", "value"]
+        return ["id", "macro_id", "file_id"]
 
     @property
     def to_tuple(self) -> tuple:
         return (self.available_macro_id, self.macro_id, self.file_id)
+
+    @classmethod
+    def from_tuple(cls, tup: tuple[str, str, str]):
+        return AvailableMacroEntity(
+            available_macro_id=tup[0],
+            macro_id=tup[1],
+            file_id=tup[2]
+        )
+
+
+@dataclass
+class UsedMacroEntity:
+    used_macro_id: str
+    macro_id: str
+    file_id: str
+
+    @classmethod
+    def columns(cls):
+        return ['id', 'macro_id', 'file_id']
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.used_macro_id, self.macro_id, self.file_id)
+
+    @classmethod
+    def from_tuple(self, tup: tuple[str, str, str]):
+        return UsedMacroEntity(
+            used_macro_id=tup[0],
+            macro_id=tup[1],
+            file_id=tup[2]
+        )
