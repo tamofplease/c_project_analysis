@@ -46,42 +46,40 @@ class UsedMacroGenerator():
             available_macros=available_macros,
             id_macro_mapper=id_macro_mapper
         )
-        res: list[UsedMacroEntity] = []
-        for file in tqdm(files[:10]):
+        res: set[UsedMacroEntity] = set()
+        for file in tqdm(files):
             file_id = file.file_id
             before_path = file.path
             after_path = file.get_preprocessed_path
             available_macro_list = searching_mapper[file_id] if file_id in searching_mapper else []
             empty_key_macro_list = [macro for macro in available_macro_list if macro[1] == '']
             non_empty_key_macro_list = [macro for macro in available_macro_list if macro[1] != '']
-            validate_targets = []
+            validate_targets = set()
             try:
                 with open(before_path, 'r') as before_file:
                     before_lines = [
                         line for line in before_file.readlines()
-                        if len(line.strip(' ')) != 0 and line.strip(' ').startswith('#')
+                        if len(line.strip(' ')) != 0 and (not line.strip(' ').startswith('#'))
                     ]
                     for before_line in before_lines:
                         for (key, value, macro_id) in non_empty_key_macro_list:
                             if key in before_line:
-                                validate_targets.append((key, value, macro_id))
+                                validate_targets.add((key, value, macro_id))
                         for (key, _, macro_id) in empty_key_macro_list:
                             if key in before_line:
-                                res.append(UsedMacroEntity.from_tuple((-1, macro_id, file_id)))
-
+                                res.add((-1, macro_id, file_id))
                 with open(after_path, 'r') as after_file:
                     after_lines = [
                         line for line in after_file.readlines()
-                        if len(line.strip(' ')) != 0 and line.strip(' ').startswith('#')
+                        if len(line.strip(' ')) != 0 and (not line.strip(' ').startswith('#'))
                     ]
                     for after_line in after_lines:
                         for (_, value, macro_id) in validate_targets:
                             if value in after_line:
-                                res.append(UsedMacroEntity.from_tuple((-1, macro_id, file_id)))
-
-            except Exception:
-                pass
-        used_macro_service.save(res)
+                                res.add((-1, macro_id, file_id))
+            except Exception as e:
+                print(e)
+        used_macro_service.save([UsedMacroEntity.from_tuple(re) for re in res])
 
 
 def main():

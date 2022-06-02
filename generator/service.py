@@ -106,7 +106,7 @@ class UsedMacroService:
 
     def fetch_all(self) -> list[UsedMacroEntity]:
         return self.used_macro_repository.fetch_macros()
-    
+
     def save(self, used_macros: list[UsedMacroEntity]) -> None:
         next_id = self.used_macro_repository.next_id
         for index, used_macro in enumerate(tqdm(used_macros)):
