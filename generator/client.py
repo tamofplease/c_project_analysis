@@ -5,6 +5,7 @@ from os.path import exists
 import glob
 from constant import Constant
 from entity import DefineMacroEntity, FileEntity, ProjectEntity
+from generator.entity import AvailableMacroEntity, MacroEntity, UsedMacroEntity, WholeMacroEntity
 from type import FormatType
 
 
@@ -19,7 +20,7 @@ class DBClient(ABC):
     def fetch(self, target_id: str):
         pass
 
-    def fetch_all(self):
+    def fetch_all(self) -> list[list[str]]:
         pass
 
 
@@ -58,7 +59,7 @@ class CSVClient(DBClient):
     def get_target_path(self):
         """return path to output """
         return Constant.output_root_path + "/" + self.table_name + ".csv"
-    
+
     @property
     def get_current_max_id(self):
         return self.fetch_all()[-1][0]
@@ -105,8 +106,9 @@ class LocalFileClient():
 
 
 class ExtractorClient():
-    def __init__(self):
-        pass
+    def __init__(self, macro_client: DBClient, available_macro_client: DBClient):
+        self.macro_client = macro_client
+        self.available_macro_client = available_macro_client
 
     def extract_define_macros(self, path: str, type: FormatType) -> set[Tuple[str, str]]:
         try:
@@ -133,18 +135,37 @@ class ExtractorClient():
             with open(path, 'r', errors='ignore') as open_f:
                 lines = open_f.read().splitlines()
                 results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
-            print(path, results)
-            return set([
+            res = set([
                 (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
             ])
+            return res
+        except FileNotFoundError:
+            return set()
+
+    def __extract_used_macros(self, path: str) -> set[Tuple[str, str]]:
+        _type = FormatType.PREPROCESS
+
+        try:
+            if _type.get_output_root not in path:
+                raise Exception('path must be placed under {} folder'.format(_type.get_output_root))
+            results: set = set()
+            with open(path, 'r', errors='ignore') as open_f:
+                lines = open_f.read().splitlines()
+                results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
+            res = set([
+                (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
+            ])
+            return res
         except FileNotFoundError:
             return set()
 
 
-project_csv_client = CSVClient("project", ProjectEntity.columns())
-file_csv_client = CSVClient("file", FileEntity.columns())
-define_macro_client = CSVClient("define_macro", DefineMacroEntity.columns())
+project_csv_client = CSVClient(ProjectEntity.table_name, ProjectEntity.columns())
+file_csv_client = CSVClient(FileEntity.table_name, FileEntity.columns())
+macro_csv_client = CSVClient(MacroEntity.table_name, MacroEntity.columns())
+whole_macro_csv_client = CSVClient(WholeMacroEntity.table_name, WholeMacroEntity.columns())
+define_macro_csv_client = CSVClient(DefineMacroEntity.table_name, DefineMacroEntity.columns())
+available_macro_csv_client = CSVClient(AvailableMacroEntity.table_name, AvailableMacroEntity.columns())
+used_macro_csv_client = CSVClient(UsedMacroEntity.table_name, UsedMacroEntity.columns())
 
 local_file_client = LocalFileClient()
-
-extractor_client = ExtractorClient()

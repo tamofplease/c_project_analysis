@@ -11,6 +11,8 @@ class ProjectEntity:
     commit_hash: str
     url: str
 
+    table_name = "project"
+
     @classmethod
     def columns(cls) -> list[str]:
         return ["id", "name", "summary", "commit_hash", "url"]
@@ -59,6 +61,8 @@ class FileEntity:
     path: str
     project_id: str
 
+    table_name = "file"
+
     @classmethod
     def columns(cls):
         return ["file_id", "name", "path", "project_id"]
@@ -75,7 +79,7 @@ class FileEntity:
     @property
     def to_tuple(self) -> tuple:
         return (self.file_id, self.name, self.path, self.project_id)
-    
+
     @classmethod
     def from_tuple(cls, tpl: tuple[str, str, str, str]):
         return FileEntity(file_id=tpl[0], name=tpl[1], path=tpl[2], project_id=tpl[3])
@@ -86,6 +90,8 @@ class MacroEntity:
     macro_id: str
     key: str
     value: str
+
+    table_name = "macros"
 
     @classmethod
     def columns(cls):
@@ -101,10 +107,37 @@ class MacroEntity:
 
 
 @dataclass
+class WholeMacroEntity:
+    whole_macro_id: str
+    macro_id: str
+    file_id: str
+
+    table_name = "whole_macros"
+
+    @classmethod
+    def columns(cls):
+        return ["id", "macro_id", "file_id"]
+
+    @property
+    def to_tuple(self) -> tuple:
+        return (self.whole_macro_id, self.macro_id, self.file_id)
+
+    @classmethod
+    def from_tuple(cls, tup: tuple[str, str, str]):
+        return WholeMacroEntity(
+            whole_macro_id=tup[0],
+            macro_id=tup[1],
+            file_id=tup[2]
+        )
+
+
+@dataclass
 class DefineMacroEntity:
     define_macro_id: str
     macro_id: str
     file_id: str
+
+    table_name = "defined_macros"
 
     @classmethod
     def columns(cls):
@@ -129,6 +162,8 @@ class AvailableMacroEntity:
     macro_id: str
     file_id: str
 
+    table_name = "available_macros"
+
     @classmethod
     def columns(cls):
         return ["id", "macro_id", "file_id"]
@@ -151,6 +186,8 @@ class UsedMacroEntity:
     used_macro_id: str
     macro_id: str
     file_id: str
+
+    table_name = "used_macros"
 
     @classmethod
     def columns(cls):
