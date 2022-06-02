@@ -81,7 +81,7 @@ class FileEntity:
         return (self.file_id, self.name, self.path, self.project_id)
 
     @classmethod
-    def from_tuple(cls, tpl: tuple[str, str, str, str]):
+    def from_tuple(cls, tpl: tuple):
         return FileEntity(file_id=tpl[0], name=tpl[1], path=tpl[2], project_id=tpl[3])
 
 
@@ -102,7 +102,7 @@ class MacroEntity:
         return (self.macro_id, self.key, self.value)
 
     @classmethod
-    def from_tuple(cls, tpl: tuple[str, str, str]):
+    def from_tuple(cls, tpl: tuple):
         return MacroEntity(macro_id=tpl[0], key=tpl[1], value=tpl[2])
 
 
@@ -123,7 +123,7 @@ class WholeMacroEntity:
         return (self.whole_macro_id, self.macro_id, self.file_id)
 
     @classmethod
-    def from_tuple(cls, tup: tuple[str, str, str]):
+    def from_tuple(cls, tup: tuple):
         return WholeMacroEntity(
             whole_macro_id=tup[0],
             macro_id=tup[1],
@@ -148,7 +148,7 @@ class DefineMacroEntity:
         return (self.define_macro_id, self.macro_id, self.file_id)
 
     @classmethod
-    def from_tuple(cls, tup: tuple[str, str, str]):
+    def from_tuple(cls, tup: tuple):
         return DefineMacroEntity(
             define_macro_id=tup[0],
             macro_id=tup[1],
@@ -173,7 +173,7 @@ class AvailableMacroEntity:
         return (self.available_macro_id, self.macro_id, self.file_id)
 
     @classmethod
-    def from_tuple(cls, tup: tuple[str, str, str]):
+    def from_tuple(cls, tup: tuple):
         return AvailableMacroEntity(
             available_macro_id=tup[0],
             macro_id=tup[1],
@@ -198,7 +198,7 @@ class UsedMacroEntity:
         return (self.used_macro_id, self.macro_id, self.file_id)
 
     @classmethod
-    def from_tuple(self, tup: tuple[str, str, str]):
+    def from_tuple(self, tup: tuple):
         return UsedMacroEntity(
             used_macro_id=tup[0],
             macro_id=tup[1],

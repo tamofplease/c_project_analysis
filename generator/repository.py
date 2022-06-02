@@ -1,17 +1,26 @@
 from os.path import exists
-from typing import Tuple
 import git
 from client import (
     project_csv_client,
-    define_macro_client,
-    extractor_client,
     file_csv_client,
+    macro_csv_client,
+    whole_macro_csv_client,
+    define_macro_csv_client,
+    available_macro_csv_client,
+    used_macro_csv_client,
     local_file_client,
     DBClient,
-    ExtractorClient,
     LocalFileClient,
 )
-from entity import DefineMacroEntity, ProjectEntity, FileEntity
+from entity import (
+    ProjectEntity,
+    FileEntity,
+    MacroEntity,
+    WholeMacroEntity,
+    DefineMacroEntity,
+    AvailableMacroEntity,
+    UsedMacroEntity
+)
 
 
 class ProjectRepository():
@@ -90,19 +99,79 @@ class FileRepository():
         )
 
 
+class MacroRepository():
+    """Implementation of MacroRepository class"""
+
+    def __init__(self, db_client: DBClient):
+        self.db_client = db_client
+
+    def fetch_macros(self) -> list[MacroEntity]:
+        return list(
+            map(
+                lambda data: MacroEntity.from_tuple(tuple(data)),
+                self.db_client.fetch_all()
+            )
+        )
+
+
+class WholeMacroRepository():
+    """Implementation of WholeMacroRepository class"""
+
+    def __init__(self, db_client: DBClient):
+        self.db_client = db_client
+
+    def fetch_macros(self) -> list[WholeMacroEntity]:
+        return list(
+            map(
+                lambda data: WholeMacroEntity.from_tuple(tuple(data)),
+                self.db_client.fetch_all()
+            )
+        )
+
+
 class DefineMacroRepository():
     """Implementation of DefineMacroRepository class"""
 
-    def __init__(self, db_client: DBClient, extractor_client: ExtractorClient):
+    def __init__(self, db_client: DBClient):
         self.db_client = db_client
-        self.extractor_client = extractor_client
 
-    def get_define_macros_from_file(self, file: FileEntity) -> list[DefineMacroEntity]:
-        results: list[Tuple[str, str]] = extractor_client.extract_define_macros(file.path)
-        return list(map(lambda x: DefineMacroEntity(define_macro_id="0", key=x[0], value=x[1]), results))
+    def fetch_macros(self) -> list[DefineMacroEntity]:
+        return list(
+            map(
+                lambda data: DefineMacroEntity.from_tuple(tuple(data)),
+                self.db_client.fetch_all()
+            )
+        )
 
-    def save_information_to_database(self, define_macro: DefineMacroEntity) -> None:
-        self.db_client.insert(define_macro.to_tuple)
+
+class AvailableMacroRepository():
+    """Implementation of AvailableMacroRepository class"""
+
+    def __init__(self, db_client: DBClient):
+        self.db_client = db_client
+
+    def fetch_macros(self) -> list[AvailableMacroEntity]:
+        return list(
+            map(
+                lambda data: AvailableMacroEntity.from_tuple(tuple(data)),
+                self.db_client.fetch_all()
+            )
+        )
+
+
+class UsedMacroRepository():
+    """Implementation of UsedMacroRepository class"""
+
+    def __init__(self, db_client: DBClient):
+        self.db_client = db_client
+
+    def fetch_macros(self) -> list[UsedMacroEntity]:
+        return list(
+            map(
+                lambda data: UsedMacroEntity.from_tuple(tuple(data)),
+                self.db_client.fetch_all()
+            )
+        )
 
 
 project_repository = ProjectRepository(
@@ -115,7 +184,25 @@ file_repository = FileRepository(
     local_file_client=local_file_client
 )
 
-define_macro_repository = DefineMacroRepository(
-    db_client=define_macro_client,
-    extractor_client=extractor_client
+macro_repository = MacroRepository(
+    db_client=macro_csv_client
 )
+
+whole_macro_repository = WholeMacroRepository(
+    db_client=whole_macro_csv_client
+)
+
+define_macro_repository = DefineMacroRepository(
+    db_client=define_macro_csv_client
+)
+
+available_macro_repository = AvailableMacroRepository(
+    db_client=available_macro_csv_client
+)
+
+used_macro_repository = UsedMacroRepository(
+    db_client=used_macro_csv_client
+)
+
+if __name__ == '__main__':
+    print(len(macro_repository.fetch_macros()))
