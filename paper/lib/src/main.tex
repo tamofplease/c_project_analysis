@@ -1,0 +1,36 @@
+\documentclass[a4paper,titlepage]{jsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[left=1.25in,right=1.25in,top=1in,bottom=1in]{geometry}
+\renewcommand{\baselinestretch}{1.25}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{comment}
+\usepackage{cite}
+
+% https://qiita.com/ta_b0_/items/2619d5927492edbb5b03
+\usepackage{listings}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+\renewcommand{\lstlistingname}{プログラム}
+
+\begin{document}
+
+\input{table/target_project.tex}
+
+\end{document}
