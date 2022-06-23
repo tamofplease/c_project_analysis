@@ -203,5 +203,14 @@ INPUT ../../out/main.aux
 INPUT ../../out/main.aux
 INPUT ../../out/main.aux
 OUTPUT ../../out/main.aux
+INPUT ./table/target_project.tex
+INPUT table/target_project.tex
+INPUT ./table/target_project.tex
+INPUT table/target_project.tex
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 OUTPUT ../../out/main.dvi
 INPUT ../../out/main.aux
