@@ -228,5 +228,9 @@ INPUT ./table/used_macro_cnt.tex
 INPUT table/used_macro_cnt.tex
 INPUT ./table/used_macro_cnt.tex
 INPUT table/used_macro_cnt.tex
+INPUT ./table/available_macro_cnt.tex
+INPUT table/available_macro_cnt.tex
+INPUT ./table/available_macro_cnt.tex
+INPUT table/available_macro_cnt.tex
 OUTPUT ../../out/main.dvi
 INPUT ../../out/main.aux

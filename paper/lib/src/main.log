@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  30 JUN 2022 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  30 JUN 2022 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,26 +709,85 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-]
+] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:44: LaTeX Error: The font size command \normalsize is not defined:
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:2: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:3: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 	\caption
+             {available macro count per files}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:50: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (282.90756pt too wide) in paragraph at lines 1--45
+\OT1/cmr/m/n/10 [h] avail-able macro count per files [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--45
+
+ []
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:46: LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 \end{document}
+l.46 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [2
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:44: Undefined control sequence.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:46: Undefined control sequence.
 <write> ...abel{table:used_macro_cnt}{{}{\thepage 
                                                   }}
-l.44 \end{document}
+l.46 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:46: Undefined control sequence.
+<write> ...table:available_macro_cnt}{{}{\thepage 
+                                                  }}
+l.46 \end{document}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -742,15 +801,15 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2746 strings out of 478994
- 42604 string characters out of 5858185
+ 2751 strings out of 478994
+ 42865 string characters out of 5858185
  360271 words of memory out of 5000000
- 20241 multiletter control sequences out of 15000+600000
+ 20243 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,7n,74p,283b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf (2 pages, 28202 bytes).
+Output written on /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf (2 pages, 29754 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  9 compressed objects within 1 object stream
