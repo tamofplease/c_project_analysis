@@ -7,21 +7,5 @@
     \hline \hline
     なし & Clone後のProject & Original Project \\
     \hline
-    gcc -E & preprocessの実行結果を標準出力 & Preprocessed Project \\
-    \hline
-    gcc -E -dM & 
-    \begin{tabular}{c}
-      preprocess終了時に有効なMacroの\\一覧を出力 
-    \end{tabular}
-    & AvailableMacro Project \\
-    \hline
-    gcc -E -dD &
-    \begin{tabular}{c}
-      preprocess実行時に定義及び定義が\\削除されたMacroを都度出力
-    \end{tabular}
-    & WholeMacros Project \\
-    \hline
-    gcc -fpreprocessed -dD -E & comment outなどの実行に不必要なコードの削除 & CleanUp Project \\
-    \hline
   \end{tabular}
 \end{table}

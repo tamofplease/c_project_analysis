@@ -24,6 +24,7 @@ class TableConverter():
 
     def __build_content_string(self, data: pd.core.frame.DataFrame) -> str:
         def __title_helper(cols: list[str]) -> str:
+            cols = list(map(lambda col: col.split('_')[0] + "".join(ele.title() for ele in col.split('_')[1:]), cols))
             return "\\hline\n\t" + " & ".join(map(str, cols)) + " \\\\ \n\t\\hline \\hline"
 
         def __content_helper(row: list[str]) -> str:
