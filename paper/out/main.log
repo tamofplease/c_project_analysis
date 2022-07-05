@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.1.3)  30 JUN 2022 16:58
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.1.3)  5 JUL 2022 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -183,7 +183,28 @@ LaTeX Font Info:    ... okay on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count268
-(./table/target_project.tex
+(./title.tex
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 10.
+[1
+
+]) (./table/target_project.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -227,16 +248,14 @@ Overfull \hbox (138.90732pt too wide) in paragraph at lines 5--50
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1
-
-] [2] [3] [4] (../../out/main.aux) ) 
+[1] [2] [3] [4] (../../out/main.aux) ) 
 Here is how much of TeX's memory you used:
- 3130 strings out of 479466
- 45980 string characters out of 5870549
- 383239 words of memory out of 5000000
- 20823 multiletter control sequences out of 15000+600000
- 408926 words of font info for 54 fonts, out of 8000000 for 9000
+ 3163 strings out of 479466
+ 46358 string characters out of 5870549
+ 382239 words of memory out of 5000000
+ 20846 multiletter control sequences out of 15000+600000
+ 412931 words of font info for 70 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  68i,9n,74p,283b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ../../out/main.dvi (4 pages, 12920 bytes).
+Output written on ../../out/main.dvi (5 pages, 13548 bytes).
