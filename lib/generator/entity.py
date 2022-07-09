@@ -87,6 +87,10 @@ class FileEntity:
     @property
     def get_preprocessed_path(self) -> str:
         return self.path.replace('project', 'out/preprocess')
+    
+    @property
+    def get_formatted_path(self) -> str:
+        return self.path.replace('project', 'out/format')
 
 
 @dataclass

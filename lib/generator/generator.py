@@ -1,6 +1,7 @@
 import os
 from tqdm import tqdm
 from service import (
+    define_macro_service,
     file_service,
     macro_service,
     available_macro_service,
@@ -9,6 +10,7 @@ from service import (
 from entity import (
     FileEntity,
     MacroEntity,
+    DefineMacroEntity,
     AvailableMacroEntity,
     UsedMacroEntity,
 )
@@ -80,6 +82,33 @@ class UsedMacroGenerator():
             except Exception as e:
                 print(e)
         used_macro_service.save([UsedMacroEntity.from_tuple(re) for re in res])
+
+class DefineMacroGenerator():
+    def __init__(self):
+        self.file_service = file_service
+        self.macro_service = macro_service
+        self.define_macro_service = define_macro_service
+        self.macro_map = {entity.key: entity for entity in macro_service.fetch_all()}
+
+    def extract_macros(self):
+        data = []
+        for file in file_service.fetch_all():
+            with open(file.get_formatted_path, mode='r') as f:
+                for line in f.readlines():
+                    if '#define' in line:
+                        key = line.split(" ")[1]
+                        if self.macro_map in key:
+                            tgt = self.macro_map[key]
+                            data.append(
+                                DefineMacroEntity(
+                                    define_macro_id=len(data) + 1,
+                                    macro_id=tgt.macro_id,
+                                    file_id=tgt.file_id
+                                )
+                            )
+        self.define_macro_service.
+
+
 
 
 def main():

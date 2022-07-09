@@ -1,0 +1,1083 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  7 JUL 2022 16:47
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+
+/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls:14: LaTeX Error: This file needs format `pLaTeX2e'
+               but this is `LaTeX2e'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \NeedsTeXFormat{pLaTeX2e}
+                              
+The current input file will not be processed further,
+because it was written for some other flavor of TeX.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count179
+\Gm@cntv=\count180
+\c@Gm@tempcnt=\count181
+\Gm@bindingoffset=\dimen138
+\Gm@wd@mp=\dimen139
+\Gm@odd@mp=\dimen140
+\Gm@even@mp=\dimen141
+\Gm@layoutwidth=\dimen142
+\Gm@layoutheight=\dimen143
+\Gm@layouthoffset=\dimen144
+\Gm@layoutvoffset=\dimen145
+\Gm@dimlist=\toks18
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 105.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2021/03/18 v5.0j Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (/usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count182
+\lst@gtempboxa=\box47
+\lst@token=\toks19
+\lst@length=\count183
+\lst@currlwidth=\dimen148
+\lst@column=\count184
+\lst@pos=\count185
+\lst@lostspace=\dimen149
+\lst@width=\dimen150
+\lst@newlines=\count186
+\lst@lineno=\count187
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\lst@maxwidth=\dimen151
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count188
+\lst@skipnumbers=\count189
+\lst@framebox=\box48
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count190
+\l__pdf_internal_box=\box49
+) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:32: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=700.50687pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=0.0pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=0.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=0.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count191
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/title.tex
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/title.tex:10: Undefined control sequence.
+l.10 \maketitle
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption
+              {利用したコンパイルoption}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character 利 (U+5229)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利
+                  用したコンパイルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character 用 (U+7528)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用
+                     したコンパイルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character し (U+3057)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用し
+                        たコンパイルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character た (U+305F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用した
+                           コンパイルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character コ (U+30B3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用したコ
+                              ンパイルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character ン (U+30F3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用したコン
+                                 パイルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character パ (U+30D1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用したコンパ
+                                    イルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character イ (U+30A4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用したコンパイ
+                                       ルoption}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character ル (U+30EB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2   \caption{利用したコンパイル
+                                          option}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 出 (U+51FA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出
+                    力内容 & 呼び方 \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 力 (U+529B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出力
+                       内容 & 呼び方 \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 内 (U+5185)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出力内
+                          容 & 呼び方 \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 容 (U+5BB9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出力内容
+                              & 呼び方 \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 呼 (U+547C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出力内容 & 呼
+                                   び方 \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character び (U+3073)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出力内容 & 呼び
+                                      方 \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 方 (U+65B9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6     option & 出力内容 & 呼び方
+                                          \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character な (U+306A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     な
+           し & Clone後のProject & Original Project \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character し (U+3057)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     なし
+               & Clone後のProject & Original Project \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character 後 (U+5F8C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     なし & Clone後
+                         のProject & Original Project \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character の (U+306E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     なし & Clone後の
+                            Project & Original Project \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:11: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex:2: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex:3: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3   \caption
+              {Target projects}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex:56: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (448.7525pt too wide) in paragraph at lines 2--39
+[]\OT1/cmr/m/n/10 [h] Tar-get projects [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--39
+
+ []
+
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex:2: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex:3: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 	\caption
+             {Target project files}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex:22: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:2: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:3: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     \caption
+                {C file loc}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:23: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:3: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     \caption
+                {s per files}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:50: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (181.16283pt too wide) in paragraph at lines 1--45
+\OT1/cmr/m/n/10 [h] s per files [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--45
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
+<write> ...abel{table:compile_option}{{}{\thepage 
+                                                  }}
+l.45 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
+<write> ...ble:target_projects_table}{{}{\thepage 
+                                                  }}
+l.45 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
+<write> ...rget_projects_files_table}{{}{\thepage 
+                                                  }}
+l.45 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
+<write> \newlabel{table:c_file_loc}{{}{\thepage 
+                                                }}
+l.45 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:2: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:3: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 	\caption
+             {available macro count per files}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:50: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (282.90756pt too wide) in paragraph at lines 1--47
+\OT1/cmr/m/n/10 [h] avail-able macro count per files [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--47
+
+ []
+
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {defined macro per file info}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (136.77945pt too wide) in paragraph at lines 1--49
+[]\OT1/cmr/m/n/10 [h] de-fined macro per file info [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--49
+
+ []
+
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {available macro per file info}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (143.44615pt too wide) in paragraph at lines 1--51
+[]\OT1/cmr/m/n/10 [h] avail-able macro per file info [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--51
+
+ []
+
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {whole macro per file info}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (130.66832pt too wide) in paragraph at lines 1--53
+[]\OT1/cmr/m/n/10 [h] whole macro per file info [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--53
+
+ []
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...abel{table:used_macro_cnt}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...table:available_macro_cnt}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...{table:defined_macro_info}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...able:available_macro_info}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {used macro per file info}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (79.05704pt too wide) in paragraph at lines 1--55
+[]\OT1/cmr/m/n/10 [h] used macro per file info [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--55
+
+ []
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+<write> ...el{table:whole_macro_info}{{}{\thepage 
+                                                  }}
+l.56 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+<write> ...bel{table:used_macro_info}{{}{\thepage 
+                                                  }}
+l.56 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2778 strings out of 478994
+ 44067 string characters out of 5858185
+ 369271 words of memory out of 5000000
+ 20256 multiletter control sequences out of 15000+600000
+ 403430 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,7n,74p,283b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf (3 pages, 31300 bytes).
+PDF statistics:
+ 18 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

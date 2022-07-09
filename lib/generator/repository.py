@@ -143,6 +143,16 @@ class DefineMacroRepository():
             )
         )
 
+    @property
+    def next_id(self) -> int:
+        try:
+            return 1 + int(self.db_client.fetch_all()[-1][0])
+        except Exception:
+            return 1
+
+    def save_information_to_database(self, define_macro: DefineMacroEntity):
+        self.db_client.insert(define_macro.to_tuple)
+
 
 class AvailableMacroRepository():
     """Implementation of AvailableMacroRepository class"""
