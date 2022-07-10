@@ -91,10 +91,11 @@ class DefineMacroService:
     def fetch_all(self) -> list[DefineMacroEntity]:
         return self.define_macro_repository.fetch_macros()
 
-    def save(self, define_macros: list[UsedMacroEntity]) -> None:
+    def save(self, define_macros: list[DefineMacroEntity]) -> None:
         next_id = self.define_macro_repository.next_id
+        print(next_id)
         for index, define_macro in enumerate(tqdm(define_macros)):
-            define_macro.used_macro_id = index + next_id
+            define_macro.define_macro_id = index + next_id
             self.define_macro_repository.save_information_to_database(define_macro)
 
 

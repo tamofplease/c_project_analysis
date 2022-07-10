@@ -83,6 +83,7 @@ class UsedMacroGenerator():
                 print(e)
         used_macro_service.save([UsedMacroEntity.from_tuple(re) for re in res])
 
+
 class DefineMacroGenerator():
     def __init__(self):
         self.file_service = file_service
@@ -106,9 +107,7 @@ class DefineMacroGenerator():
                                     file_id=tgt.file_id
                                 )
                             )
-        self.define_macro_service.
-
-
+        self.define_macro_service.save([DefineMacroEntity.from_tuple(d) for d in data])
 
 
 def main():
