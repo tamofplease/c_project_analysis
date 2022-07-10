@@ -93,26 +93,29 @@ class DefineMacroGenerator():
 
     def extract_macros(self):
         data = []
-        for file in file_service.fetch_all():
+        files: list[FileEntity] = [
+            file for file in self.file_service.fetch_all() if os.path.isfile(file.get_preprocessed_path)
+        ]
+        for file in files:
             with open(file.get_formatted_path, mode='r') as f:
                 for line in f.readlines():
                     if '#define' in line:
                         key = line.split(" ")[1]
-                        if self.macro_map in key:
+                        if key in self.macro_map:
                             tgt = self.macro_map[key]
                             data.append(
                                 DefineMacroEntity(
                                     define_macro_id=len(data) + 1,
                                     macro_id=tgt.macro_id,
-                                    file_id=tgt.file_id
+                                    file_id=file.file_id
                                 )
                             )
-        self.define_macro_service.save([DefineMacroEntity.from_tuple(d) for d in data])
+        self.define_macro_service.save(data)
 
 
 def main():
-    generator = UsedMacroGenerator()
-    generator.generate_used_macro()
+    generator = DefineMacroGenerator()
+    generator.extract_macros()
 
 
 if __name__ == "__main__":
