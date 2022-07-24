@@ -208,10 +208,6 @@ INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex
 OUTPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
-INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
-INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
-INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
@@ -229,4 +225,6 @@ INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex
 INPUT /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.aux
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  7 JUL 2022 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  21 JUL 2022 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -570,38 +570,38 @@ or  <return>  to continue without it.
 
 ) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:2: LaTeX Error: Environment table undefined.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 \begin{table}
+l.1 \begin{table}
                  [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:3: LaTeX Error: \caption outside float.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3     \caption
-                {C file loc}
+l.2 	\caption
+             {C file loc}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:23: LaTeX Error: \begin{document} ended by \end{table}.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 \end{table}
+l.21 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -609,46 +609,389 @@ or  <return>  to continue without it.
 
 ) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: LaTeX Error: Environment table undefined.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 \begin{table}
+l.1 \begin{table}
                  [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:3: LaTeX Error: \caption outside float.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3     \caption
-                {s per files}
+l.2 	\caption
+             {used_macro_count per files}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: Missing $ inserted.
+<inserted text> 
+                $
+l.2 	\caption{used_
+                   macro_count per files}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:50: LaTeX Error: \begin{document} ended by \end{table}.
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: Extra }, or forgotten $.
+l.2 	\caption{used_macro_count per files}
+                                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
+<inserted text> 
+                $
+l.20 		1568 & 160 & 160 & dwarf_
+                                process.c & project/radare2/libr/anal/dwarf_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.20 		1568 & 160 & 160 & dwarf_process.c &
+                                            project/radare2/libr/anal/dwarf_...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
+<inserted text> 
+                $
+l.20 		1568 & 160 & 160 & dwarf_process.c &
+                                            project/radare2/libr/anal/dwarf_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing } inserted.
+<inserted text> 
+                }
+l.20 		1568 & 160 & 160 & dwarf_process.c &
+                                            project/radare2/libr/anal/dwarf_...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
+<inserted text> 
+                $
+l.20 ...ocess.c & project/radare2/libr/anal/dwarf_
+                                                  process.c & 2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.20 ...roject/radare2/libr/anal/dwarf_process.c &
+                                                   2 \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
+<inserted text> 
+                $
+l.20 ...roject/radare2/libr/anal/dwarf_process.c &
+                                                   2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing } inserted.
+<inserted text> 
+                }
+l.20 ...roject/radare2/libr/anal/dwarf_process.c &
+                                                   2 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
+<inserted text> 
+                $
+l.22 		2268 & 134 & 134 & ngx_
+                              http_upstream.c & project/nginx/src/http/ngx_h...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.22 		2268 & 134 & 134 & ngx_http_upstream.c &
+                                                project/nginx/src/http/ngx_h...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
+<inserted text> 
+                $
+l.22 		2268 & 134 & 134 & ngx_http_upstream.c &
+                                                project/nginx/src/http/ngx_h...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 		2268 & 134 & 134 & ngx_http_upstream.c &
+                                                project/nginx/src/http/ngx_h...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
+<inserted text> 
+                $
+l.22 ...p_upstream.c & project/nginx/src/http/ngx_
+                                                  http_upstream.c & 3 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.22 ...oject/nginx/src/http/ngx_http_upstream.c &
+                                                   3 \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
+<inserted text> 
+                $
+l.22 ...oject/nginx/src/http/ngx_http_upstream.c &
+                                                   3 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing } inserted.
+<inserted text> 
+                }
+l.22 ...oject/nginx/src/http/ngx_http_upstream.c &
+                                                   3 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26 		2267 & 132 & 132 & ngx_
+                              http_core_module.c & project/nginx/src/http/ng...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.26 		2267 & 132 & 132 & ngx_http_core_module.c &
+                                                   project/nginx/src/http/ng...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26 		2267 & 132 & 132 & ngx_http_core_module.c &
+                                                   project/nginx/src/http/ng...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing } inserted.
+<inserted text> 
+                }
+l.26 		2267 & 132 & 132 & ngx_http_core_module.c &
+                                                   project/nginx/src/http/ng...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26 ...ore_module.c & project/nginx/src/http/ngx_
+                                                  http_core_module.c & 3 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.26 ...ct/nginx/src/http/ngx_http_core_module.c &
+                                                   3 \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26 ...ct/nginx/src/http/ngx_http_core_module.c &
+                                                   3 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing } inserted.
+<inserted text> 
+                }
+l.26 ...ct/nginx/src/http/ngx_http_core_module.c &
+                                                   3 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 		822 & 95 & 95 & core_
+                            java.c & project/radare2/libr/core/p/core_java.c...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.42 		822 & 95 & 95 & core_java.c &
+                                     project/radare2/libr/core/p/core_java.c...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 		822 & 95 & 95 & core_java.c &
+                                     project/radare2/libr/core/p/core_java.c...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing } inserted.
+<inserted text> 
+                }
+l.42 		822 & 95 & 95 & core_java.c &
+                                     project/radare2/libr/core/p/core_java.c...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 ...java.c & project/radare2/libr/core/p/core_
+                                                  java.c & 2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.42 ... project/radare2/libr/core/p/core_java.c &
+                                                   2 \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 ... project/radare2/libr/core/p/core_java.c &
+                                                   2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing } inserted.
+<inserted text> 
+                }
+l.42 ... project/radare2/libr/core/p/core_java.c &
+                                                   2 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:49: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50 \end{table}
+l.49 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:49: Missing $ inserted.
+<inserted text> 
+                $
+l.49 \end{table}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:49: Missing } inserted.
+<inserted text> 
+                }
+l.49 \end{table}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 )
-Overfull \hbox (181.16283pt too wide) in paragraph at lines 1--45
-\OT1/cmr/m/n/10 [h] s per files [][]
+Overfull \hbox (202.50323pt too wide) in paragraph at lines 1--45
+[]\OT1/cmr/m/n/10 [h] used$[]\OML/cmm/m/it/10 acro[]ountperfiles[][]$
  []
 
 
@@ -719,56 +1062,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:2: LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \begin{table}
-                 [h]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:3: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 	\caption
-             {available macro count per files}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_cnt.tex:50: LaTeX Error: \begin{document} ended by \end{table}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{table}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
-Overfull \hbox (282.90756pt too wide) in paragraph at lines 1--47
-\OT1/cmr/m/n/10 [h] avail-able macro count per files [][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--47
-
- []
-
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
+] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
 
 /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:1: LaTeX Error: Environment table undefined.
 
@@ -808,7 +1102,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-Overfull \hbox (136.77945pt too wide) in paragraph at lines 1--49
+Overfull \hbox (50.80711pt too wide) in paragraph at lines 1--49
 []\OT1/cmr/m/n/10 [h] de-fined macro per file info [][]
  []
 
@@ -857,7 +1151,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-Overfull \hbox (143.44615pt too wide) in paragraph at lines 1--51
+Overfull \hbox (97.47394pt too wide) in paragraph at lines 1--51
 []\OT1/cmr/m/n/10 [h] avail-able macro per file info [][]
  []
 
@@ -906,7 +1200,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-Overfull \hbox (130.66832pt too wide) in paragraph at lines 1--53
+Overfull \hbox (84.6961pt too wide) in paragraph at lines 1--53
 []\OT1/cmr/m/n/10 [h] whole macro per file info [][]
  []
 
@@ -915,66 +1209,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--53
 
  []
 
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[2
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
-<write> ...abel{table:used_macro_cnt}{{}{\thepage 
-                                                  }}
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
-<write> ...table:available_macro_cnt}{{}{\thepage 
-                                                  }}
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
-<write> ...{table:defined_macro_info}{{}{\thepage 
-                                                  }}
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
-<write> ...able:available_macro_info}{{}{\thepage 
-                                                  }}
-l.53 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex
+(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex
 
 /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:1: LaTeX Error: Environment table undefined.
 
@@ -1014,7 +1249,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-Overfull \hbox (79.05704pt too wide) in paragraph at lines 1--55
+Overfull \hbox (27.27924pt too wide) in paragraph at lines 1--55
 []\OT1/cmr/m/n/10 [h] used macro per file info [][]
  []
 
@@ -1037,7 +1272,40 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3
+[2
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+<write> ...abel{table:used_macro_cnt}{{}{\thepage 
+                                                  }}
+l.56 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+<write> ...{table:defined_macro_info}{{}{\thepage 
+                                                  }}
+l.56 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+<write> ...able:available_macro_info}{{}{\thepage 
+                                                  }}
+l.56 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
 <write> ...el{table:whole_macro_info}{{}{\thepage 
                                                   }}
@@ -1066,18 +1334,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2778 strings out of 478994
- 44067 string characters out of 5858185
- 369271 words of memory out of 5000000
- 20256 multiletter control sequences out of 15000+600000
+ 2772 strings out of 478994
+ 43788 string characters out of 5858185
+ 362271 words of memory out of 5000000
+ 20253 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,7n,74p,283b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf (3 pages, 31300 bytes).
+ 68i,8n,74p,283b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf (2 pages, 48094 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 23 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

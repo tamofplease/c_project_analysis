@@ -245,14 +245,6 @@ INPUT ./table/c_file_loc.tex
 INPUT table/c_file_loc.tex
 INPUT ./table/c_file_loc.tex
 INPUT table/c_file_loc.tex
-INPUT ./table/used_macro_cnt.tex
-INPUT table/used_macro_cnt.tex
-INPUT ./table/used_macro_cnt.tex
-INPUT table/used_macro_cnt.tex
-INPUT ./table/available_macro_cnt.tex
-INPUT table/available_macro_cnt.tex
-INPUT ./table/available_macro_cnt.tex
-INPUT table/available_macro_cnt.tex
 INPUT ./table/defined_macro_info.tex
 INPUT table/defined_macro_info.tex
 INPUT ./table/defined_macro_info.tex
@@ -269,4 +261,12 @@ INPUT ./table/used_macro_info.tex
 INPUT table/used_macro_info.tex
 INPUT ./table/used_macro_info.tex
 INPUT table/used_macro_info.tex
+INPUT ./table/frequency_of_macro_use_file_in_each_project.tex
+INPUT table/frequency_of_macro_use_file_in_each_project.tex
+INPUT ./table/frequency_of_macro_use_file_in_each_project.tex
+INPUT table/frequency_of_macro_use_file_in_each_project.tex
+INPUT ./table/appearance_of_define_directive_in_each_project.tex
+INPUT table/appearance_of_define_directive_in_each_project.tex
+INPUT ./table/appearance_of_define_directive_in_each_project.tex
+INPUT table/appearance_of_define_directive_in_each_project.tex
 INPUT ../../out/main.aux
