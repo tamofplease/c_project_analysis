@@ -10,7 +10,7 @@ pyvenv.cfg
 pip-selfcheck.json
 constant.py
 
-/**/*.ipynb
+# /**/*.ipynb
 /**/__pycache__/**
 
 project/
