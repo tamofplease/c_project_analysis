@@ -1,10 +1,11 @@
 from dataclasses import dataclass
-from constant import Constant
+from generator.constant import Constant
 
 
 @dataclass
 class ProjectEntity:
     """Entity of Project record"""
+
     project_id: str
     name: str
     summary: str
@@ -19,13 +20,13 @@ class ProjectEntity:
 
     @classmethod
     def from_list(cls, data: list[str]):
-        assert(len(data) == 5)
+        assert len(data) == 5
         return cls(
             project_id=data[0],
             name=data[1],
             summary=data[2],
             commit_hash=data[3],
-            url=data[4]
+            url=data[4],
         )
 
     @classmethod
@@ -35,7 +36,7 @@ class ProjectEntity:
             name=data["name"],
             summary=data["summary"],
             commit_hash=data["commit_hash"],
-            url=data["url"]
+            url=data["url"],
         )
 
     @property
@@ -56,6 +57,7 @@ class ProjectEntity:
 @dataclass
 class FileEntity:
     """Entity of File record"""
+
     file_id: str
     name: str
     path: str
@@ -73,7 +75,7 @@ class FileEntity:
             file_id=data["file_id"],
             name=data["name"],
             path=data["path"],
-            project_id=data["project_id"]
+            project_id=data["project_id"],
         )
 
     @property
@@ -86,11 +88,11 @@ class FileEntity:
 
     @property
     def get_preprocessed_path(self) -> str:
-        return self.path.replace('project', 'out/preprocess')
-    
+        return self.path.replace("project", "out/preprocess")
+
     @property
     def get_formatted_path(self) -> str:
-        return self.path.replace('project', 'out/format')
+        return self.path.replace("project", "out/format")
 
 
 @dataclass
@@ -132,11 +134,7 @@ class WholeMacroEntity:
 
     @classmethod
     def from_tuple(cls, tup: tuple):
-        return WholeMacroEntity(
-            whole_macro_id=tup[0],
-            macro_id=tup[1],
-            file_id=tup[2]
-        )
+        return WholeMacroEntity(whole_macro_id=tup[0], macro_id=tup[1], file_id=tup[2])
 
 
 @dataclass
@@ -158,9 +156,7 @@ class DefineMacroEntity:
     @classmethod
     def from_tuple(cls, tup: tuple):
         return DefineMacroEntity(
-            define_macro_id=tup[0],
-            macro_id=tup[1],
-            file_id=tup[2]
+            define_macro_id=tup[0], macro_id=tup[1], file_id=tup[2]
         )
 
 
@@ -183,9 +179,7 @@ class AvailableMacroEntity:
     @classmethod
     def from_tuple(cls, tup: tuple):
         return AvailableMacroEntity(
-            available_macro_id=tup[0],
-            macro_id=tup[1],
-            file_id=tup[2]
+            available_macro_id=tup[0], macro_id=tup[1], file_id=tup[2]
         )
 
 
@@ -199,7 +193,7 @@ class UsedMacroEntity:
 
     @classmethod
     def columns(cls):
-        return ['id', 'macro_id', 'file_id']
+        return ["id", "macro_id", "file_id"]
 
     @property
     def to_tuple(self) -> tuple:
@@ -207,8 +201,4 @@ class UsedMacroEntity:
 
     @classmethod
     def from_tuple(self, tup: tuple):
-        return UsedMacroEntity(
-            used_macro_id=tup[0],
-            macro_id=tup[1],
-            file_id=tup[2]
-        )
+        return UsedMacroEntity(used_macro_id=tup[0], macro_id=tup[1], file_id=tup[2])

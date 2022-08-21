@@ -3,17 +3,17 @@ from abc import ABC
 import csv
 from os.path import exists
 import glob
-from constant import Constant
-from entity import (
+from generator.constant import Constant
+from generator.entity import (
     ProjectEntity,
     FileEntity,
     MacroEntity,
     WholeMacroEntity,
     DefineMacroEntity,
     AvailableMacroEntity,
-    UsedMacroEntity
+    UsedMacroEntity,
 )
-from type import FormatType
+from generator.type import FormatType
 
 
 class DBClient(ABC):
@@ -22,7 +22,7 @@ class DBClient(ABC):
         self.columns: list[str] = columns_name
 
     def insert(self, data: Tuple) -> None:
-        assert(len(self.columns) == len(list(data)))
+        assert len(self.columns) == len(list(data))
 
     def fetch(self, target_id: str):
         pass
@@ -40,16 +40,16 @@ class CSVClient(DBClient):
         target_path = self.get_target_path
 
         if not exists(target_path):
-            with open(target_path, 'w') as output_file:
+            with open(target_path, "w") as output_file:
                 writer = csv.writer(output_file)
                 writer.writerow(self.columns)
-        with open(target_path, 'a') as f_out:
+        with open(target_path, "a") as f_out:
             writer = csv.writer(f_out)
             writer.writerow(data)
 
     def fetch(self, target_id: str) -> list[str]:
         target_path = self.get_target_path
-        with open(target_path, 'r') as f_out:
+        with open(target_path, "r") as f_out:
             reader = csv.reader(f_out)
             for row in reader:
                 if row[0] == target_id:
@@ -58,13 +58,13 @@ class CSVClient(DBClient):
 
     def fetch_all(self) -> list[list[str]]:
         target_path = self.get_target_path
-        with open(target_path, 'r') as f_out:
+        with open(target_path, "r") as f_out:
             reader = csv.reader(f_out)
             return [row for row in list(reader)][1:]
 
     @property
     def get_target_path(self):
-        """return path to output """
+        """return path to output"""
         return Constant.output_root_path + "/" + self.table_name + ".csv"
 
     @property
@@ -72,7 +72,7 @@ class CSVClient(DBClient):
         return self.fetch_all()[-1][0]
 
 
-class LocalFileClient():
+class LocalFileClient:
     def __init__(self):
         pass
 
@@ -94,42 +94,60 @@ class LocalFileClient():
         return True
 
     def exclude_submodules(self, paths: list[str]) -> list[str]:
-        dirs = set(['/'.join(path.split('/')[:-1]) for path in paths])
+        dirs = set(["/".join(path.split("/")[:-1]) for path in paths])
         # submoduleを除外したい
         for dir in dirs:
             files = glob.glob(dir)
-            if 'git' in files:
+            if "git" in files:
                 pass
         return []
 
     def file_paths(self, project_path) -> list[str]:
         c_files = list(glob.glob(project_path + "/**/*.c", recursive=True))
         h_files = list(glob.glob(project_path + "/**/*.h", recursive=True))
-        return c_files + [h_file for h_file in h_files if self.__check_is_related_with_c(h_file)]
+        return c_files + [
+            h_file for h_file in h_files if self.__check_is_related_with_c(h_file)
+        ]
 
     def read_content(self, file_path) -> list[str]:
         f = open(file_path, "r")
         return list(f.readlines())
 
 
-class ExtractorClient():
+class ExtractorClient:
     def __init__(self, macro_client: DBClient, available_macro_client: DBClient):
         self.macro_client = macro_client
         self.available_macro_client = available_macro_client
 
-    def extract_define_macros(self, path: str, type: FormatType) -> set[Tuple[str, str]]:
+    def extract_define_macros(
+        self, path: str, type: FormatType
+    ) -> set[Tuple[str, str]]:
         try:
             if type == FormatType.FORMAT:
                 return self.__extract_defined_macros(path)
             if type.get_output_root not in path:
-                raise Exception('path must be placed under {} folder'.format(type.get_output_root))
+                raise Exception(
+                    "path must be placed under {} folder".format(type.get_output_root)
+                )
             results: set = set()
-            with open(path, 'r', errors='ignore') as open_f:
+            with open(path, "r", errors="ignore") as open_f:
                 lines = open_f.read().splitlines()
-                results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
-            return set([
-                (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
-            ])
+                results = results.union(
+                    {
+                        line.replace("\t", " ").strip()
+                        for line in lines
+                        if "#define" in line
+                    }
+                )
+            return set(
+                [
+                    (
+                        result.split(" ")[1].strip(),
+                        " ".join(result.split(" ")[2:]).strip(),
+                    )
+                    for result in results
+                ]
+            )
         except FileNotFoundError:
             return set()
 
@@ -137,14 +155,28 @@ class ExtractorClient():
         _type = FormatType.FORMAT
         try:
             if _type.get_output_root not in path:
-                raise Exception('path must be placed under {} folder'.format(_type.get_output_root))
+                raise Exception(
+                    "path must be placed under {} folder".format(_type.get_output_root)
+                )
             results: set = set()
-            with open(path, 'r', errors='ignore') as open_f:
+            with open(path, "r", errors="ignore") as open_f:
                 lines = open_f.read().splitlines()
-                results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
-            res = set([
-                (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
-            ])
+                results = results.union(
+                    {
+                        line.replace("\t", " ").strip()
+                        for line in lines
+                        if "#define" in line
+                    }
+                )
+            res = set(
+                [
+                    (
+                        result.split(" ")[1].strip(),
+                        " ".join(result.split(" ")[2:]).strip(),
+                    )
+                    for result in results
+                ]
+            )
             return res
         except FileNotFoundError:
             return set()
@@ -154,14 +186,28 @@ class ExtractorClient():
 
         try:
             if _type.get_output_root not in path:
-                raise Exception('path must be placed under {} folder'.format(_type.get_output_root))
+                raise Exception(
+                    "path must be placed under {} folder".format(_type.get_output_root)
+                )
             results: set = set()
-            with open(path, 'r', errors='ignore') as open_f:
+            with open(path, "r", errors="ignore") as open_f:
                 lines = open_f.read().splitlines()
-                results = results.union({line.replace("\t", " ").strip() for line in lines if '#define' in line})
-            res = set([
-                (result.split(' ')[1].strip(), ' '.join(result.split(' ')[2:]).strip()) for result in results
-            ])
+                results = results.union(
+                    {
+                        line.replace("\t", " ").strip()
+                        for line in lines
+                        if "#define" in line
+                    }
+                )
+            res = set(
+                [
+                    (
+                        result.split(" ")[1].strip(),
+                        " ".join(result.split(" ")[2:]).strip(),
+                    )
+                    for result in results
+                ]
+            )
             return res
         except FileNotFoundError:
             return set()
@@ -170,9 +216,15 @@ class ExtractorClient():
 project_csv_client = CSVClient(ProjectEntity.table_name, ProjectEntity.columns())
 file_csv_client = CSVClient(FileEntity.table_name, FileEntity.columns())
 macro_csv_client = CSVClient(MacroEntity.table_name, MacroEntity.columns())
-whole_macro_csv_client = CSVClient(WholeMacroEntity.table_name, WholeMacroEntity.columns())
-define_macro_csv_client = CSVClient(DefineMacroEntity.table_name, DefineMacroEntity.columns())
-available_macro_csv_client = CSVClient(AvailableMacroEntity.table_name, AvailableMacroEntity.columns())
+whole_macro_csv_client = CSVClient(
+    WholeMacroEntity.table_name, WholeMacroEntity.columns()
+)
+define_macro_csv_client = CSVClient(
+    DefineMacroEntity.table_name, DefineMacroEntity.columns()
+)
+available_macro_csv_client = CSVClient(
+    AvailableMacroEntity.table_name, AvailableMacroEntity.columns()
+)
 used_macro_csv_client = CSVClient(UsedMacroEntity.table_name, UsedMacroEntity.columns())
 
 local_file_client = LocalFileClient()

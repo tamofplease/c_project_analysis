@@ -1,10 +1,10 @@
 # Fdb version 3
-["dvipdf"] 1658823531 "out/main.dvi" "out/main.pdf" "out/main" 1658823531
-  "out/main.dvi" 1658823531 11608 044f06601495d0987c6631b8c5f3a86d "latex"
+["dvipdf"] 0 "out/main.dvi" "out/main.pdf" "out/main" 0
+  "out/main.dvi" 0 -1 0 "latex"
   (generated)
   "out/main.pdf"
-["latex"] 1658823530 "/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex" "out/main.dvi" "main" 1658823531
-  "/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex" 1658823530 1339 c9cb4c6ca26d65a3f0b267af1f22b530 ""
+["latex"] 1659350515 "/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex" "out/main.dvi" "main" 1659350515
+  "/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex" 1658823562 1339 c9cb4c6ca26d65a3f0b267af1f22b530 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1463434352 856 39c171483fe1bb7d0e1368980c0c205b ""
@@ -41,18 +41,10 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/eptex/platex.fmt" 1658820432 2827149 482dd4cae670541b650b00f8dcec194a ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.tex" 1658823530 1339 c9cb4c6ca26d65a3f0b267af1f22b530 ""
-  "out/main.aux" 1658823531 1816 36d67787204798970a05639da3729bf5 "latex"
-  "table/appearance_of_define_directive_in_each_project.tex" 1658677788 511 28ecf5191ca6130b768192ee2e10d5e0 ""
-  "table/available_macro_info.tex" 1658677788 720 00bc662829a25cece06da469f24d6150 ""
-  "table/c_file_loc.tex" 1658677788 504 221281c5a7a084daebaf6e0ed1e2c2a7 ""
-  "table/defined_macro_info.tex" 1658677788 662 60ec04fd0c49e481cd77a5cffc723f89 ""
-  "table/frequency_of_macro_use_file_in_each_project.tex" 1658677788 508 1b0516f6dffd1e40e6499cf5905ab3d0 ""
+  "main.tex" 1658823562 1339 c9cb4c6ca26d65a3f0b267af1f22b530 ""
+  "out/main.aux" 1659350515 32 3985256e7290058c681f74d7a3565a19 "latex"
   "table/target_project.tex" 1658677788 280 f31f9510f0b1041e1fffd418ac6e7da9 ""
-  "table/target_projects_files_table.tex" 1658677788 586 c065d479ca2525bbc96ebcada57a22fe ""
-  "table/target_projects_table.tex" 1658677788 3722 1ea4a4245fecfec9eea3e05f8a07bf6b ""
-  "table/used_macro_info.tex" 1658677788 638 d1ded2c33927c252b90729789dbcea3a ""
-  "table/whole_macro_info.tex" 1658677788 711 f3d424e4f1ad917f38202f1ccfb7b3ec ""
+  "table/target_projects_table.tex" 1659350513 3623 ef87ad063e7e2a7a286a6b4a234b8e26 ""
   "title.tex" 1658677788 434 df8c9a83b33d2982ea91c286ede1b567 ""
   (generated)
   "out/main.aux"

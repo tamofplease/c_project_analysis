@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from repository import (
+from generator.repository import (
     project_repository,
     file_repository,
     macro_repository,
@@ -15,21 +15,21 @@ from repository import (
     AvailableMacroRepository,
     UsedMacroRepository,
 )
-from entity import (
+from generator.entity import (
     ProjectEntity,
     FileEntity,
     MacroEntity,
     WholeMacroEntity,
     DefineMacroEntity,
     AvailableMacroEntity,
-    UsedMacroEntity
+    UsedMacroEntity,
 )
 
 
 class ProjectService:
     """service class for project model"""
 
-    def __init__(self,  project_repository: ProjectRepository):
+    def __init__(self, project_repository: ProjectRepository):
         self.repository = project_repository
 
     def list_up_projects(self) -> list[ProjectEntity]:
@@ -120,30 +120,16 @@ class UsedMacroService:
             self.used_macro_repository.save_information_to_database(used_macro)
 
 
-project_service = ProjectService(
-    project_repository=project_repository
-)
+project_service = ProjectService(project_repository=project_repository)
 
-file_service = FileService(
-    file_repository=file_repository
-)
+file_service = FileService(file_repository=file_repository)
 
-macro_service = MacroService(
-    repository=macro_repository
-)
+macro_service = MacroService(repository=macro_repository)
 
-whole_macro_service = WholeMacroService(
-    repository=whole_macro_repository
-)
+whole_macro_service = WholeMacroService(repository=whole_macro_repository)
 
-define_macro_service = DefineMacroService(
-    repository=define_macro_repository
-)
+define_macro_service = DefineMacroService(repository=define_macro_repository)
 
-available_macro_service = AvailableMacroService(
-    repository=available_macro_repository
-)
+available_macro_service = AvailableMacroService(repository=available_macro_repository)
 
-used_macro_service = UsedMacroService(
-    repository=used_macro_repository
-)
+used_macro_service = UsedMacroService(repository=used_macro_repository)
