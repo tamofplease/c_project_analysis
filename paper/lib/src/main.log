@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.3)  21 JUL 2022 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.26)  2 SEP 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+**/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex
+(/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 
-/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls:14: LaTeX Error: This file needs format `pLaTeX2e'
+/usr/local/texlive/2022/texmf-dist/tex/platex/jsclasses/jsarticle.cls:14: LaTeX Error: This file needs format `pLaTeX2e'
                but this is `LaTeX2e'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -22,23 +22,23 @@ because it was written for some other flavor of TeX.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+\KV@toks@=\toks18
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count179
-\Gm@cntv=\count180
-\c@Gm@tempcnt=\count181
+\Gm@cnth=\count185
+\Gm@cntv=\count186
+\c@Gm@tempcnt=\count187
 \Gm@bindingoffset=\dimen138
 \Gm@wd@mp=\dimen139
 \Gm@odd@mp=\dimen140
@@ -47,60 +47,60 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen143
 \Gm@layouthoffset=\dimen144
 \Gm@layoutvoffset=\dimen145
-\Gm@dimlist=\toks18
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Gm@dimlist=\toks19
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvipdfmx.def on input line 105.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2021/03/18 v5.0j Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen146
 \Gin@req@width=\dimen147
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/comment/comment.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
- Excluding comment 'comment') (/usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+ Excluding comment 'comment') (/usr/local/texlive/2022/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count182
-\lst@gtempboxa=\box47
-\lst@token=\toks19
-\lst@length=\count183
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count188
+\lst@gtempboxa=\box50
+\lst@token=\toks20
+\lst@length=\count189
 \lst@currlwidth=\dimen148
-\lst@column=\count184
-\lst@pos=\count185
+\lst@column=\count190
+\lst@pos=\count191
 \lst@lostspace=\dimen149
 \lst@width=\dimen150
-\lst@newlines=\count186
-\lst@lineno=\count187
+\lst@newlines=\count192
+\lst@lineno=\count193
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \lst@maxwidth=\dimen151
- (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count188
-\lst@skipnumbers=\count189
-\lst@framebox=\box48
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+\c@lstnumber=\count194
+\lst@skipnumbers=\count195
+\lst@framebox=\box51
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count190
-\l__pdf_internal_box=\box49
-) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.aux)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box52
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -119,7 +119,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:32: LaTeX Error: The font size command \normalsize is not defined:
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:32: LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -166,9 +166,9 @@ or  <return>  to continue without it.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count191
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/title.tex
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/title.tex:10: Undefined control sequence.
+\c@lstlisting=\count197
+(./title.tex
+./title.tex:10: Undefined control sequence.
 l.10 \maketitle
                
 The control sequence at the end of the top line
@@ -177,9 +177,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex
+) (./table/target_project.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:1: LaTeX Error: Environment table undefined.
+./table/target_project.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -192,7 +192,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: LaTeX Error: \caption outside float.
+./table/target_project.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -204,10 +204,10 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character 利 (U+5229)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character 利 (U+5229)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -217,10 +217,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character 用 (U+7528)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -230,10 +230,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character し (U+3057)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character し (U+3057)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -243,10 +243,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character た (U+305F)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character た (U+305F)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -256,10 +256,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character コ (U+30B3)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character コ (U+30B3)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -269,10 +269,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character ン (U+30F3)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character ン (U+30F3)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -282,10 +282,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character パ (U+30D1)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character パ (U+30D1)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -295,10 +295,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character イ (U+30A4)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character イ (U+30A4)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -308,10 +308,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:2: Package inputenc Error: Unicode character ル (U+30EB)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:2: LaTeX Error: Unicode character ル (U+30EB)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -325,10 +325,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 出 (U+51FA)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character 出 (U+51FA)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -338,10 +338,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 力 (U+529B)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character 力 (U+529B)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -351,10 +351,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 内 (U+5185)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character 内 (U+5185)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -364,10 +364,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 容 (U+5BB9)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character 容 (U+5BB9)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -377,10 +377,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 呼 (U+547C)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character 呼 (U+547C)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -390,10 +390,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character び (U+3073)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character び (U+3073)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -403,10 +403,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:6: Package inputenc Error: Unicode character 方 (U+65B9)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:6: LaTeX Error: Unicode character 方 (U+65B9)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -416,10 +416,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character な (U+306A)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:8: LaTeX Error: Unicode character な (U+306A)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -429,10 +429,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character し (U+3057)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:8: LaTeX Error: Unicode character し (U+3057)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -442,10 +442,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character 後 (U+5F8C)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:8: LaTeX Error: Unicode character 後 (U+5F8C)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -455,10 +455,10 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:8: Package inputenc Error: Unicode character の (U+306E)
-(inputenc)                not set up for use with LaTeX.
+./table/target_project.tex:8: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
 
-See the inputenc package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
@@ -468,7 +468,7 @@ You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_project.tex:11: LaTeX Error: \begin{document} ended by \end{table}.
+./table/target_project.tex:11: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -480,97 +480,9 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex
+) (./table/target_projects_table.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex:2: LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \begin{table}
-                 [h]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex:3: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3   \caption
-              {Target projects}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_table.tex:56: LaTeX Error: \begin{document} ended by \end{table}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \end{table}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
-Overfull \hbox (448.7525pt too wide) in paragraph at lines 2--39
-[]\OT1/cmr/m/n/10 [h] Tar-get projects [][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--39
-
- []
-
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex:2: LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \begin{table}
-                 [h]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex:3: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 	\caption
-             {Target project files}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/target_projects_files_table.tex:22: LaTeX Error: \begin{document} ended by \end{table}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 \end{table}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:1: LaTeX Error: Environment table undefined.
+./table/target_projects_table.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -583,19 +495,144 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:2: LaTeX Error: \caption outside float.
+./table/target_projects_table.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.2 	\caption
-             {C file loc}
+             {Target projects}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./table/target_projects_table.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32 		13 & qmk_
+                firmware & Keyboard firmware (0.15.13) & 7c186ebb974b4bbadbb...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./table/target_projects_table.tex:32: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.32 		13 & qmk_firmware &
+                           Keyboard firmware (0.15.13) & 7c186ebb974b4bbadbb...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./table/target_projects_table.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32 		13 & qmk_firmware &
+                           Keyboard firmware (0.15.13) & 7c186ebb974b4bbadbb...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./table/target_projects_table.tex:32: Missing } inserted.
+<inserted text> 
+                }
+l.32 		13 & qmk_firmware &
+                           Keyboard firmware (0.15.13) & 7c186ebb974b4bbadbb...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./table/target_projects_table.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32 ...b5d2f66d030e & https://github.com/qmk/qmk_
+                                                  firmware.git \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./table/target_projects_table.tex:33: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.33 		\hline
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./table/target_projects_table.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 		\hline
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./table/target_projects_table.tex:33: Missing } inserted.
+<inserted text> 
+                }
+l.33 		\hline
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./table/target_projects_table.tex:55: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (448.7525pt too wide) in paragraph at lines 1--39
+[]\OT1/cmr/m/n/10 [h] Tar-get projects [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--39
+
+ []
+
+(./table/target_projects_files_table.tex
+
+./table/target_projects_files_table.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./table/target_projects_files_table.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {Target project files}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/c_file_loc.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+./table/target_projects_files_table.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -607,9 +644,9 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex
+) (./table/c_file_loc.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:1: LaTeX Error: Environment table undefined.
+./table/c_file_loc.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -622,449 +659,33 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: LaTeX Error: \caption outside float.
+./table/c_file_loc.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.2 	\caption
-             {used_macro_count per files}
+             {C file loc}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: Missing $ inserted.
-<inserted text> 
-                $
-l.2 	\caption{used_
-                   macro_count per files}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:2: Extra }, or forgotten $.
-l.2 	\caption{used_macro_count per files}
-                                         
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
-<inserted text> 
-                $
-l.20 		1568 & 160 & 160 & dwarf_
-                                process.c & project/radare2/libr/anal/dwarf_...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.20 		1568 & 160 & 160 & dwarf_process.c &
-                                            project/radare2/libr/anal/dwarf_...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
-<inserted text> 
-                $
-l.20 		1568 & 160 & 160 & dwarf_process.c &
-                                            project/radare2/libr/anal/dwarf_...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing } inserted.
-<inserted text> 
-                }
-l.20 		1568 & 160 & 160 & dwarf_process.c &
-                                            project/radare2/libr/anal/dwarf_...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
-<inserted text> 
-                $
-l.20 ...ocess.c & project/radare2/libr/anal/dwarf_
-                                                  process.c & 2 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.20 ...roject/radare2/libr/anal/dwarf_process.c &
-                                                   2 \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing $ inserted.
-<inserted text> 
-                $
-l.20 ...roject/radare2/libr/anal/dwarf_process.c &
-                                                   2 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:20: Missing } inserted.
-<inserted text> 
-                }
-l.20 ...roject/radare2/libr/anal/dwarf_process.c &
-                                                   2 \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
-<inserted text> 
-                $
-l.22 		2268 & 134 & 134 & ngx_
-                              http_upstream.c & project/nginx/src/http/ngx_h...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.22 		2268 & 134 & 134 & ngx_http_upstream.c &
-                                                project/nginx/src/http/ngx_h...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
-<inserted text> 
-                $
-l.22 		2268 & 134 & 134 & ngx_http_upstream.c &
-                                                project/nginx/src/http/ngx_h...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing } inserted.
-<inserted text> 
-                }
-l.22 		2268 & 134 & 134 & ngx_http_upstream.c &
-                                                project/nginx/src/http/ngx_h...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
-<inserted text> 
-                $
-l.22 ...p_upstream.c & project/nginx/src/http/ngx_
-                                                  http_upstream.c & 3 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.22 ...oject/nginx/src/http/ngx_http_upstream.c &
-                                                   3 \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing $ inserted.
-<inserted text> 
-                $
-l.22 ...oject/nginx/src/http/ngx_http_upstream.c &
-                                                   3 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:22: Missing } inserted.
-<inserted text> 
-                }
-l.22 ...oject/nginx/src/http/ngx_http_upstream.c &
-                                                   3 \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
-<inserted text> 
-                $
-l.26 		2267 & 132 & 132 & ngx_
-                              http_core_module.c & project/nginx/src/http/ng...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.26 		2267 & 132 & 132 & ngx_http_core_module.c &
-                                                   project/nginx/src/http/ng...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
-<inserted text> 
-                $
-l.26 		2267 & 132 & 132 & ngx_http_core_module.c &
-                                                   project/nginx/src/http/ng...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing } inserted.
-<inserted text> 
-                }
-l.26 		2267 & 132 & 132 & ngx_http_core_module.c &
-                                                   project/nginx/src/http/ng...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
-<inserted text> 
-                $
-l.26 ...ore_module.c & project/nginx/src/http/ngx_
-                                                  http_core_module.c & 3 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.26 ...ct/nginx/src/http/ngx_http_core_module.c &
-                                                   3 \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing $ inserted.
-<inserted text> 
-                $
-l.26 ...ct/nginx/src/http/ngx_http_core_module.c &
-                                                   3 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:26: Missing } inserted.
-<inserted text> 
-                }
-l.26 ...ct/nginx/src/http/ngx_http_core_module.c &
-                                                   3 \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
-<inserted text> 
-                $
-l.42 		822 & 95 & 95 & core_
-                            java.c & project/radare2/libr/core/p/core_java.c...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.42 		822 & 95 & 95 & core_java.c &
-                                     project/radare2/libr/core/p/core_java.c...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
-<inserted text> 
-                $
-l.42 		822 & 95 & 95 & core_java.c &
-                                     project/radare2/libr/core/p/core_java.c...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing } inserted.
-<inserted text> 
-                }
-l.42 		822 & 95 & 95 & core_java.c &
-                                     project/radare2/libr/core/p/core_java.c...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
-<inserted text> 
-                $
-l.42 ...java.c & project/radare2/libr/core/p/core_
-                                                  java.c & 2 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.42 ... project/radare2/libr/core/p/core_java.c &
-                                                   2 \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing $ inserted.
-<inserted text> 
-                $
-l.42 ... project/radare2/libr/core/p/core_java.c &
-                                                   2 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:42: Missing } inserted.
-<inserted text> 
-                }
-l.42 ... project/radare2/libr/core/p/core_java.c &
-                                                   2 \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:49: LaTeX Error: \begin{document} ended by \end{table}.
+./table/c_file_loc.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 \end{table}
+l.21 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:49: Missing $ inserted.
-<inserted text> 
-                $
-l.49 \end{table}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+) (./table/defined_macro_info.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_cnt.tex:49: Missing } inserted.
-<inserted text> 
-                }
-l.49 \end{table}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-)
-Overfull \hbox (202.50323pt too wide) in paragraph at lines 1--45
-[]\OT1/cmr/m/n/10 [h] used$[]\OML/cmm/m/it/10 acro[]ountperfiles[][]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--45
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
-<write> ...abel{table:compile_option}{{}{\thepage 
-                                                  }}
-l.45 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
-<write> ...ble:target_projects_table}{{}{\thepage 
-                                                  }}
-l.45 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
-<write> ...rget_projects_files_table}{{}{\thepage 
-                                                  }}
-l.45 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:45: Undefined control sequence.
-<write> \newlabel{table:c_file_loc}{{}{\thepage 
-                                                }}
-l.45 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:1: LaTeX Error: Environment table undefined.
+./table/defined_macro_info.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1077,7 +698,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:2: LaTeX Error: \caption outside float.
+./table/defined_macro_info.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1089,7 +710,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/defined_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+./table/defined_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1111,9 +732,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--49
 
  []
 
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex
+(./table/available_macro_info.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex:1: LaTeX Error: Environment table undefined.
+./table/available_macro_info.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1126,7 +747,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex:2: LaTeX Error: \caption outside float.
+./table/available_macro_info.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1138,7 +759,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/available_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+./table/available_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1160,9 +781,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--51
 
  []
 
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex
+(./table/whole_macro_info.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex:1: LaTeX Error: Environment table undefined.
+./table/whole_macro_info.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1175,7 +796,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex:2: LaTeX Error: \caption outside float.
+./table/whole_macro_info.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1187,7 +808,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/whole_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+./table/whole_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1209,9 +830,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--53
 
  []
 
-(/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:1: LaTeX Error: Environment table undefined.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...abel{table:compile_option}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...ble:target_projects_table}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...rget_projects_files_table}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> \newlabel{table:c_file_loc}{{}{\thepage 
+                                                }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...{table:defined_macro_info}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:53: Undefined control sequence.
+<write> ...able:available_macro_info}{{}{\thepage 
+                                                  }}
+l.53 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+] (./table/used_macro_info.tex
+
+./table/used_macro_info.tex:1: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1224,7 +930,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:2: LaTeX Error: \caption outside float.
+./table/used_macro_info.tex:2: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1236,7 +942,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/table/used_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+./table/used_macro_info.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1258,58 +964,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--55
 
  []
 
+(./table/frequency_of_macro_use_file_in_each_project.tex
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: LaTeX Error: The font size command \normalsize is not defined:
+./table/frequency_of_macro_use_file_in_each_project.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./table/frequency_of_macro_use_file_in_each_project.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {frequcncy of macro use file in each project}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./table/frequency_of_macro_use_file_in_each_project.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (./table/appearance_of_define_directive_in_each_project.tex
+
+./table/appearance_of_define_directive_in_each_project.tex:1: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./table/appearance_of_define_directive_in_each_project.tex:2: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\caption
+             {appearance of define directive in each project}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./table/appearance_of_define_directive_in_each_project.tex:21: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1--59
+
+ []
+
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:60: LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \end{document}
+l.60 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [2
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
-<write> ...abel{table:used_macro_cnt}{{}{\thepage 
-                                                  }}
-l.56 \end{document}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
-<write> ...{table:defined_macro_info}{{}{\thepage 
-                                                  }}
-l.56 \end{document}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
-<write> ...able:available_macro_info}{{}{\thepage 
-                                                  }}
-l.56 \end{document}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:60: Undefined control sequence.
 <write> ...el{table:whole_macro_info}{{}{\thepage 
                                                   }}
-l.56 \end{document}
+l.60 \end{document}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1317,10 +1073,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.tex:56: Undefined control sequence.
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:60: Undefined control sequence.
 <write> ...bel{table:used_macro_info}{{}{\thepage 
                                                   }}
-l.56 \end{document}
+l.60 \end{document}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1328,23 +1084,45 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-] (/Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.aux)
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:60: Undefined control sequence.
+<write> ..._use_file_in_each_project}{{}{\thepage 
+                                                  }}
+l.60 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tamofplease/Workspace/research/c_project_analysis/paper/lib/src/main.tex:60: Undefined control sequence.
+<write> ...directive_in_each_project}{{}{\thepage 
+                                                  }}
+l.60 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+] (./main.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2772 strings out of 478994
- 43788 string characters out of 5858185
- 362271 words of memory out of 5000000
- 20253 multiletter control sequences out of 15000+600000
- 403430 words of font info for 27 fonts, out of 8000000 for 9000
+ 2970 strings out of 478268
+ 48687 string characters out of 5846347
+ 386287 words of memory out of 5000000
+ 21172 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,74p,283b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /Users/washi38/University/Labo/c_project_analysis/paper/lib/src/main.pdf (2 pages, 48094 bytes).
+ 55i,8n,62p,288b,262s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on main.pdf (2 pages, 46926 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
