@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_process.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_process.h"
 
 
 
@@ -267,19 +267,27 @@ typedef struct _PEB_LDR_DATA {
  LIST_ENTRY InInitializationOrderModulevector;
 } PEB_LDR_DATA, *PPEB_LDR_DATA;
 
+typedef struct _RTL_USER_PROCESS_PARAMETERS {
+ BYTE Reserved1[16];
+ PVOID Reserved2[10];
+ UNICODE_STRING ImagePathName;
+ UNICODE_STRING CommandLine;
+} RTL_USER_PROCESS_PARAMETERS, * PRTL_USER_PROCESS_PARAMETERS;
+
 typedef struct _PEB {
  BOOLEAN InheritedAddressSpace;
  BOOLEAN ReadImageFileExecOptions;
  BOOLEAN BeingDebugged;
  struct BitField {
-  BYTE ImageUsesLargePages :1;
-  BYTE SpareBits :7;
+  BYTE ImageUsesLargePages : 1;
+  BYTE SpareBits : 7;
  };
  HANDLE Mutant;
  PVOID ImageBaseAddress;
  PPEB_LDR_DATA Ldr;
+ PRTL_USER_PROCESS_PARAMETERS ProcessParameters;
 
-} PEB, *PPEB;
+} PEB, * PPEB;
 
 #if defined(_M_X64) || defined(_M_ARM64)
 typedef struct _LSA_UNICODE_STRING_F32 {

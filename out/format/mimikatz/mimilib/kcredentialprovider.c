@@ -1,7 +1,7 @@
-# 1 "project/mimikatz/mimilib/kcredentialprovider.c"
-# 11 "project/mimikatz/mimilib/kcredentialprovider.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kcredentialprovider.c"
+# 11 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kcredentialprovider.c"
 #include "kcredentialprovider.h"
-# 50 "project/mimikatz/mimilib/kcredentialprovider.c"
+# 50 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kcredentialprovider.c"
 DEFINE_GUID(IID_ICredentialProvider, 0xd27c3481, 0x5a1c, 0x45b2, 0x8a, 0xaa, 0xc2, 0x0e, 0xbb, 0xe8, 0x22, 0x9e);
 DEFINE_GUID(CLSID_PasswordCredentialProvider, 0x60b78e88, 0xead8, 0x445c, 0x9c, 0xfd, 0x0b, 0x87, 0xf7, 0x4e, 0xa6, 0xcd);
 

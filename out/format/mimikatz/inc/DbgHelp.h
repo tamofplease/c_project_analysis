@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/DbgHelp.h"
-# 20 "project/mimikatz/inc/DbgHelp.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
+# 20 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 #ifndef _DBGHELP_
 #define _DBGHELP_ 
 
@@ -103,7 +103,7 @@ extern "C" {
 #define DBHLPAPI IMAGEAPI
 
 #define IMAGE_SEPARATION (64*1024)
-# 133 "project/mimikatz/inc/DbgHelp.h"
+# 133 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef struct _LOADED_IMAGE {
     PSTR ModuleName;
     HANDLE hFile;
@@ -592,7 +592,7 @@ Address64To32(
     a32->Mode = a64->Mode;
 }
 #endif
-# 633 "project/mimikatz/inc/DbgHelp.h"
+# 633 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef struct _KDHELP64 {
 
 
@@ -1029,7 +1029,7 @@ typedef BOOL
     );
 
 #endif
-# 1079 "project/mimikatz/inc/DbgHelp.h"
+# 1079 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 #ifdef _NO_CVCONST_H
 
 
@@ -3294,7 +3294,7 @@ typedef BOOL (CALLBACK WINAPI *PSYMBOLSERVERMESSAGEPROC)(UINT_PTR action, ULONG6
  #define PSYMBOLSERVERPROC PSYMBOLSERVERPROCW
  #define PSYMBOLSERVERPINGPROC PSYMBOLSERVERPINGPROCW
 #endif
-# 3351 "project/mimikatz/inc/DbgHelp.h"
+# 3351 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 DBHLP_DEPRECIATED
 BOOL
 IMAGEAPI
@@ -3584,7 +3584,7 @@ typedef struct _MINIDUMP_STRING {
     ULONG32 Length;
     WCHAR Buffer [0];
 } MINIDUMP_STRING, *PMINIDUMP_STRING;
-# 3651 "project/mimikatz/inc/DbgHelp.h"
+# 3651 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef enum _MINIDUMP_STREAM_TYPE {
 
     UnusedStream = 0,
@@ -3625,7 +3625,7 @@ typedef enum _MINIDUMP_STREAM_TYPE {
     LastReservedStream = 0xffff
 
 } MINIDUMP_STREAM_TYPE;
-# 3709 "project/mimikatz/inc/DbgHelp.h"
+# 3709 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef union _CPU_INFORMATION {
 
 
@@ -3722,7 +3722,7 @@ typedef struct _MINIDUMP_SYSTEM_INFO {
     CPU_INFORMATION Cpu;
 
 } MINIDUMP_SYSTEM_INFO, *PMINIDUMP_SYSTEM_INFO;
-# 3819 "project/mimikatz/inc/DbgHelp.h"
+# 3819 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 C_ASSERT (sizeof ( ((PPROCESS_INFORMATION)0)->dwThreadId ) == 4);
 
 typedef struct _MINIDUMP_THREAD {
@@ -3779,14 +3779,14 @@ typedef struct _MINIDUMP_EXCEPTION {
     ULONG32 __unusedAlignment;
     ULONG64 ExceptionInformation [ EXCEPTION_MAXIMUM_PARAMETERS ];
 } MINIDUMP_EXCEPTION, *PMINIDUMP_EXCEPTION;
-# 3884 "project/mimikatz/inc/DbgHelp.h"
+# 3884 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef struct MINIDUMP_EXCEPTION_STREAM {
     ULONG32 ThreadId;
     ULONG32 __alignment;
     MINIDUMP_EXCEPTION ExceptionRecord;
     MINIDUMP_LOCATION_DESCRIPTOR ThreadContext;
 } MINIDUMP_EXCEPTION_STREAM, *PMINIDUMP_EXCEPTION_STREAM;
-# 3899 "project/mimikatz/inc/DbgHelp.h"
+# 3899 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef struct _MINIDUMP_MODULE {
     ULONG64 BaseOfImage;
     ULONG32 SizeOfImage;
@@ -3843,7 +3843,7 @@ typedef struct _MINIDUMP_EXCEPTION_INFORMATION64 {
     ULONG64 ContextRecord;
     BOOL ClientPointers;
 } MINIDUMP_EXCEPTION_INFORMATION64, *PMINIDUMP_EXCEPTION_INFORMATION64;
-# 3966 "project/mimikatz/inc/DbgHelp.h"
+# 3966 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef enum _MINIDUMP_HANDLE_OBJECT_INFORMATION_TYPE {
     MiniHandleObjectInformationNone,
     MiniThreadInformation1,
@@ -3928,7 +3928,7 @@ typedef struct _MINIDUMP_FUNCTION_TABLE_STREAM {
     ULONG32 NumberOfDescriptors;
     ULONG32 SizeOfAlignPad;
 } MINIDUMP_FUNCTION_TABLE_STREAM, *PMINIDUMP_FUNCTION_TABLE_STREAM;
-# 4059 "project/mimikatz/inc/DbgHelp.h"
+# 4059 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef struct _MINIDUMP_UNLOADED_MODULE {
     ULONG64 BaseOfImage;
     ULONG32 SizeOfImage;
@@ -3947,7 +3947,7 @@ typedef struct _MINIDUMP_UNLOADED_MODULE_LIST {
     ULONG32 SizeOfEntry;
     ULONG32 NumberOfEntries;
 } MINIDUMP_UNLOADED_MODULE_LIST, *PMINIDUMP_UNLOADED_MODULE_LIST;
-# 4086 "project/mimikatz/inc/DbgHelp.h"
+# 4086 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 #define MINIDUMP_MISC1_PROCESS_ID 0x00000001
 #define MINIDUMP_MISC1_PROCESS_TIMES 0x00000002
 #define MINIDUMP_MISC1_PROCESSOR_POWER_INFO 0x00000004
@@ -4001,7 +4001,7 @@ typedef struct _MINIDUMP_MISC_INFO_3 {
 
 typedef MINIDUMP_MISC_INFO_3 MINIDUMP_MISC_INFO_N;
 typedef MINIDUMP_MISC_INFO_N* PMINIDUMP_MISC_INFO_N;
-# 4148 "project/mimikatz/inc/DbgHelp.h"
+# 4148 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef struct _MINIDUMP_MEMORY_INFO {
     ULONG64 BaseAddress;
     ULONG64 AllocationBase;
@@ -4019,7 +4019,7 @@ typedef struct _MINIDUMP_MEMORY_INFO_LIST {
     ULONG SizeOfEntry;
     ULONG64 NumberOfEntries;
 } MINIDUMP_MEMORY_INFO_LIST, *PMINIDUMP_MEMORY_INFO_LIST;
-# 4175 "project/mimikatz/inc/DbgHelp.h"
+# 4175 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 #define MINIDUMP_THREAD_INFO_ERROR_THREAD 0x00000001
 #define MINIDUMP_THREAD_INFO_WRITING_THREAD 0x00000002
 #define MINIDUMP_THREAD_INFO_EXITED_THREAD 0x00000004
@@ -4231,7 +4231,7 @@ typedef struct _MINIDUMP_CALLBACK_OUTPUT {
         HRESULT Status;
     };
 } MINIDUMP_CALLBACK_OUTPUT, *PMINIDUMP_CALLBACK_OUTPUT;
-# 4463 "project/mimikatz/inc/DbgHelp.h"
+# 4463 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef enum _MINIDUMP_TYPE {
     MiniDumpNormal = 0x00000000,
     MiniDumpWithDataSegs = 0x00000001,
@@ -4255,13 +4255,13 @@ typedef enum _MINIDUMP_TYPE {
     MiniDumpWithTokenInformation = 0x00040000,
     MiniDumpValidTypeFlags = 0x0007ffff,
 } MINIDUMP_TYPE;
-# 4498 "project/mimikatz/inc/DbgHelp.h"
+# 4498 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef enum _MINIDUMP_SECONDARY_FLAGS {
     MiniSecondaryWithoutPowerInfo = 0x00000001,
 
     MiniSecondaryValidFlags = 0x00000001,
 } MINIDUMP_SECONDARY_FLAGS;
-# 4511 "project/mimikatz/inc/DbgHelp.h"
+# 4511 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 typedef
 BOOL
 (WINAPI * MINIDUMP_CALLBACK_ROUTINE) (
@@ -4274,7 +4274,7 @@ typedef struct _MINIDUMP_CALLBACK_INFORMATION {
     MINIDUMP_CALLBACK_ROUTINE CallbackRoutine;
     PVOID CallbackParam;
 } MINIDUMP_CALLBACK_INFORMATION, *PMINIDUMP_CALLBACK_INFORMATION;
-# 4551 "project/mimikatz/inc/DbgHelp.h"
+# 4551 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DbgHelp.h"
 #define RVA_TO_ADDR(Mapping,Rva) ((PVOID)(((ULONG_PTR) (Mapping)) + (Rva)))
 
 BOOL

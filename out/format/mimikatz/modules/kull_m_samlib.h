@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_samlib.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_samlib.h"
 
 
 
@@ -234,7 +234,7 @@ extern NTSTATUS WINAPI SamFreeMemory(IN PVOID Buffer);
 
 #define USER_NORMAL_ACCOUNT 0x00000010
 #define USER_DONT_EXPIRE_PASSWORD 0x00000200
-# 245 "project/mimikatz/modules/kull_m_samlib.h"
+# 245 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_samlib.h"
 #define UF_SCRIPT 0x0001
 #define UF_ACCOUNTDISABLE 0x0002
 #define UF_HOMEDIR_REQUIRED 0x0008

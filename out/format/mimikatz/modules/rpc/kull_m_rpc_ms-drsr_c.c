@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_ms-drsr_c.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_ms-drsr_c.c"
 #include "kull_m_rpc_ms-drsr.h"
 
 #if defined(_M_X64) || defined(_M_ARM64)

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.c"
 
 
 
@@ -108,7 +108,7 @@ void CALLBACK enumit2(IN PValueUnkPtr pValueUnkPtr, IN DWORD szObject, IN PKULL_
   dealWithL(&aRemoteL);
  }
 }
-# 123 "project/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.c"
+# 123 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.c"
 void dealWithF(PKULL_M_MEMORY_ADDRESS aRemoteF)
 {
  unkF f;
@@ -124,7 +124,7 @@ void dealWithF(PKULL_M_MEMORY_ADDRESS aRemoteF)
    kprintf(L"  Path: %wZ\n", &uPath);
    LocalFree(uPath.Buffer);
   }
-# 146 "project/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.c"
+# 146 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.c"
   if(f.u)
   {
    aRemoteV2.hMemory = aRemoteF->hMemory;

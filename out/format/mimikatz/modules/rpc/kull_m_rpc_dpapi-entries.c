@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_dpapi-entries.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_dpapi-entries.c"
 #include "kull_m_rpc_dpapi-entries.h"
 
 #if defined(_M_X64) || defined(_M_ARM64)

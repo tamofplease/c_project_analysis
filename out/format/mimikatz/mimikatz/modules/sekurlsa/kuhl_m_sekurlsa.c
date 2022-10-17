@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/kuhl_m_sekurlsa.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/kuhl_m_sekurlsa.c"
 
 
 
@@ -1031,7 +1031,7 @@ VOID kuhl_m_sekurlsa_pth_luid(PSEKURLSA_PTH_DATA data)
      kprintf(L"is now R/W\n");
     }
     else PRINT_ERROR_AUTO(L"OpenProcess");
-# 1041 "project/mimikatz/mimikatz/modules/sekurlsa/kuhl_m_sekurlsa.c"
+# 1041 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/kuhl_m_sekurlsa.c"
    }
   }
   else PRINT_ERROR(L"NtQueryObject: %08x\n", status);

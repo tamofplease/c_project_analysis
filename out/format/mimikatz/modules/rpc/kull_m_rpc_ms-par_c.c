@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_ms-par_c.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_ms-par_c.c"
 #include "kull_m_rpc_ms-par.h"
 
 const UUID PAR_ObjectUUID = {0x9940ca8e, 0x512f, 0x4c58, {0x88, 0xa9, 0x61, 0x09, 0x8d, 0x68, 0x96, 0xbd}};

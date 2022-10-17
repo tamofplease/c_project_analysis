@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimilib/sekurlsadbg/kuhl_m_sekurlsa_packages.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/sekurlsadbg/kuhl_m_sekurlsa_packages.h"
 
 
 

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_misc.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_misc.h"
 
 
 
@@ -24,6 +24,8 @@
 #include <sqlext.h>
 #pragma warning(pop)
 #include <sqltypes.h>
+#include "misc/kuhl_m_misc_djoin.h"
+#include "misc/kuhl_m_misc_citrix.h"
 
 const KUHL_M kuhl_m_misc;
 
@@ -51,6 +53,8 @@ NTSTATUS kuhl_m_misc_efs(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_misc_printnightmare(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_misc_sccm_accounts(int argc, wchar_t * argv[]);
 NTSTATUS kuhl_m_misc_shadowcopies(int argc, wchar_t * argv[]);
+NTSTATUS kuhl_m_misc_djoin_proxy(int argc, wchar_t * argv[]);
+NTSTATUS kuhl_m_misc_citrix_proxy(int argc, wchar_t * argv[]);
 
 BOOL kuhl_m_misc_printnightmare_normalize_library(BOOL bIsPar, LPCWSTR szLibrary, LPWSTR *pszNormalizedLibrary, LPWSTR *pszShortLibrary);
 BOOL kuhl_m_misc_printnightmare_FillStructure(PDRIVER_INFO_2 pInfo2, BOOL bIsX64, BOOL bIsDynamic, LPCWSTR szForce, BOOL bIsPar, handle_t hRemoteBinding);

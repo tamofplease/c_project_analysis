@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimilib/kssp.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kssp.c"
 
 
 

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt6.h"
 
 
 

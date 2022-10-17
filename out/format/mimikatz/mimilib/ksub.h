@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/mimilib/ksub.h"
-# 11 "project/mimikatz/mimilib/ksub.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/ksub.h"
+# 11 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/ksub.h"
        
 #include "utils.h"
 #include <SubAuth.h>

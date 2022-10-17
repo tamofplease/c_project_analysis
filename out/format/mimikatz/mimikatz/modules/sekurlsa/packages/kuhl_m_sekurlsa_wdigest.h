@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_wdigest.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_wdigest.h"
 
 
 

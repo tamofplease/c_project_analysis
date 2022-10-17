@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_cred.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_cred.c"
 
 
 
@@ -8,7 +8,7 @@
 
 const wchar_t KULL_M_CRED_ENTROPY_CRED_DER[37] = L"\x0184\x0188\x0194\x00c8\x00e0\x00d8\x00e4\x0198\x00b4\x00e4\x0188\x00d0\x00dc\x00b4\x00d0\x018c\x0190\x00e4\x00b4\x0184\x00cc\x00d4\x00e0\x00b4\x018c\x00c8\x00c8\x00e4\x00c0\x00d0\x0190\x0188\x0184\x00dc\x0198\x00dc";
 const wchar_t KULL_M_CRED_ENTROPYDOM_CRED_DER[37] = L"\x00e0\x00c8\x0108\x0110\x00c0\x0114\x00d8\x00dc\x00b4\x00e4\x0118\x0114\x0104\x00b4\x00d0\x00dc\x00d0\x00e0\x00b4\x00e0\x00d8\x00dc\x00c8\x00b4\x0110\x00d4\x0114\x0118\x0114\x00d4\x0108\x00dc\x00dc\x00e4\x0108\x00c0";
-# 18 "project/mimikatz/modules/kull_m_cred.c"
+# 18 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_cred.c"
 PKULL_M_CRED_BLOB kull_m_cred_create(PVOID data )
 {
  PKULL_M_CRED_BLOB cred = NULL;

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc.h"
 
 
 
@@ -22,6 +22,8 @@
 #include "../kull_m_string.h"
 #include "../kull_m_crypto.h"
 #include "../kull_m_process.h"
+
+#define NDR_TSI_20 { {0x8a885d04, 0x1ceb, 0x11c9, { 0x9f, 0xe8, 0x08, 0x00, 0x2b, 0x10, 0x48, 0x60 }}, { 2, 0 }}
 
 typedef DWORD NET_API_STATUS;
 typedef UNICODE_STRING RPC_UNICODE_STRING;

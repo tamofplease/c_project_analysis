@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/mimilib/kcredentialprovider.h"
-# 11 "project/mimikatz/mimilib/kcredentialprovider.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kcredentialprovider.h"
+# 11 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kcredentialprovider.h"
        
 #include "utils.h"
 #include <initguid.h>

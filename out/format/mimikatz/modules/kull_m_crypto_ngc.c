@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_crypto_ngc.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_crypto_ngc.c"
 
 
 

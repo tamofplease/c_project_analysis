@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.h"
 
 
 
@@ -21,7 +21,7 @@ BOOL kuhl_m_sekurlsa_nt5_acquireKey(PKULL_M_MEMORY_ADDRESS aLsassMemory, PBYTE K
 VOID WINAPI kuhl_m_sekurlsa_nt5_LsaProtectMemory(IN PVOID Buffer, IN ULONG BufferSize);
 VOID WINAPI kuhl_m_sekurlsa_nt5_LsaUnprotectMemory(IN PVOID Buffer, IN ULONG BufferSize);
 NTSTATUS kuhl_m_sekurlsa_nt5_LsaEncryptMemory(PUCHAR pMemory, ULONG cbMemory, BOOL Encrypt);
-# 35 "project/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.h"
+# 35 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.h"
 typedef struct _SYMCRYPT_NT5_DES_EXPANDED_KEY {
     UINT32 roundKey[16][2];
 } SYMCRYPT_NT5_DES_EXPANDED_KEY, *PSYMCRYPT_NT5_DES_EXPANDED_KEY;

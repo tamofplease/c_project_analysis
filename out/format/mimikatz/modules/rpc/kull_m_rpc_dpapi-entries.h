@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_dpapi-entries.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_dpapi-entries.h"
        
 #include "kull_m_rpc.h"
 #include "../kull_m_crypto.h"

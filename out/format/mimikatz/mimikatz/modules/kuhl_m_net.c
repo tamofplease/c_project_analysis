@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_net.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_net.c"
 
 
 
@@ -106,7 +106,7 @@ NTSTATUS kuhl_m_net_user(int argc, wchar_t * argv[])
              {
               for(k = 0; k < aliasCountRetourned; k++)
               {
-               kprintf(L"\n |%-5u ", alias[k]);
+               kprintf(L"\n |´%-5u ", alias[k]);
                kuhl_m_net_simpleLookup(hBuiltinHandle, alias[k]);
               }
               SamFreeMemory(alias);
@@ -330,7 +330,7 @@ void kuhl_m_net_simpleLookup(SAMPR_HANDLE hDomainHandle, DWORD rid)
  }
  else PRINT_ERROR(L"SamLookupIdsInDomain %08x", status);
 }
-# 377 "project/mimikatz/mimikatz/modules/kuhl_m_net.c"
+# 377 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_net.c"
 NTSTATUS kuhl_m_net_session(int argc, wchar_t * argv[])
 {
  LPSESSION_INFO_10 pBuf;
@@ -602,7 +602,7 @@ NTSTATUS kuhl_m_net_trust(int argc, wchar_t * argv[])
  else PRINT_ERROR(L"DsEnumerateDomainTrusts: %u\n", ret);
 
  kprintf(L"\n\nLDAP mode: ");
- if(kull_m_ldap_getLdapAndRootDN(server, L"defaultNamingContext", &ld, &dn))
+ if(kull_m_ldap_getLdapAndRootDN(server, L"defaultNamingContext", &ld, &dn, NULL))
  {
   if(kull_m_string_sprintf(&sysDN, L"CN=System,%s", dn))
   {
@@ -718,7 +718,7 @@ L")";
  BOOL isCheckDNS = kull_m_string_args_byName(argc, argv, L"dns", NULL, NULL);
  kull_m_string_args_byName(argc, argv, L"server", &server, NULL);
 
- if(kull_m_ldap_getLdapAndRootDN(server, NULL, &ld, &dn))
+ if(kull_m_ldap_getLdapAndRootDN(server, NULL, &ld, &dn, NULL))
  {
   dwRet = ldap_search_s(ld, dn, LDAP_SCOPE_SUBTREE, filter, myAttrs, FALSE, &pMessage);
   if(dwRet == LDAP_SUCCESS)

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_ms-dcom_IObjectExporter_c.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_ms-dcom_IObjectExporter_c.c"
 #include "kull_m_rpc_ms-dcom_IObjectExporter.h"
 
 #define TYPE_FORMAT_STRING_SIZE 49

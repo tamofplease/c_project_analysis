@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kerberos/kuhl_m_kerberos.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kerberos/kuhl_m_kerberos.c"
 
 
 
@@ -827,5 +827,5 @@ NTSTATUS kuhl_m_kerberos_decode(int argc, wchar_t * argv[])
  else PRINT_ERROR(L"arg \'rc4\' or \'aes128\' or \'aes256\' missing\n");
  return STATUS_SUCCESS;
 }
-# 929 "project/mimikatz/mimikatz/modules/kerberos/kuhl_m_kerberos.c"
+# 929 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kerberos/kuhl_m_kerberos.c"
 #endif

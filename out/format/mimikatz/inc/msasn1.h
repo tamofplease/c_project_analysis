@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/inc/msasn1.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/msasn1.h"
 
 
 
@@ -225,7 +225,7 @@ enum
     ASN1_CHOICE_INVALID = -1,
     ASN1_CHOICE_EXTENSION = 0,
 };
-# 239 "project/mimikatz/inc/msasn1.h"
+# 239 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/msasn1.h"
 typedef enum tagASN1error_e
 {
     ASN1_SUCCESS = 0,

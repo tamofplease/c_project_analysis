@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_cloudap.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_cloudap.h"
 
 
 
@@ -20,7 +20,7 @@ typedef struct _KIWI_CLOUDAP_CACHE_UNK {
  GUID guid;
  BYTE unk[64 ];
 } KIWI_CLOUDAP_CACHE_UNK, *PKIWI_CLOUDAP_CACHE_UNK;
-# 39 "project/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_cloudap.h"
+# 39 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/packages/kuhl_m_sekurlsa_cloudap.h"
 typedef struct _KIWI_CLOUDAP_CACHE_LIST_ENTRY {
  struct _KIWI_CLOUDAP_CACHE_LIST_ENTRY *Flink;
  struct _KIWI_CLOUDAP_CACHE_LIST_ENTRY *Blink;
@@ -76,3 +76,17 @@ typedef struct _KIWI_CLOUDAP_LOGON_LIST_ENTRY_11 {
  PKIWI_CLOUDAP_CACHE_LIST_ENTRY cacheEntry;
 
 } KIWI_CLOUDAP_LOGON_LIST_ENTRY_11, *PKIWI_CLOUDAP_LOGON_LIST_ENTRY_11;
+
+typedef struct _KIWI_CLOUDAP_LOGON_LIST_ENTRY_21H2 {
+ struct _KIWI_CLOUDAP_LOGON_LIST_ENTRY* Flink;
+ struct _KIWI_CLOUDAP_LOGON_LIST_ENTRY* Blink;
+ DWORD unk0;
+ DWORD unk1;
+ DWORD unk2;
+ LUID LocallyUniqueIdentifier;
+ DWORD unk3;
+ DWORD64 unk4;
+ DWORD64 unk5;
+ PKIWI_CLOUDAP_CACHE_LIST_ENTRY cacheEntry;
+
+} KIWI_CLOUDAP_LOGON_LIST_ENTRY_21H2, * PKIWI_CLOUDAP_LOGON_LIST_ENTRY_21H2;

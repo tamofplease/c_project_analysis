@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimilib/sekurlsadbg/kull_m_rpc_ms-credentialkeys.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/sekurlsadbg/kull_m_rpc_ms-credentialkeys.c"
 #include "kull_m_rpc_ms-credentialkeys.h"
 
 #if defined(_M_X64) || defined(_M_ARM64)

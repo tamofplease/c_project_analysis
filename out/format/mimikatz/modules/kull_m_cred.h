@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_cred.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_cred.h"
 
 
 
@@ -218,7 +218,7 @@ void kull_m_cred_vault_credential_attribute_descr(DWORD level, PKULL_M_CRED_VAUL
 PKULL_M_CRED_VAULT_CLEAR kull_m_cred_vault_clear_create(PVOID data );
 void kull_m_cred_vault_clear_delete(PKULL_M_CRED_VAULT_CLEAR clear);
 void kull_m_cred_vault_clear_descr(DWORD level, PKULL_M_CRED_VAULT_CLEAR clear);
-# 239 "project/mimikatz/modules/kull_m_cred.h"
+# 239 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_cred.h"
 typedef struct _KULL_M_CRED_VAULT_POLICY_KEY_MBDK {
  DWORD keySize;
  DWORD version;
@@ -227,5 +227,5 @@ typedef struct _KULL_M_CRED_VAULT_POLICY_KEY_MBDK {
  DWORD unk0;
  KIWI_HARD_KEY key;
 } KULL_M_CRED_VAULT_POLICY_KEY_MBDK, *PKULL_M_CRED_VAULT_POLICY_KEY_MBDK;
-# 291 "project/mimikatz/modules/kull_m_cred.h"
+# 291 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_cred.h"
 BOOL kull_m_cred_vault_policy_key(PVOID data, DWORD size, BYTE aes128[AES_128_KEY_SIZE], BYTE aes256[AES_256_KEY_SIZE]);

@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/Midles.h"
-# 16 "project/mimikatz/inc/Midles.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Midles.h"
+# 16 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Midles.h"
 #ifndef __MIDLES_H__
 #define __MIDLES_H__ 
 

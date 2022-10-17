@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_ms-rprn.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_ms-rprn.c"
 #include "kull_m_rpc_ms-rprn.h"
 
 typedef struct _ms2Drprn_MIDL_TYPE_FORMAT_STRING {

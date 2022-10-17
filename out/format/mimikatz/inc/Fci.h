@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/inc/Fci.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 
 
 
@@ -96,7 +96,7 @@ typedef ERF FAR *PERF;
 #define CB_MAX_CABINET_NAME 256
 #define CB_MAX_CAB_PATH 256
 #define CB_MAX_DISK_NAME 256
-# 112 "project/mimikatz/inc/Fci.h"
+# 112 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef unsigned short TCOMP;
 
 #define tcompMASK_TYPE 0x000F
@@ -158,7 +158,7 @@ typedef unsigned short TCOMP;
 #endif
 
 #endif
-# 197 "project/mimikatz/inc/Fci.h"
+# 197 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 #ifndef INCLUDED_FCI
 #define INCLUDED_FCI 1
 
@@ -232,7 +232,7 @@ FCIERR_CAB_FORMAT_LIMIT
 
 
 typedef void * HFCI;
-# 278 "project/mimikatz/inc/Fci.h"
+# 278 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef struct {
 
     ULONG cb;
@@ -257,7 +257,7 @@ typedef struct {
     char szCabPath[CB_MAX_CAB_PATH];
 } CCAB;
 typedef CCAB *PCCAB;
-# 321 "project/mimikatz/inc/Fci.h"
+# 321 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef void HUGE * (FAR DIAMONDAPI *PFNFCIALLOC)(ULONG cb);
 #define FNFCIALLOC(fn) void HUGE * FAR DIAMONDAPI fn(ULONG cb)
 
@@ -279,7 +279,7 @@ typedef int (FAR DIAMONDAPI *PFNFCIDELETE) (__in LPSTR pszFile, int FAR *err, vo
 #define FNFCICLOSE(fn) int FAR DIAMONDAPI fn(INT_PTR hf, int FAR *err, void FAR *pv)
 #define FNFCISEEK(fn) long FAR DIAMONDAPI fn(INT_PTR hf, long dist, int seektype, int FAR *err, void FAR *pv)
 #define FNFCIDELETE(fn) int FAR DIAMONDAPI fn(__in LPSTR pszFile, int FAR *err, void FAR *pv)
-# 357 "project/mimikatz/inc/Fci.h"
+# 357 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef BOOL (DIAMONDAPI *PFNFCIGETNEXTCABINET)(PCCAB pccab,
                                                 ULONG cbPrevCab,
                                                 void FAR *pv);
@@ -287,7 +287,7 @@ typedef BOOL (DIAMONDAPI *PFNFCIGETNEXTCABINET)(PCCAB pccab,
 #define FNFCIGETNEXTCABINET(fn) BOOL DIAMONDAPI fn(PCCAB pccab, \
                                                    ULONG cbPrevCab, \
                                                    void FAR *pv)
-# 381 "project/mimikatz/inc/Fci.h"
+# 381 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef int (DIAMONDAPI *PFNFCIFILEPLACED)(PCCAB pccab,
                                            __in LPSTR pszFile,
                                            long cbFile,
@@ -299,7 +299,7 @@ typedef int (DIAMONDAPI *PFNFCIFILEPLACED)(PCCAB pccab,
                                               long cbFile, \
                                               BOOL fContinuation, \
                                               void FAR *pv)
-# 409 "project/mimikatz/inc/Fci.h"
+# 409 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef INT_PTR (DIAMONDAPI *PFNFCIGETOPENINFO)(__in LPSTR pszName,
                                                 USHORT *pdate,
                                                 USHORT *ptime,
@@ -313,7 +313,7 @@ typedef INT_PTR (DIAMONDAPI *PFNFCIGETOPENINFO)(__in LPSTR pszName,
                                                    USHORT *pattribs, \
                                                    int FAR *err, \
                                                    void FAR *pv)
-# 454 "project/mimikatz/inc/Fci.h"
+# 454 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 #define statusFile 0
 #define statusFolder 1
 #define statusCabinet 2
@@ -327,7 +327,7 @@ typedef long (DIAMONDAPI *PFNFCISTATUS)(UINT typeStatus,
                                            ULONG cb1, \
                                            ULONG cb2, \
                                            void FAR *pv)
-# 487 "project/mimikatz/inc/Fci.h"
+# 487 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 typedef BOOL (DIAMONDAPI *PFNFCIGETTEMPFILE)(__out_bcount(cbTempName) char *pszTempName,
                                              __in_range(>=, MAX_PATH) int cbTempName,
                                              void FAR *pv);
@@ -335,7 +335,7 @@ typedef BOOL (DIAMONDAPI *PFNFCIGETTEMPFILE)(__out_bcount(cbTempName) char *pszT
 #define FNFCIGETTEMPFILE(fn) BOOL DIAMONDAPI fn(__out_bcount(cbTempName) char *pszTempName, \
                                                 __in_range(>=, MAX_PATH) int cbTempName, \
                                                 void FAR *pv)
-# 520 "project/mimikatz/inc/Fci.h"
+# 520 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 HFCI DIAMONDAPI FCICreate(__in PERF perf,
                           __callback PFNFCIFILEPLACED pfnfcifp,
                           __callback PFNFCIALLOC pfna,
@@ -350,7 +350,7 @@ HFCI DIAMONDAPI FCICreate(__in PERF perf,
                           __in PCCAB pccab,
                           __in_opt void FAR *pv
                          );
-# 563 "project/mimikatz/inc/Fci.h"
+# 563 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 BOOL DIAMONDAPI FCIAddFile(__in HFCI hfci,
                            __in LPSTR pszSourceFile,
                            __in LPSTR pszFileName,
@@ -360,18 +360,18 @@ BOOL DIAMONDAPI FCIAddFile(__in HFCI hfci,
                            __callback PFNFCIGETOPENINFO pfnfcigoi,
                            TCOMP typeCompress
                           );
-# 594 "project/mimikatz/inc/Fci.h"
+# 594 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 BOOL DIAMONDAPI FCIFlushCabinet(__in HFCI hfci,
                                 BOOL fGetNextCab,
                                 __callback PFNFCIGETNEXTCABINET pfnfcignc,
                                 __callback PFNFCISTATUS pfnfcis
                                );
-# 618 "project/mimikatz/inc/Fci.h"
+# 618 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 BOOL DIAMONDAPI FCIFlushFolder(__in HFCI hfci,
                                __callback PFNFCIGETNEXTCABINET pfnfcignc,
                                __callback PFNFCISTATUS pfnfcis
                               );
-# 635 "project/mimikatz/inc/Fci.h"
+# 635 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Fci.h"
 BOOL DIAMONDAPI FCIDestroy (__in HFCI hfci);
 
 

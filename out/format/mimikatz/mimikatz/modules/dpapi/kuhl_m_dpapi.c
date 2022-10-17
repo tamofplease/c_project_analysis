@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi.c"
 
 
 
@@ -28,6 +28,7 @@ const KUHL_M_C kuhl_m_c_dpapi[] = {
  {kuhl_m_dpapi_cloudap_keyvalue_derived, L"cloudapkd", L""},
  {kuhl_m_dpapi_cloudap_fromreg, L"cloudapreg", L""},
  {kuhl_m_dpapi_sccm_networkaccessaccount, L"sccm", L""},
+ {kuhl_m_dpapi_citrix, L"citrix", L""},
  {kuhl_m_dpapi_oe_cache, L"cache", NULL},
 };
 const KUHL_M kuhl_m_dpapi = {

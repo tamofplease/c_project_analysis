@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi_oe.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi_oe.c"
 
 
 
@@ -177,7 +177,7 @@ BOOL kuhl_m_dpapi_oe_credential_addtoEntry(PKUHL_M_DPAPI_OE_CREDENTIAL_ENTRY ent
    kull_m_crypto_hmac(CALG_SHA1, entry->data.sha1hash, SHA_DIGEST_LENGTH, entry->data.sid, SidLen + sizeof(wchar_t), entry->data.sha1hashDerived, SHA_DIGEST_LENGTH);
    entry->data.flags |= KUHL_M_DPAPI_OE_CREDENTIAL_FLAG_SHA1;
   }
-# 189 "project/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi_oe.c"
+# 189 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi_oe.c"
  }
  return TRUE;
 }

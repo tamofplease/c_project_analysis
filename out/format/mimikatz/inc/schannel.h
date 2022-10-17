@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/schannel.h"
-# 18 "project/mimikatz/inc/schannel.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/schannel.h"
+# 18 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/schannel.h"
 #ifndef __SCHANNEL_H__
 #define __SCHANNEL_H__ 
 
@@ -271,11 +271,11 @@ typedef struct _SecPkgContext_EapPrfInfo
 typedef struct _SecPkgContext_SupportedSignatures
 {
     WORD cSignatureAndHashAlgorithms;
-# 308 "project/mimikatz/inc/schannel.h"
+# 308 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/schannel.h"
     __field_ecount(cSignatureAndHashAlgorithms)
         WORD *pSignatureAndHashAlgorithms;
 } SecPkgContext_SupportedSignatures, *PSecPkgContext_SupportedSignatures;
-# 327 "project/mimikatz/inc/schannel.h"
+# 327 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/schannel.h"
 typedef struct _SecPkgContext_Certificates
 {
     DWORD cCertificates;
@@ -364,7 +364,7 @@ typedef struct _SCHANNEL_CERT_HASH_STORE
 
 
 #define SCH_MACHINE_CERT_HASH 0x00000001
-# 501 "project/mimikatz/inc/schannel.h"
+# 501 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/schannel.h"
 #define SCH_CRED_NO_SYSTEM_MAPPER 0x00000002
 #define SCH_CRED_NO_SERVERNAME_CHECK 0x00000004
 #define SCH_CRED_MANUAL_CRED_VALIDATION 0x00000008
@@ -388,7 +388,7 @@ typedef struct _SCHANNEL_CERT_HASH_STORE
 #define SCH_CRED_CACHE_ONLY_URL_RETRIEVAL_ON_CREATE 0x00020000
 
 #define SCH_SEND_ROOT_CERT 0x00040000
-# 533 "project/mimikatz/inc/schannel.h"
+# 533 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/schannel.h"
 #define SCHANNEL_RENEGOTIATE 0
 #define SCHANNEL_SHUTDOWN 1
 #define SCHANNEL_ALERT 2

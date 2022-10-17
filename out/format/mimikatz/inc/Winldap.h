@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/Winldap.h"
-# 46 "project/mimikatz/inc/Winldap.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
+# 46 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #ifndef LDAP_CLIENT_DEFINED
 #define LDAP_CLIENT_DEFINED 
 
@@ -29,7 +29,7 @@ extern "C" {
 #ifndef LDAPAPI
 #define LDAPAPI __cdecl
 #endif
-# 86 "project/mimikatz/inc/Winldap.h"
+# 86 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #ifndef LDAP_UNICODE
 #ifdef UNICODE
 #define LDAP_UNICODE 1
@@ -56,7 +56,7 @@ extern "C" {
 #define LDAP_VERSION2 2
 #define LDAP_VERSION3 3
 #define LDAP_VERSION LDAP_VERSION2
-# 130 "project/mimikatz/inc/Winldap.h"
+# 130 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_BIND_CMD 0x60L
 #define LDAP_UNBIND_CMD 0x42L
 #define LDAP_SEARCH_CMD 0x63L
@@ -167,7 +167,7 @@ typedef enum {
     LDAP_CLIENT_LOOP = 0x60,
     LDAP_REFERRAL_LIMIT_EXCEEDED = 0x61
 } LDAP_RETCODE;
-# 281 "project/mimikatz/inc/Winldap.h"
+# 281 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_AUTH_SIMPLE 0x80L
 #define LDAP_AUTH_SASL 0x83L
 
@@ -229,7 +229,7 @@ typedef enum {
 #define LDAP_SUBSTRING_INITIAL 0x80L
 #define LDAP_SUBSTRING_ANY 0x81L
 #define LDAP_SUBSTRING_FINAL 0x82L
-# 353 "project/mimikatz/inc/Winldap.h"
+# 353 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_DEREF_NEVER 0
 #define LDAP_DEREF_SEARCHING 1
 #define LDAP_DEREF_FINDING 2
@@ -353,7 +353,7 @@ typedef struct ldapmsg {
     BOOLEAN ConnectionReferenced;
 
 } LDAPMessage, *PLDAPMessage;
-# 485 "project/mimikatz/inc/Winldap.h"
+# 485 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 typedef struct ldapcontrolA {
 
     PCHAR ldctl_oid;
@@ -377,7 +377,7 @@ typedef struct ldapcontrolW {
 #define LDAPControl LDAPControlA
 #define PLDAPControl PLDAPControlA
 #endif
-# 520 "project/mimikatz/inc/Winldap.h"
+# 520 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_CONTROL_REFERRALS_W L"1.2.840.113556.1.4.616"
 #define LDAP_CONTROL_REFERRALS "1.2.840.113556.1.4.616"
 
@@ -429,7 +429,7 @@ typedef struct ldapmodA {
 #define mod_values mod_vals.modv_strvals
 #define mod_bvalues mod_vals.modv_bvals
 #define NAME_ERROR(n) ((n & 0xf0) == 0x20)
-# 593 "project/mimikatz/inc/Winldap.h"
+# 593 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI LDAP * LDAPAPI ldap_openW( __in const PWCHAR HostName, ULONG PortNumber );
 WINLDAPAPI LDAP * LDAPAPI ldap_openA( __in const PCHAR HostName, ULONG PortNumber );
 
@@ -438,7 +438,7 @@ WINLDAPAPI LDAP * LDAPAPI ldap_initA( __in const PCHAR HostName, ULONG PortNumbe
 
 WINLDAPAPI LDAP * LDAPAPI ldap_sslinitW( __in PWCHAR HostName, ULONG PortNumber, int secure );
 WINLDAPAPI LDAP * LDAPAPI ldap_sslinitA( __in PCHAR HostName, ULONG PortNumber, int secure );
-# 609 "project/mimikatz/inc/Winldap.h"
+# 609 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_connect( LDAP *ld,
                                         struct l_timeval *timeout
                                         );
@@ -456,7 +456,7 @@ WINLDAPAPI LDAP * LDAPAPI ldap_init( __in PCHAR HostName, ULONG PortNumber );
 WINLDAPAPI LDAP * LDAPAPI ldap_sslinit( __in PCHAR HostName, ULONG PortNumber, int secure );
 
 #endif
-# 637 "project/mimikatz/inc/Winldap.h"
+# 637 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI LDAP * LDAPAPI cldap_openW( __in PWCHAR HostName, ULONG PortNumber );
 WINLDAPAPI LDAP * LDAPAPI cldap_openA( __in PCHAR HostName, ULONG PortNumber );
 
@@ -470,10 +470,10 @@ WINLDAPAPI LDAP * LDAPAPI cldap_openA( __in PCHAR HostName, ULONG PortNumber );
 WINLDAPAPI LDAP * LDAPAPI cldap_open( __in PCHAR HostName, ULONG PortNumber );
 
 #endif
-# 664 "project/mimikatz/inc/Winldap.h"
+# 664 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_unbind( LDAP *ld );
 WINLDAPAPI ULONG LDAPAPI ldap_unbind_s( LDAP *ld );
-# 677 "project/mimikatz/inc/Winldap.h"
+# 677 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_get_option( LDAP *ld, int option, void *outvalue );
 WINLDAPAPI ULONG LDAPAPI ldap_get_optionW( LDAP *ld, int option, void *outvalue );
 
@@ -523,7 +523,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_set_optionW( LDAP *ld, int option, const void *inv
 #define LDAP_OPT_SERVER_ERROR 0x33
 #define LDAP_OPT_SERVER_EXT_ERROR 0x34
 #define LDAP_OPT_HOST_REACHABLE 0x3E
-# 749 "project/mimikatz/inc/Winldap.h"
+# 749 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_OPT_PING_KEEP_ALIVE 0x36
 #define LDAP_OPT_PING_WAIT_TIME 0x37
 #define LDAP_OPT_PING_LIMIT 0x38
@@ -590,9 +590,9 @@ WINLDAPAPI ULONG LDAPAPI ldap_set_optionW( LDAP *ld, int option, const void *inv
 
 
 #define LDAP_OPT_ROOTDSE_CACHE 0x9a
-# 823 "project/mimikatz/inc/Winldap.h"
+# 823 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_OPT_TCP_KEEPALIVE 0x40
-# 835 "project/mimikatz/inc/Winldap.h"
+# 835 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_OPT_FAST_CONCURRENT_BIND 0x41
 
 #define LDAP_OPT_SEND_TIMEOUT 0x42
@@ -614,10 +614,10 @@ WINLDAPAPI ULONG LDAPAPI ldap_set_optionW( LDAP *ld, int option, const void *inv
 
 #define LDAP_OPT_ON ((void *) 1)
 #define LDAP_OPT_OFF ((void *) 0)
-# 871 "project/mimikatz/inc/Winldap.h"
+# 871 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_CHASE_SUBORDINATE_REFERRALS 0x00000020
 #define LDAP_CHASE_EXTERNAL_REFERRALS 0x00000040
-# 883 "project/mimikatz/inc/Winldap.h"
+# 883 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_simple_bindW( LDAP *ld, __in_opt PWCHAR dn, __in_opt PWCHAR passwd );
 WINLDAPAPI ULONG LDAPAPI ldap_simple_bindA( LDAP *ld, __in_opt PCHAR dn, __in_opt PCHAR passwd );
 WINLDAPAPI ULONG LDAPAPI ldap_simple_bind_sW( LDAP *ld, __in_opt PWCHAR dn, __in_opt PWCHAR passwd );
@@ -627,7 +627,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_bindW( LDAP *ld, __in_opt PWCHAR dn, __in_opt PWCH
 WINLDAPAPI ULONG LDAPAPI ldap_bindA( LDAP *ld, __in_opt PCHAR dn, __in_opt PCHAR cred, ULONG method );
 WINLDAPAPI ULONG LDAPAPI ldap_bind_sW( LDAP *ld, __in_opt PWCHAR dn, __in_opt PWCHAR cred, ULONG method );
 WINLDAPAPI ULONG LDAPAPI ldap_bind_sA( LDAP *ld, __in_opt PCHAR dn, __in_opt PCHAR cred, ULONG method );
-# 900 "project/mimikatz/inc/Winldap.h"
+# 900 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
  WINLDAPAPI INT LDAPAPI ldap_sasl_bindA(
          LDAP *ExternalHandle,
          __in const PCHAR DistName,
@@ -692,11 +692,11 @@ WINLDAPAPI ULONG LDAPAPI ldap_bind_s( LDAP *ld, __in_opt const PCHAR dn, __in_op
 #define ldap_sasl_bind_s ldap_sasl_bind_sA
 
 #endif
-# 973 "project/mimikatz/inc/Winldap.h"
+# 973 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_SCOPE_BASE 0x00
 #define LDAP_SCOPE_ONELEVEL 0x01
 #define LDAP_SCOPE_SUBTREE 0x02
-# 988 "project/mimikatz/inc/Winldap.h"
+# 988 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_searchW(
         LDAP *ld,
         __in const PWCHAR base,
@@ -904,7 +904,7 @@ ldap_check_filterA(
 #else
 #define ldap_check_filter ldap_check_filterA
 #endif
-# 1212 "project/mimikatz/inc/Winldap.h"
+# 1212 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_modifyW( LDAP *ld, __in PWCHAR dn, LDAPModW *mods[] );
 WINLDAPAPI ULONG LDAPAPI ldap_modifyA( LDAP *ld, __in PCHAR dn, LDAPModA *mods[] );
 
@@ -975,7 +975,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_modify_ext_s(
         PLDAPControlA *ClientControls
         );
 #endif
-# 1319 "project/mimikatz/inc/Winldap.h"
+# 1319 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_modrdn2W (
     LDAP *ExternalHandle,
     __in const PWCHAR DistinguishedName,
@@ -1149,7 +1149,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_rename_ext_s(
         PLDAPControlA *ClientControls
         );
 #endif
-# 1508 "project/mimikatz/inc/Winldap.h"
+# 1508 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_addW( LDAP *ld, __in PWCHAR dn, LDAPModW *attrs[] );
 WINLDAPAPI ULONG LDAPAPI ldap_addA( LDAP *ld, __in PCHAR dn, LDAPModA *attrs[] );
 
@@ -1221,7 +1221,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_add_ext_s(
         );
 
 #endif
-# 1597 "project/mimikatz/inc/Winldap.h"
+# 1597 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_compareW( LDAP *ld, __in const PWCHAR dn, __in const PWCHAR attr, __in PWCHAR value );
 WINLDAPAPI ULONG LDAPAPI ldap_compareA( LDAP *ld, __in const PCHAR dn, __in const PCHAR attr, __in PCHAR value );
 
@@ -1239,7 +1239,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_compare( LDAP *ld, __in const PCHAR dn, __in const
 WINLDAPAPI ULONG LDAPAPI ldap_compare_s( LDAP *ld, __in const PCHAR dn, __in const PCHAR attr, __in PCHAR value );
 
 #endif
-# 1625 "project/mimikatz/inc/Winldap.h"
+# 1625 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_compare_extW(
         LDAP *ld,
         __in const PWCHAR dn,
@@ -1310,7 +1310,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_compare_ext_s(
         PLDAPControlA *ClientControls
         );
 #endif
-# 1713 "project/mimikatz/inc/Winldap.h"
+# 1713 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_deleteW( LDAP *ld, __in const PWCHAR dn );
 WINLDAPAPI ULONG LDAPAPI ldap_deleteA( LDAP *ld, __in const PCHAR dn );
 
@@ -1374,13 +1374,13 @@ WINLDAPAPI ULONG LDAPAPI ldap_delete_ext_s(
         PLDAPControlA *ClientControls
         );
 #endif
-# 1786 "project/mimikatz/inc/Winldap.h"
+# 1786 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_abandon( LDAP *ld, ULONG msgid );
-# 1796 "project/mimikatz/inc/Winldap.h"
+# 1796 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_MSG_ONE 0
 #define LDAP_MSG_ALL 1
 #define LDAP_MSG_RECEIVED 2
-# 1813 "project/mimikatz/inc/Winldap.h"
+# 1813 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_result(
         LDAP *ld,
         ULONG msgid,
@@ -1390,13 +1390,13 @@ WINLDAPAPI ULONG LDAPAPI ldap_result(
     );
 
 WINLDAPAPI ULONG LDAPAPI ldap_msgfree( LDAPMessage *res );
-# 1830 "project/mimikatz/inc/Winldap.h"
+# 1830 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_result2error(
         LDAP *ld,
         LDAPMessage *res,
         ULONG freeit
     );
-# 1845 "project/mimikatz/inc/Winldap.h"
+# 1845 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_parse_resultW (
         LDAP *Connection,
         LDAPMessage *ResultMessage,
@@ -1617,7 +1617,7 @@ WINLDAPAPI PCHAR LDAPAPI ldap_next_attribute(
         BerElement *ptr
         );
 #endif
-# 2078 "project/mimikatz/inc/Winldap.h"
+# 2078 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI PWCHAR *LDAPAPI ldap_get_valuesW(
         LDAP *ld,
         LDAPMessage *entry,
@@ -1641,7 +1641,7 @@ WINLDAPAPI PCHAR *LDAPAPI ldap_get_values(
         __in const PCHAR attr
         );
 #endif
-# 2117 "project/mimikatz/inc/Winldap.h"
+# 2117 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI struct berval **LDAPAPI ldap_get_values_lenW (
     LDAP *ExternalHandle,
     LDAPMessage *Message,
@@ -1773,7 +1773,7 @@ WINLDAPAPI PCHAR LDAPAPI ldap_dn2ufnA( __in const PCHAR dn );
 WINLDAPAPI PCHAR LDAPAPI ldap_dn2ufn( __in const PCHAR dn );
 
 #endif
-# 2256 "project/mimikatz/inc/Winldap.h"
+# 2256 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI VOID LDAPAPI ldap_memfreeW( __in PWCHAR Block );
 WINLDAPAPI VOID LDAPAPI ldap_memfreeA( __in PCHAR Block );
 
@@ -1788,7 +1788,7 @@ WINLDAPAPI VOID LDAPAPI ber_bvfree( struct berval *bv );
 WINLDAPAPI VOID LDAPAPI ldap_memfree( __in PCHAR Block );
 
 #endif
-# 2283 "project/mimikatz/inc/Winldap.h"
+# 2283 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_ufn2dnW (
     __in const PWCHAR ufn,
     __deref_out PWCHAR *pDn
@@ -1814,7 +1814,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_ufn2dn (
 #define LBER_USE_DER 0x01
 #define LBER_USE_INDEFINITE_LEN 0x02
 #define LBER_TRANSLATE_STRINGS 0x04
-# 2316 "project/mimikatz/inc/Winldap.h"
+# 2316 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LAPI_MAJOR_VER1 1
 #define LAPI_MINOR_VER1 1
 
@@ -1828,7 +1828,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_startup (
     PLDAP_VERSION_INFO version,
     HANDLE *Instance
     );
-# 2339 "project/mimikatz/inc/Winldap.h"
+# 2339 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_API_INFO_VERSION 1
 #define LDAP_API_VERSION 2004
 #define LDAP_VERSION_MIN 2
@@ -1898,7 +1898,7 @@ typedef struct ldap_apifeature_infoW {
 WINLDAPAPI ULONG LDAPAPI ldap_cleanup (
     HANDLE hInstance
     );
-# 2437 "project/mimikatz/inc/Winldap.h"
+# 2437 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_escape_filter_elementW (
    __in_bcount(sourceLength) PCHAR sourceFilterElement,
    ULONG sourceLength,
@@ -1938,7 +1938,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_set_dbg_flags( ULONG NewFlags );
 typedef ULONG (_cdecl *DBGPRINT)( PCCH Format, ... );
 
 WINLDAPAPI VOID LDAPAPI ldap_set_dbg_routine( DBGPRINT DebugPrintRoutine );
-# 2484 "project/mimikatz/inc/Winldap.h"
+# 2484 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI int LDAPAPI
 LdapUTF8ToUnicode(
     __in_ecount(cchSrc) LPCSTR lpSrcStr,
@@ -1955,7 +1955,7 @@ LdapUnicodeToUTF8(
     __out_ecount(cchDest) LPSTR lpDestStr,
     int cchDest
     );
-# 2510 "project/mimikatz/inc/Winldap.h"
+# 2510 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_SERVER_SORT_OID "1.2.840.113556.1.4.473"
 #define LDAP_SERVER_SORT_OID_W L"1.2.840.113556.1.4.473"
 
@@ -1987,7 +1987,7 @@ typedef struct ldapsortkeyA {
 #define LDAPSortKey LDAPSortKeyA
 #define PLDAPSortKey PLDAPSortKeyA
 #endif
-# 2549 "project/mimikatz/inc/Winldap.h"
+# 2549 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_create_sort_controlA (
         PLDAP ExternalHandle,
         PLDAPSortKeyA *SortKeys,
@@ -2042,7 +2042,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_parse_sort_control (
         PCHAR *Attribute
         );
 #endif
-# 2613 "project/mimikatz/inc/Winldap.h"
+# 2613 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_encode_sort_controlW (
         PLDAP ExternalHandle,
         PLDAPSortKeyW *SortKeys,
@@ -2129,7 +2129,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_parse_page_control (
         struct berval **Cookie
         );
 #endif
-# 2732 "project/mimikatz/inc/Winldap.h"
+# 2732 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_PAGED_RESULT_OID_STRING "1.2.840.113556.1.4.319"
 #define LDAP_PAGED_RESULT_OID_STRING_W L"1.2.840.113556.1.4.319"
 
@@ -2210,7 +2210,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_search_abandon_page(
         PLDAP ExternalHandle,
         PLDAPSearch SearchBlock
     );
-# 2822 "project/mimikatz/inc/Winldap.h"
+# 2822 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_CONTROL_VLVREQUEST "2.16.840.1.113730.3.4.9"
 #define LDAP_CONTROL_VLVREQUEST_W L"2.16.840.1.113730.3.4.9"
 
@@ -2291,7 +2291,7 @@ WINLDAPAPI INT LDAPAPI ldap_parse_vlv_controlA (
 
 #define LDAP_START_TLS_OID "1.3.6.1.4.1.1466.20037"
 #define LDAP_START_TLS_OID_W L"1.3.6.1.4.1.1466.20037"
-# 2919 "project/mimikatz/inc/Winldap.h"
+# 2919 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_start_tls_sW (
     IN PLDAP ExternalHandle,
     OUT PULONG ServerReturnValue,
@@ -2308,7 +2308,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_start_tls_sA (
     IN PLDAPControlA *ServerControls,
     IN PLDAPControlA *ClientControls
 );
-# 2949 "project/mimikatz/inc/Winldap.h"
+# 2949 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI BOOLEAN LDAPAPI ldap_stop_tls_s (
     IN PLDAP ExternalHandle
  );
@@ -2330,7 +2330,7 @@ WINLDAPAPI BOOLEAN LDAPAPI ldap_stop_tls_s (
 
 #define LDAP_TTL_EXTENDED_OP_OID "1.3.6.1.4.1.1466.101.119.1"
 #define LDAP_TTL_EXTENDED_OP_OID_W L"1.3.6.1.4.1.1466.101.119.1"
-# 2988 "project/mimikatz/inc/Winldap.h"
+# 2988 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI LDAPMessage *LDAPAPI ldap_first_reference( LDAP *ld, LDAPMessage *res );
 
 
@@ -2376,7 +2376,7 @@ WINLDAPAPI ULONG LDAPAPI ldap_parse_reference (
         );
 
 #endif
-# 3045 "project/mimikatz/inc/Winldap.h"
+# 3045 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 WINLDAPAPI ULONG LDAPAPI ldap_extended_operationW(
         LDAP *ld,
         __in const PWCHAR Oid,
@@ -2441,9 +2441,9 @@ WINLDAPAPI ULONG LDAPAPI ldap_close_extended_op(
         LDAP *ld,
         ULONG MessageNumber
         );
-# 3124 "project/mimikatz/inc/Winldap.h"
+# 3124 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_OPT_REFERRAL_CALLBACK 0x70
-# 3139 "project/mimikatz/inc/Winldap.h"
+# 3139 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 typedef ULONG (_cdecl QUERYFORCONNECTION)(
     PLDAP PrimaryConnection,
     PLDAP ReferralFromConnection,
@@ -2454,7 +2454,7 @@ typedef ULONG (_cdecl QUERYFORCONNECTION)(
     PVOID CurrentUserToken,
     PLDAP *ConnectionToUse
     );
-# 3163 "project/mimikatz/inc/Winldap.h"
+# 3163 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 typedef BOOLEAN (_cdecl NOTIFYOFNEWCONNECTION) (
     PLDAP PrimaryConnection,
     PLDAP ReferralFromConnection,
@@ -2466,7 +2466,7 @@ typedef BOOLEAN (_cdecl NOTIFYOFNEWCONNECTION) (
     PVOID CurrentUser,
     ULONG ErrorCodeFromBind
     );
-# 3185 "project/mimikatz/inc/Winldap.h"
+# 3185 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 typedef ULONG (_cdecl DEREFERENCECONNECTION)(
     PLDAP PrimaryConnection,
     PLDAP ConnectionToDereference
@@ -2493,17 +2493,17 @@ WINLDAPAPI ULONG LDAPAPI LdapGetLastError( VOID );
 
 
 WINLDAPAPI ULONG LDAPAPI LdapMapErrorToWin32( ULONG LdapError );
-# 3220 "project/mimikatz/inc/Winldap.h"
+# 3220 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_OPT_CLIENT_CERTIFICATE 0x80
-# 3235 "project/mimikatz/inc/Winldap.h"
+# 3235 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 typedef BOOLEAN (_cdecl QUERYCLIENTCERT) (
     IN PLDAP Connection,
     IN PSecPkgContext_IssuerListInfoEx trusted_CAs,
     IN OUT PCCERT_CONTEXT *ppCertificate
     );
-# 3249 "project/mimikatz/inc/Winldap.h"
+# 3249 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 #define LDAP_OPT_SERVER_CERTIFICATE 0x81
-# 3258 "project/mimikatz/inc/Winldap.h"
+# 3258 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/Winldap.h"
 typedef BOOLEAN (_cdecl VERIFYSERVERCERT) (
      PLDAP Connection,
      PCCERT_CONTEXT* pServerCert

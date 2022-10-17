@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_cabinet.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_cabinet.c"
 
 
 

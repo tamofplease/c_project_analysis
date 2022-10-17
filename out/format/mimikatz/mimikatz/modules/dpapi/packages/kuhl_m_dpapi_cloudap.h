@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/dpapi/packages/kuhl_m_dpapi_cloudap.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/dpapi/packages/kuhl_m_dpapi_cloudap.h"
 
 
 

@@ -1,11 +1,11 @@
-# 1 "project/mimikatz/modules/kull_m_string.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_string.c"
 
 
 
 
 
 #include "kull_m_string.h"
-# 20 "project/mimikatz/modules/kull_m_string.c"
+# 20 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_string.c"
 BOOL kull_m_string_suspectUnicodeString(IN PUNICODE_STRING pUnicodeString)
 {
  int unicodeTestFlags = IS_TEXT_UNICODE_STATISTICS;

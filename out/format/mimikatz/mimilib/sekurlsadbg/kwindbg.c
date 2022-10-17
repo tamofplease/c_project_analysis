@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimilib/sekurlsadbg/kwindbg.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/sekurlsadbg/kwindbg.c"
 
 
 

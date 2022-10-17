@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/mimikatz.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/mimikatz.c"
 
 
 

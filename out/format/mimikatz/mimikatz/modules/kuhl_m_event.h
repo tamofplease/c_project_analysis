@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_event.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_event.h"
 
 
 

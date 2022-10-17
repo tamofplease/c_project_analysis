@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/crypto/kuhl_m_crypto_pki.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/crypto/kuhl_m_crypto_pki.h"
 
 
 

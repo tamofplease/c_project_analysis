@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/cardmod.h"
-# 19 "project/mimikatz/inc/cardmod.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
+# 19 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #ifndef __CARDMOD__H__
 #define __CARDMOD__H__ 
 
@@ -13,7 +13,7 @@
 #pragma warning(pop)
 #include <specstrings.h>
 #include <bcrypt.h>
-# 40 "project/mimikatz/inc/cardmod.h"
+# 40 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define SCARD_PROVIDER_CARD_MODULE 0x80000001
 
 typedef struct _CARD_DATA CARD_DATA, *PCARD_DATA;
@@ -26,11 +26,11 @@ typedef ULONG_PTR CARD_KEY_HANDLE, *PCARD_KEY_HANDLE;
 
 
 #define CARD_DATA_VALUE_UNKNOWN ((DWORD) -1)
-# 63 "project/mimikatz/inc/cardmod.h"
+# 63 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define szBASE_CSP_DIR "mscp"
 
 #define szINTERMEDIATE_CERTS_DIR "mscerts"
-# 77 "project/mimikatz/inc/cardmod.h"
+# 77 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define szCACHE_FILE "cardcf"
 
 #define szCARD_IDENTIFIER_FILE "cardid"
@@ -38,7 +38,7 @@ typedef ULONG_PTR CARD_KEY_HANDLE, *PCARD_KEY_HANDLE;
 
 #define szCONTAINER_MAP_FILE "cmapfile"
 #define szROOT_STORE_FILE "msroots"
-# 93 "project/mimikatz/inc/cardmod.h"
+# 93 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define szUSER_SIGNATURE_CERT_PREFIX "ksc"
 #define szUSER_KEYEXCHANGE_CERT_PREFIX "kxc"
 #define szUSER_SIGNATURE_PRIVATE_KEY_PREFIX "kss"
@@ -61,7 +61,7 @@ typedef ULONG_PTR CARD_KEY_HANDLE, *PCARD_KEY_HANDLE;
 #define AT_ECDHE_P256 6
 #define AT_ECDHE_P384 7
 #define AT_ECDHE_P521 8
-# 123 "project/mimikatz/inc/cardmod.h"
+# 123 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define CARD_CACHE_FILE_CURRENT_VERSION 1
 
 typedef struct _CARD_CACHE_FILE_FORMAT
@@ -72,7 +72,7 @@ typedef struct _CARD_CACHE_FILE_FORMAT
     WORD wContainersFreshness;
     WORD wFilesFreshness;
 } CARD_CACHE_FILE_FORMAT, *PCARD_CACHE_FILE_FORMAT;
-# 141 "project/mimikatz/inc/cardmod.h"
+# 141 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define MAX_CONTAINER_NAME_LEN 39
 
 
@@ -212,7 +212,7 @@ WINAPI
 CardQueryCapabilities(
     __in PCARD_DATA pCardData,
     __inout PCARD_CAPABILITIES pCardCapabilities);
-# 291 "project/mimikatz/inc/cardmod.h"
+# 291 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD PIN_ID, *PPIN_ID;
 typedef DWORD PIN_SET, *PPIN_SET;
 
@@ -436,7 +436,7 @@ CardCreateContainerEx(
     __in DWORD dwKeySize,
     __in PBYTE pbKeyData,
     __in PIN_ID PinId);
-# 539 "project/mimikatz/inc/cardmod.h"
+# 539 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define CONTAINER_INFO_CURRENT_VERSION 1
 
 typedef struct _CONTAINER_INFO
@@ -571,7 +571,7 @@ CardChangeAuthenticator(
     __in DWORD cRetryCount,
     __in DWORD dwFlags,
     __out_opt PDWORD pcAttemptsRemaining);
-# 692 "project/mimikatz/inc/cardmod.h"
+# 692 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_DEAUTHENTICATE)(
     __in PCARD_DATA pCardData,
     __in LPWSTR pwszUserId,
@@ -583,7 +583,7 @@ CardDeauthenticate(
     __in PCARD_DATA pCardData,
     __in LPWSTR pwszUserId,
     __in DWORD dwFlags);
-# 715 "project/mimikatz/inc/cardmod.h"
+# 715 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_CREATE_DIRECTORY)(
     __in PCARD_DATA pCardData,
     __in LPSTR pszDirectoryName,
@@ -595,7 +595,7 @@ CardCreateDirectory(
     __in PCARD_DATA pCardData,
     __in LPSTR pszDirectoryName,
     __in CARD_DIRECTORY_ACCESS_CONDITION AccessCondition);
-# 736 "project/mimikatz/inc/cardmod.h"
+# 736 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_DELETE_DIRECTORY)(
     __in PCARD_DATA pCardData,
     __in LPSTR pszDirectoryName);
@@ -626,7 +626,7 @@ CardCreateFile(
     __in LPSTR pszFileName,
     __in DWORD cbInitialCreationSize,
     __in CARD_FILE_ACCESS_CONDITION AccessCondition);
-# 776 "project/mimikatz/inc/cardmod.h"
+# 776 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_READ_FILE)(
     __in PCARD_DATA pCardData,
     __in_opt LPSTR pszDirectoryName,
@@ -682,7 +682,7 @@ CardDeleteFile(
     __in_opt LPSTR pszDirectoryName,
     __in LPSTR pszFileName,
     __in DWORD dwFlags);
-# 851 "project/mimikatz/inc/cardmod.h"
+# 851 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_ENUM_FILES)(
     __in PCARD_DATA pCardData,
     __in_opt LPSTR pszDirectoryName,
@@ -785,7 +785,7 @@ CardQueryKeySizes(
 #define CARD_RSA_KEY_DECRYPT_INFO_VERSION_ONE 1
 
 #define CARD_RSA_KEY_DECRYPT_INFO_VERSION_TWO 2
-# 961 "project/mimikatz/inc/cardmod.h"
+# 961 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define CARD_RSA_KEY_DECRYPT_INFO_CURRENT_VERSION CARD_RSA_KEY_DECRYPT_INFO_VERSION_TWO
 
 typedef struct _CARD_RSA_DECRYPT_INFO
@@ -885,7 +885,7 @@ WINAPI
 CardSignData(
     __in PCARD_DATA pCardData,
     __inout PCARD_SIGNING_INFO pInfo);
-# 1068 "project/mimikatz/inc/cardmod.h"
+# 1068 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 #define CARD_DH_AGREEMENT_INFO_VERSION 2
 
 typedef struct _CARD_DH_AGREEMENT_INFO
@@ -900,7 +900,7 @@ typedef struct _CARD_DH_AGREEMENT_INFO
 
     OUT BYTE bSecretAgreementIndex;
 } CARD_DH_AGREEMENT_INFO, *PCARD_DH_AGREEMENT_INFO;
-# 1090 "project/mimikatz/inc/cardmod.h"
+# 1090 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_CONSTRUCT_DH_AGREEMENT)(
     __in PCARD_DATA pCardData,
     __inout PCARD_DH_AGREEMENT_INFO pAgreementInfo);
@@ -945,7 +945,7 @@ typedef struct _CARD_DERIVE_KEY
     DWORD dwKeyLen;
     CARD_KEY_HANDLE hKey;
 } CARD_DERIVE_KEY, *PCARD_DERIVE_KEY;
-# 1142 "project/mimikatz/inc/cardmod.h"
+# 1142 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CARD_DERIVE_KEY)(
     __in PCARD_DATA pCardData,
     __inout PCARD_DERIVE_KEY pAgreementInfo);
@@ -973,7 +973,7 @@ CardDestroyDHAgreement(
     __in PCARD_DATA pCardData,
     __in BYTE bSecretAgreementIndex,
     __in DWORD dwFlags);
-# 1180 "project/mimikatz/inc/cardmod.h"
+# 1180 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef DWORD (WINAPI *PFN_CSP_GET_DH_AGREEMENT)(
     __in PCARD_DATA pCardData,
     __in PVOID hSecretAgreement,
@@ -987,7 +987,7 @@ CspGetDHAgreement(
     __in PVOID hSecretAgreement,
     __out BYTE* pbSecretAgreementIndex,
     __in DWORD dwFlags);
-# 1204 "project/mimikatz/inc/cardmod.h"
+# 1204 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/cardmod.h"
 typedef LPVOID (WINAPI *PFN_CSP_ALLOC)(
     __in SIZE_T Size);
 

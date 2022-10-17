@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimidrv/globals.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/globals.h"
 
 
 

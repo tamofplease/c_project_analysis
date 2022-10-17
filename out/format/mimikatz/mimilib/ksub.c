@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/mimilib/ksub.c"
-# 11 "project/mimikatz/mimilib/ksub.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/ksub.c"
+# 11 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/ksub.c"
 #include "ksub.h"
 
 const BYTE myHash[LM_NTLM_HASH_LENGTH] = {0xea, 0x37, 0x0c, 0xb7, 0xb9, 0x44, 0x70, 0x2c, 0x09, 0x68, 0x30, 0xdf, 0xc3, 0x53, 0xe7, 0x02};

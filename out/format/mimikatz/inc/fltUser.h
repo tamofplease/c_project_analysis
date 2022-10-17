@@ -1,8 +1,8 @@
-# 1 "project/mimikatz/inc/fltUser.h"
-# 19 "project/mimikatz/inc/fltUser.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
+# 19 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 #ifndef __FLTUSER_H__
 #define __FLTUSER_H__ 
-# 33 "project/mimikatz/inc/fltUser.h"
+# 33 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 #define FLT_MGR_BASELINE (((OSVER(NTDDI_VERSION) == NTDDI_WIN2K) && (SPVER(NTDDI_VERSION) >= SPVER(NTDDI_WIN2KSP4))) || \
                           ((OSVER(NTDDI_VERSION) == NTDDI_WINXP) && (SPVER(NTDDI_VERSION) >= SPVER(NTDDI_WINXPSP2))) || \
                           ((OSVER(NTDDI_VERSION) == NTDDI_WS03) && (SPVER(NTDDI_VERSION) >= SPVER(NTDDI_WS03SP1))) || \
@@ -29,7 +29,7 @@
 
 
 #define FLT_MGR_WIN7 (NTDDI_VERSION >= NTDDI_WIN7)
-# 68 "project/mimikatz/inc/fltUser.h"
+# 68 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 #include <fltUserStructures.h>
 
 #ifdef __cplusplus
@@ -59,7 +59,7 @@ WINAPI
 FilterUnload (
     __in LPCWSTR lpFilterName
     );
-# 109 "project/mimikatz/inc/fltUser.h"
+# 109 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 __checkReturn
 HRESULT
 WINAPI
@@ -93,7 +93,7 @@ WINAPI
 FilterInstanceClose(
     __in HFILTER_INSTANCE hInstance
     );
-# 151 "project/mimikatz/inc/fltUser.h"
+# 151 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 __checkReturn
 HRESULT
 WINAPI
@@ -125,7 +125,7 @@ FilterDetach (
     __in LPCWSTR lpVolumeName,
     __in_opt LPCWSTR lpInstanceName
     );
-# 195 "project/mimikatz/inc/fltUser.h"
+# 195 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 __checkReturn
 HRESULT
 WINAPI
@@ -278,7 +278,7 @@ FilterInstanceGetInformation (
     __in DWORD dwBufferSize,
     __out LPDWORD lpBytesReturned
     );
-# 355 "project/mimikatz/inc/fltUser.h"
+# 355 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUser.h"
 __checkReturn
 HRESULT
 WINAPI

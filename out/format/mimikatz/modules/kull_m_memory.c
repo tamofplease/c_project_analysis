@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_memory.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_memory.c"
 
 
 
@@ -274,7 +274,7 @@ BOOL kull_m_memory_query(IN PKULL_M_MEMORY_ADDRESS Address, OUT PMEMORY_BASIC_IN
  case KULL_M_MEMORY_TYPE_PROCESS:
   status = VirtualQueryEx(Address->hMemory->pHandleProcess->hProcess, Address->address, MemoryInfo, sizeof(MEMORY_BASIC_INFORMATION)) == sizeof(MEMORY_BASIC_INFORMATION);
   break;
-# 294 "project/mimikatz/modules/kull_m_memory.c"
+# 294 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_memory.c"
  default:
   break;
  }

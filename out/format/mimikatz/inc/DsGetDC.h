@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/DsGetDC.h"
-# 23 "project/mimikatz/inc/DsGetDC.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
+# 23 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 #ifndef _DSGETDC_
 #define _DSGETDC_ 
 
@@ -16,7 +16,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 48 "project/mimikatz/inc/DsGetDC.h"
+# 48 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 #define DS_FORCE_REDISCOVERY 0x00000001
 
 #define DS_DIRECTORY_SERVICE_REQUIRED 0x00000010
@@ -415,7 +415,7 @@ DsEnumerateDomainTrustsA (
 #else
 #define DsEnumerateDomainTrusts DsEnumerateDomainTrustsA
 #endif
-# 454 "project/mimikatz/inc/DsGetDC.h"
+# 454 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 #if defined(_NTLSA_) || defined(_NTSECAPI_)
 
 DSGETDCAPI

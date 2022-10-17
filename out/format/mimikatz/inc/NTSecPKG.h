@@ -1,20 +1,20 @@
-# 1 "project/mimikatz/inc/NTSecPKG.h"
-# 18 "project/mimikatz/inc/NTSecPKG.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
+# 18 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 #ifndef _NTSECPKG_
 #define _NTSECPKG_ 
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 36 "project/mimikatz/inc/NTSecPKG.h"
+# 36 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef PVOID *PLSA_CLIENT_REQUEST;
-# 45 "project/mimikatz/inc/NTSecPKG.h"
+# 45 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef enum _LSA_TOKEN_INFORMATION_TYPE {
     LsaTokenInformationNull,
     LsaTokenInformationV1,
     LsaTokenInformationV2
 } LSA_TOKEN_INFORMATION_TYPE, *PLSA_TOKEN_INFORMATION_TYPE;
-# 61 "project/mimikatz/inc/NTSecPKG.h"
+# 61 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _LSA_TOKEN_INFORMATION_NULL {
 
 
@@ -24,11 +24,11 @@ typedef struct _LSA_TOKEN_INFORMATION_NULL {
 
 
     LARGE_INTEGER ExpirationTime;
-# 81 "project/mimikatz/inc/NTSecPKG.h"
+# 81 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     PTOKEN_GROUPS Groups;
 
 } LSA_TOKEN_INFORMATION_NULL, *PLSA_TOKEN_INFORMATION_NULL;
-# 94 "project/mimikatz/inc/NTSecPKG.h"
+# 94 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _LSA_TOKEN_INFORMATION_V1 {
 
 
@@ -45,21 +45,21 @@ typedef struct _LSA_TOKEN_INFORMATION_V1 {
 
 
     TOKEN_USER User;
-# 121 "project/mimikatz/inc/NTSecPKG.h"
+# 121 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     PTOKEN_GROUPS Groups;
-# 134 "project/mimikatz/inc/NTSecPKG.h"
+# 134 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     TOKEN_PRIMARY_GROUP PrimaryGroup;
-# 151 "project/mimikatz/inc/NTSecPKG.h"
+# 151 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     PTOKEN_PRIVILEGES Privileges;
-# 164 "project/mimikatz/inc/NTSecPKG.h"
+# 164 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     TOKEN_OWNER Owner;
-# 176 "project/mimikatz/inc/NTSecPKG.h"
+# 176 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     TOKEN_DEFAULT_DACL DefaultDacl;
 
 } LSA_TOKEN_INFORMATION_V1, *PLSA_TOKEN_INFORMATION_V1;
-# 188 "project/mimikatz/inc/NTSecPKG.h"
+# 188 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef LSA_TOKEN_INFORMATION_V1 LSA_TOKEN_INFORMATION_V2, *PLSA_TOKEN_INFORMATION_V2;
-# 199 "project/mimikatz/inc/NTSecPKG.h"
+# 199 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef NTSTATUS
 (NTAPI LSA_CREATE_LOGON_SESSION) (
     IN PLUID LogonId
@@ -176,7 +176,7 @@ typedef struct _LSA_DISPATCH_TABLE {
     PLSA_COPY_TO_CLIENT_BUFFER CopyToClientBuffer;
     PLSA_COPY_FROM_CLIENT_BUFFER CopyFromClientBuffer;
 } LSA_DISPATCH_TABLE, *PLSA_DISPATCH_TABLE;
-# 333 "project/mimikatz/inc/NTSecPKG.h"
+# 333 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 #define LSA_AP_NAME_INITIALIZE_PACKAGE "LsaApInitializePackage\0"
 #define LSA_AP_NAME_LOGON_USER "LsaApLogonUser\0"
 #define LSA_AP_NAME_LOGON_USER_EX "LsaApLogonUserEx\0"
@@ -665,7 +665,7 @@ typedef SECURITY_USER_DATA SecurityUserData, * PSecurityUserData;
 #define NO_LONG_NAMES 2
 
 #endif
-# 829 "project/mimikatz/inc/NTSecPKG.h"
+# 829 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef NTSTATUS
 (NTAPI LSA_IMPERSONATE_CLIENT) (
     VOID
@@ -1069,7 +1069,7 @@ typedef LSA_CREATE_TOKEN_EX * PLSA_CREATE_TOKEN_EX;
 #define _ENCRYPTED_CREDENTIAL_DEFINED 
 
 typedef struct _ENCRYPTED_CREDENTIALW {
-# 1240 "project/mimikatz/inc/NTSecPKG.h"
+# 1240 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     CREDENTIALW Cred;
 
 
@@ -1707,7 +1707,7 @@ typedef NTSTATUS
 
 #define SECPKG_LSAMODEINIT_NAME "SpLsaModeInitialize"
 #define SECPKG_USERMODEINIT_NAME "SpUserModeInitialize"
-# 1901 "project/mimikatz/inc/NTSecPKG.h"
+# 1901 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 #define SECPKG_INTERFACE_VERSION 0x00010000
 #define SECPKG_INTERFACE_VERSION_2 0x00020000
 #define SECPKG_INTERFACE_VERSION_3 0x00040000

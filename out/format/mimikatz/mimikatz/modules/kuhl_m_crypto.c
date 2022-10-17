@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_crypto.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_crypto.c"
 
 
 
@@ -806,7 +806,7 @@ NTSTATUS kuhl_m_crypto_hash(int argc, wchar_t * argv[])
    }
   }
  }
-# 822 "project/mimikatz/mimikatz/modules/kuhl_m_crypto.c"
+# 822 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_crypto.c"
  if(NT_SUCCESS(RtlUpcaseUnicodeStringToOemString(&oTmp, &uPassword, TRUE)))
  {
   if(NT_SUCCESS(RtlCalculateLmOwfPassword(oTmp.Buffer, hash)))
@@ -1164,7 +1164,7 @@ BOOL kuhl_m_crypto_ImportCert(LPCVOID data, DWORD dwSize, HCERTSTORE *hStore, PC
  *pCertContext = NULL;
  if(!(status = CryptQueryObject(CERT_QUERY_OBJECT_BLOB, &blobCert, CERT_QUERY_CONTENT_FLAG_CERT, CERT_QUERY_FORMAT_FLAG_ALL, 0, &dwMsgAndCertEncodingType, &dwContentType, &dwFormatType, hStore, NULL, (const void **) pCertContext)))
   PRINT_ERROR_AUTO(L"CryptQueryObject");
-# 1188 "project/mimikatz/mimikatz/modules/kuhl_m_crypto.c"
+# 1188 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_crypto.c"
  return status;
 }
 

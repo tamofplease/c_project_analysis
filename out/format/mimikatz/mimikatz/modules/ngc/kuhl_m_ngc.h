@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/ngc/kuhl_m_ngc.h"
 
 
 

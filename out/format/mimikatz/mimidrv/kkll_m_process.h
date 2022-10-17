@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimidrv/kkll_m_process.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/kkll_m_process.h"
 
 
 

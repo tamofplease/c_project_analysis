@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_ms-nrpc_c.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_ms-nrpc_c.c"
 #include "kull_m_rpc_ms-nrpc.h"
 
 typedef struct _netlogon_MIDL_TYPE_FORMAT_STRING {

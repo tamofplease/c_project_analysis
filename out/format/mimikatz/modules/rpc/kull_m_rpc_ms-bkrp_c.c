@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/rpc/kull_m_rpc_ms-bkrp_c.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/rpc/kull_m_rpc_ms-bkrp_c.c"
 #include "kull_m_rpc_ms-bkrp.h"
 
 const GUID

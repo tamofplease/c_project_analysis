@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_remotelib.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_remotelib.c"
 
 
 
@@ -35,7 +35,7 @@ BOOL kull_m_remotelib_create(PKULL_M_MEMORY_ADDRESS aRemoteFunc, PREMOTE_LIB_INP
 
  if(!output)
   output = &oData;
-# 45 "project/mimikatz/modules/kull_m_remotelib.c"
+# 45 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_remotelib.c"
  if(data = (PREMOTE_LIB_DATA) LocalAlloc(LPTR, size))
  {
   RtlCopyMemory(&data->input, input, FIELD_OFFSET(REMOTE_LIB_INPUT_DATA, inputData) + input->inputSize);

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_lsadump.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_lsadump.c"
 
 
 
@@ -908,7 +908,7 @@ void kuhl_m_lsadump_printMsCache(PMSCACHE_ENTRY entry, CHAR version)
  ptr.UserName.Length = ptr.UserName.MaximumLength = entry->szUserName;
  ptr.Domain.Buffer = (PWSTR) ((PBYTE) ptr.UserName.Buffer + SIZE_ALIGN(entry->szUserName, 4));
  ptr.Domain.Length = ptr.Domain.MaximumLength = entry->szDomainName;
-# 946 "project/mimikatz/mimikatz/modules/kuhl_m_lsadump.c"
+# 946 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_lsadump.c"
  kprintf(L"User      : %wZ\\%wZ\n", &ptr.Domain, &ptr.UserName);
  kprintf(L"MsCacheV%c : ", version); kull_m_string_wprintf_hex(((PMSCACHE_DATA) entry->enc_data)->mshashdata, LM_NTLM_HASH_LENGTH, 0); kprintf(L"\n");
 }

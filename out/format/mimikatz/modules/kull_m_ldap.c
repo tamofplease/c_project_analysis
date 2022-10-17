@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/modules/kull_m_ldap.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/modules/kull_m_ldap.c"
 
 
 
@@ -6,7 +6,7 @@
 
 #include "kull_m_ldap.h"
 
-BOOL kull_m_ldap_getLdapAndRootDN(PCWCHAR system, PCWCHAR nc, PLDAP *ld, PWCHAR *rootDn)
+BOOL kull_m_ldap_getLdapAndRootDN(PCWCHAR system, PCWCHAR nc, PLDAP *ld, PWCHAR *rootDn, PSEC_WINNT_AUTH_IDENTITY pIdentity)
 {
  BOOL status = FALSE;
  DWORD dwErr;
@@ -15,7 +15,7 @@ BOOL kull_m_ldap_getLdapAndRootDN(PCWCHAR system, PCWCHAR nc, PLDAP *ld, PWCHAR 
  {
   if(*rootDn = kull_m_ldap_getRootDomainNamingContext(nc, *ld))
   {
-   dwErr = ldap_bind_s(*ld, NULL, NULL, LDAP_AUTH_NEGOTIATE);
+   dwErr = ldap_bind_s(*ld, NULL, (PWCHAR) pIdentity, LDAP_AUTH_NEGOTIATE);
    status = (dwErr == LDAP_SUCCESS);
    if(!status)
    {

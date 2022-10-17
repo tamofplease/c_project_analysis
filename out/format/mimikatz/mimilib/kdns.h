@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimilib/kdns.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimilib/kdns.h"
 
 
 

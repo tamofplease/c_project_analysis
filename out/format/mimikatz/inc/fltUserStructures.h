@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/fltUserStructures.h"
-# 19 "project/mimikatz/inc/fltUserStructures.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
+# 19 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 #ifndef __FLT_USER_STRUCTURES_H__
 #define __FLT_USER_STRUCTURES_H__ 
 
@@ -23,7 +23,7 @@
 typedef HANDLE HFILTER;
 typedef HANDLE HFILTER_INSTANCE;
 typedef HANDLE HFILTER_VOLUME;
-# 51 "project/mimikatz/inc/fltUserStructures.h"
+# 51 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 typedef __success(return >= 0) LONG NTSTATUS;
 typedef NTSTATUS *PNTSTATUS;
 
@@ -62,7 +62,7 @@ typedef enum _FLT_FILESYSTEM_TYPE {
     FLT_FSTYPE_GPFS
 
 } FLT_FILESYSTEM_TYPE, *PFLT_FILESYSTEM_TYPE;
-# 107 "project/mimikatz/inc/fltUserStructures.h"
+# 107 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 typedef enum _FILTER_INFORMATION_CLASS {
 
     FilterFullInformation,
@@ -88,7 +88,7 @@ typedef struct _FILTER_FULL_INFORMATION {
     WCHAR FilterNameBuffer[1];
 
 } FILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION;
-# 143 "project/mimikatz/inc/fltUserStructures.h"
+# 143 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 typedef struct _FILTER_AGGREGATE_BASIC_INFORMATION {
 
     ULONG NextEntryOffset;
@@ -135,7 +135,7 @@ typedef struct _FILTER_AGGREGATE_BASIC_INFORMATION {
     } Type;
 
 } FILTER_AGGREGATE_BASIC_INFORMATION, *PFILTER_AGGREGATE_BASIC_INFORMATION;
-# 198 "project/mimikatz/inc/fltUserStructures.h"
+# 198 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 #if FLT_MGR_LONGHORN
 typedef struct _FILTER_AGGREGATE_STANDARD_INFORMATION {
 
@@ -201,7 +201,7 @@ typedef struct _FILTER_AGGREGATE_STANDARD_INFORMATION {
 
 } FILTER_AGGREGATE_STANDARD_INFORMATION, *PFILTER_AGGREGATE_STANDARD_INFORMATION;
 #endif
-# 271 "project/mimikatz/inc/fltUserStructures.h"
+# 271 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 typedef enum _FILTER_VOLUME_INFORMATION_CLASS {
 
     FilterVolumeBasicInformation,
@@ -279,7 +279,7 @@ typedef struct _FILTER_VOLUME_STANDARD_INFORMATION {
 
 } FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION;
 #endif
-# 357 "project/mimikatz/inc/fltUserStructures.h"
+# 357 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 typedef enum _INSTANCE_INFORMATION_CLASS {
 
     InstanceBasicInformation,
@@ -460,11 +460,11 @@ typedef struct _INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 
 } INSTANCE_AGGREGATE_STANDARD_INFORMATION, *PINSTANCE_AGGREGATE_STANDARD_INFORMATION;
 #endif
-# 545 "project/mimikatz/inc/fltUserStructures.h"
+# 545 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
 typedef struct _FILTER_MESSAGE_HEADER {
-# 554 "project/mimikatz/inc/fltUserStructures.h"
+# 554 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
     ULONG ReplyLength;
-# 564 "project/mimikatz/inc/fltUserStructures.h"
+# 564 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
     ULONGLONG MessageId;
 
 
@@ -474,9 +474,9 @@ typedef struct _FILTER_MESSAGE_HEADER {
 } FILTER_MESSAGE_HEADER, *PFILTER_MESSAGE_HEADER;
 
 typedef struct _FILTER_REPLY_HEADER {
-# 581 "project/mimikatz/inc/fltUserStructures.h"
+# 581 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
     NTSTATUS Status;
-# 590 "project/mimikatz/inc/fltUserStructures.h"
+# 590 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/fltUserStructures.h"
     ULONGLONG MessageId;
 
 

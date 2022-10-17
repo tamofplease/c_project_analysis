@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_lsadump.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_lsadump.h"
 
 
 
@@ -118,7 +118,7 @@ typedef struct _SAM_KEY_DATA {
  DWORD unk0;
  DWORD unk1;
 } SAM_KEY_DATA, *PSAM_KEY_DATA;
-# 139 "project/mimikatz/mimikatz/modules/kuhl_m_lsadump.h"
+# 139 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_lsadump.h"
 typedef struct _SAM_KEY_DATA_AES {
  DWORD Revision;
  DWORD Length;

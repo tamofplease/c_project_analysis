@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kuhl_m_token.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_token.h"
 
 
 
@@ -11,7 +11,7 @@
 #include "kuhl_m_process.h"
 
 const KUHL_M kuhl_m_token;
-# 23 "project/mimikatz/mimikatz/modules/kuhl_m_token.h"
+# 23 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kuhl_m_token.h"
 typedef struct _KUHL_M_TOKEN_ELEVATE_DATA {
  PSID pSid;
  PCWSTR pUsername;

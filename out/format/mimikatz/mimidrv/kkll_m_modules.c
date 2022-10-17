@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimidrv/kkll_m_modules.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/kkll_m_modules.c"
 
 
 

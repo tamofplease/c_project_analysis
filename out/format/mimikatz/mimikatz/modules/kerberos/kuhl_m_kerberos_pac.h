@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/kerberos/kuhl_m_kerberos_pac.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/kerberos/kuhl_m_kerberos_pac.h"
 
 
 

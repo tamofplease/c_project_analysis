@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi_oe.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/dpapi/kuhl_m_dpapi_oe.h"
 
 
 

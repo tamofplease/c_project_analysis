@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/wincred.h"
-# 22 "project/mimikatz/inc/wincred.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
+# 22 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 #ifndef _WINCRED_H_
 #define _WINCRED_H_ 
 
@@ -66,7 +66,7 @@ typedef struct _FILETIME *LPFILETIME;
 #ifndef _NTDEF_
 typedef LONG NTSTATUS, *PNTSTATUS;
 #endif
-# 120 "project/mimikatz/inc/wincred.h"
+# 120 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 #define STATUS_LOGON_FAILURE ((NTSTATUS)0xC000006DL)
 #define STATUS_WRONG_PASSWORD ((NTSTATUS)0xC000006AL)
 #define STATUS_PASSWORD_EXPIRED ((NTSTATUS)0xC0000071L)
@@ -154,7 +154,7 @@ typedef LONG NTSTATUS, *PNTSTATUS;
         (_Status) == STATUS_LOGON_TYPE_NOT_GRANTED || \
         (_Status) == HRESULT_FROM_NT( STATUS_LOGON_TYPE_NOT_GRANTED ) \
 )
-# 217 "project/mimikatz/inc/wincred.h"
+# 217 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 #define CRED_MAX_STRING_LENGTH 256
 
 
@@ -492,14 +492,14 @@ typedef PCREDENTIAL_TARGET_INFORMATIONW PCREDENTIAL_TARGET_INFORMATION;
 typedef CREDENTIAL_TARGET_INFORMATIONA CREDENTIAL_TARGET_INFORMATION;
 typedef PCREDENTIAL_TARGET_INFORMATIONA PCREDENTIAL_TARGET_INFORMATION;
 #endif
-# 562 "project/mimikatz/inc/wincred.h"
+# 562 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 #define CERT_HASH_LENGTH 20
 
 typedef struct _CERT_CREDENTIAL_INFO {
     ULONG cbSize;
     UCHAR rgbHashOfCert[CERT_HASH_LENGTH];
 } CERT_CREDENTIAL_INFO, *PCERT_CREDENTIAL_INFO;
-# 576 "project/mimikatz/inc/wincred.h"
+# 576 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _USERNAME_TARGET_CREDENTIAL_INFO {
     LPWSTR UserName;
 } USERNAME_TARGET_CREDENTIAL_INFO, *PUSERNAME_TARGET_CREDENTIAL_INFO;
@@ -671,7 +671,7 @@ typedef PCREDUI_INFOA PCREDUI_INFO;
         CREDUIWIN_ENUMERATE_CURRENT_USER | \
         CREDUIWIN_SECURE_PROMPT | \
         CREDUIWIN_PACK_32_WOW )
-# 757 "project/mimikatz/inc/wincred.h"
+# 757 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 #define CRED_PRESERVE_CREDENTIAL_BLOB 0x1
 
 WINADVAPI

@@ -1,4 +1,4 @@
-# 1 "project/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c"
 
 
 
@@ -157,7 +157,7 @@ NTSTATUS kuhl_m_sekurlsa_nt5_LsaEncryptMemory(PUCHAR pMemory, ULONG cbMemory, BO
  }
  return status;
 }
-# 171 "project/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c"
+# 171 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimikatz/modules/sekurlsa/crypto/kuhl_m_sekurlsa_nt5.c"
 const UINT32 SymCryptDesSpbox[8][64] = {
  0x02080800, 0x00080000, 0x02000002, 0x02080802, 0x02000000, 0x00080802, 0x00080002, 0x02000002, 0x00080802, 0x02080800, 0x02080000, 0x00000802, 0x02000802, 0x02000000, 0x00000000, 0x00080002,
  0x00080000, 0x00000002, 0x02000800, 0x00080800, 0x02080802, 0x02080000, 0x00000802, 0x02000800, 0x00000002, 0x00000800, 0x00080800, 0x02080002, 0x00000800, 0x02000802, 0x02080002, 0x00000000,

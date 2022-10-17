@@ -1,5 +1,5 @@
-# 1 "project/mimikatz/inc/SubAuth.h"
-# 17 "project/mimikatz/inc/SubAuth.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/SubAuth.h"
+# 17 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/SubAuth.h"
 #ifndef _NTSUBAUTH_
 #define _NTSUBAUTH_ 
 
@@ -85,7 +85,7 @@ typedef PVOID SAM_HANDLE, *PSAM_HANDLE;
 #define USER_COMPUTED_ACCOUNT_CONTROL_BITS \
             (USER_ACCOUNT_AUTO_LOCKED | \
              USER_PASSWORD_EXPIRED )
-# 113 "project/mimikatz/inc/SubAuth.h"
+# 113 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/SubAuth.h"
 #define SAM_DAYS_PER_WEEK (7)
 #define SAM_HOURS_PER_WEEK (24 * SAM_DAYS_PER_WEEK)
 #define SAM_MINUTES_PER_WEEK (60 * SAM_HOURS_PER_WEEK)
@@ -93,7 +93,7 @@ typedef PVOID SAM_HANDLE, *PSAM_HANDLE;
 typedef struct _LOGON_HOURS {
 
     USHORT UnitsPerWeek;
-# 135 "project/mimikatz/inc/SubAuth.h"
+# 135 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/SubAuth.h"
     PUCHAR LogonHours;
 
 } LOGON_HOURS, *PLOGON_HOURS;
