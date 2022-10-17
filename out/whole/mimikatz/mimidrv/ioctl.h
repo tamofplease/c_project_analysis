@@ -1,4 +1,4 @@
-# 0 "project/mimikatz/mimidrv/ioctl.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/ioctl.h"
 # 0 "<built-in>"
 #define __STDC__ 1
 # 0 "<built-in>"
@@ -10,13 +10,13 @@
 # 0 "<built-in>"
 #define __STDC_HOSTED__ 1
 # 0 "<built-in>"
-#define __GNUC__ 11
+#define __GNUC__ 12
 # 0 "<built-in>"
 #define __GNUC_MINOR__ 2
 # 0 "<built-in>"
 #define __GNUC_PATCHLEVEL__ 0
 # 0 "<built-in>"
-#define __VERSION__ "11.2.0"
+#define __VERSION__ "12.2.0"
 # 0 "<built-in>"
 #define __ATOMIC_RELAXED 0
 # 0 "<built-in>"
@@ -52,7 +52,7 @@
 # 0 "<built-in>"
 #define __SIZEOF_DOUBLE__ 8
 # 0 "<built-in>"
-#define __SIZEOF_LONG_DOUBLE__ 16
+#define __SIZEOF_LONG_DOUBLE__ 8
 # 0 "<built-in>"
 #define __SIZEOF_SIZE_T__ 8
 # 0 "<built-in>"
@@ -146,7 +146,7 @@
 # 0 "<built-in>"
 #define __UINTPTR_TYPE__ long unsigned int
 # 0 "<built-in>"
-#define __GXX_ABI_VERSION 1016
+#define __GXX_ABI_VERSION 1017
 # 0 "<built-in>"
 #define __SCHAR_MAX__ 0x7f
 # 0 "<built-in>"
@@ -332,6 +332,8 @@
 # 0 "<built-in>"
 #define __FLT_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMAF 1
+# 0 "<built-in>"
 #define __FLT_IS_IEC_60559__ 2
 # 0 "<built-in>"
 #define __DBL_MANT_DIG__ 53
@@ -364,33 +366,35 @@
 # 0 "<built-in>"
 #define __DBL_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMA 1
+# 0 "<built-in>"
 #define __DBL_IS_IEC_60559__ 2
 # 0 "<built-in>"
-#define __LDBL_MANT_DIG__ 64
+#define __LDBL_MANT_DIG__ 53
 # 0 "<built-in>"
-#define __LDBL_DIG__ 18
+#define __LDBL_DIG__ 15
 # 0 "<built-in>"
-#define __LDBL_MIN_EXP__ (-16381)
+#define __LDBL_MIN_EXP__ (-1021)
 # 0 "<built-in>"
-#define __LDBL_MIN_10_EXP__ (-4931)
+#define __LDBL_MIN_10_EXP__ (-307)
 # 0 "<built-in>"
-#define __LDBL_MAX_EXP__ 16384
+#define __LDBL_MAX_EXP__ 1024
 # 0 "<built-in>"
-#define __LDBL_MAX_10_EXP__ 4932
+#define __LDBL_MAX_10_EXP__ 308
 # 0 "<built-in>"
-#define __DECIMAL_DIG__ 21
+#define __DECIMAL_DIG__ 17
 # 0 "<built-in>"
-#define __LDBL_DECIMAL_DIG__ 21
+#define __LDBL_DECIMAL_DIG__ 17
 # 0 "<built-in>"
-#define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
+#define __LDBL_MAX__ 1.79769313486231570814527423731704357e+308L
 # 0 "<built-in>"
-#define __LDBL_NORM_MAX__ 1.18973149535723176502126385303097021e+4932L
+#define __LDBL_NORM_MAX__ 1.79769313486231570814527423731704357e+308L
 # 0 "<built-in>"
-#define __LDBL_MIN__ 3.36210314311209350626267781732175260e-4932L
+#define __LDBL_MIN__ 2.22507385850720138309023271733240406e-308L
 # 0 "<built-in>"
-#define __LDBL_EPSILON__ 1.08420217248550443400745280086994171e-19L
+#define __LDBL_EPSILON__ 2.22044604925031308084726333618164062e-16L
 # 0 "<built-in>"
-#define __LDBL_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951L
+#define __LDBL_DENORM_MIN__ 4.94065645841246544176568792868221372e-324L
 # 0 "<built-in>"
 #define __LDBL_HAS_DENORM__ 1
 # 0 "<built-in>"
@@ -398,7 +402,41 @@
 # 0 "<built-in>"
 #define __LDBL_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMAL 1
+# 0 "<built-in>"
 #define __LDBL_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT16_MANT_DIG__ 11
+# 0 "<built-in>"
+#define __FLT16_DIG__ 3
+# 0 "<built-in>"
+#define __FLT16_MIN_EXP__ (-13)
+# 0 "<built-in>"
+#define __FLT16_MIN_10_EXP__ (-4)
+# 0 "<built-in>"
+#define __FLT16_MAX_EXP__ 16
+# 0 "<built-in>"
+#define __FLT16_MAX_10_EXP__ 4
+# 0 "<built-in>"
+#define __FLT16_DECIMAL_DIG__ 5
+# 0 "<built-in>"
+#define __FLT16_MAX__ 6.55040000000000000000000000000000000e+4F16
+# 0 "<built-in>"
+#define __FLT16_NORM_MAX__ 6.55040000000000000000000000000000000e+4F16
+# 0 "<built-in>"
+#define __FLT16_MIN__ 6.10351562500000000000000000000000000e-5F16
+# 0 "<built-in>"
+#define __FLT16_EPSILON__ 9.76562500000000000000000000000000000e-4F16
+# 0 "<built-in>"
+#define __FLT16_DENORM_MIN__ 5.96046447753906250000000000000000000e-8F16
+# 0 "<built-in>"
+#define __FLT16_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT16_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT16_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT16_IS_IEC_60559__ 2
 # 0 "<built-in>"
 #define __FLT32_MANT_DIG__ 24
 # 0 "<built-in>"
@@ -429,6 +467,8 @@
 #define __FLT32_HAS_INFINITY__ 1
 # 0 "<built-in>"
 #define __FLT32_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FP_FAST_FMAF32 1
 # 0 "<built-in>"
 #define __FLT32_IS_IEC_60559__ 2
 # 0 "<built-in>"
@@ -461,6 +501,8 @@
 #define __FLT64_HAS_INFINITY__ 1
 # 0 "<built-in>"
 #define __FLT64_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FP_FAST_FMAF64 1
 # 0 "<built-in>"
 #define __FLT64_IS_IEC_60559__ 2
 # 0 "<built-in>"
@@ -526,11 +568,13 @@
 # 0 "<built-in>"
 #define __FLT32X_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMAF32x 1
+# 0 "<built-in>"
 #define __FLT32X_IS_IEC_60559__ 2
 # 0 "<built-in>"
-#define __FLT64X_MANT_DIG__ 64
+#define __FLT64X_MANT_DIG__ 113
 # 0 "<built-in>"
-#define __FLT64X_DIG__ 18
+#define __FLT64X_DIG__ 33
 # 0 "<built-in>"
 #define __FLT64X_MIN_EXP__ (-16381)
 # 0 "<built-in>"
@@ -540,17 +584,17 @@
 # 0 "<built-in>"
 #define __FLT64X_MAX_10_EXP__ 4932
 # 0 "<built-in>"
-#define __FLT64X_DECIMAL_DIG__ 21
+#define __FLT64X_DECIMAL_DIG__ 36
 # 0 "<built-in>"
-#define __FLT64X_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+#define __FLT64X_MAX__ 1.18973149535723176508575932662800702e+4932F64x
 # 0 "<built-in>"
-#define __FLT64X_NORM_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+#define __FLT64X_NORM_MAX__ 1.18973149535723176508575932662800702e+4932F64x
 # 0 "<built-in>"
 #define __FLT64X_MIN__ 3.36210314311209350626267781732175260e-4932F64x
 # 0 "<built-in>"
-#define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
+#define __FLT64X_EPSILON__ 1.92592994438723585305597794258492732e-34F64x
 # 0 "<built-in>"
-#define __FLT64X_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951F64x
+#define __FLT64X_DENORM_MIN__ 6.47517511943802511092443895822764655e-4966F64x
 # 0 "<built-in>"
 #define __FLT64X_HAS_DENORM__ 1
 # 0 "<built-in>"
@@ -576,6 +620,8 @@
 # 0 "<built-in>"
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
 # 0 "<built-in>"
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1
+# 0 "<built-in>"
 #define __GCC_ATOMIC_BOOL_LOCK_FREE 2
 # 0 "<built-in>"
 #define __GCC_ATOMIC_CHAR_LOCK_FREE 2
@@ -596,6 +642,10 @@
 # 0 "<built-in>"
 #define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
 # 0 "<built-in>"
+#define __GCC_DESTRUCTIVE_SIZE 256
+# 0 "<built-in>"
+#define __GCC_CONSTRUCTIVE_SIZE 64
+# 0 "<built-in>"
 #define __GCC_ATOMIC_POINTER_LOCK_FREE 2
 # 0 "<built-in>"
 #define __HAVE_SPECULATION_SAFE_VALUE 1
@@ -610,53 +660,155 @@
 # 0 "<built-in>"
 #define __SIZEOF_PTRDIFF_T__ 8
 # 0 "<built-in>"
-#define __amd64 1
+#define __aarch64__ 1
 # 0 "<built-in>"
-#define __amd64__ 1
+#define __ARM_64BIT_STATE 1
 # 0 "<built-in>"
-#define __x86_64 1
+#define __ARM_ARCH_ISA_A64 1
 # 0 "<built-in>"
-#define __x86_64__ 1
+#define __ARM_ALIGN_MAX_PWR 28
 # 0 "<built-in>"
-#define __SIZEOF_FLOAT80__ 16
+#define __ARM_ALIGN_MAX_STACK_PWR 16
 # 0 "<built-in>"
-#define __SIZEOF_FLOAT128__ 16
+#define __ARM_ARCH_8A 1
 # 0 "<built-in>"
-#define __ATOMIC_HLE_ACQUIRE 65536
+#define __ARM_ARCH_PROFILE 65
 # 0 "<built-in>"
-#define __ATOMIC_HLE_RELEASE 131072
+#define __ARM_FEATURE_CLZ 1
+# 0 "<built-in>"
+#define __ARM_FEATURE_IDIV 1
+# 0 "<built-in>"
+#define __ARM_FEATURE_UNALIGNED 1
+# 0 "<built-in>"
+#define __ARM_PCS_AAPCS64 1
+# 0 "<built-in>"
+#define __ARM_SIZEOF_WCHAR_T 4
 # 0 "<built-in>"
 #define __GCC_ASM_FLAG_OUTPUTS__ 1
 # 0 "<built-in>"
-#define __k8 1
+#undef __ARM_FP_FAST
 # 0 "<built-in>"
-#define __k8__ 1
+#define __ARM_ARCH 8
 # 0 "<built-in>"
-#define __tune_core2__ 1
+#define __ARM_SIZEOF_MINIMAL_ENUM 4
 # 0 "<built-in>"
-#define __code_model_small__ 1
+#undef __AARCH64EB__
 # 0 "<built-in>"
-#define __MMX__ 1
+#undef __ARM_BIG_ENDIAN
 # 0 "<built-in>"
-#define __SSE__ 1
+#define __AARCH64EL__ 1
 # 0 "<built-in>"
-#define __SSE2__ 1
+#define __ARM_FEATURE_FMA 1
 # 0 "<built-in>"
-#define __SSE3__ 1
+#define __ARM_FP 14
 # 0 "<built-in>"
-#define __FXSR__ 1
+#define __ARM_FP16_FORMAT_IEEE 1
 # 0 "<built-in>"
-#define __SSE_MATH__ 1
+#define __ARM_FP16_ARGS 1
 # 0 "<built-in>"
-#define __SSE2_MATH__ 1
+#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC
 # 0 "<built-in>"
-#define __MMX_WITH_SSE__ 1
+#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC
 # 0 "<built-in>"
-#define __SEG_FS 1
+#define __ARM_FEATURE_NUMERIC_MAXMIN 1
 # 0 "<built-in>"
-#define __SEG_GS 1
+#define __ARM_NEON 1
+# 0 "<built-in>"
+#undef __ARM_FEATURE_CRC32
+# 0 "<built-in>"
+#undef __ARM_FEATURE_DOTPROD
+# 0 "<built-in>"
+#undef __ARM_FEATURE_COMPLEX
+# 0 "<built-in>"
+#undef __ARM_FEATURE_JCVT
+# 0 "<built-in>"
+#undef __AARCH64_CMODEL_TINY__
+# 0 "<built-in>"
+#undef __AARCH64_CMODEL_SMALL__
+# 0 "<built-in>"
+#undef __AARCH64_CMODEL_LARGE__
+# 0 "<built-in>"
+#define __AARCH64_CMODEL_SMALL__ 1
+# 0 "<built-in>"
+#undef _ILP32
+# 0 "<built-in>"
+#undef __ILP32__
+# 0 "<built-in>"
+#undef __ARM_FEATURE_CRYPTO
+# 0 "<built-in>"
+#undef __ARM_FEATURE_QRDMX
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_BITS
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_VECTOR_OPERATORS
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_MATMUL_INT8
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_MATMUL_FP32
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_MATMUL_FP64
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_AES
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_BITPERM
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_SHA3
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_SM4
+# 0 "<built-in>"
+#undef __ARM_FEATURE_ATOMICS
+# 0 "<built-in>"
+#undef __ARM_FEATURE_AES
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SHA2
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SHA3
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SHA512
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SM3
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SM4
+# 0 "<built-in>"
+#undef __ARM_FEATURE_FP16_FML
+# 0 "<built-in>"
+#undef __ARM_FEATURE_FRINT
+# 0 "<built-in>"
+#undef __ARM_FEATURE_TME
+# 0 "<built-in>"
+#undef __ARM_FEATURE_RNG
+# 0 "<built-in>"
+#undef __ARM_FEATURE_MEMORY_TAGGING
+# 0 "<built-in>"
+#undef __ARM_FEATURE_BTI_DEFAULT
+# 0 "<built-in>"
+#undef __ARM_FEATURE_PAC_DEFAULT
+# 0 "<built-in>"
+#undef __ARM_FEATURE_MATMUL_INT8
+# 0 "<built-in>"
+#undef __ARM_FEATURE_BF16_VECTOR_ARITHMETIC
+# 0 "<built-in>"
+#undef __ARM_FEATURE_BF16_SCALAR_ARITHMETIC
+# 0 "<built-in>"
+#undef __ARM_FEATURE_LS64
+# 0 "<built-in>"
+#undef __FLT_EVAL_METHOD__
+# 0 "<built-in>"
+#define __FLT_EVAL_METHOD__ 0
+# 0 "<built-in>"
+#undef __FLT_EVAL_METHOD_C99__
+# 0 "<built-in>"
+#define __FLT_EVAL_METHOD_C99__ 0
 # 0 "<built-in>"
 #define __LITTLE_ENDIAN__ 1
+# 0 "<built-in>"
+#define __arm64 1
+# 0 "<built-in>"
+#define __arm64__ 1
 # 0 "<built-in>"
 #define __MACH__ 1
 # 0 "<built-in>"
@@ -666,14 +818,14 @@
 # 0 "<built-in>"
 #define __CONSTANT_CFSTRINGS__ 1
 # 0 "<built-in>"
-#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 110500
+#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 120000
 # 0 "<built-in>"
 #define __strong 
 # 0 "<built-in>"
 #define __weak 
 # 0 "<command-line>"
 #define __DYNAMIC__ 1
-# 1 "project/mimikatz/mimidrv/ioctl.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/ioctl.h"
 
 
 

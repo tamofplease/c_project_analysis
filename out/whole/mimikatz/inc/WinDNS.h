@@ -1,4 +1,4 @@
-# 0 "project/mimikatz/inc/WinDNS.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 # 0 "<built-in>"
 #define __STDC__ 1
 # 0 "<built-in>"
@@ -10,13 +10,13 @@
 # 0 "<built-in>"
 #define __STDC_HOSTED__ 1
 # 0 "<built-in>"
-#define __GNUC__ 11
+#define __GNUC__ 12
 # 0 "<built-in>"
 #define __GNUC_MINOR__ 2
 # 0 "<built-in>"
 #define __GNUC_PATCHLEVEL__ 0
 # 0 "<built-in>"
-#define __VERSION__ "11.2.0"
+#define __VERSION__ "12.2.0"
 # 0 "<built-in>"
 #define __ATOMIC_RELAXED 0
 # 0 "<built-in>"
@@ -52,7 +52,7 @@
 # 0 "<built-in>"
 #define __SIZEOF_DOUBLE__ 8
 # 0 "<built-in>"
-#define __SIZEOF_LONG_DOUBLE__ 16
+#define __SIZEOF_LONG_DOUBLE__ 8
 # 0 "<built-in>"
 #define __SIZEOF_SIZE_T__ 8
 # 0 "<built-in>"
@@ -146,7 +146,7 @@
 # 0 "<built-in>"
 #define __UINTPTR_TYPE__ long unsigned int
 # 0 "<built-in>"
-#define __GXX_ABI_VERSION 1016
+#define __GXX_ABI_VERSION 1017
 # 0 "<built-in>"
 #define __SCHAR_MAX__ 0x7f
 # 0 "<built-in>"
@@ -332,6 +332,8 @@
 # 0 "<built-in>"
 #define __FLT_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMAF 1
+# 0 "<built-in>"
 #define __FLT_IS_IEC_60559__ 2
 # 0 "<built-in>"
 #define __DBL_MANT_DIG__ 53
@@ -364,33 +366,35 @@
 # 0 "<built-in>"
 #define __DBL_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMA 1
+# 0 "<built-in>"
 #define __DBL_IS_IEC_60559__ 2
 # 0 "<built-in>"
-#define __LDBL_MANT_DIG__ 64
+#define __LDBL_MANT_DIG__ 53
 # 0 "<built-in>"
-#define __LDBL_DIG__ 18
+#define __LDBL_DIG__ 15
 # 0 "<built-in>"
-#define __LDBL_MIN_EXP__ (-16381)
+#define __LDBL_MIN_EXP__ (-1021)
 # 0 "<built-in>"
-#define __LDBL_MIN_10_EXP__ (-4931)
+#define __LDBL_MIN_10_EXP__ (-307)
 # 0 "<built-in>"
-#define __LDBL_MAX_EXP__ 16384
+#define __LDBL_MAX_EXP__ 1024
 # 0 "<built-in>"
-#define __LDBL_MAX_10_EXP__ 4932
+#define __LDBL_MAX_10_EXP__ 308
 # 0 "<built-in>"
-#define __DECIMAL_DIG__ 21
+#define __DECIMAL_DIG__ 17
 # 0 "<built-in>"
-#define __LDBL_DECIMAL_DIG__ 21
+#define __LDBL_DECIMAL_DIG__ 17
 # 0 "<built-in>"
-#define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
+#define __LDBL_MAX__ 1.79769313486231570814527423731704357e+308L
 # 0 "<built-in>"
-#define __LDBL_NORM_MAX__ 1.18973149535723176502126385303097021e+4932L
+#define __LDBL_NORM_MAX__ 1.79769313486231570814527423731704357e+308L
 # 0 "<built-in>"
-#define __LDBL_MIN__ 3.36210314311209350626267781732175260e-4932L
+#define __LDBL_MIN__ 2.22507385850720138309023271733240406e-308L
 # 0 "<built-in>"
-#define __LDBL_EPSILON__ 1.08420217248550443400745280086994171e-19L
+#define __LDBL_EPSILON__ 2.22044604925031308084726333618164062e-16L
 # 0 "<built-in>"
-#define __LDBL_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951L
+#define __LDBL_DENORM_MIN__ 4.94065645841246544176568792868221372e-324L
 # 0 "<built-in>"
 #define __LDBL_HAS_DENORM__ 1
 # 0 "<built-in>"
@@ -398,7 +402,41 @@
 # 0 "<built-in>"
 #define __LDBL_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMAL 1
+# 0 "<built-in>"
 #define __LDBL_IS_IEC_60559__ 2
+# 0 "<built-in>"
+#define __FLT16_MANT_DIG__ 11
+# 0 "<built-in>"
+#define __FLT16_DIG__ 3
+# 0 "<built-in>"
+#define __FLT16_MIN_EXP__ (-13)
+# 0 "<built-in>"
+#define __FLT16_MIN_10_EXP__ (-4)
+# 0 "<built-in>"
+#define __FLT16_MAX_EXP__ 16
+# 0 "<built-in>"
+#define __FLT16_MAX_10_EXP__ 4
+# 0 "<built-in>"
+#define __FLT16_DECIMAL_DIG__ 5
+# 0 "<built-in>"
+#define __FLT16_MAX__ 6.55040000000000000000000000000000000e+4F16
+# 0 "<built-in>"
+#define __FLT16_NORM_MAX__ 6.55040000000000000000000000000000000e+4F16
+# 0 "<built-in>"
+#define __FLT16_MIN__ 6.10351562500000000000000000000000000e-5F16
+# 0 "<built-in>"
+#define __FLT16_EPSILON__ 9.76562500000000000000000000000000000e-4F16
+# 0 "<built-in>"
+#define __FLT16_DENORM_MIN__ 5.96046447753906250000000000000000000e-8F16
+# 0 "<built-in>"
+#define __FLT16_HAS_DENORM__ 1
+# 0 "<built-in>"
+#define __FLT16_HAS_INFINITY__ 1
+# 0 "<built-in>"
+#define __FLT16_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FLT16_IS_IEC_60559__ 2
 # 0 "<built-in>"
 #define __FLT32_MANT_DIG__ 24
 # 0 "<built-in>"
@@ -429,6 +467,8 @@
 #define __FLT32_HAS_INFINITY__ 1
 # 0 "<built-in>"
 #define __FLT32_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FP_FAST_FMAF32 1
 # 0 "<built-in>"
 #define __FLT32_IS_IEC_60559__ 2
 # 0 "<built-in>"
@@ -461,6 +501,8 @@
 #define __FLT64_HAS_INFINITY__ 1
 # 0 "<built-in>"
 #define __FLT64_HAS_QUIET_NAN__ 1
+# 0 "<built-in>"
+#define __FP_FAST_FMAF64 1
 # 0 "<built-in>"
 #define __FLT64_IS_IEC_60559__ 2
 # 0 "<built-in>"
@@ -526,11 +568,13 @@
 # 0 "<built-in>"
 #define __FLT32X_HAS_QUIET_NAN__ 1
 # 0 "<built-in>"
+#define __FP_FAST_FMAF32x 1
+# 0 "<built-in>"
 #define __FLT32X_IS_IEC_60559__ 2
 # 0 "<built-in>"
-#define __FLT64X_MANT_DIG__ 64
+#define __FLT64X_MANT_DIG__ 113
 # 0 "<built-in>"
-#define __FLT64X_DIG__ 18
+#define __FLT64X_DIG__ 33
 # 0 "<built-in>"
 #define __FLT64X_MIN_EXP__ (-16381)
 # 0 "<built-in>"
@@ -540,17 +584,17 @@
 # 0 "<built-in>"
 #define __FLT64X_MAX_10_EXP__ 4932
 # 0 "<built-in>"
-#define __FLT64X_DECIMAL_DIG__ 21
+#define __FLT64X_DECIMAL_DIG__ 36
 # 0 "<built-in>"
-#define __FLT64X_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+#define __FLT64X_MAX__ 1.18973149535723176508575932662800702e+4932F64x
 # 0 "<built-in>"
-#define __FLT64X_NORM_MAX__ 1.18973149535723176502126385303097021e+4932F64x
+#define __FLT64X_NORM_MAX__ 1.18973149535723176508575932662800702e+4932F64x
 # 0 "<built-in>"
 #define __FLT64X_MIN__ 3.36210314311209350626267781732175260e-4932F64x
 # 0 "<built-in>"
-#define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
+#define __FLT64X_EPSILON__ 1.92592994438723585305597794258492732e-34F64x
 # 0 "<built-in>"
-#define __FLT64X_DENORM_MIN__ 3.64519953188247460252840593361941982e-4951F64x
+#define __FLT64X_DENORM_MIN__ 6.47517511943802511092443895822764655e-4966F64x
 # 0 "<built-in>"
 #define __FLT64X_HAS_DENORM__ 1
 # 0 "<built-in>"
@@ -576,6 +620,8 @@
 # 0 "<built-in>"
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
 # 0 "<built-in>"
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1
+# 0 "<built-in>"
 #define __GCC_ATOMIC_BOOL_LOCK_FREE 2
 # 0 "<built-in>"
 #define __GCC_ATOMIC_CHAR_LOCK_FREE 2
@@ -596,6 +642,10 @@
 # 0 "<built-in>"
 #define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
 # 0 "<built-in>"
+#define __GCC_DESTRUCTIVE_SIZE 256
+# 0 "<built-in>"
+#define __GCC_CONSTRUCTIVE_SIZE 64
+# 0 "<built-in>"
 #define __GCC_ATOMIC_POINTER_LOCK_FREE 2
 # 0 "<built-in>"
 #define __HAVE_SPECULATION_SAFE_VALUE 1
@@ -610,53 +660,155 @@
 # 0 "<built-in>"
 #define __SIZEOF_PTRDIFF_T__ 8
 # 0 "<built-in>"
-#define __amd64 1
+#define __aarch64__ 1
 # 0 "<built-in>"
-#define __amd64__ 1
+#define __ARM_64BIT_STATE 1
 # 0 "<built-in>"
-#define __x86_64 1
+#define __ARM_ARCH_ISA_A64 1
 # 0 "<built-in>"
-#define __x86_64__ 1
+#define __ARM_ALIGN_MAX_PWR 28
 # 0 "<built-in>"
-#define __SIZEOF_FLOAT80__ 16
+#define __ARM_ALIGN_MAX_STACK_PWR 16
 # 0 "<built-in>"
-#define __SIZEOF_FLOAT128__ 16
+#define __ARM_ARCH_8A 1
 # 0 "<built-in>"
-#define __ATOMIC_HLE_ACQUIRE 65536
+#define __ARM_ARCH_PROFILE 65
 # 0 "<built-in>"
-#define __ATOMIC_HLE_RELEASE 131072
+#define __ARM_FEATURE_CLZ 1
+# 0 "<built-in>"
+#define __ARM_FEATURE_IDIV 1
+# 0 "<built-in>"
+#define __ARM_FEATURE_UNALIGNED 1
+# 0 "<built-in>"
+#define __ARM_PCS_AAPCS64 1
+# 0 "<built-in>"
+#define __ARM_SIZEOF_WCHAR_T 4
 # 0 "<built-in>"
 #define __GCC_ASM_FLAG_OUTPUTS__ 1
 # 0 "<built-in>"
-#define __k8 1
+#undef __ARM_FP_FAST
 # 0 "<built-in>"
-#define __k8__ 1
+#define __ARM_ARCH 8
 # 0 "<built-in>"
-#define __tune_core2__ 1
+#define __ARM_SIZEOF_MINIMAL_ENUM 4
 # 0 "<built-in>"
-#define __code_model_small__ 1
+#undef __AARCH64EB__
 # 0 "<built-in>"
-#define __MMX__ 1
+#undef __ARM_BIG_ENDIAN
 # 0 "<built-in>"
-#define __SSE__ 1
+#define __AARCH64EL__ 1
 # 0 "<built-in>"
-#define __SSE2__ 1
+#define __ARM_FEATURE_FMA 1
 # 0 "<built-in>"
-#define __SSE3__ 1
+#define __ARM_FP 14
 # 0 "<built-in>"
-#define __FXSR__ 1
+#define __ARM_FP16_FORMAT_IEEE 1
 # 0 "<built-in>"
-#define __SSE_MATH__ 1
+#define __ARM_FP16_ARGS 1
 # 0 "<built-in>"
-#define __SSE2_MATH__ 1
+#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC
 # 0 "<built-in>"
-#define __MMX_WITH_SSE__ 1
+#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC
 # 0 "<built-in>"
-#define __SEG_FS 1
+#define __ARM_FEATURE_NUMERIC_MAXMIN 1
 # 0 "<built-in>"
-#define __SEG_GS 1
+#define __ARM_NEON 1
+# 0 "<built-in>"
+#undef __ARM_FEATURE_CRC32
+# 0 "<built-in>"
+#undef __ARM_FEATURE_DOTPROD
+# 0 "<built-in>"
+#undef __ARM_FEATURE_COMPLEX
+# 0 "<built-in>"
+#undef __ARM_FEATURE_JCVT
+# 0 "<built-in>"
+#undef __AARCH64_CMODEL_TINY__
+# 0 "<built-in>"
+#undef __AARCH64_CMODEL_SMALL__
+# 0 "<built-in>"
+#undef __AARCH64_CMODEL_LARGE__
+# 0 "<built-in>"
+#define __AARCH64_CMODEL_SMALL__ 1
+# 0 "<built-in>"
+#undef _ILP32
+# 0 "<built-in>"
+#undef __ILP32__
+# 0 "<built-in>"
+#undef __ARM_FEATURE_CRYPTO
+# 0 "<built-in>"
+#undef __ARM_FEATURE_QRDMX
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_BITS
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_VECTOR_OPERATORS
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_MATMUL_INT8
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_MATMUL_FP32
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE_MATMUL_FP64
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_AES
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_BITPERM
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_SHA3
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SVE2_SM4
+# 0 "<built-in>"
+#undef __ARM_FEATURE_ATOMICS
+# 0 "<built-in>"
+#undef __ARM_FEATURE_AES
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SHA2
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SHA3
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SHA512
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SM3
+# 0 "<built-in>"
+#undef __ARM_FEATURE_SM4
+# 0 "<built-in>"
+#undef __ARM_FEATURE_FP16_FML
+# 0 "<built-in>"
+#undef __ARM_FEATURE_FRINT
+# 0 "<built-in>"
+#undef __ARM_FEATURE_TME
+# 0 "<built-in>"
+#undef __ARM_FEATURE_RNG
+# 0 "<built-in>"
+#undef __ARM_FEATURE_MEMORY_TAGGING
+# 0 "<built-in>"
+#undef __ARM_FEATURE_BTI_DEFAULT
+# 0 "<built-in>"
+#undef __ARM_FEATURE_PAC_DEFAULT
+# 0 "<built-in>"
+#undef __ARM_FEATURE_MATMUL_INT8
+# 0 "<built-in>"
+#undef __ARM_FEATURE_BF16_VECTOR_ARITHMETIC
+# 0 "<built-in>"
+#undef __ARM_FEATURE_BF16_SCALAR_ARITHMETIC
+# 0 "<built-in>"
+#undef __ARM_FEATURE_LS64
+# 0 "<built-in>"
+#undef __FLT_EVAL_METHOD__
+# 0 "<built-in>"
+#define __FLT_EVAL_METHOD__ 0
+# 0 "<built-in>"
+#undef __FLT_EVAL_METHOD_C99__
+# 0 "<built-in>"
+#define __FLT_EVAL_METHOD_C99__ 0
 # 0 "<built-in>"
 #define __LITTLE_ENDIAN__ 1
+# 0 "<built-in>"
+#define __arm64 1
+# 0 "<built-in>"
+#define __arm64__ 1
 # 0 "<built-in>"
 #define __MACH__ 1
 # 0 "<built-in>"
@@ -666,17 +818,17 @@
 # 0 "<built-in>"
 #define __CONSTANT_CFSTRINGS__ 1
 # 0 "<built-in>"
-#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 110500
+#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 120000
 # 0 "<built-in>"
 #define __strong 
 # 0 "<built-in>"
 #define __weak 
 # 0 "<command-line>"
 #define __DYNAMIC__ 1
-# 1 "project/mimikatz/inc/WinDNS.h"
-# 25 "project/mimikatz/inc/WinDNS.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
+# 25 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define _WINDNS_INCLUDED_ 
-# 38 "project/mimikatz/inc/WinDNS.h"
+# 38 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef unsigned __int64 QWORD, *PQWORD;
 
 
@@ -714,7 +866,7 @@ typedef struct _IP4_ARRAY
 
 }
 IP4_ARRAY, *PIP4_ARRAY;
-# 99 "project/mimikatz/inc/WinDNS.h"
+# 99 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef union
 {
 
@@ -728,7 +880,7 @@ typedef union
 
 }
 IP6_ADDRESS, *PIP6_ADDRESS;
-# 130 "project/mimikatz/inc/WinDNS.h"
+# 130 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #undef IP6_ADDRESS_STRING_LENGTH
 #define IP6_ADDRESS_STRING_LENGTH (65)
 #define IP6_ADDRESS_STRING_BUFFER_LENGTH (65)
@@ -772,7 +924,7 @@ IP6_ADDRESS, *PIP6_ADDRESS;
 
 
 #define INLINE_WRITE_FLIPPED_DWORD(pout,in) INLINE_DWORD_FLIP( *((UNALIGNED DWORD *)(pout)), in )
-# 186 "project/mimikatz/inc/WinDNS.h"
+# 186 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_PORT_HOST_ORDER (0x0035)
 #define DNS_PORT_NET_ORDER (0x3500)
 
@@ -835,7 +987,7 @@ IP6_ADDRESS, *PIP6_ADDRESS;
 
 
 #define DNS_MAX_TEXT_STRING_LENGTH (255)
-# 256 "project/mimikatz/inc/WinDNS.h"
+# 256 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #pragma pack(push, 1)
 
 
@@ -879,9 +1031,9 @@ DNS_HEADER_EXT, *PDNS_HEADER_EXT;
 
 
 #define DNS_HEADER_FLAGS(pHead) ( *((PWORD)(pHead)+1) )
-# 308 "project/mimikatz/inc/WinDNS.h"
+# 308 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_BYTE_FLIP_HEADER_COUNTS(pHeader) { PDNS_HEADER _head = (pHeader); INLINE_HTONS(_head->Xid, _head->Xid ); INLINE_HTONS(_head->QuestionCount, _head->QuestionCount ); INLINE_HTONS(_head->AnswerCount, _head->AnswerCount ); INLINE_HTONS(_head->NameServerCount,_head->NameServerCount ); INLINE_HTONS(_head->AdditionalCount,_head->AdditionalCount ); }
-# 322 "project/mimikatz/inc/WinDNS.h"
+# 322 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_OFFSET_TO_QUESTION_NAME sizeof(DNS_HEADER)
 
 
@@ -984,7 +1136,7 @@ DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 #define DNS_RCODE_SERVER_FAILURE DNS_RCODE_SERVFAIL
 #define DNS_RCODE_NAME_ERROR DNS_RCODE_NXDOMAIN
 #define DNS_RCODE_NOT_IMPLEMENTED DNS_RCODE_NOTIMPL
-# 437 "project/mimikatz/inc/WinDNS.h"
+# 437 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_CLASS_INTERNET 0x0001
 #define DNS_CLASS_CSNET 0x0002
 #define DNS_CLASS_CHAOS 0x0003
@@ -1000,7 +1152,7 @@ DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 #define DNS_RCLASS_NONE 0xfe00
 #define DNS_RCLASS_ALL 0xff00
 #define DNS_RCLASS_ANY 0xff00
-# 465 "project/mimikatz/inc/WinDNS.h"
+# 465 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_TYPE_ZERO 0x0000
 
 
@@ -1107,7 +1259,7 @@ DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 #define DNS_TYPE_UID 0x0065
 #define DNS_TYPE_GID 0x0066
 #define DNS_TYPE_UNSPEC 0x0067
-# 581 "project/mimikatz/inc/WinDNS.h"
+# 581 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_TYPE_ADDRS 0x00f8
 #define DNS_TYPE_TKEY 0x00f9
 #define DNS_TYPE_TSIG 0x00fa
@@ -1207,7 +1359,7 @@ DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 
 #define DNS_RTYPE_WINS 0x01ff
 #define DNS_RTYPE_WINSR 0x02ff
-# 696 "project/mimikatz/inc/WinDNS.h"
+# 696 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_ATMA_FORMAT_E164 1
 #define DNS_ATMA_FORMAT_AESA 2
 #define DNS_ATMA_MAX_ADDR_LENGTH (20)
@@ -1219,7 +1371,7 @@ DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 
 #define DNS_ATMA_AESA_ADDR_LENGTH (20)
 #define DNS_ATMA_MAX_RECORD_LENGTH (DNS_ATMA_MAX_ADDR_LENGTH+1)
-# 715 "project/mimikatz/inc/WinDNS.h"
+# 715 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNSSEC_ALGORITHM_RSAMD5 1
 #define DNSSEC_ALGORITHM_RSASHA1 5
 #define DNSSEC_ALGORITHM_NULL 253
@@ -1301,7 +1453,7 @@ DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 #define IS_WORD_ALIGNED(p) ( !((UINT_PTR)(p) & (UINT_PTR)1) )
 #define IS_DWORD_ALIGNED(p) ( !((UINT_PTR)(p) & (UINT_PTR)3) )
 #define IS_QWORD_ALIGNED(p) ( !((UINT_PTR)(p) & (UINT_PTR)7) )
-# 808 "project/mimikatz/inc/WinDNS.h"
+# 808 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum
 {
 
@@ -1337,7 +1489,7 @@ typedef enum
 
 }
 DNS_CONFIG_TYPE;
-# 852 "project/mimikatz/inc/WinDNS.h"
+# 852 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_CONFIG_FLAG_ALLOC (0x00000001)
 
 DNS_STATUS
@@ -1350,7 +1502,7 @@ DnsQueryConfig(
     __out_bcount_part(*pBufLen, *pBufLen) PVOID pBuffer,
     __inout PDWORD pBufLen
     );
-# 875 "project/mimikatz/inc/WinDNS.h"
+# 875 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct
 {
     IP4_ADDRESS IpAddress;
@@ -1744,7 +1896,7 @@ typedef struct
     PSTR pNameResultDomain;
 }
 DNS_WINSR_DATAA, *PDNS_WINSR_DATAA;
-# 1289 "project/mimikatz/inc/WinDNS.h"
+# 1289 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef DNS_PTR_DATAA DNS_PTR_DATA, *PDNS_PTR_DATA;
 typedef DNS_SOA_DATAA DNS_SOA_DATA, *PDNS_SOA_DATA;
 typedef DNS_MINFO_DATAA DNS_MINFO_DATA, *PDNS_MINFO_DATA;
@@ -1809,7 +1961,7 @@ typedef struct _DnsRecordFlags
     DWORD Reserved : 24;
 }
 DNS_RECORD_FLAGS;
-# 1362 "project/mimikatz/inc/WinDNS.h"
+# 1362 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum _DnsSection
 {
     DnsSectionQuestion,
@@ -1824,7 +1976,7 @@ DNS_SECTION;
 #define DnsSectionZone DnsSectionQuestion
 #define DnsSectionPrereq DnsSectionAnswer
 #define DnsSectionUpdate DnsSectionAuthority
-# 1385 "project/mimikatz/inc/WinDNS.h"
+# 1385 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNSREC_SECTION (0x00000003)
 
 #define DNSREC_QUESTION (0x00000000)
@@ -1842,7 +1994,7 @@ DNS_SECTION;
 
 #define DNSREC_DELETE (0x00000004)
 #define DNSREC_NOEXIST (0x00000004)
-# 1421 "project/mimikatz/inc/WinDNS.h"
+# 1421 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DnsRecordW
 {
     struct _DnsRecordW * pNext;
@@ -2045,14 +2197,14 @@ typedef DNS_RECORD_OPTA DNS_RECORD_OPT, *PDNS_RECORD_OPT;
 
 #define DNS_RECORD_FIXED_SIZE FIELD_OFFSET( DNS_RECORD, Data )
 #define SIZEOF_DNS_RECORD_HEADER DNS_RECORD_FIXED_SIZE
-# 1635 "project/mimikatz/inc/WinDNS.h"
+# 1635 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DnsRRSet
 {
     PDNS_RECORD pFirstRR;
     PDNS_RECORD pLastRR;
 }
 DNS_RRSET, *PDNS_RRSET;
-# 1663 "project/mimikatz/inc/WinDNS.h"
+# 1663 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_RRSET_INIT(rrset) { PDNS_RRSET _prrset = &(rrset); _prrset->pFirstRR = NULL; _prrset->pLastRR = (PDNS_RECORD) &_prrset->pFirstRR; }
 
 
@@ -2095,7 +2247,7 @@ typedef struct DNS_PROXY_INFORMATION {
                 __out DNS_PROXY_INFORMATION_TYPE proxyInformationType;
                 __out_opt PWSTR proxyName;
 } DNS_PROXY_INFORMATION;
-# 1719 "project/mimikatz/inc/WinDNS.h"
+# 1719 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum _DNS_CHARSET
 {
     DnsCharSetUnknown,
@@ -2131,7 +2283,7 @@ DnsRecordSetCopyEx(
 #define DnsRecordCopy(pRR) DnsRecordCopyEx( (pRR), DnsCharSetAnsi, DnsCharSetAnsi )
 
 #define DnsRecordSetCopy(pRR) DnsRecordSetCopyEx( (pRR), DnsCharSetAnsi, DnsCharSetAnsi )
-# 1768 "project/mimikatz/inc/WinDNS.h"
+# 1768 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 BOOL
 WINAPI
 DnsRecordCompare(
@@ -2156,7 +2308,7 @@ PDNS_RECORD
 DnsRecordSetDetach(
     __inout PDNS_RECORD pRecordList
     );
-# 1802 "project/mimikatz/inc/WinDNS.h"
+# 1802 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum
 {
     DnsFreeFlat = 0,
@@ -2171,7 +2323,7 @@ DnsFree(
     __inout PVOID pData,
     __in DNS_FREE_TYPE FreeType
     );
-# 1824 "project/mimikatz/inc/WinDNS.h"
+# 1824 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DnsFreeRecordListDeep DnsFreeRecordList
 
 
@@ -2183,7 +2335,7 @@ DnsRecordListFree(
     __inout_opt PDNS_RECORD pRecordList,
     __in DNS_FREE_TYPE FreeType
     );
-# 1847 "project/mimikatz/inc/WinDNS.h"
+# 1847 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_QUERY_STANDARD 0x00000000
 #define DNS_QUERY_ACCEPT_TRUNCATED_RESPONSE 0x00000001
 #define DNS_QUERY_USE_TCP_ONLY 0x00000002
@@ -2253,7 +2405,7 @@ DnsQuery_W(
 
 
 #define DnsQuery DnsQuery_A
-# 1934 "project/mimikatz/inc/WinDNS.h"
+# 1934 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #define DNS_UPDATE_SECURITY_USE_DEFAULT 0x00000000
 #define DNS_UPDATE_SECURITY_OFF 0x00000010
 #define DNS_UPDATE_SECURITY_ON 0x00000020
@@ -2265,7 +2417,7 @@ DnsQuery_W(
 #define DNS_UPDATE_SKIP_NO_UPDATE_ADAPTERS 0x00002000
 #define DNS_UPDATE_REMOTE_SERVER 0x00004000
 #define DNS_UPDATE_RESERVED 0xffff0000
-# 1956 "project/mimikatz/inc/WinDNS.h"
+# 1956 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 DNS_STATUS
 WINAPI
 DnsAcquireContextHandle_W(
@@ -2372,7 +2524,7 @@ DnsReplaceRecordSetUTF8(
 
 
 #define DnsReplaceRecordSet DnsReplaceRecordSetA
-# 2070 "project/mimikatz/inc/WinDNS.h"
+# 2070 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum _DNS_NAME_FORMAT
 {
     DnsNameDomain,
@@ -2424,7 +2576,7 @@ DnsValidateName_UTF8(
 
 #define DNS_VALSVR_ERROR_NO_TCP 0x10
 #define DNS_VALSVR_ERROR_UNKNOWN 0xFF
-# 2138 "project/mimikatz/inc/WinDNS.h"
+# 2138 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 BOOL
 WINAPI
 DnsNameCompare_A(
@@ -2443,7 +2595,7 @@ DnsNameCompare_W(
 
 
 #define DnsNameCompare(n1,n2) DnsNameCompare_A( (n1),(n2) )
-# 2164 "project/mimikatz/inc/WinDNS.h"
+# 2164 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DNS_MESSAGE_BUFFER
 {
     DNS_HEADER MessageHead;
