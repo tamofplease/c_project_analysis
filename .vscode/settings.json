@@ -1,23 +1,22 @@
 {
-    "python.formatting.provider": "black",
-    "python.languageServer": "Pylance",
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.analysis.extraPaths": [
-        "venv/lib/python3.9/site-packages",
-    ],
-    "cSpell.words": [
-        "auxv",
-        "dataclass",
-        "deps",
-        "iquote",
-        "isystem",
-        "Labo",
-        "ntstatus",
-        "pshpack",
-        "rpcndr",
-        "schannel",
-        "tqdm",
-        "washi"
-    ]
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.analysis.extraPaths": ["venv/lib/python3.9/site-packages"],
+  "cSpell.words": [
+    "auxv",
+    "dataclass",
+    "deps",
+    "iquote",
+    "isystem",
+    "Labo",
+    "ntstatus",
+    "pshpack",
+    "rpcndr",
+    "schannel",
+    "tqdm",
+    "washi"
+  ],
+  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
 }
