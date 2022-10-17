@@ -1,8 +1,8 @@
-# 0 "project/mimikatz/inc/DhcpSSdk.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "project/mimikatz/inc/DhcpSSdk.h"
-# 30 "project/mimikatz/inc/DhcpSSdk.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
+# 30 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 typedef DWORD DHCP_IP_ADDRESS;
 typedef struct _DHCP_SERVER_OPTIONS {
     BYTE *MessageType;
@@ -31,14 +31,14 @@ typedef struct _DHCP_SERVER_OPTIONS {
     DWORD DSDomainNameLen;
     DWORD UNALIGNED *ScopeId;
 } DHCP_SERVER_OPTIONS, *LPDHCP_SERVER_OPTIONS;
-# 106 "project/mimikatz/inc/DhcpSSdk.h"
+# 106 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 typedef
 DWORD
 (APIENTRY *LPDHCP_CONTROL)(
     IN DWORD dwControlCode,
     IN LPVOID lpReserved
 )
-# 128 "project/mimikatz/inc/DhcpSSdk.h"
+# 128 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -51,7 +51,7 @@ DWORD
     IN OUT LPVOID *PktContext,
     OUT LPBOOL ProcessIt
 )
-# 183 "project/mimikatz/inc/DhcpSSdk.h"
+# 183 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -64,7 +64,7 @@ DWORD
     IN LPVOID Reserved,
     IN LPVOID PktContext
 )
-# 246 "project/mimikatz/inc/DhcpSSdk.h"
+# 246 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -78,7 +78,7 @@ DWORD
     IN LPVOID Reserved,
     IN LPVOID PktContext
 )
-# 299 "project/mimikatz/inc/DhcpSSdk.h"
+# 299 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -94,7 +94,7 @@ DWORD
     IN LPVOID Reserved,
     IN LPVOID PktContext
 )
-# 352 "project/mimikatz/inc/DhcpSSdk.h"
+# 352 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -106,7 +106,7 @@ DWORD
     IN LPVOID PktContext,
     IN OUT LPDHCP_SERVER_OPTIONS ServerOptions
 )
-# 392 "project/mimikatz/inc/DhcpSSdk.h"
+# 392 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -118,7 +118,7 @@ DWORD
     IN DWORD Reserved,
     IN DWORD ClientType
 )
-# 424 "project/mimikatz/inc/DhcpSSdk.h"
+# 424 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;
 
 typedef
@@ -142,5 +142,5 @@ DWORD
     IN DWORD CalloutVersion,
     IN OUT LPDHCP_CALLOUT_TABLE CalloutTbl
 )
-# 484 "project/mimikatz/inc/DhcpSSdk.h"
+# 484 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DhcpSSdk.h"
 ;

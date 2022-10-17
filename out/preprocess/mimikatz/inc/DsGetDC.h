@@ -1,8 +1,8 @@
-# 0 "project/mimikatz/inc/DsGetDC.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "project/mimikatz/inc/DsGetDC.h"
-# 103 "project/mimikatz/inc/DsGetDC.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
+# 103 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 typedef struct _DOMAIN_CONTROLLER_INFOA {
     LPSTR DomainControllerName;
     LPSTR DomainControllerAddress;
@@ -50,7 +50,7 @@ typedef struct _DOMAIN_CONTROLLER_INFOW {
     LPWSTR ClientSiteName;
 
 } DOMAIN_CONTROLLER_INFOW, *PDOMAIN_CONTROLLER_INFOW;
-# 194 "project/mimikatz/inc/DsGetDC.h"
+# 194 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 DECLSPEC_IMPORT
 DWORD
 WINAPI
@@ -96,7 +96,7 @@ DsGetSiteNameW(
     IN __in_opt LPCWSTR ComputerName OPTIONAL,
     OUT __deref_out LPWSTR *SiteName
 );
-# 247 "project/mimikatz/inc/DsGetDC.h"
+# 247 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 DECLSPEC_IMPORT
 DWORD
 WINAPI
@@ -110,9 +110,9 @@ WINAPI
 DsValidateSubnetNameA(
     __in IN LPCSTR SubnetName
 );
-# 331 "project/mimikatz/inc/DsGetDC.h"
+# 331 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 typedef struct _DS_DOMAIN_TRUSTSW {
-# 340 "project/mimikatz/inc/DsGetDC.h"
+# 340 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
     LPWSTR NetbiosDomainName;
     LPWSTR DnsDomainName;
 
@@ -122,7 +122,7 @@ typedef struct _DS_DOMAIN_TRUSTSW {
 
 
     ULONG Flags;
-# 368 "project/mimikatz/inc/DsGetDC.h"
+# 368 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
     ULONG ParentIndex;
 
 
@@ -133,7 +133,7 @@ typedef struct _DS_DOMAIN_TRUSTSW {
 
     ULONG TrustType;
     ULONG TrustAttributes;
-# 388 "project/mimikatz/inc/DsGetDC.h"
+# 388 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
     PSID DomainSid;
 
 
@@ -158,7 +158,7 @@ typedef struct _DS_DOMAIN_TRUSTSA {
     PSID DomainSid;
     GUID DomainGuid;
 } DS_DOMAIN_TRUSTSA, *PDS_DOMAIN_TRUSTSA;
-# 421 "project/mimikatz/inc/DsGetDC.h"
+# 421 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 DECLSPEC_IMPORT
 DWORD
 WINAPI
@@ -178,7 +178,7 @@ DsEnumerateDomainTrustsA (
     __deref_out_ecount(*DomainCount) PDS_DOMAIN_TRUSTSA *Domains,
     __out PULONG DomainCount
     );
-# 481 "project/mimikatz/inc/DsGetDC.h"
+# 481 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/DsGetDC.h"
 DECLSPEC_IMPORT
 DWORD
 WINAPI

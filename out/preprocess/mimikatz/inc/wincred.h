@@ -1,8 +1,8 @@
-# 0 "project/mimikatz/inc/wincred.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "project/mimikatz/inc/wincred.h"
-# 49 "project/mimikatz/inc/wincred.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
+# 49 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _SecHandle
 {
     ULONG_PTR dwLower ;
@@ -13,7 +13,7 @@ typedef struct _SecHandle
 
 
 typedef PSecHandle PCtxtHandle;
-# 69 "project/mimikatz/inc/wincred.h"
+# 69 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _FILETIME
     {
     DWORD dwLowDateTime;
@@ -23,9 +23,9 @@ typedef struct _FILETIME
 typedef struct _FILETIME *PFILETIME;
 
 typedef struct _FILETIME *LPFILETIME;
-# 86 "project/mimikatz/inc/wincred.h"
+# 86 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef LONG NTSTATUS, *PNTSTATUS;
-# 241 "project/mimikatz/inc/wincred.h"
+# 241 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _CREDENTIAL_ATTRIBUTEA {
     LPSTR Keyword;
     DWORD Flags;
@@ -56,7 +56,7 @@ typedef struct _CREDENTIAL_ATTRIBUTEW {
 
 typedef CREDENTIAL_ATTRIBUTEA CREDENTIAL_ATTRIBUTE;
 typedef PCREDENTIAL_ATTRIBUTEA PCREDENTIAL_ATTRIBUTE;
-# 422 "project/mimikatz/inc/wincred.h"
+# 422 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _CREDENTIALA {
     DWORD Flags;
     DWORD Type;
@@ -121,7 +121,7 @@ typedef struct _CREDENTIALW {
 
 typedef CREDENTIALA CREDENTIAL;
 typedef PCREDENTIALA PCREDENTIAL;
-# 505 "project/mimikatz/inc/wincred.h"
+# 505 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _CREDENTIAL_TARGET_INFORMATIONA {
     LPSTR TargetName;
     LPSTR NetbiosServerName;
@@ -136,7 +136,7 @@ typedef struct _CREDENTIAL_TARGET_INFORMATIONA {
 } CREDENTIAL_TARGET_INFORMATIONA, *PCREDENTIAL_TARGET_INFORMATIONA;
 
 typedef struct _CREDENTIAL_TARGET_INFORMATIONW {
-# 528 "project/mimikatz/inc/wincred.h"
+# 528 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
     LPWSTR TargetName;
     LPWSTR NetbiosServerName;
     LPWSTR DnsServerName;
@@ -162,12 +162,12 @@ typedef struct _CREDENTIAL_TARGET_INFORMATIONW {
 
 typedef CREDENTIAL_TARGET_INFORMATIONA CREDENTIAL_TARGET_INFORMATION;
 typedef PCREDENTIAL_TARGET_INFORMATIONA PCREDENTIAL_TARGET_INFORMATION;
-# 564 "project/mimikatz/inc/wincred.h"
+# 564 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _CERT_CREDENTIAL_INFO {
     ULONG cbSize;
     UCHAR rgbHashOfCert[20];
 } CERT_CREDENTIAL_INFO, *PCERT_CREDENTIAL_INFO;
-# 576 "project/mimikatz/inc/wincred.h"
+# 576 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _USERNAME_TARGET_CREDENTIAL_INFO {
     LPWSTR UserName;
 } USERNAME_TARGET_CREDENTIAL_INFO, *PUSERNAME_TARGET_CREDENTIAL_INFO;
@@ -201,7 +201,7 @@ typedef enum _CRED_PROTECTION_TYPE {
     CredUserProtection,
     CredTrustedProtection
 } CRED_PROTECTION_TYPE, *PCRED_PROTECTION_TYPE;
-# 623 "project/mimikatz/inc/wincred.h"
+# 623 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 typedef struct _CREDUI_INFOA
 {
     DWORD cbSize;
@@ -226,7 +226,7 @@ typedef struct _CREDUI_INFOW
 
 typedef CREDUI_INFOA CREDUI_INFO;
 typedef PCREDUI_INFOA PCREDUI_INFO;
-# 759 "project/mimikatz/inc/wincred.h"
+# 759 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -242,7 +242,7 @@ CredWriteA (
     __in PCREDENTIALA Credential,
     __in DWORD Flags
     );
-# 782 "project/mimikatz/inc/wincred.h"
+# 782 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -262,7 +262,7 @@ CredReadA (
     __reserved DWORD Flags,
     __out PCREDENTIALA *Credential
     );
-# 815 "project/mimikatz/inc/wincred.h"
+# 815 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -282,7 +282,7 @@ CredEnumerateA (
     __out DWORD *Count,
     __deref_out_ecount(*Count) PCREDENTIALA **Credential
     );
-# 842 "project/mimikatz/inc/wincred.h"
+# 842 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -300,7 +300,7 @@ CredWriteDomainCredentialsA (
     __in PCREDENTIALA Credential,
     __in DWORD Flags
     );
-# 875 "project/mimikatz/inc/wincred.h"
+# 875 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -320,7 +320,7 @@ CredReadDomainCredentialsA (
     __out DWORD *Count,
     __deref_out_ecount(*Count) PCREDENTIALA **Credential
     );
-# 902 "project/mimikatz/inc/wincred.h"
+# 902 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -338,7 +338,7 @@ CredDeleteA (
     __in DWORD Type,
     __reserved DWORD Flags
     );
-# 927 "project/mimikatz/inc/wincred.h"
+# 927 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -358,7 +358,7 @@ CredRenameA (
     __in DWORD Type,
     __reserved DWORD Flags
     );
-# 960 "project/mimikatz/inc/wincred.h"
+# 960 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -588,7 +588,7 @@ CredIsProtectedA(
     __in LPSTR pszProtectedCredentials,
     __out CRED_PROTECTION_TYPE* pProtectionType
     );
-# 1198 "project/mimikatz/inc/wincred.h"
+# 1198 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -608,7 +608,7 @@ CredFindBestCredentialA (
     IN DWORD Flags,
     OUT PCREDENTIALA *Credential
     );
-# 1227 "project/mimikatz/inc/wincred.h"
+# 1227 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 DECLSPEC_IMPORT
 BOOL
 WINAPI
@@ -693,7 +693,7 @@ CredUIPromptForWindowsCredentialsA(
     __inout_opt BOOL *pfSave,
     __in DWORD dwFlags
     );
-# 1319 "project/mimikatz/inc/wincred.h"
+# 1319 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 EXTERN_C DECLSPEC_IMPORT
 DWORD
 WINAPI
@@ -715,7 +715,7 @@ CredUIParseUserNameA(
     __out_ecount(domainBufferSize) CHAR *domain,
     __in ULONG domainBufferSize
     );
-# 1349 "project/mimikatz/inc/wincred.h"
+# 1349 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 EXTERN_C DECLSPEC_IMPORT
 DWORD
 WINAPI
@@ -745,7 +745,7 @@ CredUICmdLinePromptForCredentialsA(
     __inout_opt PBOOL pfSave,
     __in DWORD dwFlags
     );
-# 1390 "project/mimikatz/inc/wincred.h"
+# 1390 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 EXTERN_C DECLSPEC_IMPORT
 DWORD
 WINAPI
@@ -761,7 +761,7 @@ CredUIConfirmCredentialsA(
     __in PCSTR pszTargetName,
     __in BOOL bConfirm
     );
-# 1413 "project/mimikatz/inc/wincred.h"
+# 1413 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/wincred.h"
 EXTERN_C DECLSPEC_IMPORT
 DWORD
 WINAPI

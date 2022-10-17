@@ -1,16 +1,16 @@
-# 0 "project/mimikatz/inc/NTSecPKG.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "project/mimikatz/inc/NTSecPKG.h"
-# 36 "project/mimikatz/inc/NTSecPKG.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
+# 36 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef PVOID *PLSA_CLIENT_REQUEST;
-# 45 "project/mimikatz/inc/NTSecPKG.h"
+# 45 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef enum _LSA_TOKEN_INFORMATION_TYPE {
     LsaTokenInformationNull,
     LsaTokenInformationV1,
     LsaTokenInformationV2
 } LSA_TOKEN_INFORMATION_TYPE, *PLSA_TOKEN_INFORMATION_TYPE;
-# 61 "project/mimikatz/inc/NTSecPKG.h"
+# 61 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _LSA_TOKEN_INFORMATION_NULL {
 
 
@@ -20,11 +20,11 @@ typedef struct _LSA_TOKEN_INFORMATION_NULL {
 
 
     LARGE_INTEGER ExpirationTime;
-# 81 "project/mimikatz/inc/NTSecPKG.h"
+# 81 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     PTOKEN_GROUPS Groups;
 
 } LSA_TOKEN_INFORMATION_NULL, *PLSA_TOKEN_INFORMATION_NULL;
-# 94 "project/mimikatz/inc/NTSecPKG.h"
+# 94 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _LSA_TOKEN_INFORMATION_V1 {
 
 
@@ -41,21 +41,21 @@ typedef struct _LSA_TOKEN_INFORMATION_V1 {
 
 
     TOKEN_USER User;
-# 121 "project/mimikatz/inc/NTSecPKG.h"
+# 121 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     PTOKEN_GROUPS Groups;
-# 134 "project/mimikatz/inc/NTSecPKG.h"
+# 134 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     TOKEN_PRIMARY_GROUP PrimaryGroup;
-# 151 "project/mimikatz/inc/NTSecPKG.h"
+# 151 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     PTOKEN_PRIVILEGES Privileges;
-# 164 "project/mimikatz/inc/NTSecPKG.h"
+# 164 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     TOKEN_OWNER Owner;
-# 176 "project/mimikatz/inc/NTSecPKG.h"
+# 176 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
     TOKEN_DEFAULT_DACL DefaultDacl;
 
 } LSA_TOKEN_INFORMATION_V1, *PLSA_TOKEN_INFORMATION_V1;
-# 188 "project/mimikatz/inc/NTSecPKG.h"
+# 188 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef LSA_TOKEN_INFORMATION_V1 LSA_TOKEN_INFORMATION_V2, *PLSA_TOKEN_INFORMATION_V2;
-# 199 "project/mimikatz/inc/NTSecPKG.h"
+# 199 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef NTSTATUS
 (NTAPI LSA_CREATE_LOGON_SESSION) (
     IN PLUID LogonId
@@ -172,7 +172,7 @@ typedef struct _LSA_DISPATCH_TABLE {
     PLSA_COPY_TO_CLIENT_BUFFER CopyToClientBuffer;
     PLSA_COPY_FROM_CLIENT_BUFFER CopyFromClientBuffer;
 } LSA_DISPATCH_TABLE, *PLSA_DISPATCH_TABLE;
-# 347 "project/mimikatz/inc/NTSecPKG.h"
+# 347 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef NTSTATUS
 (NTAPI LSA_AP_INITIALIZE_PACKAGE) (
     IN ULONG AuthenticationPackageId,
@@ -304,10 +304,10 @@ typedef struct {
 typedef NTSTATUS (*PSAM_CREDENTIAL_UPDATE_REGISTER_MAPPED_ENTRYPOINTS_ROUTINE) (
     __out SAM_REGISTER_MAPPING_TABLE *Table
     );
-# 491 "project/mimikatz/inc/NTSecPKG.h"
+# 491 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef LPTHREAD_START_ROUTINE SEC_THREAD_START;
 typedef LPSECURITY_ATTRIBUTES SEC_ATTRS;
-# 507 "project/mimikatz/inc/NTSecPKG.h"
+# 507 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECPKG_CLIENT_INFO {
     LUID LogonId;
     ULONG ProcessID;
@@ -341,7 +341,7 @@ typedef struct _SECPKG_CALL_INFO {
     ULONG CallCount;
     PVOID MechOid;
 } SECPKG_CALL_INFO, * PSECPKG_CALL_INFO;
-# 559 "project/mimikatz/inc/NTSecPKG.h"
+# 559 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECPKG_SUPPLEMENTAL_CRED {
     UNICODE_STRING PackageName;
     ULONG CredentialSize;
@@ -375,7 +375,7 @@ typedef struct _SECPKG_SUPPLIED_CREDENTIAL {
     SECPKG_BYTE_VECTOR PackedCredentials;
     ULONG CredFlags;
 } SECPKG_SUPPLIED_CREDENTIAL, *PSECPKG_SUPPLIED_CREDENTIAL;
-# 605 "project/mimikatz/inc/NTSecPKG.h"
+# 605 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECPKG_CREDENTIAL {
     ULONG64 Version;
     USHORT cbHeaderLength;
@@ -404,7 +404,7 @@ typedef struct _SECPKG_SUPPLEMENTAL_CRED_ARRAY {
     SECPKG_SUPPLEMENTAL_CRED Credentials[1];
 
 } SECPKG_SUPPLEMENTAL_CRED_ARRAY, *PSECPKG_SUPPLEMENTAL_CRED_ARRAY;
-# 648 "project/mimikatz/inc/NTSecPKG.h"
+# 648 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef NTSTATUS
 (NTAPI LSA_CALLBACK_FUNCTION)(
     ULONG_PTR Argument1,
@@ -414,7 +414,7 @@ typedef NTSTATUS
     );
 
 typedef LSA_CALLBACK_FUNCTION * PLSA_CALLBACK_FUNCTION;
-# 678 "project/mimikatz/inc/NTSecPKG.h"
+# 678 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECPKG_PRIMARY_CRED {
     LUID LogonId;
     UNICODE_STRING DownlevelName;
@@ -432,7 +432,7 @@ typedef struct _SECPKG_PRIMARY_CRED {
     UNICODE_STRING Spare3;
     UNICODE_STRING Spare4;
 } SECPKG_PRIMARY_CRED, *PSECPKG_PRIMARY_CRED;
-# 710 "project/mimikatz/inc/NTSecPKG.h"
+# 710 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECPKG_PARAMETERS {
     ULONG Version;
     ULONG MachineState;
@@ -518,7 +518,7 @@ typedef struct _SECPKG_TARGETINFO
 typedef struct _SecPkgContext_SaslContext {
     PVOID SaslContext;
 } SecPkgContext_SaslContext, * PSecPkgContext_SaslContext;
-# 807 "project/mimikatz/inc/NTSecPKG.h"
+# 807 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECURITY_USER_DATA {
     SECURITY_STRING UserName;
     SECURITY_STRING LogonDomainName;
@@ -527,7 +527,7 @@ typedef struct _SECURITY_USER_DATA {
 } SECURITY_USER_DATA, *PSECURITY_USER_DATA;
 
 typedef SECURITY_USER_DATA SecurityUserData, * PSecurityUserData;
-# 829 "project/mimikatz/inc/NTSecPKG.h"
+# 829 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef NTSTATUS
 (NTAPI LSA_IMPERSONATE_CLIENT) (
     VOID
@@ -810,7 +810,7 @@ NTSTATUS
     ULONG CallbackId,
     PLSA_CALLBACK_FUNCTION Callback
     );
-# 1127 "project/mimikatz/inc/NTSecPKG.h"
+# 1127 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SECPKG_EVENT_PACKAGE_CHANGE {
     ULONG ChangeType;
     LSA_SEC_HANDLE PackageId;
@@ -904,7 +904,7 @@ typedef LSA_PROTECT_MEMORY * PLSA_PROTECT_MEMORY;
 typedef LSA_OPEN_TOKEN_BY_LOGON_ID * PLSA_OPEN_TOKEN_BY_LOGON_ID;
 typedef LSA_EXPAND_AUTH_DATA_FOR_DOMAIN * PLSA_EXPAND_AUTH_DATA_FOR_DOMAIN;
 typedef LSA_CREATE_TOKEN_EX * PLSA_CREATE_TOKEN_EX;
-# 1352 "project/mimikatz/inc/NTSecPKG.h"
+# 1352 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef struct _SEC_WINNT_AUTH_IDENTITY32 {
     ULONG User;
     ULONG UserLength;
@@ -1427,7 +1427,7 @@ typedef NTSTATUS
     OUT PSECPKG_USER_FUNCTION_TABLE *ppTables,
     OUT PULONG pcTables
     );
-# 1908 "project/mimikatz/inc/NTSecPKG.h"
+# 1908 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef enum _KSEC_CONTEXT_TYPE {
     KSecPaged,
     KSecNonPaged
@@ -1440,7 +1440,7 @@ typedef struct _KSEC_LIST_ENTRY {
     PVOID OwningList;
     PVOID Reserved;
 } KSEC_LIST_ENTRY, * PKSEC_LIST_ENTRY;
-# 1930 "project/mimikatz/inc/NTSecPKG.h"
+# 1930 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/NTSecPKG.h"
 typedef PVOID
 (SEC_ENTRY KSEC_CREATE_CONTEXT_LIST)(
     IN KSEC_CONTEXT_TYPE Type

@@ -1,8 +1,8 @@
-# 0 "project/mimikatz/inc/WinDNS.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "project/mimikatz/inc/WinDNS.h"
-# 38 "project/mimikatz/inc/WinDNS.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
+# 38 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef unsigned __int64 QWORD, *PQWORD;
 
 
@@ -17,7 +17,7 @@ typedef DNS_STATUS *PDNS_STATUS;
 
 
 typedef DWORD IP4_ADDRESS, *PIP4_ADDRESS;
-# 65 "project/mimikatz/inc/WinDNS.h"
+# 65 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _IP4_ARRAY
 {
     DWORD AddrCount;
@@ -28,7 +28,7 @@ typedef struct _IP4_ARRAY
 
 }
 IP4_ARRAY, *PIP4_ARRAY;
-# 99 "project/mimikatz/inc/WinDNS.h"
+# 99 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef union
 {
 
@@ -42,7 +42,7 @@ typedef union
 
 }
 IP6_ADDRESS, *PIP6_ADDRESS;
-# 256 "project/mimikatz/inc/WinDNS.h"
+# 256 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 #pragma pack(push, 1)
 
 
@@ -80,7 +80,7 @@ typedef struct _DNS_HEADER_EXT
     BYTE chVersion;
 }
 DNS_HEADER_EXT, *PDNS_HEADER_EXT;
-# 346 "project/mimikatz/inc/WinDNS.h"
+# 346 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DNS_WIRE_QUESTION
 {
 
@@ -109,7 +109,7 @@ typedef struct _DNS_WIRE_RECORD
 DNS_WIRE_RECORD, *PDNS_WIRE_RECORD;
 
 #pragma pack(pop)
-# 808 "project/mimikatz/inc/WinDNS.h"
+# 808 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum
 {
 
@@ -145,7 +145,7 @@ typedef enum
 
 }
 DNS_CONFIG_TYPE;
-# 854 "project/mimikatz/inc/WinDNS.h"
+# 854 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 DNS_STATUS
 WINAPI
 DnsQueryConfig(
@@ -156,7 +156,7 @@ DnsQueryConfig(
     __out_bcount_part(*pBufLen, *pBufLen) PVOID pBuffer,
     __inout PDWORD pBufLen
     );
-# 875 "project/mimikatz/inc/WinDNS.h"
+# 875 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct
 {
     IP4_ADDRESS IpAddress;
@@ -550,7 +550,7 @@ typedef struct
     PSTR pNameResultDomain;
 }
 DNS_WINSR_DATAA, *PDNS_WINSR_DATAA;
-# 1289 "project/mimikatz/inc/WinDNS.h"
+# 1289 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef DNS_PTR_DATAA DNS_PTR_DATA, *PDNS_PTR_DATA;
 typedef DNS_SOA_DATAA DNS_SOA_DATA, *PDNS_SOA_DATA;
 typedef DNS_MINFO_DATAA DNS_MINFO_DATA, *PDNS_MINFO_DATA;
@@ -565,7 +565,7 @@ typedef DNS_NSEC_DATAA DNS_NSEC_DATA, *PDNS_NSEC_DATA;
 typedef DNS_TKEY_DATAA DNS_TKEY_DATA, *PDNS_TKEY_DATA;
 typedef DNS_TSIG_DATAA DNS_TSIG_DATA, *PDNS_TSIG_DATA;
 typedef DNS_WINSR_DATAA DNS_WINSR_DATA, *PDNS_WINSR_DATA;
-# 1343 "project/mimikatz/inc/WinDNS.h"
+# 1343 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DnsRecordFlags
 {
     DWORD Section : 2;
@@ -576,7 +576,7 @@ typedef struct _DnsRecordFlags
     DWORD Reserved : 24;
 }
 DNS_RECORD_FLAGS;
-# 1362 "project/mimikatz/inc/WinDNS.h"
+# 1362 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum _DnsSection
 {
     DnsSectionQuestion,
@@ -585,7 +585,7 @@ typedef enum _DnsSection
     DnsSectionAddtional,
 }
 DNS_SECTION;
-# 1421 "project/mimikatz/inc/WinDNS.h"
+# 1421 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DnsRecordW
 {
     struct _DnsRecordW * pNext;
@@ -780,14 +780,14 @@ DNS_RECORD_OPTA, *PDNS_RECORD_OPTA;
 
 typedef DNS_RECORDA DNS_RECORD, *PDNS_RECORD;
 typedef DNS_RECORD_OPTA DNS_RECORD_OPT, *PDNS_RECORD_OPT;
-# 1635 "project/mimikatz/inc/WinDNS.h"
+# 1635 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DnsRRSet
 {
     PDNS_RECORD pFirstRR;
     PDNS_RECORD pLastRR;
 }
 DNS_RRSET, *PDNS_RRSET;
-# 1686 "project/mimikatz/inc/WinDNS.h"
+# 1686 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef
 VOID
 (WINAPI *DNS_PROXY_COMPLETION_ROUTINE) (
@@ -807,7 +807,7 @@ typedef struct DNS_PROXY_INFORMATION {
                 __out DNS_PROXY_INFORMATION_TYPE proxyInformationType;
                 __out_opt PWSTR proxyName;
 } DNS_PROXY_INFORMATION;
-# 1719 "project/mimikatz/inc/WinDNS.h"
+# 1719 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum _DNS_CHARSET
 {
     DnsCharSetUnknown,
@@ -833,7 +833,7 @@ DnsRecordSetCopyEx(
     __in DNS_CHARSET CharSetIn,
     __in DNS_CHARSET CharSetOut
     );
-# 1768 "project/mimikatz/inc/WinDNS.h"
+# 1768 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 BOOL
 WINAPI
 DnsRecordCompare(
@@ -858,7 +858,7 @@ PDNS_RECORD
 DnsRecordSetDetach(
     __inout PDNS_RECORD pRecordList
     );
-# 1802 "project/mimikatz/inc/WinDNS.h"
+# 1802 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum
 {
     DnsFreeFlat = 0,
@@ -873,14 +873,14 @@ DnsFree(
     __inout PVOID pData,
     __in DNS_FREE_TYPE FreeType
     );
-# 1829 "project/mimikatz/inc/WinDNS.h"
+# 1829 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 VOID
 WINAPI
 DnsRecordListFree(
     __inout_opt PDNS_RECORD pRecordList,
     __in DNS_FREE_TYPE FreeType
     );
-# 1879 "project/mimikatz/inc/WinDNS.h"
+# 1879 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 DNS_STATUS
 WINAPI
 DnsQuery_A(
@@ -913,7 +913,7 @@ DnsQuery_W(
     __deref_out_opt PDNS_RECORD * ppQueryResults,
     __deref_opt_out_opt PVOID * pReserved
     );
-# 1956 "project/mimikatz/inc/WinDNS.h"
+# 1956 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 DNS_STATUS
 WINAPI
 DnsAcquireContextHandle_W(
@@ -978,7 +978,7 @@ DnsModifyRecordsInSet_UTF8(
     __inout_opt PVOID pExtraList,
     __inout_opt PVOID pReserved
     );
-# 2028 "project/mimikatz/inc/WinDNS.h"
+# 2028 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 DNS_STATUS
 WINAPI
 DnsReplaceRecordSetW(
@@ -1008,7 +1008,7 @@ DnsReplaceRecordSetUTF8(
     __inout_opt PVOID pExtraInfo,
     __inout_opt PVOID pReserved
     );
-# 2070 "project/mimikatz/inc/WinDNS.h"
+# 2070 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef enum _DNS_NAME_FORMAT
 {
     DnsNameDomain,
@@ -1039,7 +1039,7 @@ DnsValidateName_UTF8(
     __in PCSTR pszName,
     __in DNS_NAME_FORMAT Format
     );
-# 2138 "project/mimikatz/inc/WinDNS.h"
+# 2138 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 BOOL
 WINAPI
 DnsNameCompare_A(
@@ -1053,7 +1053,7 @@ DnsNameCompare_W(
     __in PCWSTR pName1,
     __in PCWSTR pName2
     );
-# 2164 "project/mimikatz/inc/WinDNS.h"
+# 2164 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/inc/WinDNS.h"
 typedef struct _DNS_MESSAGE_BUFFER
 {
     DNS_HEADER MessageHead;

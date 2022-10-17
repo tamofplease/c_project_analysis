@@ -1,8 +1,8 @@
-# 0 "project/mimikatz/mimidrv/ioctl.h"
+# 0 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/ioctl.h"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "project/mimikatz/mimidrv/ioctl.h"
-# 38 "project/mimikatz/mimidrv/ioctl.h"
+# 1 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/ioctl.h"
+# 38 "/Users/tamofplease/Workspace/research/docker-exp/workspace/mimikatz/mimidrv/ioctl.h"
 typedef struct _PS_PROTECTION {
  UCHAR Type : 3;
  UCHAR Audit : 1;
