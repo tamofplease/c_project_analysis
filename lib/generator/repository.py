@@ -1,6 +1,6 @@
 from os.path import exists
 import git
-from generator.client import (
+from client import (
     project_csv_client,
     file_csv_client,
     macro_csv_client,
@@ -12,7 +12,7 @@ from generator.client import (
     DBClient,
     LocalFileClient,
 )
-from generator.entity import (
+from entity import (
     ProjectEntity,
     FileEntity,
     MacroEntity,
@@ -168,6 +168,16 @@ class AvailableMacroRepository:
                 self.db_client.fetch_all(),
             )
         )
+    
+    @property
+    def next_id(self) -> int:
+        try:
+            return 1 + int(self.db_client.fetch_all()[-1][0])
+        except Exception:
+            return 1
+
+    def save_information_to_database(self, available_macro: AvailableMacroEntity):
+        self.db_client.insert(available_macro.to_tuple)
 
 
 class UsedMacroRepository:

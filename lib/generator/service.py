@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from generator.repository import (
+from repository import (
     project_repository,
     file_repository,
     macro_repository,
@@ -15,7 +15,7 @@ from generator.repository import (
     AvailableMacroRepository,
     UsedMacroRepository,
 )
-from generator.entity import (
+from entity import (
     ProjectEntity,
     FileEntity,
     MacroEntity,
@@ -104,6 +104,12 @@ class AvailableMacroService:
 
     def fetch_all(self) -> list[AvailableMacroEntity]:
         return self.available_macro_repository.fetch_macros()
+    
+    def save(self, available_macros: list[AvailableMacroEntity]) -> None:
+        next_id = self.available_macro_repository.next_id
+        for index, used_macro in enumerate(tqdm(available_macros)):
+            used_macro.used_macro_id = index + next_id
+            self.available_macro_repository.save_information_to_database(used_macro)
 
 
 class UsedMacroService:

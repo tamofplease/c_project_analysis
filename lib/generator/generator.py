@@ -37,7 +37,7 @@ class UsedMacroGenerator():
             ))
         return res
 
-    def generate_used_macro(self):
+    def extract_macros(self):
         files: list[FileEntity] = [
             file for file in self.file_service.fetch_all() if os.path.isfile(file.get_preprocessed_path)
         ]
@@ -96,8 +96,8 @@ class DefineMacroGenerator():
         files: list[FileEntity] = [
             file for file in self.file_service.fetch_all() if os.path.isfile(file.get_preprocessed_path)
         ]
-        for file in files:
-            with open(file.get_formatted_path, mode='r') as f:
+        for file in tqdm(files):
+            with open(file.get_formatted_path, mode='r', errors='ignore') as f:
                 for line in f.readlines():
                     if '#define' in line:
                         key = line.split(" ")[1]
@@ -113,8 +113,43 @@ class DefineMacroGenerator():
         self.define_macro_service.save(data)
 
 
+class AvailableMacroGenerator():
+    def __init__(self):
+        self.file_service = file_service
+        self.macro_service = macro_service
+        self.available_macro_service = available_macro_service
+        self.macro_map = {entity.key: entity for entity in macro_service.fetch_all()}
+
+    def extract_macros(self):
+        data = []
+        files: list[FileEntity] = [
+            file for file in self.file_service.fetch_all() if os.path.isfile(file.get_preprocessed_path)
+        ]
+        for file in files:
+            with open(file.get_available_path, mode='r') as f:
+                for line in f.readlines():
+                    if '#define' in line:
+                        key = line.split(" ")[1]
+                        if key in self.macro_map:
+                            tgt = self.macro_map[key]
+                            data.append(
+                                AvailableMacroEntity(
+                                    available_macro_id=len(data) + 1,
+                                    macro_id=tgt.macro_id,
+                                    file_id=file.file_id
+                                )
+                            )
+        self.available_macro_service.save(data)
+
+
 def main():
+    # generator = AvailableMacroGenerator()
+    # generator.extract_macros()
+
     generator = DefineMacroGenerator()
+    generator.extract_macros()
+
+    generator = UsedMacroGenerator()
     generator.extract_macros()
 
 

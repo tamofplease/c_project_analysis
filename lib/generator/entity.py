@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from generator.constant import Constant
+from constant import Constant
 
 
 @dataclass
@@ -93,6 +93,10 @@ class FileEntity:
     @property
     def get_formatted_path(self) -> str:
         return self.path.replace("project", "out/format")
+    
+    @property
+    def get_available_path(self) -> str:
+        return self.path.replace("project", "out/available")
 
 
 @dataclass

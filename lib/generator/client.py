@@ -3,8 +3,8 @@ from abc import ABC
 import csv
 from os.path import exists
 import glob
-from generator.constant import Constant
-from generator.entity import (
+from constant import Constant
+from entity import (
     ProjectEntity,
     FileEntity,
     MacroEntity,
@@ -13,7 +13,7 @@ from generator.entity import (
     AvailableMacroEntity,
     UsedMacroEntity,
 )
-from generator.type import FormatType
+from type import FormatType
 
 
 class DBClient(ABC):

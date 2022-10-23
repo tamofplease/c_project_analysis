@@ -1,0 +1,33 @@
+{
+
+    "include_path": {
+        "absolute": {
+            "quote": [],
+            "system": [
+                "/usr/local/include/",
+                "/usr/local/Cellar/libarchive/3.6.1/include/"
+            ]
+        },
+        "relative": {
+            "quote": [
+                ""
+            ],
+            "system": []
+        }
+    },
+    "limited_words": {
+        "mac": [],
+        "windows": [
+            "windows",
+            "win"
+        ],
+        "linux": [
+            "linux",
+            "sys/personality.h",
+            "sys/auxv.h"
+        ]
+    },
+    "ignore_word": [
+        "cpu-offsets.h"
+    ]
+}
